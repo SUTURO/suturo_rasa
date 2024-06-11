@@ -1,0 +1,15 @@
+## rasa
+data/*
+actions/*
+models/*.tar.gz
+tests/*
+config.yml
+domain.yml
+credentials.yml
+endpoints.yml
+/.rasa
+
+## command generator
+tests.json
+generated_training.txt
+generated_testing.txt
