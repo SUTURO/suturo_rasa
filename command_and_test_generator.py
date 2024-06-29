@@ -7,148 +7,13 @@ import os
 import sys
 import copy
 import nltk
-import importlib
-
+import shutil
 from pathlib import Path
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-    importlib.reload(nltk)
-   
+import yaml
 
 # We may want to run this script from an arbitrary location, let's not depend on the current working directory to locate our resources.
 ownDir = os.path.dirname(os.path.abspath(__file__))
-
-# TODO: get rid of these placeholder intents from our rules and stories
-domainPreamble = '''
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  utter_did_that_help:
-  - text: "Did that help you?"
-  utter_happy:
-  - text: "Great, carry on!"
-  utter_goodbye:
-  - text: "Bye"
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - ParkArms
-
-'''
-preamble = '''
-- intent: ParkingArms
-  examples: |
-    - Please place your arms in a relaxed position.
-    - Please park your arms.
-    - Kindly rest your arms at your sides.
-    - Can you put your arms down and let them rest?
-    - Can you put your hands near your body?
-    - Kindly rest your hands at your sides.
-
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
-'''
 
 def loadSharp(infile):
     def _findCommentStart(l): # Kinda silly to use # for comment and ### for situations in cat3, but if them's the format ...
@@ -177,7 +42,7 @@ def loadOntology(ontologyLoader):
         retq[entityType] = {'entities': loadSharp(fileEntities), # Isn't it much nicer to have a function you can call when you need to do the same thing over and over again?
                             'classes': None}
         if 1 > len(retq[entityType]['entities']):
-            print("Do not have any %s defined in the file!" % msgName)
+            print("Do not have any %s defined in the file!" % inflection.pluralize(entityType))
             sys.exit(1)
         if fileClassLabels is not None:
             retq[entityType]['classes'] = loadSharp(fileClassLabels)
@@ -188,18 +53,26 @@ def loadOntology(ontologyLoader):
             retq[entityType]['entities'] = list(set(retq[entityType]['entities']))
     return retq
 
-ontologyLoader = []
-ontologyLoader.append(("NaturalPerson", "naturalPersons.txt", None, "NaturalPersons"))
-ontologyLoader.append(("drink", "drinks.txt", None, "drinks"))
-ontologyLoader.append(("food", "foods.txt", None, "foods"))
-ontologyLoader.append(("PhysicalArtifact", "physicalArtifacts.txt", None, "PhysicalArtifacts"))
-ontologyLoader.append(("PhysicalPlace", "physicalPlaces.txt", None, "PhysicalPlaces"))
+def parseEntities(entitiesFile):
+    with open(entitiesFile) as stream:
+        try:
+            ydata = (yaml.safe_load(stream))
+            retq={}
+            for entityType, entityDesc in ydata.items():
+                retq[entityType] = {"entities": list(set(entityDesc["entities"]))}
+                if 1 > len(retq[entityType]['entities']):
+                    print("Do not have any %s defined in the file!" % inflection.pluralize(entityType))
+                    sys.exit(1)
+            return retq
+        except yaml.YAMLError as exc:
+            print(exc)
 
-#ontologyLoader.append(("E_Attribute_Item", "attributes_item.txt", None, "E_Attribute_Items"))
-#ontologyLoader.append(("E_Attribute_Location", "attributes_location.txt", None, "E_Attribute_Locations"))
-#ontologyLoader.append(("E_Attribute_Source", "attributes_location.txt", None, "E_Attribute_Sources"))
-#ontologyLoader.append(("E_Attribute_Destination", "attributes_location.txt", None, "E_Attribute_Destinations"))
-#ontologyLoader.append(("E_Attribute_Beneficiary", "attributes_beneficiary.txt", None, "E_Attribute_Beneficiaries"))
+#ontologyLoader = []
+#ontologyLoader.append(("NaturalPerson", "naturalPersons.txt", None, "NaturalPersons"))
+#ontologyLoader.append(("drink", "drinks.txt", None, "drinks"))
+#ontologyLoader.append(("food", "foods.txt", None, "foods"))
+#ontologyLoader.append(("PhysicalArtifact", "physicalArtifacts.txt", None, "PhysicalArtifacts"))
+#ontologyLoader.append(("PhysicalPlace", "physicalPlaces.txt", None, "PhysicalPlaces"))
 
 #ontologyLoader.append(('LOCATION', 'locations.txt', 'location_categories.txt', 'locations'))
 #ontologyLoader.append(('ITEM', 'items.txt', 'item_categories.txt', 'items'))
@@ -220,7 +93,7 @@ ontologyLoader.append(("PhysicalPlace", "physicalPlaces.txt", None, "PhysicalPla
 #ontologyLoader.append(('person_name', 'person_names.txt', None, 'person_names'))
 #ontologyLoader.append(('person', 'persons.txt', None, 'persons'))
 
-ontology = loadOntology(ontologyLoader)
+#ontology = loadOntology(ontologyLoader)
 
 templatesRaw = loadSharp('templates.txt')
 templates = {}
@@ -229,52 +102,37 @@ for t in templatesRaw:
     intent = t[:idx].strip()
     sentence = t[idx+1:].strip()
     if intent not in templates:
-        templates[intent] = set()
-    templates[intent].add(sentence)
+        templates[intent] = []
+    templates[intent].append(sentence)
 
-templates = {k:list(v) for k,v in templates.items()}
 punctuation = set([',', ':', '.', ';', '"', '\'', '?', '!'])
 
 # We actually may want to generate MANY sentences at once for both training and testing purposes. One by one is silly.
-def generateN(examplesPerTemplate, N, Ntrials, templates, ontology):
-    def _generate(template):
-        tokens = nltk.word_tokenize(template)
-        spec = []
-        for token in tokens:
-            value = str(token)
-            annotation = None
-            if '|' in token:
-                annspec = token.split('|')
-                annotation = {"entity": annspec[0], "role": annspec[1]}
-                if 2 < len(annspec):
-                    annotation["group"] = annspec[2]
-                if annspec[0] in ontology:
-                    value = random.choice(ontology[annspec[0]]['entities'])
-                else:
-                    value = annspec[0] # TODO: this imposes a limit: an out-of-onto token must be a single "word" according to nltk.word_tokenize.
-                    # This means: OK: "yourself", "me". Not ok: "cup of coffee".
-            spec.append([value, annotation])
-        return spec
+def generateN(N, Ntrials, templates, ontology):
     creations = {}
-    for intent in sorted(list(templates.keys())):
+    for intent in sorted(list(templates.keys())): # TODO: may want to force generation of O(N) examples per template
         intentTemplates = templates[intent]
         creations[intent] = {}
-        k = 0
-        NtrialsLocal = len(intentTemplates)*examplesPerTemplate*10
-        for e in intentTemplates:
-            for j in range(examplesPerTemplate):
-                while k < NtrialsLocal:
-                    k += 1
-                    spec = _generate(e)
-                    specId = specToText(spec)
-                    if specId not in creations[intent]:
-                        creations[intent][specId] = spec
-                        break
         k = 0
         while (N > len(creations[intent])) and (k < Ntrials):
             k += 1
             template = random.choice(intentTemplates)
-            spec = _generate(template)
+            tokens = nltk.word_tokenize(template)
+            spec = []
+            for token in tokens:
+                value = str(token)
+                annotation = None
+                if '|' in token:
+                    annspec = token.split('|')
+                    annotation = {"entity": annspec[0], "role": annspec[1]}
+                    if 2 < len(annspec):
+                        annotation["group"] = annspec[2]
+                    if annspec[0] in ontology:
+                        value = random.choice(ontology[annspec[0]]['entities'])
+                    else:
+                        value = annspec[0] # TODO: this imposes a limit: an out-of-onto token must be a single "word" according to nltk.word_tokenize.
+                        # This means: OK: "yourself", "me". Not ok: "cup of coffee".
+                spec.append([value, annotation])
             creations[intent][specToText(spec)] = spec
     return {intent: [(k, creations[intent][k]) for k in sorted(list(creations[intent].keys()))] for intent in sorted(list(creations.keys()))}
 
@@ -318,13 +176,13 @@ def writeNL(creations, outfileName):
             for text, _ in specs:
                 _ = outfile.write("%s\n" % text)
 
-def writeRasaNLU(creations, path, outfileNLUName, outfileDomainName, ontology):
-    dataPath = os.path.join(path,"data")
-    Path(dataPath).mkdir(parents=True, exist_ok=True)
-    outfileNLUName = os.path.join(dataPath, outfileNLUName)
+def writeRasaNLU(creations, ontology, outputPath):
+    nluDataPath = os.path.join(outputPath, "data")
+    Path(nluDataPath).mkdir(parents=True, exist_ok=True)
+    outfileNLUName = os.path.join(nluDataPath, 'nlu.yml')
+    outfileDomainName = os.path.join(outputPath, 'domain.yml')
     with open(outfileNLUName, 'w') as outfile:
         _ = outfile.write('version: "3.1"\n\nnlu:\n')
-        _ = outfile.write("%s\n" % preamble)
         for intent in sorted(list(creations.keys())):
             specs = creations[intent]
             _ = outfile.write('- intent: %s\n  examples: |\n' % intent)
@@ -336,10 +194,8 @@ def writeRasaNLU(creations, path, outfileNLUName, outfileDomainName, ontology):
             for x in sorted(list(set(ontology[e]['entities']))):
                 _ = outfile.write('    - %s\n' % x)
             _ = outfile.write('\n')
-    outfileDomainName = os.path.join(path, outfileDomainName)
     with open(outfileDomainName, 'w') as outfile:
-        #_ = outfile.write('version: "3.1"\n\nintents:\n')
-        _ = outfile.write('version: "3.1"\n\n%s' % domainPreamble)
+        _ = outfile.write('version: "3.1"\n\nintents:\n')
         for intent in sorted(list(creations.keys())):
             _ = outfile.write('  - %s\n' % intent)
         _ = outfile.write('\n\nentities:\n')
@@ -360,37 +216,33 @@ def writeRasaTesting(creations, outfileName):
         _ = outfile.write('[\n%s\n]\n' % ',\n'.join(tests))
 
 def main():
+    # TODO: provide an arbitrary path for output files.
     parser = argparse.ArgumentParser(prog='command_and_test_generator', description='Generate commands, training, and testing files for NLU commands', epilog='Text at the bottom of help')
-    parser.add_argument('-k', '--examplesPerTemplate', default="1", help="Number of examples to generate per template. Must be an integer at least equal to 1.")
-    parser.add_argument('-Ntrain', '--numberTrainingExamples', default="100", help='Number of training examples to generate per intent. Will be forced to 20 if lower.')
-    parser.add_argument('-Ntest', '--numberTestingExamples', default="100", help='Number of training examples to generate per intent. Will be forced to 20 if lower.')
-    parser.add_argument('-Ntries', '--numberTrials', default="2000", help='Number of trials for random generation per intent. Forced to 10*(Ntrain+Ntest) if lower.')
-    parser.add_argument('-p', '--path', default="./", help="Path to place generated files for rasa at. Assumes the path for nlu.yml is at <path>/data/")
+    parser.add_argument('-o', '--outputPath', default="./", help="Path to a rasa project folder where to place the generated files.")
+    parser.add_argument('-t', '--templates', default="./templates.txt", help="Path and filename for a templates.txt file; this contains a list of templates to generate example sentences from.")
+    parser.add_argument('-e', '--entities', default="./entities.yml", help="Path and filename for an entities.yml file; this contains a dictionary of entities to use to fill slots in generated sentences.")
+    parser.add_argument('-Ntrain', '--numberTrainingExamples', default="20", help='Number of training examples to generate per intent. Will be forced to 20 if lower.')
+    parser.add_argument('-Ntest', '--numberTestingExamples', default="20", help='Number of training examples to generate per intent. Will be forced to 20 if lower.')
+    parser.add_argument('-Ntries', '--numberTrials', default="400", help='Number of trials for random generation per intent. Forced to 10*(Ntrain+Ntest) if lower.')
     # Forget about generating according to their category files. Internally, our team is splitting sentences so we need to generate train/test data for intents.
     #parser.add_argument('-c', '--category', default="2", help='Category of templates to generate for. May be 1 or 2 (will be forced to 2 otherwise). TODO: add support for cat 3.')
     arguments = parser.parse_args()
-    try:
-        examplesPerTemplate = int(arguments.examplesPerTemplate)
-    except:
-        examplesPerTemplate = 1
-    path = arguments.path
+    outputPath = arguments.outputPath
+    ontology = parseEntities(arguments.entities)
     Ntrain = int(arguments.numberTrainingExamples)
-    #templateCount = sum(len(x) for x in templates.values())
-    #minCount = max(20, templateCount*examplesPerTemplate)
-    minCount = 20
-    if minCount > Ntrain:
-        Ntrain = minCount
+    if 20 > Ntrain:
+        Ntrain = 20
     Ntest = int(arguments.numberTrainingExamples)
-    if minCount > Ntest:
-        Ntest = minCount
+    if 20 > Ntest:
+        Ntest = 20
     Ntrials = int(arguments.numberTrials)
     if 10*(Ntrain + Ntest) > Ntrials:
         Ntrials = 10*(Ntrain + Ntest)
-    trainSpecs = generateN(examplesPerTemplate, Ntest, Ntrials, templates, ontology)
-    testSpecs = generateN(examplesPerTemplate, Ntest, Ntrials, templates, ontology)
+    trainSpecs = generateN(Ntest, Ntrials, templates, ontology)
+    testSpecs = generateN(Ntest, Ntrials, templates, ontology)
     writeNL(trainSpecs, 'generated_training.txt')
     writeNL(testSpecs, 'generated_testing.txt')
-    writeRasaNLU(trainSpecs, path, 'nlu.yml', 'domain.yml', ontology)
+    writeRasaNLU(trainSpecs, ontology, outputPath)
     writeRasaTesting(testSpecs, 'tests.json')
 
 if "__main__" == __name__:
