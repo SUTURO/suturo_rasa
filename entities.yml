@@ -1,0 +1,211 @@
+drink:
+  entities:
+   - apple juice
+   - beer
+   - bottle of wine
+   - cafe au lait
+   - coffee
+   - coffee can
+   - coffee with milk
+   - coke
+   - cola
+   - cola can
+   - cup of coffee
+   - cup of coffee with milk
+   - cup of tea
+   - gin tonic
+   - ginger ale
+   - glass of milk
+   - glass of mineral water
+   - glass of water
+   - ice tea bottle
+   - iced coffee
+   - iced tea
+   - jug of milk
+   - juicebox
+   - juice pack
+   - lemonade
+   - milk
+   - milk pack
+   - mineral water
+   - orange juice
+   - orange juice box
+   - sprite
+   - tea
+   - tropical juice bottle
+   - water
+   - wine bottle
+   - wine glass
+
+food:
+  entities:
+   - apple
+   - banana
+   - bowl of soup
+   - box of cereal
+   - box of sugar
+   - cereal box
+   - cereal box robo cup
+   - chili con carne
+   - chili sin carne
+   - chips can
+   - chocolate pudding box
+   - cracker box
+   - gelatin box
+   - jar of pickles
+   - jello box
+   - jello chocolate pudding box
+   - jello strawberry box
+   - kiwi
+   - lemon
+   - meat
+   - mustard bottle
+   - mustard container
+   - orange
+   - oregano shaker
+   - pancake mix bottle
+   - pastry box
+   - peach
+   - pear
+   - piece of toast
+   - plum
+   - potted meat can
+   - pringles chips can
+   - sandwich
+   - soup
+   - steak
+   - strawberry
+   - sugar
+   - sugar box
+   - tomato soup can
+   - tuna fish can
+   - vegetables
+
+NaturalPerson:
+  entities:
+   - her
+   - him
+   - them
+   - Alice
+   - Adel
+   - Amanda
+   - Andrew
+   - Angel
+   - Ashley
+   - Axel
+   - Bob
+   - Brittany
+   - Charlie
+   - Christopher
+   - Daniel
+   - David
+   - Elizabeth
+   - James
+   - Jane
+   - Jennifer
+   - Jessica
+   - John
+   - Joseph
+   - Joshua
+   - Jules
+   - Justin
+   - Lauren
+   - Matthew
+   - Michael
+   - Morgan
+   - Paris
+   - Robin
+   - Simone
+   - Samantha
+   - Sarah
+   - Stephanie
+
+PhysicalArtifact:
+  entities:
+   - abrasive sponge
+   - bag
+   - baseball
+   - bib
+   - bleach cleanser bottle
+   - bottle
+   - bottle of shampoo
+   - bowl
+   - box
+   - cabinet
+   - chair
+   - coffee pack
+   - countertop
+   - cup
+   - cupboard
+   - cutting board
+   - dice
+   - dishwasher tab
+   - door
+   - drawer
+   - foam brick
+   - fork
+   - fridge
+   - frying pan
+   - glass
+   - glass cleaner spray bottle
+   - golfball
+   - it
+   - jar
+   - jug
+   - kitchen cabinet
+   - knife
+   - lid
+   - metal bowl
+   - metal mug
+   - metal plate
+   - mini soccerball
+   - mug
+   - napkin
+   - oven
+   - pill box
+   - pitcher
+   - plastic knife
+   - plate
+   - pot
+   - racquet ball
+   - refrigerator
+   - rope
+   - rubiks cube
+   - salt shaker
+   - serving mat
+   - shampoo
+   - shelf
+   - skillet
+   - soap
+   - sofa
+   - softball
+   - spatula
+   - spoon
+   - stacking blocks
+   - stove
+   - table
+   - table cloth
+   - tea bag box
+   - tennisball
+   - these
+   - them
+   - those
+   - towel
+   - toyota HSR
+   - trash bin
+   - trash can
+   - tray
+   - washer
+
+PhysicalPlace:
+  entities:
+   - balcony
+   - bathroom
+   - bedroom
+   - dining room
+   - kitchen
+   - living room
+   - lobby
+   - office
+   - pantry
+   - there

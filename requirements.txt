@@ -1,0 +1,7 @@
+inflection
+nltk
+pathlib
+pyyaml
+requests
+spacy
+
