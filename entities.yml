@@ -6,8 +6,10 @@ drink:
    - cafe au lait
    - coffee
    - coffee can
+   - can of coffee
    - coffee with milk
    - coke
+   - can of coke
    - cola
    - cola can
    - cup of coffee
@@ -19,23 +21,30 @@ drink:
    - glass of mineral water
    - glass of water
    - ice tea bottle
+   - bottle of ice tea
    - iced coffee
    - iced tea
    - jug of milk
-   - juicebox
+   - juice box
    - juice pack
+   - pack of juice
    - lemonade
    - milk
    - milk pack
    - mineral water
    - orange juice
    - orange juice box
+   - box of orange juice
    - sprite
    - tea
    - tropical juice bottle
+   - bottle of tropical juice
    - water
    - wine bottle
    - wine glass
+   - glass of wine
+   - milk bottle
+   - bottle of milk
 
 food:
   entities:
@@ -51,6 +60,7 @@ food:
    - chips can
    - chocolate pudding box
    - cracker box
+   - crackers
    - gelatin box
    - jar of pickles
    - jello box
@@ -61,15 +71,18 @@ food:
    - meat
    - mustard bottle
    - mustard container
+   - mustard
    - orange
    - oregano shaker
    - pancake mix bottle
+   - bottle of pancake mix
    - pastry box
    - peach
    - pear
    - piece of toast
    - plum
    - potted meat can
+   - can of potted meat
    - pringles chips can
    - sandwich
    - soup
@@ -78,8 +91,13 @@ food:
    - sugar
    - sugar box
    - tomato soup can
+   - can of tomato soup
    - tuna fish can
+   - can of tuna fish
    - vegetables
+   - grapes
+   - corny box
+   - box of corny
 
 NaturalPerson:
   entities:
@@ -148,7 +166,7 @@ PhysicalArtifact:
    - frying pan
    - glass
    - glass cleaner spray bottle
-   - golfball
+   - golf ball
    - it
    - jar
    - jug
@@ -158,7 +176,7 @@ PhysicalArtifact:
    - metal bowl
    - metal mug
    - metal plate
-   - mini soccerball
+   - mini soccer ball
    - mug
    - napkin
    - oven
@@ -167,11 +185,12 @@ PhysicalArtifact:
    - plastic knife
    - plate
    - pot
-   - racquet ball
+   - racquetball
    - refrigerator
    - rope
    - rubiks cube
    - salt shaker
+   - salt
    - serving mat
    - shampoo
    - shelf
@@ -186,7 +205,8 @@ PhysicalArtifact:
    - table
    - table cloth
    - tea bag box
-   - tennisball
+   - box of tea bags
+   - tennis ball
    - these
    - them
    - those
@@ -196,6 +216,18 @@ PhysicalArtifact:
    - trash can
    - tray
    - washer
+   - scissors
+   - marker
+   - screwdriver
+   - clamp
+   - hammer
+   - wood block
+   - block of wood
+   - scrub cleaner
+   - marble
+   - handle
+   - plastic chain
+   - toothpaste
 
 PhysicalPlace:
   entities:
@@ -209,3 +241,4 @@ PhysicalPlace:
    - office
    - pantry
    - there
+   - dishwasher
