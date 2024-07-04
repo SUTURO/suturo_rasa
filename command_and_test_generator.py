@@ -12,6 +12,12 @@ from pathlib import Path
 
 import yaml
 
+try:
+    nltk.word_tokenize("Alice in Wonderland")
+except LookupError:
+    nltk.download("punkt")
+    
+
 # We may want to run this script from an arbitrary location, let's not depend on the current working directory to locate our resources.
 ownDir = os.path.dirname(os.path.abspath(__file__))
 
