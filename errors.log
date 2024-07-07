@@ -1,0 +1,10 @@
+[
+	["offer the me in a blouse next to the door in the dining room a frenchs yellow mustard bottle from the cupboard in the study room",
+		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
+	["bring Alice having a pullover a pill box from the cupboard in the dining room",
+		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
+	["bring gentleman having a blue jeans a nine peg hole test from the cupboard in the bedroom",
+		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
+	["give the Alice a tomato soup can from the cupboard in the arena",
+		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]]
+]

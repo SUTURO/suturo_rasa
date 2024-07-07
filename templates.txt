@@ -2,205 +2,461 @@
 # a single '#' character starts a comment
 # Each line defining a template should have the format
 # intent_name: annotated sentence
+# an annotation for a role has the format Entity|Role
 
-Fetching: go grab a drink|Item from the PhysicalPlace|Origin
-Fetching: grab a PhysicalArtifact|Item from the PhysicalPlace|Origin.
+Affirm: yes
+Affirm: indeed
+Affirm: agreed
+Affirm: affirmative
+Affirm: that's right
+Affirm: that's correct
+Affirm: correct
+Affirm: right
+Affirm: yeah
+Affirm: ok
+Affirm: yeah that's right
 
-LookingFor: look for a PhysicalArtifact|Item
-LookingFor: find a PhysicalArtifact|Item
-LookingFor: search for a PhysicalArtifact|Item
-LookingFor: can you check if there's a PhysicalArtifact|Item around?
-LookingFor: can you find where the food|Item is kept?
-LookingFor: can you help NaturalPerson|BeneficiaryRole find a drink|Item?
-LookingFor: can you help NaturalPerson|BeneficiaryRole find a food|Item?
-LookingFor: can you help NaturalPerson|BeneficiaryRole find a PhysicalArtifact|Item?
-LookingFor: can you help NaturalPerson|BeneficiaryRole look for a drink|Item?
-LookingFor: can you help NaturalPerson|BeneficiaryRole look for a food|Item?
-LookingFor: can you help NaturalPerson|BeneficiaryRole look for a PhysicalArtifact|Item?
-LookingFor: can you look for a food|Item?
-LookingFor: can you look for a PhysicalArtifact|Item?
-LookingFor: can you look where the drink|Item is kept?
-LookingFor: can you search for a PhysicalArtifact|Item?
-LookingFor: can you see if there's a PhysicalArtifact|Item available?
-LookingFor: can you see where the PhysicalArtifact|Item are kept?
-LookingFor: can you see where the PhysicalArtifact|Item is kept?
-LookingFor: could you do NaturalPerson|BeneficiaryRole a favor and locate a drink|Item?
-LookingFor: could you do NaturalPerson|BeneficiaryRole a favor and locate a food|Item?
-LookingFor: could you do NaturalPerson|BeneficiaryRole a favor and locate a PhysicalArtifact|Item?
-LookingFor: could you look for a PhysicalArtifact|Item?
-LookingFor: could you please find a PhysicalArtifact|Item for NaturalPerson|BeneficiaryRole?
-LookingFor: could you please search for a PhysicalArtifact|Item?
-LookingFor: is it possible for you to seek out a PhysicalArtifact|Item?
-LookingFor: would you mind locating a PhysicalArtifact|Item?
-LookingFor: would you be able to find a PhysicalArtifact|Item?
+Deny: no
+Deny: denied
+Deny: not quite
+Deny: wrong
+Deny: that's not right
+Deny: that's not it
+Deny: that's not what I meant
+Deny: nah
+Deny: nope
+Deny: incorrect
+Deny: that's incorrect
+Deny: sorry, that is not right
 
-MovingTo: go to the PhysicalArtifact|Destination
-MovingTo: go to the PhysicalPlace|Destination
-MovingTo: move to the PhysicalArtifact|Destination
-MovingTo: move to the PhysicalPlace|Destination
-MovingTo: can you make your way over to the PhysicalArtifact|Destination?
-MovingTo: can you make your way over to the PhysicalPlace|Destination?
-MovingTo: can you make your way to the PhysicalArtifact|Destination?
-MovingTo: can you make your way to the PhysicalPlace|Destination?
-MovingTo: can you move to the PhysicalArtifact|Destination?
-MovingTo: can you move to the PhysicalPlace|Destination?
-MovingTo: could you go to the PhysicalArtifact|Destination?
-MovingTo: could you please go and stand next to the PhysicalArtifact|Destination?
-MovingTo: could you please go over and stand by the PhysicalArtifact|Destination?
-MovingTo: could you please go to the PhysicalArtifact|Destination?
-MovingTo: would you mind going over to the PhysicalPlace|Destination?
+TellTime: what's the tine?
+TellTime: oh dear, what tine is it?
+TellTime: what time is it?
+TellTime: can you tell me the time, please?
+TellTime: do you know what time it is?
+TellTime: do you have a watch?
+TellTime: could you tell me what time it is?
 
-Cleaning: can you clean out the PhysicalArtifact|Item?
-Cleaning: can you clean the PhysicalArtifact|Item?
-Cleaning: can you clean the PhysicalArtifact|Item in the PhysicalPlace|Location?
-Cleaning: can you sweep the PhysicalPlace|Item?
-Cleaning: clean the PhysicalArtifact|Item
-Cleaning: clean the PhysicalPlace|Item
-Cleaning: could you wipe the PhysicalArtifact|Item?
-Cleaning: would you clean the PhysicalArtifact|Item?
-Cleaning: would you be able to wash the PhysicalArtifact|Item?
-Cleaning: would you mind dusting the PhysicalArtifact|Item in the PhysicalPlace|Location?
+AssertSpeaker: hello, my name is NaturalPerson|AgentRole
+AssertSpeaker: hi, I am NaturalPerson|AgentRole
+AssertSpeaker: my name is NaturalPerson|AgentRole
+AssertSpeaker: I am NaturalPerson|AgentRole
+AssertSpeaker: you can call me NaturalPerson|AgentRole
+AssertSpeaker: I am known as NaturalPerson|AgentRole
 
-Transporting: bring NaturalPerson|BeneficiaryRole a drink|Item 
-Transporting: bring NaturalPerson|BeneficiaryRole a food|Item 
-Transporting: bring NaturalPerson|BeneficiaryRole a PhysicalArtifact|Item 
-Transporting: get NaturalPerson|BeneficiaryRole a drink|Item 
-Transporting: get NaturalPerson|BeneficiaryRole a food|Item 
-Transporting: get NaturalPerson|BeneficiaryRole a PhysicalArtifact|Item 
-Transporting: move the drink|Item to the PhysicalArtifact|Destination?
-Transporting: move the food|Item to the PhysicalArtifact|Destination?
-Transporting: move the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
-Transporting: move the drink|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: move the food|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: move the PhysicalArtifact|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: move the drink|Item to the PhysicalPlace|Destination?
-Transporting: move the food|Item to the PhysicalPlace|Destination?
-Transporting: move the PhysicalArtifact|Item to the PhysicalPlace|Destination?
-Transporting: take the drink|Item to the PhysicalArtifact|Destination?
-Transporting: take the food|Item to the PhysicalArtifact|Destination?
-Transporting: take the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
-Transporting: take the drink|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: take the food|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: take the PhysicalArtifact|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: take the drink|Item to the PhysicalPlace|Destination?
-Transporting: take the food|Item to the PhysicalPlace|Destination?
-Transporting: take the PhysicalArtifact|Item to the PhysicalPlace|Destination?
-Transporting: can you move the drink|Item to the PhysicalArtifact|Destination?
-Transporting: can you move the food|Item to the PhysicalArtifact|Destination?
-Transporting: can you move the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
-Transporting: can you move the drink|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: can you move the food|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: can you move the PhysicalArtifact|Item to the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Transporting: can you move the drink|Item to the PhysicalPlace|Destination?
-Transporting: can you move the food|Item to the PhysicalPlace|Destination?
-Transporting: can you move the PhysicalArtifact|Item to the PhysicalPlace|Destination?
-Transporting: bring the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
-Transporting: could you fetch NaturalPerson|BeneficiaryRole a drink|Item
-Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalPlace|Location PhysicalArtifact|Destination?
-Transporting: would you be able to move the PhysicalArtifact|Item holder to the PhysicalArtifact|Destination?
-Transporting: would you be able to move the PhysicalArtifact|Item holder to the PhysicalPlace|Destination?
-Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
-Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalPlace|Destination?
-Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalPlace|Destination?
+AssertPreference: my favorite drink is Transportable|Item
+AssertPreference: my favorite food is Transportable|Item
+AssertPreference: I like Transportable|Item a lot
+AssertPreference: I prefer Transportable|Item
+AssertPreference: I am very fond of Transportable|Item
+AssertPreference: Transportable|Item is my favorite
+AssertPreference: I like Transportable|Item
 
-Arranging: can you assist NaturalPerson|BeneficiaryRole in arranging the PhysicalArtifact|Item on the PhysicalPlace|Location PhysicalArtifact|Destination, please?
-Arranging: can you collaborate with NaturalPerson|BeneficiaryRole to arrange the PhysicalArtifact|Item on the PhysicalArtifact|Destination?
-Arranging: can you join NaturalPerson|BeneficiaryRole in organizing the PhysicalArtifact|Item at the PhysicalArtifact|Destination?
-Arranging: can you provide some help in positioning the PhysicalArtifact|Item on the PhysicalArtifact|Destination?
-Arranging: could you kindly assist NaturalPerson|BeneficiaryRole in setting up the PhysicalArtifact|Item on the PhysicalPlace|Location PhysicalArtifact|Destination?
-Arranging: could you lend NaturalPerson|BeneficiaryRole a hand in organizing the PhysicalArtifact|Item on the PhysicalPlace|Location PhysicalArtifact|Destination?
-Arranging: could you offer your assistance in placing the PhysicalArtifact|Item on the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Arranging: would you be able to help NaturalPerson|BeneficiaryRole with the task of arranging the PhysicalArtifact|Item next to the PhysicalArtifact|Destination on the PhysicalArtifact|Location?
-Arranging: would you mind helping NaturalPerson|BeneficiaryRole set up the PhysicalArtifact|Item on the PhysicalArtifact|Destination in the PhysicalPlace|Location?
-Arranging: would you mind partnering with NaturalPerson|BeneficiaryRole to arrange the PhysicalArtifact|Item on the PhysicalPlace|Item PhysicalArtifact|Destination?
+#Fetching: go grab a drink|Item from the PhysicalPlace|Origin
+#Fetching: grab a Transportable|Item from the PhysicalPlace|Origin.
 
-cooking_help: can you help NaturalPerson|BeneficiaryRole make a drink|outcome?
-cooking_help: can you help NaturalPerson|BeneficiaryRole make a food|outcome?
-cooking_help: can you help NaturalPerson|BeneficiaryRole with making drink|outcome?
-cooking_help: can you help NaturalPerson|BeneficiaryRole with making food|outcome?
-cooking_help: could you cook food|outcome for NaturalPerson|BeneficiaryRole
-cooking_help: could you make a drink|outcome for NaturalPerson|BeneficiaryRole
-cooking_help: could you make drink|outcome for NaturalPerson|BeneficiaryRole
-cooking_help: could you make food|outcome for NaturalPerson|BeneficiaryRole
-cooking_help: NaturalPerson|BeneficiaryRole need a drink|outcome
-cooking_help: make NaturalPerson|BeneficiaryRole a drink|outcome
-cooking_help: make NaturalPerson|BeneficiaryRole a food|outcome
+LookingFor: look for a Transportable|Item
+LookingFor: find a Transportable|Item
+LookingFor: search for a Transportable|Item
+LookingFor: can you check if there's a Transportable|Item around?
+LookingFor: can you find NaturalPerson|BeneficiaryRole?
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source
+LookingFor: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom
+LookingFor: look for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing?
+LookingFor: find a NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing?
+LookingFor: search for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source?
+LookingFor: look for a NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source?
+LookingFor: find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source?
+LookingFor: search for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: look for a NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: look for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you locate a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: look for a NaturalPerson|BeneficiaryRole?
+LookingFor: find a NaturalPerson|BeneficiaryRole?
+LookingFor: search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source?
+LookingFor: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source?
+LookingFor: find a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source?
+LookingFor: search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: go find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you locate a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you find where the Transportable|Item is kept?
+LookingFor: can you look for a Transportable|Item in the Room|SourceRoom?
+LookingFor: go find a Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you search for a Transportable|Item?
+LookingFor: can you see if there's a Transportable|Item on the DesignedFurniture|Source?
+LookingFor: can you locate a Transportable|Item next to the DesignedFurniture|Source?
+LookingFor: can you see if there's a Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you locate a Transportable|Item next to the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: see if there is any Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom?
+LookingFor: can you find a Transportable|Item from the Room|SourceRoom for me?
 
-Receptionist: hello my name is NaturalPerson|BeneficiaryRole
-Receptionist: hi, I am NaturalPerson|BeneficiaryRole and my favorite drink is drink|Item
-Receptionist: I am NaturalPerson|BeneficiaryRole and I like to drink drink|Item
-Receptionist: hey I'm NaturalPerson|BeneficiaryRole and I enjoy drink|Item
-Receptionist: my name is NaturalPerson|BeneficiaryRole and I prefer drink|Item
-Receptionist: I prefer drink|Item
-Receptionist: I like drink|Item
-Receptionist: my favorite drink is drink|Item
-Receptionist: what I like most to drink is drink|Item
-Receptionist: hello, i'm NaturalPerson|BeneficiaryRole.
-Receptionist: hi there, NaturalPerson|BeneficiaryRole here. my favorite drink is drink|Item.
-Receptionist: i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
-Receptionist: hey, i'm NaturalPerson|BeneficiaryRole, and my preferred beverage is drink|Item.
-Receptionist: nice to see you! i'm NaturalPerson|BeneficiaryRole, and i like to drink drink|Item.
-Receptionist: my name is NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
-Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i enjoy drinking drink|Item.
-Receptionist: hi, my favorite drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
-Receptionist: i'm NaturalPerson|BeneficiaryRole and love to drink drink|Item.
-Receptionist: good day, my name is NaturalPerson|BeneficiaryRole and i prefer drink|Item.
-Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i like to indulge in drink|Item.
-Receptionist: hello, NaturalPerson|BeneficiaryRole here. my go-to drink is drink|Item.
-Receptionist: greetings! i'm NaturalPerson|BeneficiaryRole, and i enjoy sipping on drink|Item.
-Receptionist: pleasure to meet you! i'm NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
-Receptionist: hi, my go-to drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
-Receptionist: greetings, i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
-Receptionist: hello, NaturalPerson|BeneficiaryRole here. my preferred beverage is drink|Item.
+MovingTo: go to the DesignedFurniture|Destination
+MovingTo: go to the Room|DestinationRoom
+MovingTo: go to the DesignedFurniture|Destination in the Room|DestinationRoom
+MovingTo: move next to the DesignedFurniture|Destination
+MovingTo: can you make your way over to the DesignedFurniture|Destination in the Room|DestinationRoom?
+MovingTo: can you make your way over to the Room|DestinationRoom?
+MovingTo: can you move to the DesignedFurniture|Destination in the Room|DestinationRoom?
+MovingTo: navigate to the DesignedFurniture|Destination in the Room|DestinationRoom
+MovingTo: could you navigate to the Room|DestinationRoom
+MovingTo: go to the NaturalPerson|BeneficiaryRole
+MovingTo: go to the NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Destination
+MovingTo: can you make your way over to the NaturalPerson|BeneficiaryRole in the Room|DestinationRoom?
+MovingTo: move next to the NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Destination in the Room|DestinationRoom?
+MovingTo: navigate to the NaturalPerson|BeneficiaryRole near the DesignedFurniture|Destination in the Room|DestinationRoom?
+MovingTo: go to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+MovingTo: go to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Destination
+MovingTo: can you make your way over to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing in the Room|DestinationRoom?
+MovingTo: move next to the NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Destination in the Room|DestinationRoom?
+MovingTo: navigate to the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom?
 
-Order: I would like to order food|Item and drink|Item.
-Order: I would like to order food|Item and drink|Item and drink|Item.
-Order: I would like to order food|Item and drink|Item and food|Item.
-Order: I would like to order drink|Item and food|Item.
-Order: I would like to order drink|Item and food|Item and food|Item.
-Order: I would like to order drink|Item and food|Item and drink|Item.
-Order: I would like to order food|Item and food|Item.
-Order: I would like to order food|Item and food|Item and food|Item.
-Order: I would like to order food|Item and food|Item and drink|Item.
-Order: I would like to order drink|Item and drink|Item.
-Order: I would like to order drink|Item and drink|Item and food|Item.
-Order: I would like to order drink|Item and drink|Item and drink|Item.
+Transporting: take a Transportable|Item to the Room|DestinationRoom
+Transporting: get a Transportable|Item to the Room|DestinationRoom
+Transporting: fetch a Transportable|Item to the Room|DestinationRoom
+Transporting: take a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: get a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: fetch a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: put a Transportable|Item on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: place a Transportable|Item on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: take a Transportable|Item from the Room|SourceRoom to the Room|DestinationRoom
+Transporting: get a Transportable|Item from the Room|SourceRoom to the Room|DestinationRoom
+Transporting: grasp a Transportable|Item from the Room|SourceRoom
+Transporting: fetch a Transportable|Item from the Room|SourceRoom to Room|DestinationRoom
+Transporting: take a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: get a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: fetch a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: put a Transportable|Item from the Room|SourceRoom on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: place a Transportable|Item from the Room|SourceRoom on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: get a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: grasp a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: fetch a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: put a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: place a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: deliver a Transportable|Item to the Room|DestinationRoom
+Transporting: move the Transportable|Item to the Room|DestinationRoom
+Transporting: deliver a Transportable|Item from the Room|SourceRoom to the Room|DestinationRoom
+Transporting: move the Transportable|Item from the Room|SourceRoom to the Room|DestinationRoom
+Transporting: deliver a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: move the Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item to the DesignedFurniture|Destination
+Transporting: bring a Transportable|Item to the DesignedFurniture|Destination
+Transporting: bring a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
+Transporting: bring a Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
+Transporting: bring a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: bring a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: take a Transportable|Item to the NaturalPerson|BeneficiaryRole
+Transporting: fetch a Transportable|Item for a NaturalPerson|BeneficiaryRole
+Transporting: get the NaturalPerson|BeneficiaryRole a Transportable|Item
+Transporting: bring NaturalPerson|BeneficiaryRole a Transportable|Item
+Transporting: give the NaturalPerson|BeneficiaryRole a Transportable|Item
+Transporting: deliver a Transportable|Item to the NaturalPerson|BeneficiaryRole
+Transporting: move the Transportable|Item to the NaturalPerson|BeneficiaryRole
+Transporting: take a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: fetch a Transportable|Item from the Room|SourceRoom for a NaturalPerson|BeneficiaryRole
+Transporting: get the NaturalPerson|BeneficiaryRolea Transportable|Item from the Room|SourceRoom
+Transporting: bring NaturalPerson|BeneficiaryRole a Transportable|Item from the Room|SourceRoom
+Transporting: give the NaturalPerson|BeneficiaryRole a Transportable|Item from the Room|SourceRoom
+Transporting: deliver a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: move the Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: fetch a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom for a NaturalPerson|BeneficiaryRole
+Transporting: get the NaturalPerson|BeneficiaryRolea Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: bring NaturalPerson|BeneficiaryRole a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: give the NaturalPerson|BeneficiaryRole a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
+Transporting: take a Transportable|Item to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing
+Transporting: fetch a Transportable|Item for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing
+Transporting: get the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item
+Transporting: bring NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing a Transportable|Item
+Transporting: give the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item
+Transporting: deliver a Transportable|Item to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: move the Transportable|Item to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: take a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing
+Transporting: fetch a Transportable|Item from the Room|SourceRoom for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing
+Transporting: get the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item from the Room|SourceRoom
+Transporting: bring NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing a Transportable|Item from the Room|SourceRoom
+Transporting: give the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item from the Room|SourceRoom
+Transporting: deliver a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: move the Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing
+Transporting: fetch a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing
+Transporting: get the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: bring NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: give the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Transporting: take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who sits on the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: fetch a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing next to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: get the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: bring NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing next to the DesignedFurniture|Destination in the Room|DestinationRoom a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: give the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing and standing next to the DesignedFurniture|Destination in the Room|DestinationRoom a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing and standing next to the DesignedFurniture|Destination in the Room|DestinationRoom
+Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom
 
-Order: I would like to get food|Item and drink|Item.
-Order: I would like to get food|Item and drink|Item and drink|Item.
-Order: I would like to get food|Item and drink|Item and food|Item.
-Order: I would like to get drink|Item and food|Item.
-Order: I would like to get drink|Item and food|Item and food|Item.
-Order: I would like to get drink|Item and food|Item and drink|Item.
-Order: I would like to get food|Item and food|Item.
-Order: I would like to get food|Item and food|Item and food|Item.
-Order: I would like to get food|Item and food|Item and drink|Item.
-Order: I would like to get drink|Item and drink|Item.
-Order: I would like to get drink|Item and drink|Item and food|Item.
-Order: I would like to get drink|Item and drink|Item and drink|Item.
 
-Order: I'll go with the food|Item and drink|Item.
-Order: I'll go with the food|Item and drink|Item and drink|Item.
-Order: I'll go with the food|Item and drink|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item and drink|Item.
-Order: I'll go with the food|Item and food|Item.
-Order: I'll go with the food|Item and food|Item and food|Item.
-Order: I'll go with the food|Item and food|Item and drink|Item.
-Order: I'll go with the drink|Item and drink|Item.
-Order: I'll go with the drink|Item and drink|Item and food|Item.
-Order: I'll go with the drink|Item and drink|Item and drink|Item.
+Greet: greet NaturalPerson|BeneficiaryRole
+Greet: say hi to NaturalPerson|BeneficiaryRole
+Greet: welcome NaturalPerson|BeneficiaryRole
+Greet: say hello to NaturalPerson|BeneficiaryRole
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole
+Greet: salute NaturalPerson|BeneficiaryRole
+Greet: greet NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Greet: say hi to NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing
+Greet: welcome NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing
+Greet: say hello to NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole who has a Clothing|BeneficiaryClothing
+Greet: salute NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
+Greet: greet NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: say hi to NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: welcome NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: say hello to NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: salute NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Greet: greet NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source
+Greet: say hi to NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source
+Greet: welcome NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source
+Greet: say hello to NaturalPerson|BeneficiaryRole standing near the DesignedFurniture|Source
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source
+Greet: salute NaturalPerson|BeneficiaryRole near a DesignedFurniture|Source
+Greet: greet NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source in the Room|SourceRoom
+Greet: say hi to NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom
+Greet: welcome NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source in the Room|SourceRoom
+Greet: say hello to NaturalPerson|BeneficiaryRole standing near the DesignedFurniture|Source in the Room|SourceRoom
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom
+Greet: salute NaturalPerson|BeneficiaryRole near a DesignedFurniture|Source in the Room|SourceRoom
+Greet: greet NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom
+Greet: say hi to NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom
+Greet: welcome NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom
+Greet: say hello to NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing near the DesignedFurniture|Source in the Room|SourceRoom
+Greet: introduce yourself to NaturalPerson|BeneficiaryRole who has a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom
+Greet: salute NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near a DesignedFurniture|Source in the Room|SourceRoom
 
-Order: I'll take the food|Item and drink|Item.
-Order: I'll take the food|Item and drink|Item and drink|Item.
-Order: I'll take the food|Item and drink|Item and food|Item.
-Order: I'll take the drink|Item and food|Item.
-Order: I'll take the drink|Item and food|Item and food|Item.
-Order: I'll take the drink|Item and food|Item and drink|Item.
-Order: I'll take the food|Item and food|Item.
-Order: I'll take the food|Item and food|Item and food|Item.
-Order: I'll take the food|Item and food|Item and drink|Item.
-Order: I'll take the drink|Item and drink|Item.
-Order: I'll take the drink|Item and drink|Item and food|Item.
-Order: I'll take the drink|Item and drink|Item and drink|Item.
+
+Count: how many NaturalPerson|BeneficiaryRole there are in the Room|SourceRoom
+Count: tell me how many NaturalPerson|BeneficiaryRole are in the Room|SourceRoom
+Count: count how many NaturalPerson|BeneficiaryRole there are in the Room|SourceRoom
+Count: tell me the number of NaturalPerson|BeneficiaryRole are in the Room|SourceRoom
+Count: tell me the amount of NaturalPerson|BeneficiaryRole are in the Room|SourceRoom
+Count: do you know how many NaturalPerson|BeneficiaryRole there are in the Room|SourceRoom
+Count: how many NaturalPerson|BeneficiaryRole there are near a DesignedFurniture|Source
+Count: tell me how many NaturalPerson|BeneficiaryRole are near a DesignedFurniture|Source
+Count: count how many NaturalPerson|BeneficiaryRole there are next to a DesignedFurniture|Source
+Count: tell me the number of NaturalPerson|BeneficiaryRole are standing next to a DesignedFurniture|Source
+Count: tell me the amount of NaturalPerson|BeneficiaryRole are sitting on the DesignedFurniture|Source
+Count: do you know how many NaturalPerson|BeneficiaryRole there are next to a DesignedFurniture|Source
+Count: how many NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing there are in the Room|SourceRoom
+Count: tell me how many NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing are in the Room|SourceRoom
+Count: tell me how many Transportable|Item are in the Room|SourceRoom
+Count: how many Transportable|Item are in the Room|SourceRoom
+Count: count how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are in the Room|SourceRoom
+Count: count how many Transportable|Item are in the Room|SourceRoom
+Count: tell me the number of NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing are in the Room|SourceRoom
+Count: tell me the number of Transportable|Item are in the Room|SourceRoom
+Count: tell me the amount of NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing are in the Room|SourceRoom
+Count: tell me the amount of Transportable|Item are in the Room|SourceRoom
+Count: do you know how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are in the Room|SourceRoom
+Count: do you know how many Transportable|Item are in the Room|SourceRoom
+Count: how many NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing there are near a DesignedFurniture|Source
+Count: tell me how many NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing are near a DesignedFurniture|Source
+Count: tell me how many Transportable|Item are on a DesignedFurniture|Source
+Count: how many Transportable|Item are in a DesignedFurniture|Source
+Count: count how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are next to a DesignedFurniture|Source
+Count: count how many Transportable|Item are on a DesignedFurniture|Source
+Count: tell me the number of NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing are standing next to a DesignedFurniture|Source
+Count: tell me the number of Transportable|Item are on a DesignedFurniture|Source
+Count: tell me the amount of NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing are sitting on the DesignedFurniture|Source
+Count: tell me the amount of Transportable|Item are on a DesignedFurniture|Source
+Count: do you know how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are next to a DesignedFurniture|Source
+Count: do you know how many Transportable|Item are on a DesignedFurniture|Source
+Count: how many NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing there are near a DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me how many NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing are near a DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me how many Transportable|Item are on a DesignedFurniture|Source in the Room|SourceRoom
+Count: how many Transportable|Item are in a DesignedFurniture|Source in the Room|SourceRoom
+Count: count how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are next to a DesignedFurniture|Source in the Room|SourceRoom
+Count: count how many Transportable|Item are on a DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me the number of NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing are standing next to a DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me the number of Transportable|Item are on a DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me the amount of NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing are sitting on the DesignedFurniture|Source in the Room|SourceRoom
+Count: tell me the amount of Transportable|Item are on a DesignedFurniture|Source in the Room|SourceRoom
+Count: do you know how many NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing there are next to a DesignedFurniture|Source in the Room|SourceRoom
+Count: do you know how many Transportable|Item are on a DesignedFurniture|Source in the Room|SourceRoom
+
+Describe: describe the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Describe: tell me about the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Describe: what can you tell me about the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Describe: what do you know about the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Describe: describe the NaturalPerson|BeneficiaryRole near a DesignedFurniture|Source
+Describe: tell me about the NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source
+Describe: what can you tell me about the NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source
+Describe: what do you know about the NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source
+Describe: describe the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Describe: describe the Transportable|Item in the Room|SourceRoom
+Describe: tell me about the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Describe: tell me about the Transportable|Item in the Room|SourceRoom
+Describe: what can you tell me about the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Describe: what can you tell me about the Transportable|Item in the Room|SourceRoom
+Describe: what do you know about the NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Describe: what do you know about the Transportable|Item in the Room|SourceRoom
+Describe: describe the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near a DesignedFurniture|Source
+Describe: describe the Transportable|Item on the DesignedFurniture|Source
+Describe: tell me about the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source
+Describe: tell me about the Transportable|Item on the DesignedFurniture|Source
+Describe: what can you tell me about the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source
+Describe: what can you tell me about the Transportable|Item on the DesignedFurniture|Source
+Describe: what do you know about the NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source
+Describe: what do you know about the Transportable|Item on the DesignedFurniture|Source
+Describe: describe the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near a DesignedFurniture|Source in the Room|SourceRoom
+Describe: describe the Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom
+Describe: tell me about the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom
+Describe: tell me about the Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom
+Describe: what can you tell me about the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom
+Describe: what can you tell me about the Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom
+Describe: what do you know about the NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom
+Describe: what do you know about the Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom
+
+Offer: offer a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who sits on the DesignedFurniture|Destination in the Room|DestinationRoom
+Offer: offer the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing next to the DesignedFurniture|Destination in the Room|DestinationRoom a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Offer: offer a Transportable|Item to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who sits on the DesignedFurniture|Destination
+Offer: offer the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing next to the DesignedFurniture|Destination a Transportable|Item from the DesignedFurniture|Source
+Offer: offer a Transportable|Item from Room|SourceRoom to the NaturalPerson|BeneficiaryRole who sits on the DesignedFurniture|Destination in the Room|DestinationRoom
+Offer: offer the NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Destination in the Room|DestinationRoom a Transportable|Item from the Room|SourceRoom
+Offer: offer a Transportable|Item from Room|SourceRoom to the NaturalPerson|BeneficiaryRole in the Room|DestinationRoom
+Offer: offer the NaturalPerson|BeneficiaryRole in the Room|DestinationRoom a Transportable|Item from the Room|SourceRoom
+Offer: offer a Transportable|Item to the NaturalPerson|BeneficiaryRole
+Offer: offer the NaturalPerson|BeneficiaryRole a Transportable|Item
+
+Follow: follow NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Follow: follow around the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Follow: go after the NaturalPerson|BeneficiaryRole in the Room|SourceRoom
+Follow: follow NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source
+Follow: follow around the NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source
+Follow: go after the NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source
+Follow: follow NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Follow: follow around the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Follow: go after the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing in the Room|SourceRoom
+Follow: follow NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source
+Follow: follow around the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source
+Follow: go after the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source
+Follow: follow NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom
+Follow: follow around the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom
+Follow: go after the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom
+
+
+Guide: guide NaturalPerson|BeneficiaryRole from the Room|SourceRoom to Room|DestinationRoom
+Guide: escort the NaturalPerson|BeneficiaryRole from the Room|SourceRoom to the Room|DestinationRoom
+Guide: lead the NaturalPerson|BeneficiaryRole from the Room|SourceRoom to Room|DestinationRoom
+Guide: show the NaturalPerson|BeneficiaryRole from the Room|SourceRoom the way to the Room|DestinationRoom
+Guide: take the NaturalPerson|BeneficiaryRole from the Room|SourceRoom to the Room|DestinationRoom
+Guide: guide NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom to Room|DestinationRoom
+Guide: escort the NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Guide: lead the NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source in the Room|SourceRoom to Room|DestinationRoom
+Guide: show the NaturalPerson|BeneficiaryRole next the DesignedFurniture|Source in the Room|SourceRoom the way to the Room|DestinationRoom
+Guide: take the NaturalPerson|BeneficiaryRole sitting on the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Guide: guide NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing from the Room|SourceRoom to Room|DestinationRoom
+Guide: escort the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing from the Room|SourceRoom to the Room|DestinationRoom
+Guide: lead the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing from the Room|SourceRoom to Room|DestinationRoom
+Guide: show the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing from the Room|SourceRoom the way to the Room|DestinationRoom
+Guide: take the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing from the Room|SourceRoom to the Room|DestinationRoom
+Guide: guide NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom to Room|DestinationRoom
+Guide: escort the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Guide: lead the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom to Room|DestinationRoom
+Guide: show the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing next the DesignedFurniture|Source in the Room|SourceRoom the way to the Room|DestinationRoom
+Guide: take the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Guide: guide NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Guide: escort the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Guide: lead the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Guide: show the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing next the DesignedFurniture|Source in the Room|SourceRoom the way to the DesignedFurniture|Destination in the Room|DestinationRoom
+Guide: take the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+
+Accompany: accompany NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole standing from the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole from the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole near the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing from the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing from the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom to the Room|DestinationRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom
+Accompany: accompany NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+Accompany: accompany the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
+
+#Cleaning: can you clean out the Transportable|Item?
+#Cleaning: can you clean the Transportable|Item?
+#Cleaning: can you clean the Transportable|Item in the PhysicalPlace|Location?
+#Cleaning: can you sweep the PhysicalPlace|Item?
+#Cleaning: clean the Transportable|Item
+#Cleaning: clean the PhysicalPlace|Item
+#Cleaning: could you wipe the Transportable|Item?
+#Cleaning: would you clean the Transportable|Item?
+#Cleaning: would you be able to wash the Transportable|Item?
+#Cleaning: would you mind dusting the Transportable|Item in the PhysicalPlace|Location?
+
+#Arranging: can you assist NaturalPerson|BeneficiaryRole in arranging the Transportable|Item on the PhysicalPlace|Location Transportable|Destination, please?
+#Arranging: can you collaborate with NaturalPerson|BeneficiaryRole to arrange the Transportable|Item on the Transportable|Destination?
+#Arranging: can you join NaturalPerson|BeneficiaryRole in organizing the Transportable|Item at the Transportable|Destination?
+#Arranging: can you provide some help in positioning the Transportable|Item on the Transportable|Destination?
+#Arranging: could you kindly assist NaturalPerson|BeneficiaryRole in setting up the Transportable|Item on the PhysicalPlace|Location Transportable|Destination?
+#Arranging: could you lend NaturalPerson|BeneficiaryRole a hand in organizing the Transportable|Item on the PhysicalPlace|Location Transportable|Destination?
+#Arranging: could you offer your assistance in placing the Transportable|Item on the Transportable|Destination in the PhysicalPlace|Location?
+#Arranging: would you be able to help NaturalPerson|BeneficiaryRole with the task of arranging the Transportable|Item next to the Transportable|Destination on the Transportable|Location?
+#Arranging: would you mind helping NaturalPerson|BeneficiaryRole set up the Transportable|Item on the Transportable|Destination in the PhysicalPlace|Location?
+#Arranging: would you mind partnering with NaturalPerson|BeneficiaryRole to arrange the Transportable|Item on the PhysicalPlace|Item Transportable|Destination?
+
+#Receptionist: hello my name is NaturalPerson|BeneficiaryRole
+#Receptionist: hi, I am NaturalPerson|BeneficiaryRole and my favorite drink is drink|Item
+#Receptionist: I am NaturalPerson|BeneficiaryRole and I like to drink drink|Item
+#Receptionist: hey I'm NaturalPerson|BeneficiaryRole and I enjoy drink|Item
+#Receptionist: my name is NaturalPerson|BeneficiaryRole and I prefer drink|Item
+#Receptionist: I prefer drink|Item
+#Receptionist: I like drink|Item
+#Receptionist: my favorite drink is drink|Item
+#Receptionist: what I like most to drink is drink|Item
+#Receptionist: hello, i'm NaturalPerson|BeneficiaryRole.
+#Receptionist: hi there, NaturalPerson|BeneficiaryRole here. my favorite drink is drink|Item.
+#Receptionist: i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+#Receptionist: hey, i'm NaturalPerson|BeneficiaryRole, and my preferred beverage is drink|Item.
+#Receptionist: nice to see you! i'm NaturalPerson|BeneficiaryRole, and i like to drink drink|Item.
+#Receptionist: my name is NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+#Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i enjoy drinking drink|Item.
+#Receptionist: hi, my favorite drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+#Receptionist: i'm NaturalPerson|BeneficiaryRole and love to drink drink|Item.
+#Receptionist: good day, my name is NaturalPerson|BeneficiaryRole and i prefer drink|Item.
+#Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i like to indulge in drink|Item.
+#Receptionist: hello, NaturalPerson|BeneficiaryRole here. my go-to drink is drink|Item.
+#Receptionist: greetings! i'm NaturalPerson|BeneficiaryRole, and i enjoy sipping on drink|Item.
+#Receptionist: pleasure to meet you! i'm NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+#Receptionist: hi, my go-to drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+#Receptionist: greetings, i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+#Receptionist: hello, NaturalPerson|BeneficiaryRole here. my preferred beverage is drink|Item.
+
+#RequestDish: I would like some Transportable|Item
+#RequestDish: I want a Transportable|Item
+#RequestDish: some Transportable|Item please
+#RequestDish: I like Transportable|Item
+#RequestDish: bring me some Transportable|Item
+#RequestDish: I will take the Transportable|Item
+

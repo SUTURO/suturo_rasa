@@ -1,0 +1,250 @@
+drink:
+  entities:
+   - apple juice
+   - beer
+   - bottle of wine
+   - cafe au lait
+   - coffee
+   - coffee can
+   - can of coffee
+   - coffee with milk
+   - coke
+   - can of coke
+   - cola
+   - cola can
+   - cup of coffee
+   - cup of coffee with milk
+   - milk coffee
+   - cup of tea
+   - gin tonic
+   - ginger ale
+   - glass of milk
+   - glass of mineral water
+   - glass of water
+   - ice tea bottle
+   - bottle of ice tea
+   - iced coffee
+   - iced tea
+   - jug of milk
+   - juice box
+   - juice pack
+   - pack of juice
+   - lemonade
+   - milk
+   - milk pack
+   - mineral water
+   - orange juice
+   - orange juice box
+   - box of orange juice
+   - sprite
+   - tea
+   - tropical juice bottle
+   - bottle of tropical juice
+   - water
+   - wine bottle
+   - wine glass
+   - glass of wine
+   - milk bottle
+   - bottle of milk
+
+food:
+  entities:
+   - apple
+   - banana
+   - bowl of soup
+   - box of cereal
+   - box of sugar
+   - cereal box
+   - cereal box robo cup
+   - chili con carne
+   - chili sin carne
+   - chips can
+   - chocolate pudding box
+   - cracker box
+   - crackers
+   - gelatin box
+   - jar of pickles
+   - pickles
+   - jello box
+   - jello chocolate pudding box
+   - jello strawberry box
+   - kiwi
+   - lemon
+   - meat
+   - mustard bottle
+   - mustard container
+   - mustard
+   - orange
+   - oregano shaker
+   - pancake mix bottle
+   - bottle of pancake mix
+   - pastry box
+   - peach
+   - pear
+   - piece of toast
+   - toast
+   - plum
+   - potted meat can
+   - can of potted meat
+   - pringles chips can
+   - sandwich
+   - soup
+   - steak
+   - strawberry
+   - sugar
+   - sugar box
+   - tomato soup can
+   - can of tomato soup
+   - tuna fish can
+   - can of tuna fish
+   - vegetables
+   - vegetable
+   - grapes
+   - corny box
+   - box of corny
+   - tomato
+
+NaturalPerson:
+  entities:
+   - her
+   - him
+   - them
+   - Alice
+   - Adel
+   - Amanda
+   - Andrew
+   - Angel
+   - Ashley
+   - Axel
+   - Bob
+   - Brittany
+   - Charlie
+   - Christopher
+   - Daniel
+   - David
+   - Elizabeth
+   - James
+   - Jane
+   - Jennifer
+   - Jessica
+   - John
+   - Joseph
+   - Joshua
+   - Jules
+   - Justin
+   - Lauren
+   - Matthew
+   - Michael
+   - Morgan
+   - Paris
+   - Robin
+   - Simone
+   - Samantha
+   - Sarah
+   - Stephanie
+
+PhysicalArtifact:
+  entities:
+   - abrasive sponge
+   - bag
+   - baseball
+   - bib
+   - bleach cleanser bottle
+   - bottle
+   - bottle of shampoo
+   - bowl
+   - box
+   - cabinet
+   - chair
+   - coffee pack
+   - countertop
+   - cup
+   - cupboard
+   - cutting board
+   - dice
+   - dishwasher tab
+   - door
+   - drawer
+   - foam brick
+   - fork
+   - fridge
+   - frying pan
+   - pan
+   - glass
+   - glass cleaner spray bottle
+   - golf ball
+   - it
+   - jar
+   - jug
+   - kitchen cabinet
+   - knife
+   - lid
+   - metal bowl
+   - metal mug
+   - metal plate
+   - mini soccer ball
+   - mug
+   - napkin
+   - oven
+   - pill box
+   - pitcher
+   - plastic knife
+   - plate
+   - pot
+   - racquetball
+   - refrigerator
+   - rope
+   - rubiks cube
+   - salt shaker
+   - salt
+   - serving mat
+   - shampoo
+   - shelf
+   - skillet
+   - soap
+   - sofa
+   - softball
+   - spatula
+   - spoon
+   - stacking blocks
+   - stove
+   - table
+   - table cloth
+   - tea bag box
+   - box of tea bags
+   - tennis ball
+   - these
+   - them
+   - those
+   - towel
+   - toyota HSR
+   - trash bin
+   - trash can
+   - tray
+   - washer
+   - scissors
+   - marker
+   - screwdriver
+   - clamp
+   - hammer
+   - wood block
+   - block of wood
+   - scrub cleaner
+   - marble
+   - handle
+   - plastic chain
+   - toothpaste
+   - dishwasher
+
+PhysicalPlace:
+  entities:
+   - balcony
+   - bathroom
+   - bedroom
+   - dining room
+   - kitchen
+   - living room
+   - lobby
+   - office
+   - pantry
+   - there
