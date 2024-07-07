@@ -37,6 +37,83 @@ TellTime: do you know what time it is?
 TellTime: do you have a watch?
 TellTime: could you tell me what time it is?
 
+TellDay: what day is it today?
+TellDay: what day is today?
+TellDay: what day is it?
+TellDay: what's the date today?
+TellDay: what's today's date?
+TellDay: what's today's day?
+TellDay: which day is it today?
+TellDay: can you tell me the day today?
+TellDay: can you tell me today's date please?
+TellDay: what's today's weekday?
+
+TellTomorrow: what day is tomorrow?
+TellTomorrow: what's tomorrow's date?
+TellTomorrow: what day will it be tomorrow?
+TellTomorrow: what's the day tomorrow?
+TellTomorrow: what will tomorrow's day be?
+TellTomorrow: Which day is it tomorrow?
+TellTomorrow: can you tell me the day tomorrow?
+TellTomorrow: what's tomorrow's day?
+TellTomorrow: what day of the week is it tomorrow?
+TellTomorrow: what's tomorrow's weekday?
+
+TellTeamName: what is your team's name?
+TellTeamName: what is the name of your team?
+TellTeamName: what is the title of your team?
+TellTeamName: what's your group's name?
+TellTeamName: What name does your team go by?
+TellTeamName: what is your team called?
+TellTeamName: what name does your team use?
+
+TellTeamCountry: which country is your team from?
+TellTeamCountry: from which country is your team?
+TellTeamCountry: what country is your team from?
+TellTeamCountry: what is the home country of your team?
+TellTeamCountry: what nation does your team come from?
+TellTeamCountry: what country is your team based in?
+TellTeamCountry: what nation does your team belong to?
+TellTeamCountry: what place is your team from?
+
+TellTeamAffiliation: what is your teams affiliation?
+TellTeamAffiliation: what organization is your team associated with?
+TellTeamAffiliation: Who is your team affiliated with?
+TellTeamAffiliation: what organisation does your team belong to?
+TellTeamAffiliation: which institution is your team aligned with?
+TellTeamAffiliation: which institution does your team represent?
+TellTeamAffiliation: what association does your team have?
+TellTeamAffiliation: which entity is your team linked with?
+
+TellDayOfWeek: what day of the week is it?
+TellDayOfWeek: what weekday is it?
+TellDayOfWeek: can you tell me the day of the week?
+TellDayOfWeek: which weekday is it?
+TellDayOfWeek: what's today's day of the week?
+TellDayOfWeek: today is which day of the week?
+
+TellBirthday: when is your birthday?
+TellBirthday: what day were you born?
+TellBirthday: what is your birth date?
+TellBirthday: what is your date of birth?
+TellBirthday: when do you celebrate your birthday?
+TellBirthday: on which date were you born?
+TellBirthday: when is your birthday anniversary?
+
+TellFrom: where are you from?
+TellFrom: where do you come from?
+TellFrom: where were you born?
+TellFrom: where fo you originate from?
+
+TellSomething: tell me something about yourself
+TellSomething: what is a fun fact about you?
+TellSomething: tell me something about you
+TellSomething: share something about yourself
+TellSomething: talk about yourself
+TellSomething: share a little bit about yourself
+
+
+
 AssertSpeaker: hello, my name is NaturalPerson|AgentRole
 AssertSpeaker: hi, I am NaturalPerson|AgentRole
 AssertSpeaker: my name is NaturalPerson|AgentRole

@@ -1,10 +1,12 @@
 [
-	["offer the me in a blouse next to the door in the dining room a frenchs yellow mustard bottle from the cupboard in the study room",
-		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
-	["bring Alice having a pullover a pill box from the cupboard in the dining room",
-		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
-	["bring gentleman having a blue jeans a nine peg hole test from the cupboard in the bedroom",
-		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]],
-	["give the Alice a tomato soup can from the cupboard in the arena",
-		["MISSMATCH", [[["DesignedFurniture", "Source", "cupboard"], ["Transportable", "Item", "cupboard"]]]]]
+	["tell me the amount of Bob wearing a shoes are sitting on the kitchen cabinet in the kitchen",
+		["MISSMATCH", [[["Room", "SourceRoom", "kitchen"], ["DesignedFurniture", "Source", "kitchen"]]]]],
+	["what can you tell me about the mulled wine tea on the kitchen cabinet in the kitchen",
+		["MISSMATCH", [[["Room", "SourceRoom", "kitchen"], ["DesignedFurniture", "Source", "kitchen"]]]]],
+	["offer the Alice in a tshirt next to the rack in the bathroom a tray from the book case in the arena",
+		["MISSMATCH", [[["Transportable", "Item", "tray"], ["DesignedFurniture", "Source", "tray"]]]]],
+	["offer the them in a shirt next to the couch table in the living room a cookie from the book case in the living room",
+		["MISSMATCH", [[["Transportable", "Item", "cookie"], ["DesignedFurniture", "Source", "cookie"]]]]],
+	["give the Robin wearing a dress and standing next to the drawer in the living room a tray from the dining table in the bathroom",
+		["MISSMATCH", [[["Transportable", "Item", "tray"], ["DesignedFurniture", "Source", "tray"]]]]]
 ]

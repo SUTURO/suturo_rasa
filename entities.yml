@@ -18,6 +18,8 @@ Clothing:
   - hoodie
   - leggings
   - socks
+  - sweater
+  - coat
 NaturalPerson:
   entities:
   - Adel
@@ -92,7 +94,6 @@ DesignedFurniture:
   - table
   - dining table
   - coat rack
-  - cupboard
   - book case
   - shelf unit
   - kitchen cabinet
@@ -101,6 +102,7 @@ DesignedFurniture:
   - table
   - chair
   - rack
+  - couch
 Room:
   entities:
   - lobby
@@ -121,27 +123,29 @@ Transportable:
   - wine glass
   - pot
   - pickles jar
+  - pringles
   - pringles chips can
-  - master chef can
   - skillet
-  - starkist tuna fish can
   - milk bottle
   - tuna fish can
   - cocoa box
+  - hot chocolate
   - stapel chips
   - domino sugar box
   - cracker box
-  - coffee can
+  - coffee grounds
   - can
   - coffee can
   - tomato soup can
   - coffee pack
   - clear box
   - glass
+  - cheezit
   - cheez it cracker box
+  - cornflakes
   - pill box
   - juice pack
-  - windex glass cleaner spray bottle
+  - glass cleaner spray bottle
   - cookie box
   - milk jug
   - salt shaker
@@ -153,33 +157,33 @@ Transportable:
   - sink
   - mug
   - corny box
-  - soft scrub bleach cleanser bottle
+  - cleanser
   - trash bin
   - nesquick cereal box
   - cereal box
   - oregano shaker
   - raspberry juice box
-  - jellO chocolate pudding box
+  - jello chocolate pudding box
+  - chocolate jello
   - juice bottle
   - tea bag box
   - pasta bowl
-  - dinner plate
-  - milkpack ja
+  - milkpack
   - tropical juice bottle
+  - tropical juice
   - spray bottle
   - milk glass
   - soup can
   - bowl
-  - metal plate
   - jello strawberry box
+  - strawberry jello
   - pitcher
   - plate
   - frenchs yellow mustard bottle
   - cereal bowl
   - mustard bottle
-  - breakfast plate
+  - mustard
   - gelatine box
-  - tiger cup
   - bag
   - bleach cleanser bottle
   - salad bowl
@@ -187,15 +191,15 @@ Transportable:
   - water glass
   - potted meat can
   - cleanser bottle
-  - spam potted meat can
+  - spam
   - pancake mix bottle
   - pudding box
   - milk pack
-  - glass cleaner spray bottle
   - ice tea bottle
   - orange juice box
   - cup
   - juice box
+  - sugar
   - sugar box
   - metal bowl
   - metal mug
@@ -210,8 +214,11 @@ Transportable:
   - pot
   - clamp
   - mini soccer ball
+  - soccer ball
   - cutlery
   - knife
+  - plastic knife
+  - metal knife
   - lego
   - spoon
   - timer
@@ -240,6 +247,7 @@ Transportable:
   - mineral water
   - mustard
   - orange
+  - orange juice
   - cutting board
   - mulled wine tea
   - peach
@@ -257,10 +265,8 @@ Transportable:
   - milk coffee
   - tuna
   - processed food
-  - dinner plate
   - metal cup
   - gin tonic
-  - cup blue
   - milk glass
   - bowl
   - ice tea
@@ -268,31 +274,24 @@ Transportable:
   - credit card
   - baked good
   - bowl
-  - metal plate
   - tomato soup
   - beer
   - nine peg hole test
   - nut
-  - plate
   - cereal bowl
   - toy airplane
   - scotch brite dobie sponge
-  - breakfast plate
   - nail
   - abrasive sponge
   - cereal
-  - kitchen knife
   - mueslibox
   - apple
   - tray
   - tea
-  - tiger cup
   - fastener
   - small marker
   - pear
-  - koelln knusper schokokeks
   - plum
-  - cup small
   - pancake
   - drink
   - salad bowl
@@ -303,17 +302,16 @@ Transportable:
   - meat
   - water glass
   - raspberry juice
-  - plastic knife
   - stacking blocks
   - toast
   - lemonade
   - chili con carne
   - grapes
-  - cup
   - juice
   - tableware
   - metal bowl
   - iced coffee
+  - iced tea
   - ketchup
   - apple juice
   - metal mug
@@ -337,6 +335,7 @@ Transportable:
   - serving mat
   - oregano
   - colored wood block
+  - red wine
   - soap
   - bib
   - tomato
