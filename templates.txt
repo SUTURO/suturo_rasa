@@ -2,6 +2,12 @@
 # a single '#' character starts a comment
 # Each line defining a template should have the format
 # intent_name: annotated sentence
+# An annotated sentence includes placeholders to fill in with entities playing
+# various roles in a sentence. The placeholders can have one of the following forms:
+# <EntityType>|<Role> for example Food|Item
+# or
+# <EntityType>|<Role>|<Group Index> for example NaturalPerson|AgentRole|2
+# Entity types must be defined via giving examples for them in the entities.yml file.
 
 Affirm: yes
 Affirm: indeed
