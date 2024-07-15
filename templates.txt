@@ -248,14 +248,14 @@ Transporting: deliver a Transportable|Item to the NaturalPerson|BeneficiaryRole
 Transporting: move the Transportable|Item to the NaturalPerson|BeneficiaryRole
 Transporting: take a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
 Transporting: fetch a Transportable|Item from the Room|SourceRoom for a NaturalPerson|BeneficiaryRole
-Transporting: get the NaturalPerson|BeneficiaryRolea Transportable|Item from the Room|SourceRoom
+Transporting: get the NaturalPerson|BeneficiaryRole Transportable|Item from the Room|SourceRoom
 Transporting: bring NaturalPerson|BeneficiaryRole a Transportable|Item from the Room|SourceRoom
 Transporting: give the NaturalPerson|BeneficiaryRole a Transportable|Item from the Room|SourceRoom
 Transporting: deliver a Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
 Transporting: move the Transportable|Item from the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
 Transporting: take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
 Transporting: fetch a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom for a NaturalPerson|BeneficiaryRole
-Transporting: get the NaturalPerson|BeneficiaryRolea Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
+Transporting: get the NaturalPerson|BeneficiaryRole Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
 Transporting: bring NaturalPerson|BeneficiaryRole a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
 Transporting: give the NaturalPerson|BeneficiaryRole a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
 Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole
