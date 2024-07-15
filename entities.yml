@@ -46,6 +46,17 @@ drink:
    - glass of wine
    - milk bottle
    - bottle of milk
+   - ice tea
+   - ice tea can
+   - can of ice tea
+   - water bottle
+   - bottle of water
+   - big coke
+   - big cola
+   - fanta
+   - fanta can
+   - can of fanta
+   - dubbelfris
 
 food:
   entities:
@@ -103,64 +114,104 @@ food:
    - corny box
    - box of corny
    - tomato
+   - cornflakes
+   - corn flakes
+   - pea soup
+   - pea soup can
+   - can of pea soup
+   - curryy
+   - pancake mix
+   - hagelslag
+   - sausages
+   - mayonaise
+   - mayonnaise
+   - mayo
+   - Stroopwaffel
+   - candy
+   - liquorice
+   - licorice
+   - crisps
+   - pringles
+   - tictac
+   - Tic tac
 
 NaturalPerson:
   entities:
-   - her
-   - him
-   - them
-   - Alice
-   - Adel
-   - Amanda
-   - Andrew
-   - Angel
-   - Ashley
-   - Axel
-   - Bob
-   - Brittany
-   - Charlie
-   - Christopher
-   - Daniel
-   - David
-   - Elizabeth
-   - James
-   - Jane
-   - Jennifer
-   - Jessica
-   - John
-   - Joseph
-   - Joshua
-   - Jules
-   - Justin
-   - Lauren
-   - Matthew
-   - Michael
-   - Morgan
-   - Paris
-   - Robin
-   - Simone
-   - Samantha
-   - Sarah
-   - Stephanie
-   - Sophie
-   - Julia
-   - Emma
-   - Sara
-   - Laura
-   - Hayley
-   - Susan
-   - Fleur
-   - Gabriëlle
-   - John
-   - Liam
-   - Lucas
-   - William
-   - Kevin
-   - Jesse
-   - Noah
-   - Harrie
-   - Peter
-
+  - Adel
+  - Alice
+  - Amanda
+  - Andrew
+  - Angel
+  - Ashley
+  - Axel
+  - Bob
+  - Brittany
+  - Charlie
+  - Christopher
+  - Daniel
+  - David
+  - Elizabeth
+  - Emma
+  - Fleur
+  - Gabrielle
+  - Harrie
+  - Hayley
+  - James
+  - Jane
+  - Jennifer
+  - Jesse
+  - Jessica
+  - John
+  - Joseph
+  - Joshua
+  - Jules
+  - Julia
+  - Justin
+  - Kevin
+  - Laura
+  - Lauren
+  - Liam
+  - Lucas
+  - Matthew
+  - Michael
+  - Morgan
+  - Noah
+  - Paris
+  - Peter
+  - Robin
+  - Samantha
+  - Sara
+  - Sarah
+  - Simone
+  - Sophie
+  - Stephanie
+  - Susan
+  - William
+  - boy
+  - child
+  - dame
+  - damsel
+  - fellow
+  - gentleman
+  - girl
+  - guy
+  - lady
+  - lord
+  - madam
+  - man
+  - miss
+  - missus
+  - mister
+  - mr
+  - mrs
+  - person
+  - woman
+  - them
+  - they
+  - him
+  - her
+  - me
+  
 PhysicalArtifact:
   entities:
    - abrasive sponge
@@ -253,6 +304,8 @@ PhysicalArtifact:
    - plastic chain
    - toothpaste
    - dishwasher
+   - sponge
+   - candle
 
 PhysicalPlace:
   entities:
