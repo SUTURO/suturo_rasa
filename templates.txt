@@ -113,6 +113,39 @@ TellSomething: talk about yourself
 TellSomething: share a little bit about yourself
 
 
+EindhovenMountain: What is the highest mountain in the Netherlands? 
+EindhovenMountain: Which one is the highest mountain in the Netherlands? 
+
+EindhovenPainter: Which painter created the night watch?
+EindhovenPainter: Who created the night watch?
+EindhovenPainter: Who is the artist behind the night watch?
+
+EindhovenLake: What is the largest lake in the Netherlands?
+EindhovenLake: Which one is the largest lake in the Netherlands?
+
+EindhovenBaron: Who is the current Baron of Eindhoven?
+EindhovenBaron: The current Baron of Eindhoven is who?
+
+EindhovenCreated: When was Eindhoven first chartered? 
+EindhovenCreated: When was Eindhoven founded? 
+
+EindhovenPeople: How many people live in Eindhoven?
+EindhovenPeople: How many citizens do live in Eindhoven? 
+
+EindhovenMascot: What is the mascot for the 2024 RoboCup called?
+EindhovenMascot: How is the mascot of the 2024 RoboCup called?
+EindhovenMascot: What is the name of the mascot of this year's RoboCup?
+EindhovenMascot: What name does the mascot of RoboCup 2024 have?
+
+EindhovenLowestPoint: How low is the lowest point in the Netherlands?
+EindhovenLowestPoint: What is the lowest point in the Netherlands?
+EindhovenLowestPoint: Which one is the lowest point in the Netherlands?
+
+EindhovenCurrency: What was the dutch currency before the Euro? 
+EindhovenCurrency: Which kind of currency did the dutch have before the Euro?
+EindhovenCurrency: What kind of currency was used in the Netherlands before the Euro?
+
+
 
 AssertSpeaker: hello, my name is NaturalPerson|AgentRole
 AssertSpeaker: hi, I am NaturalPerson|AgentRole
@@ -137,7 +170,6 @@ LookingFor: find a Transportable|Item
 LookingFor: search for a Transportable|Item
 LookingFor: can you check if there's a Transportable|Item around?
 LookingFor: can you find NaturalPerson|BeneficiaryRole?
-LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source
 LookingFor: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 LookingFor: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom
 LookingFor: go find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom
