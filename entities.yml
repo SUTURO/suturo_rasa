@@ -115,6 +115,7 @@ NaturalPerson:
   - gentleman
   - girl
   - guy
+  - girl
   - lady
   - lord
   - madam
@@ -130,7 +131,35 @@ NaturalPerson:
   - they
   - him
   - her
+  - him
   - me
+  - person
+  - them
+  - they
+DesignedFurniture:
+  entities:
+  - drawer
+  - microwave
+  - dishwasher tray
+  - kitchen cabinet
+  - dishwasher
+  - cupboard  
+  - door
+  - sofa
+  - couch table
+  - kitchen table
+  - table
+  - dining table
+  - coat rack
+  - book case
+  - shelf unit
+  - kitchen cabinet
+  - bed
+  - there
+  - table
+  - chair
+  - rack
+  - couch
 Room:
   entities:
   - bathroom
@@ -145,6 +174,10 @@ Room:
   - pantry
   - kitchen
   - balcony
+  - kitchen
+  - pantry
+  - office
+  - dining room
 Transportable:
   entities:
   - ginger ale
@@ -379,6 +412,9 @@ Transportable:
   - vegetable
   - towel
   - foam brick
+  - salt
+  - it
+  - towel
   - serving mat
   - wood block
   - shampoo
