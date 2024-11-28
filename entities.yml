@@ -102,7 +102,7 @@ NaturalPerson:
   - Samantha
   - Sara
   - Sarah
-  - Simone
+  - Simon
   - Sophie
   - Stephanie
   - Susan
@@ -385,4 +385,142 @@ Transportable:
   - it
   - object
   
+drink:
+  entities:
+   - apple juice
+   - beer
+   - bottle of wine
+   - cafe au lait
+   - coffee
+   - coffee can
+   - can of coffee
+   - coffee with milk
+   - coke
+   - can of coke
+   - cola
+   - cola can
+   - cup of coffee
+   - cup of coffee with milk
+   - milk coffee
+   - cup of tea
+   - gin tonic
+   - ginger ale
+   - glass of milk
+   - glass of mineral water
+   - glass of water
+   - ice tea bottle
+   - bottle of ice tea
+   - iced coffee
+   - iced tea
+   - jug of milk
+   - juice box
+   - juice pack
+   - pack of juice
+   - lemonade
+   - milk
+   - milk pack
+   - mineral water
+   - orange juice
+   - orange juice box
+   - box of orange juice
+   - sprite
+   - tea
+   - tropical juice bottle
+   - bottle of tropical juice
+   - water
+   - wine bottle
+   - wine glass
+   - glass of wine
+   - milk bottle
+   - bottle of milk
+   - ice tea
+   - ice tea can
+   - can of ice tea
+   - water bottle
+   - bottle of water
+   - big coke
+   - big cola
+   - fanta
+   - fanta can
+   - can of fanta
+   - dubbelfris
+
+food:
+  entities:
+   - apple
+   - banana
+   - bowl of soup
+   - box of cereal
+   - box of sugar
+   - cereal box
+   - cereal box robo cup
+   - chili con carne
+   - chili sin carne
+   - chips can
+   - chocolate pudding box
+   - cracker box
+   - crackers
+   - gelatin box
+   - jar of pickles
+   - pickles
+   - jello box
+   - jello chocolate pudding box
+   - jello strawberry box
+   - kiwi
+   - lemon
+   - meat
+   - mustard bottle
+   - mustard container
+   - mustard
+   - orange
+   - oregano shaker
+   - pancake mix bottle
+   - bottle of pancake mix
+   - pastry box
+   - peach
+   - pear
+   - piece of toast
+   - toast
+   - plum
+   - potted meat can
+   - can of potted meat
+   - pringles chips can
+   - sandwich
+   - soup
+   - steak
+   - strawberry
+   - sugar
+   - sugar box
+   - tomato soup can
+   - can of tomato soup
+   - tuna fish can
+   - can of tuna fish
+   - vegetables
+   - vegetable
+   - grapes
+   - corny box
+   - box of corny
+   - tomato
+   - cornflakes
+   - corn flakes
+   - pea soup
+   - pea soup can
+   - can of pea soup
+   - curryy
+   - pancake mix
+   - hagelslag
+   - sausages
+   - mayonaise
+   - mayonnaise
+   - mayo
+   - Stroopwaffel
+   - candy
+   - liquorice
+   - licorice
+   - crisps
+   - pringles
+   - tictac
+   - Tic tac
+   - fries
+   - french fries
 
