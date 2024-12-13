@@ -1,0 +1,918 @@
+version: "3.1"
+
+nlu:
+- intent: Arranging
+  examples: |
+    - can you assist [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}, please?
+    - can you assist [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}, please?
+    - can you assist [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}, please?
+    - can you assist [man]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}, please?
+    - can you assist [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}, please?
+    - can you collaborate with [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [Sara]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you collaborate with [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you join [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} at the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you provide some help in positioning the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Justin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you kindly assist [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} in setting up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you lend [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a hand in organizing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you offer your assistance in placing the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you be able to help [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with the task of arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} next to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Location"}?
+    - would you be able to help [Emma]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with the task of arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} next to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Location"}?
+    - would you be able to help [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with the task of arranging the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} next to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Location"}?
+    - would you mind helping [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} set up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you mind helping [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} set up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you mind helping [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} set up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you mind helping [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} set up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you mind helping [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} set up the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - would you mind partnering with [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you mind partnering with [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you mind partnering with [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you mind partnering with [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} to arrange the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} on the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+
+- intent: Cleaning
+  examples: |
+    - can you clean out the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you clean the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - can you clean the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you sweep the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"}?
+    - clean the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}
+    - clean the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Item"}
+    - could you wipe the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - would you be able to wash the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - would you clean the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - would you mind dusting the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+
+- intent: Fetching
+  examples: |
+    - go grab a [apple juice]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [beer]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [big coke]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [big cola]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [bottle of ice tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [bottle of tropical juice]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [bottle of water]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [bottle of wine]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [box of orange juice]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cafe au lait]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [can of coffee]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [can of fanta]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [can of ice tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [coffee]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [coffee with milk]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cola can]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cola]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cup of coffee]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cup of coffee with milk]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [cup of tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [dubbelfris]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [fanta]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [gin tonic]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [ginger ale]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [glass of milk]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [glass of mineral water]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [glass of water]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [glass of wine]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [ice tea bottle]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [ice tea can]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [ice tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [iced tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [jug of milk]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [juice box]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [juice pack]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [milk bottle]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [milk coffee]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [milk]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [milk pack]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [mineral water]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [orange juice box]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [pack of juice]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [sprite]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [tea]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [tropical juice bottle]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [water bottle]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [water]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [wine bottle]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - go grab a [wine glass]{"entity": "drink", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}
+    - grab a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} from the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Origin"}.
+
+- intent: LookingFor
+  examples: |
+    - can you check if there 's a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} around?
+    - can you find where the [grapes]{"entity": "food", "role": "Item"} is kept?
+    - can you find where the [jello strawberry box]{"entity": "food", "role": "Item"} is kept?
+    - can you find where the [mustard]{"entity": "food", "role": "Item"} is kept?
+    - can you find where the [toast]{"entity": "food", "role": "Item"} is kept?
+    - can you help [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [coke]{"entity": "drink", "role": "Item"}?
+    - can you help [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [cereal box robo cup]{"entity": "food", "role": "Item"}?
+    - can you help [Elizabeth]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [cereal box]{"entity": "food", "role": "Item"}?
+    - can you help [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [box of corny]{"entity": "food", "role": "Item"}?
+    - can you help [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [glass of wine]{"entity": "drink", "role": "Item"}?
+    - can you help [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [tea]{"entity": "drink", "role": "Item"}?
+    - can you help [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you help [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you help [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you help [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [crisps]{"entity": "food", "role": "Item"}?
+    - can you help [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you help [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you help [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} find a [pickles]{"entity": "food", "role": "Item"}?
+    - can you help [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [coffee with milk]{"entity": "drink", "role": "Item"}?
+    - can you help [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [can of coke]{"entity": "drink", "role": "Item"}?
+    - can you help [mister]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [sugar box]{"entity": "food", "role": "Item"}?
+    - can you help [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} look for a [cornflakes]{"entity": "food", "role": "Item"}?
+    - can you look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you look for a [Tic tac]{"entity": "food", "role": "Item"}?
+    - can you look for a [box of cereal]{"entity": "food", "role": "Item"}?
+    - can you look for a [can of pea soup]{"entity": "food", "role": "Item"}?
+    - can you look for a [mustard]{"entity": "food", "role": "Item"}?
+    - can you look for a [orange]{"entity": "food", "role": "Item"}?
+    - can you look where the [bottle of water]{"entity": "drink", "role": "Item"} is kept?
+    - can you look where the [coffee can]{"entity": "drink", "role": "Item"} is kept?
+    - can you look where the [milk]{"entity": "drink", "role": "Item"} is kept?
+    - can you search for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - can you see if there 's a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} available?
+    - can you see where the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} are kept?
+    - can you see where the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} is kept?
+    - could you do [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - could you do [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [ice tea bottle]{"entity": "drink", "role": "Item"}?
+    - could you do [Emma]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [coffee]{"entity": "drink", "role": "Item"}?
+    - could you do [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [box of corny]{"entity": "food", "role": "Item"}?
+    - could you do [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [orange juice]{"entity": "drink", "role": "Item"}?
+    - could you do [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a favor and locate a [banana]{"entity": "food", "role": "Item"}?
+    - could you look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - could you please find a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} for [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}?
+    - could you please search for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - find a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}
+    - is it possible for you to seek out a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - look for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}
+    - search for a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}
+    - would you be able to find a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+    - would you mind locating a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}?
+
+- intent: MovingTo
+  examples: |
+    - can you make your way over to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you make your way over to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - can you make your way to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you make your way to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - can you move to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - could you go to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you please go and stand next to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you please go over and stand by the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - could you please go to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - go to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}
+    - go to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}
+    - move to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}
+    - move to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}
+    - would you mind going over to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+
+- intent: Order
+  examples: |
+    - I 'll go with the [box of sugar]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of coffee]{"entity": "drink", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cereal box robo cup]{"entity": "food", "role": "Item"} and [banana]{"entity": "food", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [chili con carne]{"entity": "food", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [chips can]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [cola]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [gelatin box]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [glass of mineral water]{"entity": "drink", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [ice tea]{"entity": "drink", "role": "Item"} and [lemonade]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [lemonade]{"entity": "drink", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [licorice]{"entity": "food", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mineral water]{"entity": "drink", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [bottle of pancake mix]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I 'll take the [can of coffee]{"entity": "drink", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"} and [pancake mix]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cornflakes]{"entity": "food", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [gin tonic]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jug of milk]{"entity": "drink", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [meat]{"entity": "food", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [pack of juice]{"entity": "drink", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I 'll take the [soup]{"entity": "food", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [soup]{"entity": "food", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [sugar]{"entity": "food", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [vegetable]{"entity": "food", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [wine bottle]{"entity": "drink", "role": "Item"} and [Stroopwaffel]{"entity": "food", "role": "Item"} and [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [beer]{"entity": "drink", "role": "Item"} and [can of tomato soup]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of coke]{"entity": "drink", "role": "Item"} and [lemonade]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of pea soup]{"entity": "food", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of potted meat]{"entity": "food", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"} and [oregano shaker]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of potted meat]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to get [cereal box robo cup]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I would like to get [cola]{"entity": "drink", "role": "Item"} and [orange]{"entity": "food", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [cup of coffee]{"entity": "drink", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [mayonnaise]{"entity": "food", "role": "Item"} and [tomato soup can]{"entity": "food", "role": "Item"}.
+    - I would like to get [orange]{"entity": "food", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"} and [lemonade]{"entity": "drink", "role": "Item"}.
+    - I would like to get [piece of toast]{"entity": "food", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I would like to get [vegetables]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I would like to order [bottle of milk]{"entity": "drink", "role": "Item"} and [milk bottle]{"entity": "drink", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [box of cereal]{"entity": "food", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I would like to order [can of fanta]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cereal box robo cup]{"entity": "food", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I would like to order [coffee]{"entity": "drink", "role": "Item"} and [oregano shaker]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to order [coke]{"entity": "drink", "role": "Item"} and [tomato soup can]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I would like to order [cup of coffee]{"entity": "drink", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to order [lemonade]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to order [orange]{"entity": "food", "role": "Item"} and [milk pack]{"entity": "drink", "role": "Item"}.
+    - I would like to order [pear]{"entity": "food", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [piece of toast]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I would like to order [tea]{"entity": "drink", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I would like to order [tea]{"entity": "drink", "role": "Item"} and [peach]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+
+- intent: Receptionist
+  examples: |
+    - I am [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - I like [big cola]{"entity": "drink", "role": "Item"}
+    - I like [bottle of wine]{"entity": "drink", "role": "Item"}
+    - I like [tropical juice bottle]{"entity": "drink", "role": "Item"}
+    - good day, my name is [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [beer]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [pack of juice]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [jug of milk]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [tea]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [milk pack]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [miss]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [wine bottle]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [cup of tea]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [ice tea]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [orange juice box]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [water]{"entity": "drink", "role": "Item"}.
+    - hello my name is [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello, [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [coffee can]{"entity": "drink", "role": "Item"}.
+    - hello, [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [water]{"entity": "drink", "role": "Item"}.
+    - hello, [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [beer]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [tea]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [mineral water]{"entity": "drink", "role": "Item"}.
+    - hello, [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [glass of milk]{"entity": "drink", "role": "Item"}.
+    - hello, [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [can of coke]{"entity": "drink", "role": "Item"}.
+    - hey I 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [cup of coffee]{"entity": "drink", "role": "Item"}
+    - hey I 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [juice pack]{"entity": "drink", "role": "Item"}
+    - hey I 'm [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [can of fanta]{"entity": "drink", "role": "Item"}
+    - hey, i 'm [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [iced tea]{"entity": "drink", "role": "Item"}.
+    - hi there, [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [fanta can]{"entity": "drink", "role": "Item"}.
+    - hi there, [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [milk bottle]{"entity": "drink", "role": "Item"}.
+    - hi, my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}. i 'm [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [milk]{"entity": "drink", "role": "Item"}. i 'm [Elizabeth]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [cafe au lait]{"entity": "drink", "role": "Item"}. i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [iced tea]{"entity": "drink", "role": "Item"}. i 'm [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [iced tea]{"entity": "drink", "role": "Item"}.
+    - my name is [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [cola]{"entity": "drink", "role": "Item"}.
+    - my name is [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - my name is [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [bottle of tropical juice]{"entity": "drink", "role": "Item"}
+    - my name is [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [big cola]{"entity": "drink", "role": "Item"}
+    - nice to see you! i 'm [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [sprite]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [milk bottle]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [beer]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [fanta]{"entity": "drink", "role": "Item"}.
+    - what I like most to drink is [glass of wine]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [milk bottle]{"entity": "drink", "role": "Item"}
+
+- intent: Transporting
+  examples: |
+    - bring [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [sugar box]{"entity": "food", "role": "Item"}
+    - bring [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [tropical juice bottle]{"entity": "drink", "role": "Item"}
+    - bring [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [sugar]{"entity": "food", "role": "Item"}
+    - bring [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [bottle of water]{"entity": "drink", "role": "Item"}
+    - bring [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"}
+    - bring [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [Stroopwaffel]{"entity": "food", "role": "Item"}
+    - bring [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [coke]{"entity": "drink", "role": "Item"}
+    - bring [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [cola can]{"entity": "drink", "role": "Item"}
+    - bring the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - can you move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move the [cafe au lait]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move the [cola]{"entity": "drink", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - can you move the [crackers]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - can you move the [glass of water]{"entity": "drink", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - can you move the [glass of wine]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - can you move the [ice tea]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move the [jello chocolate pudding box]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - can you move the [jug of milk]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - can you move the [orange]{"entity": "food", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - can you move the [plum]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - could you fetch [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [can of fanta]{"entity": "drink", "role": "Item"}
+    - could you fetch [Stephanie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [fanta can]{"entity": "drink", "role": "Item"}
+    - get [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [soup]{"entity": "food", "role": "Item"}
+    - get [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [tea]{"entity": "drink", "role": "Item"}
+    - get [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [wine glass]{"entity": "drink", "role": "Item"}
+    - move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - move the [big cola]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - move the [can of potted meat]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - move the [can of potted meat]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - move the [crackers]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - move the [cup of coffee with milk]{"entity": "drink", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - move the [fanta can]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - move the [glass of water]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - move the [pea soup can]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - move the [pea soup]{"entity": "food", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - take the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - take the [bottle of ice tea]{"entity": "drink", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - take the [cornflakes]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - take the [cracker box]{"entity": "food", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - take the [pringles chips can]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"} in the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"}?
+    - take the [strawberry]{"entity": "food", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - take the [tea]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - take the [tropical juice bottle]{"entity": "drink", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you be able to move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} holder to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you be able to move the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} holder to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+    - would you mind moving the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you mind moving the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Location"} [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Destination"}?
+    - would you mind moving the [PhysicalArtifact]{"entity": "PhysicalArtifact", "role": "Item"} to the [PhysicalPlace]{"entity": "PhysicalPlace", "role": "Destination"}?
+
+- intent: cooking_help
+  examples: |
+    - [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} need a [big coke]{"entity": "drink", "role": "outcome"}
+    - can you help [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [fries]{"entity": "food", "role": "outcome"}?
+    - can you help [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [pringles chips can]{"entity": "food", "role": "outcome"}?
+    - can you help [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [jello strawberry box]{"entity": "food", "role": "outcome"}?
+    - can you help [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [pringles chips can]{"entity": "food", "role": "outcome"}?
+    - can you help [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [Stroopwaffel]{"entity": "food", "role": "outcome"}?
+    - can you help [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [cafe au lait]{"entity": "drink", "role": "outcome"}?
+    - can you help [Lauren]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [mayonaise]{"entity": "food", "role": "outcome"}?
+    - can you help [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [crisps]{"entity": "food", "role": "outcome"}?
+    - can you help [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [steak]{"entity": "food", "role": "outcome"}?
+    - can you help [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [ginger ale]{"entity": "drink", "role": "outcome"}?
+    - can you help [Stephanie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [coke]{"entity": "drink", "role": "outcome"}?
+    - can you help [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [water]{"entity": "drink", "role": "outcome"}?
+    - can you help [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [chips can]{"entity": "food", "role": "outcome"}?
+    - can you help [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [cup of coffee with milk]{"entity": "drink", "role": "outcome"}?
+    - can you help [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [kiwi]{"entity": "food", "role": "outcome"}?
+    - can you help [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [box of sugar]{"entity": "food", "role": "outcome"}?
+    - can you help [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [tropical juice bottle]{"entity": "drink", "role": "outcome"}?
+    - can you help [miss]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [coffee]{"entity": "drink", "role": "outcome"}?
+    - can you help [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [milk]{"entity": "drink", "role": "outcome"}?
+    - can you help [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [tictac]{"entity": "food", "role": "outcome"}?
+    - can you help [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} with making [pack of juice]{"entity": "drink", "role": "outcome"}?
+    - can you help [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} make a [glass of wine]{"entity": "drink", "role": "outcome"}?
+    - could you cook [can of tuna fish]{"entity": "food", "role": "outcome"} for [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [chips can]{"entity": "food", "role": "outcome"} for [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [chocolate pudding box]{"entity": "food", "role": "outcome"} for [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [mayonaise]{"entity": "food", "role": "outcome"} for [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [mustard]{"entity": "food", "role": "outcome"} for [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [pea soup]{"entity": "food", "role": "outcome"} for [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [pringles]{"entity": "food", "role": "outcome"} for [Gabrielle]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you cook [strawberry]{"entity": "food", "role": "outcome"} for [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make a [glass of mineral water]{"entity": "drink", "role": "outcome"} for [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make a [sprite]{"entity": "drink", "role": "outcome"} for [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make a [water]{"entity": "drink", "role": "outcome"} for [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [box of orange juice]{"entity": "drink", "role": "outcome"} for [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [can of tomato soup]{"entity": "food", "role": "outcome"} for [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [cola]{"entity": "drink", "role": "outcome"} for [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [cup of coffee with milk]{"entity": "drink", "role": "outcome"} for [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [milk pack]{"entity": "drink", "role": "outcome"} for [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [strawberry]{"entity": "food", "role": "outcome"} for [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [toast]{"entity": "food", "role": "outcome"} for [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - could you make [wine glass]{"entity": "drink", "role": "outcome"} for [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - make [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [bottle of wine]{"entity": "drink", "role": "outcome"}
+    - make [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [water bottle]{"entity": "drink", "role": "outcome"}
+    - make [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [box of cereal]{"entity": "food", "role": "outcome"}
+    - make [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [orange juice]{"entity": "drink", "role": "outcome"}
+    - make [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [Tic tac]{"entity": "food", "role": "outcome"}
+    - make [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [pear]{"entity": "food", "role": "outcome"}
+    - make [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} a [pringles]{"entity": "food", "role": "outcome"}
+    - [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} need a [cola can]{"entity": "drink", "role": "outcome"}
+
+- lookup: Clothing
+  examples: |
+    - blouse
+    - blue jeans
+    - coat
+    - dress
+    - gloves
+    - hat
+    - hoodie
+    - jacket
+    - leggings
+    - pants
+    - pullover
+    - shirt
+    - shoes
+    - socks
+    - sweater
+    - t-shirt
+    - tie
+    - trousers
+    - vest
+
+- lookup: DesignedFurniture
+  examples: |
+    - bed
+    - book case
+    - chair
+    - coat hanger
+    - coffee table
+    - couch
+    - cupboard
+    - desk
+    - dining table
+    - dinner table
+    - dishwasher
+    - dishwasher tray
+    - door
+    - drawer
+    - hallway cabinet
+    - kitchen cabinet
+    - kitchen counter
+    - kitchen table
+    - lamp
+    - lounge chair
+    - rack
+    - shelf
+    - shelf unit
+    - sink
+    - sofa
+    - table
+    - there
+    - trash can
+    - tv table
+
+- lookup: NaturalPerson
+  examples: |
+    - Adel
+    - Alice
+    - Amanda
+    - Andrew
+    - Angel
+    - Ashley
+    - Axel
+    - Bob
+    - Brittany
+    - Charlie
+    - Christopher
+    - Daniel
+    - David
+    - Elizabeth
+    - Emma
+    - Fleur
+    - Gabrielle
+    - Harrie
+    - Hayley
+    - James
+    - Jane
+    - Jennifer
+    - Jesse
+    - Jessica
+    - John
+    - Joseph
+    - Joshua
+    - Jules
+    - Julia
+    - Justin
+    - Kevin
+    - Laura
+    - Lauren
+    - Liam
+    - Lucas
+    - Matthew
+    - Michael
+    - Morgan
+    - Noah
+    - Paris
+    - Peter
+    - Robin
+    - Samantha
+    - Sara
+    - Sarah
+    - Simon
+    - Sophie
+    - Stephanie
+    - Susan
+    - William
+    - boy
+    - child
+    - dame
+    - damsel
+    - fellow
+    - gentleman
+    - girl
+    - guy
+    - her
+    - him
+    - lady
+    - lord
+    - madam
+    - man
+    - me
+    - miss
+    - missus
+    - mister
+    - mr
+    - mrs
+    - person
+    - them
+    - they
+    - woman
+
+- lookup: Room
+  examples: |
+    - arena
+    - bathroom
+    - bedroom
+    - dining room
+    - hallway
+    - kitchen
+    - living room
+    - lobby
+    - office
+    - study room
+
+- lookup: Transportable
+  examples: |
+    - abrasive sponge
+    - apple
+    - apple juice
+    - bag
+    - baked good
+    - banana
+    - baseball
+    - beer
+    - big coke
+    - blank credit card
+    - bleach
+    - bleach cleanser bottle
+    - bolt
+    - bottle
+    - bowl
+    - bread
+    - breakfast plate
+    - can
+    - candle
+    - candy
+    - cereal
+    - cereal bowl
+    - cereal box
+    - cheezit
+    - cheezit cracker box
+    - chili
+    - chili con carne
+    - chili sin carne
+    - chips can
+    - chocolate jello
+    - chocolate sprinkles
+    - cleanser
+    - cleanser bottle
+    - clear box
+    - cocoa box
+    - coffee
+    - coffee can
+    - coffee grounds
+    - coffee pack
+    - coke
+    - cola
+    - cola bottle
+    - cola can
+    - colored wood block
+    - condiment
+    - cookie
+    - cookie box
+    - cookie mix
+    - cornflakes
+    - corny box
+    - cracker box
+    - credit card
+    - crips
+    - cup
+    - curry
+    - cutlery
+    - cutting board
+    - dice
+    - dinner plate
+    - dish
+    - dishwasher tab
+    - domino sugar box
+    - drink
+    - dubbelfris
+    - fanta
+    - fastener
+    - fish
+    - foam brick
+    - fork
+    - fruit
+    - gelatine box
+    - gin tonic
+    - ginger ale
+    - glass
+    - glass cleaner spray bottle
+    - golf ball
+    - grapes
+    - grocery bag
+    - hagelslag
+    - hammer
+    - hot chocolate
+    - ice tea
+    - ice tea bottle
+    - iced coffee
+    - iced tea
+    - it
+    - jello box
+    - jello chocolate pudding box
+    - jello strawberry box
+    - jug
+    - juice
+    - juice bottle
+    - juice box
+    - juice pack
+    - ketchup
+    - kitchen knife
+    - kiwi
+    - knife
+    - large marker
+    - lego
+    - lego duplo
+    - lemon
+    - lemonade
+    - liquid
+    - liquorice
+    - low fat long lasting milk
+    - mayonaise
+    - meat
+    - metal bowl
+    - metal cup
+    - metal knife
+    - metal mug
+    - milk
+    - milk bottle
+    - milk coffee
+    - milk glass
+    - milk jug
+    - milk pack
+    - mineral water
+    - mini soccer ball
+    - muesli
+    - mueslibox
+    - mug
+    - mulled wine tea
+    - mustard
+    - mustard bottle
+    - nail
+    - napkin
+    - nesquick cereal box
+    - nut
+    - object
+    - orange
+    - orange juice
+    - orange juice box
+    - oregano
+    - oregano shaker
+    - padlock and keys
+    - pancake
+    - pancake mix
+    - pancake mix bottle
+    - paper bag
+    - pasta bowl
+    - pastry box
+    - pea soup
+    - peach
+    - pear
+    - pickles jar
+    - pitcher
+    - plastic chain
+    - plastic knife
+    - plate
+    - plum
+    - pot
+    - potted meat can
+    - pringles
+    - processed food
+    - pudding box
+    - racquet ball
+    - raspberry juice
+    - raspberry juice box
+    - red wine
+    - rope
+    - rubiks cube
+    - salad bowl
+    - salt
+    - salt shaker
+    - sandwich
+    - sausages
+    - scissors
+    - scotch brite dobie sponge
+    - screw
+    - screwdriver
+    - scrub cleaner
+    - serving mat
+    - shampoo
+    - skillet
+    - small marker
+    - soap
+    - soccer ball
+    - soft ball
+    - soup
+    - soup can
+    - spam
+    - spatula
+    - spice
+    - sponge
+    - spoon
+    - spray bottle
+    - sprite
+    - stacking blocks
+    - stapel chips
+    - steak
+    - strawberry
+    - strawberry jello
+    - stroopwafels
+    - sugar
+    - sugar box
+    - sweets
+    - table cloth
+    - tea
+    - tea bag box
+    - tennis ball
+    - tictac
+    - tiger cup
+    - toast
+    - tomato
+    - tomato soup
+    - tomato soup can
+    - toothpaste
+    - towel
+    - toy airplane
+    - tray
+    - tropical juice
+    - tropical juice bottle
+    - tuna
+    - tuna fish can
+    - vegetable
+    - washcloth
+    - washer
+    - water
+    - water bottle
+    - water glass
+    - wine bottle
+    - wine glass
+    - wood block
+    - writing tool
+    - yellow mustard bottle
+
+- lookup: drink
+  examples: |
+    - apple juice
+    - beer
+    - big coke
+    - big cola
+    - bottle of ice tea
+    - bottle of milk
+    - bottle of tropical juice
+    - bottle of water
+    - bottle of wine
+    - box of orange juice
+    - cafe au lait
+    - can of coffee
+    - can of coke
+    - can of fanta
+    - can of ice tea
+    - coffee
+    - coffee can
+    - coffee with milk
+    - coke
+    - cola
+    - cola can
+    - cup of coffee
+    - cup of coffee with milk
+    - cup of tea
+    - dubbelfris
+    - fanta
+    - fanta can
+    - gin tonic
+    - ginger ale
+    - glass of milk
+    - glass of mineral water
+    - glass of water
+    - glass of wine
+    - ice tea
+    - ice tea bottle
+    - ice tea can
+    - iced coffee
+    - iced tea
+    - jug of milk
+    - juice box
+    - juice pack
+    - lemonade
+    - milk
+    - milk bottle
+    - milk coffee
+    - milk pack
+    - mineral water
+    - orange juice
+    - orange juice box
+    - pack of juice
+    - sprite
+    - tea
+    - tropical juice bottle
+    - water
+    - water bottle
+    - wine bottle
+    - wine glass
+
+- lookup: food
+  examples: |
+    - Stroopwaffel
+    - Tic tac
+    - apple
+    - banana
+    - bottle of pancake mix
+    - bowl of soup
+    - box of cereal
+    - box of corny
+    - box of sugar
+    - can of pea soup
+    - can of potted meat
+    - can of tomato soup
+    - can of tuna fish
+    - candy
+    - cereal box
+    - cereal box robo cup
+    - chili con carne
+    - chili sin carne
+    - chips can
+    - chocolate pudding box
+    - corn flakes
+    - cornflakes
+    - corny box
+    - cracker box
+    - crackers
+    - crisps
+    - curryy
+    - french fries
+    - fries
+    - gelatin box
+    - grapes
+    - hagelslag
+    - jar of pickles
+    - jello box
+    - jello chocolate pudding box
+    - jello strawberry box
+    - kiwi
+    - lemon
+    - licorice
+    - liquorice
+    - mayo
+    - mayonaise
+    - mayonnaise
+    - meat
+    - mustard
+    - mustard bottle
+    - mustard container
+    - orange
+    - oregano shaker
+    - pancake mix
+    - pancake mix bottle
+    - pastry box
+    - pea soup
+    - pea soup can
+    - peach
+    - pear
+    - pickles
+    - piece of toast
+    - plum
+    - potted meat can
+    - pringles
+    - pringles chips can
+    - sandwich
+    - sausages
+    - soup
+    - steak
+    - strawberry
+    - sugar
+    - sugar box
+    - tictac
+    - toast
+    - tomato
+    - tomato soup can
+    - tuna fish can
+    - vegetable
+    - vegetables
+

@@ -1,0 +1,83 @@
+# Sentence templates for the various intents recognized by the robot.
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+Receptionist: hello my name is NaturalPerson|BeneficiaryRole
+Receptionist: hi, I am NaturalPerson|BeneficiaryRole and my favorite drink is drink|Item
+Receptionist: I am NaturalPerson|BeneficiaryRole and I like to drink drink|Item
+Receptionist: hey I'm NaturalPerson|BeneficiaryRole and I enjoy drink|Item
+Receptionist: my name is NaturalPerson|BeneficiaryRole and I prefer drink|Item
+Receptionist: I prefer drink|Item
+Receptionist: I like drink|Item
+Receptionist: my favorite drink is drink|Item
+Receptionist: what I like most to drink is drink|Item
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole.
+Receptionist: hi there, NaturalPerson|BeneficiaryRole here. my favorite drink is drink|Item.
+Receptionist: i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+Receptionist: hey, i'm NaturalPerson|BeneficiaryRole, and my preferred beverage is drink|Item.
+Receptionist: nice to see you! i'm NaturalPerson|BeneficiaryRole, and i like to drink drink|Item.
+Receptionist: my name is NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i enjoy drinking drink|Item.
+Receptionist: hi, my favorite drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+Receptionist: i'm NaturalPerson|BeneficiaryRole and love to drink drink|Item.
+Receptionist: good day, my name is NaturalPerson|BeneficiaryRole and i prefer drink|Item.
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i like to indulge in drink|Item.
+Receptionist: hello, NaturalPerson|BeneficiaryRole here. my go-to drink is drink|Item.
+Receptionist: greetings! i'm NaturalPerson|BeneficiaryRole, and i enjoy sipping on drink|Item.
+Receptionist: pleasure to meet you! i'm NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+Receptionist: hi, my go-to drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+Receptionist: greetings, i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+Receptionist: hello, NaturalPerson|BeneficiaryRole here. my preferred beverage is drink|Item.
+
+Order: I would like to order food|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and drink|Item.
+Order: I would like to order food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and drink|Item and drink|Item.
+
+Order: I would like to get food|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and drink|Item.
+Order: I would like to get food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and drink|Item and drink|Item.
+
+Order: I'll go with the food|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and drink|Item.
+Order: I'll go with the food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and drink|Item and drink|Item.
+
+Order: I'll take the food|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and drink|Item.
+Order: I'll take the food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and drink|Item and drink|Item.
