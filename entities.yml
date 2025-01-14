@@ -524,3 +524,33 @@ food:
    - fries
    - french fries
 
+Interest:
+  entities:
+    - running
+    - jogging 
+    - working out
+    - yoga 
+    - pilates
+    - soccer 
+    - basketball
+    - handball
+    - volleyball
+    - american football
+    - rugby
+    - polo
+    - lacross
+    - dancing
+    - swimming
+    - rock climbing
+    - skydiving
+    - surfing
+    - movies
+    - tv shows
+    - games
+    - board games
+    - video games
+    - pc games
+    - console games
+    - youtube 
+    - streams
+

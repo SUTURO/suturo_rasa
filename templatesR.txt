@@ -81,3 +81,17 @@ Order: I'll take the food|Item and food|Item and drink|Item.
 Order: I'll take the drink|Item and drink|Item.
 Order: I'll take the drink|Item and drink|Item and food|Item.
 Order: I'll take the drink|Item and drink|Item and drink|Item.
+
+Hobbies: I like Interest|Concept and Interest|Concept
+Hobbies: I like Interest|Concept 
+Hobbies: I like Interest|Concept and Interest|Concept 
+Hobbies: I enjoy Interest|Concept and love exploring Interest|Concept.
+Hobbies: My favorite activities include Interest|Concept and practicing Interest|Concept.
+Hobbies: I like to spend my free time doing Interest|Concept and learning about Interest|Concept.
+Hobbies: I often find myself drawn to Interest|Concept, as well as discovering more about Interest|Concept.
+Hobbies: A lot of my time goes into Interest|Concept, along with Interest|Concept.
+Hobbies: I take great pleasure in Interest|Concept, and I’m always excited to try Interest|Concept.
+Hobbies: On weekends, I enjoy Interest|Concept and sometimes delve into Interest|Concept.
+Hobbies: I find Interest|Concept relaxing and often pair it with Interest|Concept.
+Hobbies: My ideal day involves Interest|Concept, followed by some Interest|Concept.
+Hobbies: I’ve recently developed a love for Interest|Concept, in addition to my passion for Interest|Concept.
