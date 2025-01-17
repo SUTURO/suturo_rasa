@@ -82,9 +82,10 @@ Order: I'll take the drink|Item and drink|Item.
 Order: I'll take the drink|Item and drink|Item and food|Item.
 Order: I'll take the drink|Item and drink|Item and drink|Item.
 
-Hobbies: I like Interest|Concept and Interest|Concept
-Hobbies: I like Interest|Concept 
-Hobbies: I like Interest|Concept and Interest|Concept 
+Hobbies: I like Interest|Concept and Interest|Concept.
+Hobbies: I like Interest|Concept.
+Hobbies: I like Interest|Concept and Interest|Concept.
+Hobbies: My favorite activity is Interests|Concept.
 Hobbies: I enjoy Interest|Concept and love exploring Interest|Concept.
 Hobbies: My favorite activities include Interest|Concept and practicing Interest|Concept.
 Hobbies: I like to spend my free time doing Interest|Concept and learning about Interest|Concept.
