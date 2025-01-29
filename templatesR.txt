@@ -96,3 +96,101 @@ Hobbies: On weekends, I enjoy Interest|Concept and sometimes delve into Interest
 Hobbies: I find Interest|Concept relaxing and often pair it with Interest|Concept.
 Hobbies: My ideal day involves Interest|Concept, followed by some Interest|Concept.
 Hobbies: I’ve recently developed a love for Interest|Concept, in addition to my passion for Interest|Concept.
+Hobbies: I like Interest|Concept and experimenting with Interest|Concept.
+Hobbies: I enjoy Interest|Concept and find great joy in exploring Interest|Concept.
+Hobbies: My favorite pastime is Interest|Concept, and I occasionally delve into Interest|Concept.
+Hobbies: I like to dedicate time to Interest|Concept while also learning more about Interest|Concept.
+Hobbies: I’m fascinated by Interest|Concept and often pair it with practicing Interest|Concept.
+Hobbies: A significant part of my week involves Interest|Concept and trying out Interest|Concept.
+Hobbies: I’ve always loved Interest|Concept and recently started exploring Interest|Concept.
+Hobbies: I take delight in Interest|Concept, and it often goes hand-in-hand with Interest|Concept.
+Hobbies: On a quiet day, I enjoy Interest|Concept and reflecting on Interest|Concept.
+Hobbies: I’m passionate about Interest|Concept and find that it complements my interest in Interest|Concept.
+Hobbies: My weekends are often spent practicing Interest|Concept and enjoying Interest|Concept.
+Hobbies: I find peace in Interest|Concept and love sharing it with Interest|Concept.
+Hobbies: My favorite way to unwind is by exploring Interest|Concept and diving into Interest|Concept.
+Hobbies: I’ve grown to appreciate Interest|Concept and its connection to Interest|Concept.
+Hobbies: Spending time on Interest|Concept inspires me to also try Interest|Concept.
+
+affirm: Yes.
+affirm: That is correct.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: That's right.
+affirm: Correct.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Exactly.
+affirm: Sure.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Affirmative.
+affirm: Agreed.
+affirm: For sure.
+affirm: True.
+affirm: Quite so.
+affirm: Naturally.
+affirm: Yep.
+affirm: Right.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: Precisely.
+affirm: That’s spot on.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: Sure thing.
+affirm: By all means.
+affirm: That’s exactly it.
+affirm: Indisputably.
+affirm: You’re absolutely correct.
+affirm: Couldn’t agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: You’re spot on.
+affirm: Right on the money.
+affirm: One hundred percent.
+affirm: Completely true.
+affirm: You’re right.
+
+deny: No.
+deny: That is incorrect.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don’t agree.
+deny: That’s not true.
+deny: Incorrect.
+deny: False.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Nope.
+deny: Negative.
+deny: Not in the slightest.
+deny: I don’t think so.
+deny: That’s wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: No way.
+deny: That’s a mistake.
+deny: That’s false.
+deny: Not exactly.
+deny: Far from it.
+deny: That’s not the case.
+deny: That doesn’t seem right.
+deny: I wouldn’t say so.
+deny: Not likely.
+deny: Untrue.
+deny: Out of the question.
+deny: No chance.
+deny: I’m afraid not.
+deny: That’s a misconception.
+deny: Definitely no.
+deny: That doesn’t hold up.
+deny: Completely false.
+deny: That’s not accurate.
+deny: Not at all true.
+deny: I’d say no.
