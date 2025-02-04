@@ -1,0 +1,134 @@
+Order: I would like to order food|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and drink|Item.
+Order: I would like to order food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and drink|Item and drink|Item.
+
+Order: I would like to get food|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and drink|Item.
+Order: I would like to get food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and drink|Item and drink|Item.
+
+Order: I'll go with the food|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and drink|Item.
+Order: I'll go with the food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and drink|Item and drink|Item.
+
+Order: I'll take the food|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and drink|Item.
+Order: I'll take the food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and drink|Item and drink|Item.
+
+affirm: Yes.
+affirm: That is correct.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: That's right.
+affirm: Correct.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Exactly.
+affirm: Sure.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Affirmative.
+affirm: Agreed.
+affirm: For sure.
+affirm: True.
+affirm: Quite so.
+affirm: Naturally.
+affirm: Yep.
+affirm: Right.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: Precisely.
+affirm: That's spot on.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: Sure thing.
+affirm: By all means.
+affirm: That's exactly it.
+affirm: Indisputably.
+affirm: You're absolutely correct.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: One hundred percent.
+affirm: Completely true.
+affirm: You're right.
+
+deny: No.
+deny: That is incorrect.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: That's not true.
+deny: Incorrect.
+deny: False.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Nope.
+deny: Negative.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: No way.
+deny: That's a mistake.
+deny: That's false.
+deny: Not exactly.
+deny: Far from it.
+deny: That's not the case.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Untrue.
+deny: Out of the question.
+deny: No chance.
+deny: I'm afraid not.
+deny: That's a misconception.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: I'd say no.
