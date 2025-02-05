@@ -36,7 +36,7 @@ DesignedFurniture:
 #  - coat rack
   - coat hanger
   - dishwasher
-#  - microwave
+  - microwave
   - chair
   - sofa
   - couch
@@ -58,7 +58,9 @@ DesignedFurniture:
 NaturalPerson:
   entities:
   - Adel
+  - Alexander
   - Alice
+  - Alina
   - Amanda
   - Andrew
   - Angel
@@ -73,8 +75,11 @@ NaturalPerson:
   - Elizabeth
   - Emma
   - Fleur
+  - Fritz
   - Gabrielle
+  - Hans
   - Harrie
+  - Hartmut
   - Hayley
   - James
   - Jane
@@ -97,15 +102,18 @@ NaturalPerson:
   - Morgan
   - Noah
   - Paris
+  - Patrick
   - Peter
   - Robin
   - Samantha
   - Sara
   - Sarah
+  - Sascha
   - Simon
   - Sophie
   - Stephanie
   - Susan
+  - Vanessa
   - William
   - boy
   - child
@@ -131,6 +139,7 @@ NaturalPerson:
   - him
   - her
   - me
+
 Room:
   entities:
   - bathroom
@@ -258,7 +267,6 @@ Transportable:
   - salt shaker
   - red wine
   - crips
-  - candy
   - milk bottle
   - juice bottle
   - baseball
@@ -384,6 +392,8 @@ Transportable:
   - shampoo
   - it
   - object
+  - red bull
+  - lactosefree milk
   
 drink:
   entities:
@@ -444,6 +454,8 @@ drink:
    - fanta can
    - can of fanta
    - dubbelfris
+   - red bull
+   - lactosefree milk
 
 food:
   entities:
@@ -454,6 +466,7 @@ food:
    - box of sugar
    - cereal box
    - cereal box robo cup
+   - cereal
    - chili con carne
    - chili sin carne
    - chips can
@@ -506,7 +519,7 @@ food:
    - pea soup
    - pea soup can
    - can of pea soup
-   - curryy
+   - curry
    - pancake mix
    - hagelslag
    - sausages
