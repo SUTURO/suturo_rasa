@@ -43,6 +43,14 @@ Order: I would like to order food|Item and food|Item and drink|Item.
 Order: I would like to order drink|Item and drink|Item.
 Order: I would like to order drink|Item and drink|Item and food|Item.
 Order: I would like to order drink|Item and drink|Item and drink|Item.
+Order: I would like to order drink|Item, food|Item and drink|Item.
+Order: I would like to order drink|Item, drink|Item and food|Item.
+Order: I would like to order drink|Item, drink|Item and drink|Item.
+Order: I would like to order drink|Item, food|Item and food|Item.
+Order: I would like to order food|Item, food|Item and drink|Item.
+Order: I would like to order food|Item, drink|Item and food|Item.
+Order: I would like to order food|Item, drink|Item and drink|Item.
+Order: I would like to order food|Item, food|Item and food|Item.
 
 Order: I would like to get food|Item and drink|Item.
 Order: I would like to get food|Item and drink|Item and drink|Item.
@@ -56,6 +64,14 @@ Order: I would like to get food|Item and food|Item and drink|Item.
 Order: I would like to get drink|Item and drink|Item.
 Order: I would like to get drink|Item and drink|Item and food|Item.
 Order: I would like to get drink|Item and drink|Item and drink|Item.
+Order: I would like to get drink|Item, food|Item and drink|Item.
+Order: I would like to get drink|Item, drink|Item and food|Item.
+Order: I would like to get drink|Item, food|Item and food|Item.
+Order: I would like to get drink|Item, drink|Item and drink|Item.
+Order: I would like to get food|Item, food|Item and drink|Item.
+Order: I would like to get food|Item, drink|Item and food|Item.
+Order: I would like to get food|Item, food|Item and food|Item.
+Order: I would like to get food|Item, drink|Item and drink|Item.
 
 Order: I'll go with the food|Item and drink|Item.
 Order: I'll go with the food|Item and drink|Item and drink|Item.
@@ -69,6 +85,14 @@ Order: I'll go with the food|Item and food|Item and drink|Item.
 Order: I'll go with the drink|Item and drink|Item.
 Order: I'll go with the drink|Item and drink|Item and food|Item.
 Order: I'll go with the drink|Item and drink|Item and drink|Item.
+Order: I'll go with the drink|Item, food|Item and drink|Item.
+Order: I'll go with the drink|Item, drink|Item and food|Item.
+Order: I'll go with the drink|Item, drink|Item and drink|Item.
+Order: I'll go with the drink|Item, food|Item and food|Item.
+Order: I'll go with the food|Item, food|Item and drink|Item.
+Order: I'll go with the food|Item, drink|Item and food|Item.
+Order: I'll go with the food|Item, drink|Item and drink|Item.
+Order: I'll go with the food|Item, food|Item and food|Item.
 
 Order: I'll take the food|Item and drink|Item.
 Order: I'll take the food|Item and drink|Item and drink|Item.
@@ -82,6 +106,14 @@ Order: I'll take the food|Item and food|Item and drink|Item.
 Order: I'll take the drink|Item and drink|Item.
 Order: I'll take the drink|Item and drink|Item and food|Item.
 Order: I'll take the drink|Item and drink|Item and drink|Item.
+Order: I'll take the drink|Item, food|Item and food|Item.
+Order: I'll take the drink|Item, food|Item and drink|Item.
+Order: I'll take the drink|Item, drink|Item and food|Item.
+Order: I'll take the drink|Item, drink|Item and drink|Item
+Order: I'll take the food|Item, food|Item and drink|Item.
+Order: I'll take the food|Item, drink|Item and food|Item.
+Order: I'll take the food|Item, food|Item and food|Item.
+Order: I'll take the food|Item, drink|Item and drink|Item.
 
 Order: I'll take the food|Item.
 Order: I'll take the drink|Item.
@@ -95,7 +127,7 @@ Order: I would like to order drink|Item.
 Hobbies: I like Interest|Concept and Interest|Concept.
 Hobbies: I like Interest|Concept.
 Hobbies: I like Interest|Concept and Interest|Concept.
-Hobbies: My favorite activity is Interests|Concept.
+Hobbies: My favorite activity is Interest|Concept.
 Hobbies: I enjoy Interest|Concept and love exploring Interest|Concept.
 Hobbies: My favorite activities include Interest|Concept and practicing Interest|Concept.
 Hobbies: I like to spend my free time doing Interest|Concept and learning about Interest|Concept.
