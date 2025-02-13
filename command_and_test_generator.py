@@ -101,7 +101,7 @@ def parseEntities(entitiesFile):
 
 #ontology = loadOntology(ontologyLoader)
 
-templatesRaw = loadSharp('templates.txt')
+templatesRaw = loadSharp('templatesR.txt')
 templates = {}
 for t in templatesRaw:
     idx = t.find(':')

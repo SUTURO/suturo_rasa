@@ -393,6 +393,7 @@ Transportable:
   - it
   - object
   - red bull
+  - redbull
   - lactosefree milk
   
 drink:
@@ -536,6 +537,9 @@ food:
    - Tic tac
    - fries
    - french fries
+   - hamburger
+   - cheeseburger
+   - burger
 
 Interest:
   entities:

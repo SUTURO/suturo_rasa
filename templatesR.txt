@@ -115,6 +115,44 @@ Order: I'll take the food|Item, drink|Item and food|Item.
 Order: I'll take the food|Item, food|Item and food|Item.
 Order: I'll take the food|Item, drink|Item and drink|Item.
 
+Order: I'd like the food|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item.
+Order: I'd like the food|Item and drink|Item and food|Item.
+Order: I'd like the food|Item and drink|Item and drink|Item.
+Order: I'd like the food|Item and food|Item and drink|Item.
+Order: I'd like the food|Item and food|Item and foood|Item.
+Order: I'd like the drink|Item and drink|Item and food|Item.
+Order: I'd like the drink|Item and drink|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item and foood|Item.
+Order: I'd like the food|Item, drink|Item and food|Item.
+Order: I'd like the food|Item, food|Item and drink|Item.
+Order: I'd like the food|Item, food|Item and food|Item.
+Order: I'd like the food|Item, drink|Item and drink|Item.
+Order: I'd like the drink|Item, drink|Item and food|Item.
+Order: I'd like the drink|Item, food|Item and drink|Item.
+Order: I'd like the drink|Item, food|Item and food|Item.
+Order: I'd like the drink|Item, drink|Item and drink|Item.
+
+Order: I want to have the food|Item and drink|Item.
+Order: I want to have the drink|Item and food|Item.
+Order: I want to have the food|Item and drink|Item and food|Item.
+Order: I want to have food|Item and drink|Item and drink|Item.
+Order: I want to have food|Item and food|Item and drink|Item.
+Order: I want to have food|Item and food|Item and foood|Item.
+Order: I want to have drink|Item and drink|Item and food|Item.
+Order: I want to have drink|Item and drink|Item and drink|Item.
+Order: I want to have drink|Item and food|Item and drink|Item.
+Order: I want to have drink|Item and food|Item and foood|Item.
+Order: I want to have the food|Item, drink|Item and food|Item.
+Order: I want to have the food|Item, food|Item and drink|Item.
+Order: I want to have the food|Item, food|Item and food|Item.
+Order: I want to have the food|Item, drink|Item and drink|Item.
+Order: I want to have the drink|Item, drink|Item and food|Item.
+Order: I want to have the drink|Item, food|Item and drink|Item.
+Order: I want to have the drink|Item, food|Item and food|Item.
+Order: I want to have the drink|Item, drink|Item and drink|Item.
+
 Order: I'll take the food|Item.
 Order: I'll take the drink|Item.
 Order: I'll go with the food|Item.
