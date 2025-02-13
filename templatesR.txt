@@ -1,0 +1,276 @@
+# Sentence templates for the various intents recognized by the robot.
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+Receptionist: hello my name is NaturalPerson|BeneficiaryRole
+Receptionist: hi, I am NaturalPerson|BeneficiaryRole and my favorite drink is drink|Item
+Receptionist: I am NaturalPerson|BeneficiaryRole and I like to drink drink|Item
+Receptionist: hey I'm NaturalPerson|BeneficiaryRole and I enjoy drink|Item
+Receptionist: my name is NaturalPerson|BeneficiaryRole and I prefer drink|Item
+Receptionist: I prefer drink|Item
+Receptionist: I like drink|Item
+Receptionist: my favorite drink is drink|Item
+Receptionist: what I like most to drink is drink|Item
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole.
+Receptionist: hi there, NaturalPerson|BeneficiaryRole here. my favorite drink is drink|Item.
+Receptionist: i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+Receptionist: hey, i'm NaturalPerson|BeneficiaryRole, and my preferred beverage is drink|Item.
+Receptionist: nice to see you! i'm NaturalPerson|BeneficiaryRole, and i like to drink drink|Item.
+Receptionist: my name is NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i enjoy drinking drink|Item.
+Receptionist: hi, my favorite drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+Receptionist: i'm NaturalPerson|BeneficiaryRole and love to drink drink|Item.
+Receptionist: good day, my name is NaturalPerson|BeneficiaryRole and i prefer drink|Item.
+Receptionist: hello, i'm NaturalPerson|BeneficiaryRole, and i like to indulge in drink|Item.
+Receptionist: hello, NaturalPerson|BeneficiaryRole here. my go-to drink is drink|Item.
+Receptionist: greetings! i'm NaturalPerson|BeneficiaryRole, and i enjoy sipping on drink|Item.
+Receptionist: pleasure to meet you! i'm NaturalPerson|BeneficiaryRole, and my favorite drink is drink|Item.
+Receptionist: hi, my go-to drink is drink|Item. i'm NaturalPerson|BeneficiaryRole.
+Receptionist: greetings, i'm NaturalPerson|BeneficiaryRole, and i enjoy drink|Item.
+Receptionist: hello, NaturalPerson|BeneficiaryRole here. my preferred beverage is drink|Item.
+Receptionist: NaturalPerson|BeneficiaryRole and drink|Item.
+
+Order: I would like to order food|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and drink|Item.
+Order: I would like to order food|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and food|Item.
+Order: I would like to order drink|Item and food|Item and drink|Item.
+Order: I would like to order food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and food|Item.
+Order: I would like to order food|Item and food|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item.
+Order: I would like to order drink|Item and drink|Item and food|Item.
+Order: I would like to order drink|Item and drink|Item and drink|Item.
+Order: I would like to order drink|Item, food|Item and drink|Item.
+Order: I would like to order drink|Item, drink|Item and food|Item.
+Order: I would like to order drink|Item, drink|Item and drink|Item.
+Order: I would like to order drink|Item, food|Item and food|Item.
+Order: I would like to order food|Item, food|Item and drink|Item.
+Order: I would like to order food|Item, drink|Item and food|Item.
+Order: I would like to order food|Item, drink|Item and drink|Item.
+Order: I would like to order food|Item, food|Item and food|Item.
+
+Order: I would like to get food|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and drink|Item.
+Order: I would like to get food|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and food|Item.
+Order: I would like to get drink|Item and food|Item and drink|Item.
+Order: I would like to get food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and food|Item.
+Order: I would like to get food|Item and food|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item.
+Order: I would like to get drink|Item and drink|Item and food|Item.
+Order: I would like to get drink|Item and drink|Item and drink|Item.
+Order: I would like to get drink|Item, food|Item and drink|Item.
+Order: I would like to get drink|Item, drink|Item and food|Item.
+Order: I would like to get drink|Item, food|Item and food|Item.
+Order: I would like to get drink|Item, drink|Item and drink|Item.
+Order: I would like to get food|Item, food|Item and drink|Item.
+Order: I would like to get food|Item, drink|Item and food|Item.
+Order: I would like to get food|Item, food|Item and food|Item.
+Order: I would like to get food|Item, drink|Item and drink|Item.
+
+Order: I'll go with the food|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and drink|Item.
+Order: I'll go with the food|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and food|Item.
+Order: I'll go with the drink|Item and food|Item and drink|Item.
+Order: I'll go with the food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and food|Item.
+Order: I'll go with the food|Item and food|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item.
+Order: I'll go with the drink|Item and drink|Item and food|Item.
+Order: I'll go with the drink|Item and drink|Item and drink|Item.
+Order: I'll go with the drink|Item, food|Item and drink|Item.
+Order: I'll go with the drink|Item, drink|Item and food|Item.
+Order: I'll go with the drink|Item, drink|Item and drink|Item.
+Order: I'll go with the drink|Item, food|Item and food|Item.
+Order: I'll go with the food|Item, food|Item and drink|Item.
+Order: I'll go with the food|Item, drink|Item and food|Item.
+Order: I'll go with the food|Item, drink|Item and drink|Item.
+Order: I'll go with the food|Item, food|Item and food|Item.
+
+Order: I'll take the food|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and drink|Item.
+Order: I'll take the food|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and food|Item.
+Order: I'll take the drink|Item and food|Item and drink|Item.
+Order: I'll take the food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and food|Item.
+Order: I'll take the food|Item and food|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item.
+Order: I'll take the drink|Item and drink|Item and food|Item.
+Order: I'll take the drink|Item and drink|Item and drink|Item.
+Order: I'll take the drink|Item, food|Item and food|Item.
+Order: I'll take the drink|Item, food|Item and drink|Item.
+Order: I'll take the drink|Item, drink|Item and food|Item.
+Order: I'll take the drink|Item, drink|Item and drink|Item
+Order: I'll take the food|Item, food|Item and drink|Item.
+Order: I'll take the food|Item, drink|Item and food|Item.
+Order: I'll take the food|Item, food|Item and food|Item.
+Order: I'll take the food|Item, drink|Item and drink|Item.
+
+Order: I'd like the food|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item.
+Order: I'd like the food|Item and drink|Item and food|Item.
+Order: I'd like the food|Item and drink|Item and drink|Item.
+Order: I'd like the food|Item and food|Item and drink|Item.
+Order: I'd like the food|Item and food|Item and foood|Item.
+Order: I'd like the drink|Item and drink|Item and food|Item.
+Order: I'd like the drink|Item and drink|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item and drink|Item.
+Order: I'd like the drink|Item and food|Item and foood|Item.
+Order: I'd like the food|Item, drink|Item and food|Item.
+Order: I'd like the food|Item, food|Item and drink|Item.
+Order: I'd like the food|Item, food|Item and food|Item.
+Order: I'd like the food|Item, drink|Item and drink|Item.
+Order: I'd like the drink|Item, drink|Item and food|Item.
+Order: I'd like the drink|Item, food|Item and drink|Item.
+Order: I'd like the drink|Item, food|Item and food|Item.
+Order: I'd like the drink|Item, drink|Item and drink|Item.
+
+Order: I want to have the food|Item and drink|Item.
+Order: I want to have the drink|Item and food|Item.
+Order: I want to have the food|Item and drink|Item and food|Item.
+Order: I want to have food|Item and drink|Item and drink|Item.
+Order: I want to have food|Item and food|Item and drink|Item.
+Order: I want to have food|Item and food|Item and foood|Item.
+Order: I want to have drink|Item and drink|Item and food|Item.
+Order: I want to have drink|Item and drink|Item and drink|Item.
+Order: I want to have drink|Item and food|Item and drink|Item.
+Order: I want to have drink|Item and food|Item and foood|Item.
+Order: I want to have the food|Item, drink|Item and food|Item.
+Order: I want to have the food|Item, food|Item and drink|Item.
+Order: I want to have the food|Item, food|Item and food|Item.
+Order: I want to have the food|Item, drink|Item and drink|Item.
+Order: I want to have the drink|Item, drink|Item and food|Item.
+Order: I want to have the drink|Item, food|Item and drink|Item.
+Order: I want to have the drink|Item, food|Item and food|Item.
+Order: I want to have the drink|Item, drink|Item and drink|Item.
+
+Order: I'll take the food|Item.
+Order: I'll take the drink|Item.
+Order: I'll go with the food|Item.
+Order: I'll go with the drink|Item.
+Order: I would like to get food|Item.
+Order: I would like to get drink|Item.
+Order: I would like to order food|Item.
+Order: I would like to order drink|Item.
+
+Hobbies: I like Interest|Concept and Interest|Concept.
+Hobbies: I like Interest|Concept.
+Hobbies: I like Interest|Concept and Interest|Concept.
+Hobbies: My favorite activity is Interest|Concept.
+Hobbies: I enjoy Interest|Concept and love exploring Interest|Concept.
+Hobbies: My favorite activities include Interest|Concept and practicing Interest|Concept.
+Hobbies: I like to spend my free time doing Interest|Concept and learning about Interest|Concept.
+Hobbies: I often find myself drawn to Interest|Concept, as well as discovering more about Interest|Concept.
+Hobbies: A lot of my time goes into Interest|Concept, along with Interest|Concept.
+Hobbies: I take great pleasure in Interest|Concept, and I’m always excited to try Interest|Concept.
+Hobbies: On weekends, I enjoy Interest|Concept and sometimes delve into Interest|Concept.
+Hobbies: I find Interest|Concept relaxing and often pair it with Interest|Concept.
+Hobbies: My ideal day involves Interest|Concept, followed by some Interest|Concept.
+Hobbies: I’ve recently developed a love for Interest|Concept, in addition to my passion for Interest|Concept.
+Hobbies: I like Interest|Concept and experimenting with Interest|Concept.
+Hobbies: I enjoy Interest|Concept and find great joy in exploring Interest|Concept.
+Hobbies: My favorite pastime is Interest|Concept, and I occasionally delve into Interest|Concept.
+Hobbies: I like to dedicate time to Interest|Concept while also learning more about Interest|Concept.
+Hobbies: I’m fascinated by Interest|Concept and often pair it with practicing Interest|Concept.
+Hobbies: A significant part of my week involves Interest|Concept and trying out Interest|Concept.
+Hobbies: I’ve always loved Interest|Concept and recently started exploring Interest|Concept.
+Hobbies: I take delight in Interest|Concept, and it often goes hand-in-hand with Interest|Concept.
+Hobbies: On a quiet day, I enjoy Interest|Concept and reflecting on Interest|Concept.
+Hobbies: I’m passionate about Interest|Concept and find that it complements my interest in Interest|Concept.
+Hobbies: My weekends are often spent practicing Interest|Concept and enjoying Interest|Concept.
+Hobbies: I find peace in Interest|Concept and love sharing it with Interest|Concept.
+Hobbies: My favorite way to unwind is by exploring Interest|Concept and diving into Interest|Concept.
+Hobbies: I’ve grown to appreciate Interest|Concept and its connection to Interest|Concept.
+Hobbies: Spending time on Interest|Concept inspires me to also try Interest|Concept.
+
+affirm: Yes.
+affirm: That is correct.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: That's right.
+affirm: Correct.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Exactly.
+affirm: Sure.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Affirmative.
+affirm: Agreed.
+affirm: For sure.
+affirm: True.
+affirm: Quite so.
+affirm: Naturally.
+affirm: Yep.
+affirm: Right.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: Precisely.
+affirm: That's spot on.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: Sure thing.
+affirm: By all means.
+affirm: That's exactly it.
+affirm: Indisputably.
+affirm: You're absolutely correct.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: One hundred percent.
+affirm: Completely true.
+affirm: You're right.
+
+deny: No.
+deny: That is incorrect.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: That's not true.
+deny: Incorrect.
+deny: False.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Nope.
+deny: Negative.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: No way.
+deny: That's a mistake.
+deny: That's false.
+deny: Not exactly.
+deny: Far from it.
+deny: That's not the case.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Untrue.
+deny: Out of the question.
+deny: No chance.
+deny: I'm afraid not.
+deny: That's a misconception.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: I'd say no.

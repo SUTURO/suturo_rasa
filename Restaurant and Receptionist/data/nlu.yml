@@ -1,0 +1,1522 @@
+version: "3.1"
+
+nlu:
+- intent: Order
+  examples: |
+    - I 'll go with the [Stroopwaffel]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [Tic tac]{"entity": "food", "role": "Item"} and [orange]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [Tic tac]{"entity": "food", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [apple]{"entity": "food", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [apple juice]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [banana]{"entity": "food", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [banana]{"entity": "food", "role": "Item"} and [milk pack]{"entity": "drink", "role": "Item"} and [mayonaise]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [big cola]{"entity": "drink", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [big cola]{"entity": "drink", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [bottle of milk]{"entity": "drink", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [bottle of milk]{"entity": "drink", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [bottle of milk]{"entity": "drink", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [bottle of water]{"entity": "drink", "role": "Item"} and [gelatin box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [bottle of water]{"entity": "drink", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [bottle of wine]{"entity": "drink", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [box of cereal]{"entity": "food", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"} and [pancake mix]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [box of orange juice]{"entity": "drink", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [box of sugar]{"entity": "food", "role": "Item"} and [cereal box robo cup]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of coffee]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of coffee]{"entity": "drink", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of coke]{"entity": "drink", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of fanta]{"entity": "drink", "role": "Item"} and [plum]{"entity": "food", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of fanta]{"entity": "drink", "role": "Item"} and [steak]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [can of ice tea]{"entity": "drink", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of ice tea]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [can of pea soup]{"entity": "food", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of potted meat]{"entity": "food", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [can of tomato soup]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [candy]{"entity": "food", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"} and [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [chili con carne]{"entity": "food", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [chili sin carne]{"entity": "food", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [chips can]{"entity": "food", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"} and [pear]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [chocolate pudding box]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [coffee]{"entity": "drink", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [coffee with milk]{"entity": "drink", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cola]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cola can]{"entity": "drink", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cola can]{"entity": "drink", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [corn flakes]{"entity": "food", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [crackers]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [crackers]{"entity": "food", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"} and [plum]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [crisps]{"entity": "food", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cup of coffee]{"entity": "drink", "role": "Item"} and [crackers]{"entity": "food", "role": "Item"} and [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cup of coffee]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [cup of tea]{"entity": "drink", "role": "Item"} and [milk coffee]{"entity": "drink", "role": "Item"} and [gelatin box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [curryy]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [dubbelfris]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [fanta]{"entity": "drink", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [fanta can]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [fries]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [gelatin box]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [gin tonic]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [ginger ale]{"entity": "drink", "role": "Item"} and [milk pack]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [ginger ale]{"entity": "drink", "role": "Item"} and [pear]{"entity": "food", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [glass of mineral water]{"entity": "drink", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [glass of mineral water]{"entity": "drink", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [glass of mineral water]{"entity": "drink", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [glass of water]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [glass of water]{"entity": "drink", "role": "Item"} and [french fries]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [glass of water]{"entity": "drink", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"} and [plum]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [glass of wine]{"entity": "drink", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [glass of wine]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [ice tea can]{"entity": "drink", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [ice tea can]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [ice tea can]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [iced coffee]{"entity": "drink", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [iced tea]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [jar of pickles]{"entity": "food", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [jello strawberry box]{"entity": "food", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [jug of milk]{"entity": "drink", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [jug of milk]{"entity": "drink", "role": "Item"} and [meat]{"entity": "food", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [juice box]{"entity": "drink", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [juice pack]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [juice pack]{"entity": "drink", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [juice pack]{"entity": "drink", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [kiwi]{"entity": "food", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [lemon]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"} and [sugar box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [lemon]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [lemonade]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [licorice]{"entity": "food", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [licorice]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [licorice]{"entity": "food", "role": "Item"} and [chips can]{"entity": "food", "role": "Item"} and [can of tomato soup]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [licorice]{"entity": "food", "role": "Item"} and [steak]{"entity": "food", "role": "Item"} and [tictac]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [liquorice]{"entity": "food", "role": "Item"} and [bottle of ice tea]{"entity": "drink", "role": "Item"} and [oregano shaker]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [mayo]{"entity": "food", "role": "Item"} and [can of tomato soup]{"entity": "food", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mayonnaise]{"entity": "food", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mayonnaise]{"entity": "food", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [meat]{"entity": "food", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [chili sin carne]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [milk]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [milk pack]{"entity": "drink", "role": "Item"} and [kiwi]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [milk pack]{"entity": "drink", "role": "Item"} and [peach]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [milk pack]{"entity": "drink", "role": "Item"} and [plum]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mineral water]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [juice box]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mineral water]{"entity": "drink", "role": "Item"} and [milk coffee]{"entity": "drink", "role": "Item"} and [sugar]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [mustard bottle]{"entity": "food", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [mustard container]{"entity": "food", "role": "Item"} and [big cola]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [orange]{"entity": "food", "role": "Item"} and [soup]{"entity": "food", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [orange juice box]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"} and [Stroopwaffel]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [oregano shaker]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [oregano shaker]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pack of juice]{"entity": "drink", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [pack of juice]{"entity": "drink", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pancake mix]{"entity": "food", "role": "Item"} and [fries]{"entity": "food", "role": "Item"} and [mayo]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [pea soup]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pea soup can]{"entity": "food", "role": "Item"} and [chips can]{"entity": "food", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pea soup can]{"entity": "food", "role": "Item"} and [lemonade]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pea soup can]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [peach]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [peach]{"entity": "food", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pear]{"entity": "food", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [piece of toast]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [piece of toast]{"entity": "food", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [plum]{"entity": "food", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pringles chips can]{"entity": "food", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [pringles chips can]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"} and [pringles]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [sandwich]{"entity": "food", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [tomato]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [tomato soup can]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [tropical juice bottle]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [tropical juice bottle]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [tuna fish can]{"entity": "food", "role": "Item"} and [big cola]{"entity": "drink", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [tuna fish can]{"entity": "food", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [vegetable]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [vegetables]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"}.
+    - I 'll go with the [vegetables]{"entity": "food", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [coffee can]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [water]{"entity": "drink", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [water bottle]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll go with the [water bottle]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [apple juice]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [banana]{"entity": "food", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"}.
+    - I 'll take the [beer]{"entity": "drink", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [beer]{"entity": "drink", "role": "Item"} and [peach]{"entity": "food", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"}.
+    - I 'll take the [big cola]{"entity": "drink", "role": "Item"} and [juice box]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [bottle of ice tea]{"entity": "drink", "role": "Item"} and [bowl of soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [soup]{"entity": "food", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [bottle of wine]{"entity": "drink", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [bowl of soup]{"entity": "food", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [box of cereal]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [box of corny]{"entity": "food", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I 'll take the [box of sugar]{"entity": "food", "role": "Item"} and [kiwi]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cafe au lait]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [can of coffee]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I 'll take the [can of coffee]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [can of coffee]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [sugar box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [can of coke]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [can of fanta]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [candy]{"entity": "food", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [candy]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [candy]{"entity": "food", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cereal box]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cereal box robo cup]{"entity": "food", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [chips can]{"entity": "food", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [chocolate pudding box]{"entity": "food", "role": "Item"} and [bowl of soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [chocolate pudding box]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [chocolate pudding box]{"entity": "food", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"}.
+    - I 'll take the [coffee with milk]{"entity": "drink", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I 'll take the [coke]{"entity": "drink", "role": "Item"} and [banana]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cola]{"entity": "drink", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cola can]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [cola can]{"entity": "drink", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [corn flakes]{"entity": "food", "role": "Item"} and [french fries]{"entity": "food", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cornflakes]{"entity": "food", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cup of coffee]{"entity": "drink", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [cup of tea]{"entity": "drink", "role": "Item"} and [pringles]{"entity": "food", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [dubbelfris]{"entity": "drink", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I 'll take the [fanta]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [fanta]{"entity": "drink", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [fanta]{"entity": "drink", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"}.
+    - I 'll take the [gelatin box]{"entity": "food", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"} and [apple]{"entity": "food", "role": "Item"}.
+    - I 'll take the [gelatin box]{"entity": "food", "role": "Item"} and [pickles]{"entity": "food", "role": "Item"} and [milk pack]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [gin tonic]{"entity": "drink", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [gin tonic]{"entity": "drink", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [ginger ale]{"entity": "drink", "role": "Item"} and [cereal box robo cup]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I 'll take the [ginger ale]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [glass of mineral water]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [glass of water]{"entity": "drink", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [glass of water]{"entity": "drink", "role": "Item"} and [chili sin carne]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I 'll take the [glass of water]{"entity": "drink", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I 'll take the [grapes]{"entity": "food", "role": "Item"} and [mayo]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"}.
+    - I 'll take the [ice tea bottle]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [ice tea can]{"entity": "drink", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"} and [vegetable]{"entity": "food", "role": "Item"}.
+    - I 'll take the [iced coffee]{"entity": "drink", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [iced tea]{"entity": "drink", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"} and [plum]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jar of pickles]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [jello box]{"entity": "food", "role": "Item"} and [Tic tac]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jello box]{"entity": "food", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jello box]{"entity": "food", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jello strawberry box]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I 'll take the [jello strawberry box]{"entity": "food", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [jello strawberry box]{"entity": "food", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [juice pack]{"entity": "drink", "role": "Item"} and [bottle of pancake mix]{"entity": "food", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [juice pack]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [juice pack]{"entity": "drink", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [tomato]{"entity": "food", "role": "Item"}.
+    - I 'll take the [kiwi]{"entity": "food", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [lemonade]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"} and [mayonaise]{"entity": "food", "role": "Item"}.
+    - I 'll take the [licorice]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [liquorice]{"entity": "food", "role": "Item"} and [fries]{"entity": "food", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I 'll take the [mayonaise]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I 'll take the [mayonaise]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [mayonaise]{"entity": "food", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [meat]{"entity": "food", "role": "Item"} and [Tic tac]{"entity": "food", "role": "Item"}.
+    - I 'll take the [meat]{"entity": "food", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [milk coffee]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [milk coffee]{"entity": "drink", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [mineral water]{"entity": "drink", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"} and [tuna fish can]{"entity": "food", "role": "Item"}.
+    - I 'll take the [mineral water]{"entity": "drink", "role": "Item"} and [sandwich]{"entity": "food", "role": "Item"} and [big cola]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [mustard]{"entity": "food", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [mustard]{"entity": "food", "role": "Item"} and [sugar]{"entity": "food", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [mustard bottle]{"entity": "food", "role": "Item"} and [orange]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I 'll take the [mustard container]{"entity": "food", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"}.
+    - I 'll take the [orange]{"entity": "food", "role": "Item"} and [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [orange juice]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [orange juice box]{"entity": "drink", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [orange juice box]{"entity": "drink", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [oregano shaker]{"entity": "food", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I 'll take the [pea soup]{"entity": "food", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [pea soup]{"entity": "food", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [pea soup]{"entity": "food", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"} and [corny box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [peach]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [pear]{"entity": "food", "role": "Item"} and [tomato soup can]{"entity": "food", "role": "Item"}.
+    - I 'll take the [piece of toast]{"entity": "food", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [potted meat can]{"entity": "food", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [pringles]{"entity": "food", "role": "Item"} and [milk bottle]{"entity": "drink", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [pringles]{"entity": "food", "role": "Item"} and [pear]{"entity": "food", "role": "Item"} and [orange juice]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [sandwich]{"entity": "food", "role": "Item"} and [orange]{"entity": "food", "role": "Item"}.
+    - I 'll take the [soup]{"entity": "food", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [steak]{"entity": "food", "role": "Item"} and [bottle of pancake mix]{"entity": "food", "role": "Item"}.
+    - I 'll take the [sugar]{"entity": "food", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [sugar]{"entity": "food", "role": "Item"} and [can of pea soup]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I 'll take the [sugar]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [sugar]{"entity": "food", "role": "Item"} and [pancake mix]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I 'll take the [sugar box]{"entity": "food", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [tictac]{"entity": "food", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [apple]{"entity": "food", "role": "Item"}.
+    - I 'll take the [tomato]{"entity": "food", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"}.
+    - I 'll take the [vegetables]{"entity": "food", "role": "Item"} and [big cola]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [water]{"entity": "drink", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"}.
+    - I 'll take the [wine bottle]{"entity": "drink", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [wine glass]{"entity": "drink", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I 'll take the [wine glass]{"entity": "drink", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I 'll take the [wine glass]{"entity": "drink", "role": "Item"} and [tuna fish can]{"entity": "food", "role": "Item"}.
+    - I would like to get [Stroopwaffel]{"entity": "food", "role": "Item"} and [candy]{"entity": "food", "role": "Item"}.
+    - I would like to get [Stroopwaffel]{"entity": "food", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to get [Tic tac]{"entity": "food", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [Tic tac]{"entity": "food", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I would like to get [apple juice]{"entity": "drink", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to get [apple juice]{"entity": "drink", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I would like to get [apple juice]{"entity": "drink", "role": "Item"} and [tictac]{"entity": "food", "role": "Item"}.
+    - I would like to get [beer]{"entity": "drink", "role": "Item"} and [pear]{"entity": "food", "role": "Item"}.
+    - I would like to get [big cola]{"entity": "drink", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [bottle of ice tea]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of ice tea]{"entity": "drink", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of ice tea]{"entity": "drink", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of milk]{"entity": "drink", "role": "Item"} and [tictac]{"entity": "food", "role": "Item"} and [lemon]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of pancake mix]{"entity": "food", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [bottle of water]{"entity": "drink", "role": "Item"} and [can of tomato soup]{"entity": "food", "role": "Item"} and [french fries]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of water]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [mayo]{"entity": "food", "role": "Item"}.
+    - I would like to get [bottle of wine]{"entity": "drink", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"} and [milk bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [bottle of wine]{"entity": "drink", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [bowl of soup]{"entity": "food", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"}.
+    - I would like to get [box of cereal]{"entity": "food", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to get [box of cereal]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I would like to get [box of corny]{"entity": "food", "role": "Item"} and [sugar box]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [box of sugar]{"entity": "food", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of coffee]{"entity": "drink", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of coke]{"entity": "drink", "role": "Item"} and [bowl of soup]{"entity": "food", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of fanta]{"entity": "drink", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of ice tea]{"entity": "drink", "role": "Item"} and [pack of juice]{"entity": "drink", "role": "Item"} and [orange juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of pea soup]{"entity": "food", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of potted meat]{"entity": "food", "role": "Item"} and [milk coffee]{"entity": "drink", "role": "Item"} and [corny box]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of tomato soup]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of tomato soup]{"entity": "food", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - I would like to get [can of tomato soup]{"entity": "food", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of tomato soup]{"entity": "food", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to get [can of tuna fish]{"entity": "food", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [candy]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"} and [sandwich]{"entity": "food", "role": "Item"}.
+    - I would like to get [cereal box robo cup]{"entity": "food", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"}.
+    - I would like to get [chips can]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [chips can]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [coffee]{"entity": "drink", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"}.
+    - I would like to get [coffee]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I would like to get [coffee can]{"entity": "drink", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I would like to get [coffee can]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"}.
+    - I would like to get [coke]{"entity": "drink", "role": "Item"} and [milk coffee]{"entity": "drink", "role": "Item"} and [pickles]{"entity": "food", "role": "Item"}.
+    - I would like to get [cola]{"entity": "drink", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [cola]{"entity": "drink", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I would like to get [corn flakes]{"entity": "food", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to get [corny box]{"entity": "food", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"}.
+    - I would like to get [crackers]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"}.
+    - I would like to get [crisps]{"entity": "food", "role": "Item"} and [milk pack]{"entity": "drink", "role": "Item"} and [pastry box]{"entity": "food", "role": "Item"}.
+    - I would like to get [cup of coffee]{"entity": "drink", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"}.
+    - I would like to get [curryy]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"}.
+    - I would like to get [curryy]{"entity": "food", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [chips can]{"entity": "food", "role": "Item"}.
+    - I would like to get [curryy]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [dubbelfris]{"entity": "drink", "role": "Item"} and [tomato]{"entity": "food", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"}.
+    - I would like to get [fanta]{"entity": "drink", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [fanta]{"entity": "drink", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I would like to get [fanta]{"entity": "drink", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"} and [orange juice]{"entity": "drink", "role": "Item"}.
+    - I would like to get [fanta can]{"entity": "drink", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"}.
+    - I would like to get [fries]{"entity": "food", "role": "Item"} and [coffee can]{"entity": "drink", "role": "Item"} and [coffee can]{"entity": "drink", "role": "Item"}.
+    - I would like to get [gelatin box]{"entity": "food", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [gin tonic]{"entity": "drink", "role": "Item"} and [plum]{"entity": "food", "role": "Item"}.
+    - I would like to get [gin tonic]{"entity": "drink", "role": "Item"} and [tuna fish can]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"}.
+    - I would like to get [glass of milk]{"entity": "drink", "role": "Item"} and [box of corny]{"entity": "food", "role": "Item"}.
+    - I would like to get [glass of milk]{"entity": "drink", "role": "Item"} and [lemon]{"entity": "food", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to get [glass of water]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [glass of wine]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"}.
+    - I would like to get [grapes]{"entity": "food", "role": "Item"} and [apple]{"entity": "food", "role": "Item"}.
+    - I would like to get [ice tea]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [ice tea can]{"entity": "drink", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to get [ice tea can]{"entity": "drink", "role": "Item"} and [tomato soup can]{"entity": "food", "role": "Item"} and [soup]{"entity": "food", "role": "Item"}.
+    - I would like to get [iced coffee]{"entity": "drink", "role": "Item"} and [mayonaise]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I would like to get [iced coffee]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I would like to get [jar of pickles]{"entity": "food", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"} and [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [jello box]{"entity": "food", "role": "Item"} and [plum]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to get [jello chocolate pudding box]{"entity": "food", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"} and [cereal box]{"entity": "food", "role": "Item"}.
+    - I would like to get [jello strawberry box]{"entity": "food", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [juice box]{"entity": "drink", "role": "Item"} and [orange]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"}.
+    - I would like to get [kiwi]{"entity": "food", "role": "Item"} and [pringles]{"entity": "food", "role": "Item"}.
+    - I would like to get [lemon]{"entity": "food", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to get [licorice]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"} and [bowl of soup]{"entity": "food", "role": "Item"}.
+    - I would like to get [licorice]{"entity": "food", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"}.
+    - I would like to get [liquorice]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to get [liquorice]{"entity": "food", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to get [liquorice]{"entity": "food", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"}.
+    - I would like to get [mayonaise]{"entity": "food", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I would like to get [mayonnaise]{"entity": "food", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to get [mayonnaise]{"entity": "food", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"}.
+    - I would like to get [mayonnaise]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"} and [gelatin box]{"entity": "food", "role": "Item"}.
+    - I would like to get [meat]{"entity": "food", "role": "Item"} and [apple]{"entity": "food", "role": "Item"} and [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [milk coffee]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [milk coffee]{"entity": "drink", "role": "Item"} and [pancake mix]{"entity": "food", "role": "Item"}.
+    - I would like to get [milk pack]{"entity": "drink", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I would like to get [mineral water]{"entity": "drink", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"}.
+    - I would like to get [mineral water]{"entity": "drink", "role": "Item"} and [steak]{"entity": "food", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"}.
+    - I would like to get [mustard bottle]{"entity": "food", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [orange]{"entity": "food", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [orange]{"entity": "food", "role": "Item"} and [sandwich]{"entity": "food", "role": "Item"}.
+    - I would like to get [orange juice box]{"entity": "drink", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I would like to get [oregano shaker]{"entity": "food", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pack of juice]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pancake mix]{"entity": "food", "role": "Item"} and [kiwi]{"entity": "food", "role": "Item"}.
+    - I would like to get [pancake mix]{"entity": "food", "role": "Item"} and [orange]{"entity": "food", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"}.
+    - I would like to get [pancake mix bottle]{"entity": "food", "role": "Item"} and [big cola]{"entity": "drink", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pancake mix bottle]{"entity": "food", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [soup]{"entity": "food", "role": "Item"}.
+    - I would like to get [pancake mix bottle]{"entity": "food", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pastry box]{"entity": "food", "role": "Item"} and [corny box]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pastry box]{"entity": "food", "role": "Item"} and [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pastry box]{"entity": "food", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"} and [banana]{"entity": "food", "role": "Item"}.
+    - I would like to get [pastry box]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pickles]{"entity": "food", "role": "Item"} and [can of tuna fish]{"entity": "food", "role": "Item"}.
+    - I would like to get [plum]{"entity": "food", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to get [plum]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [plum]{"entity": "food", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"} and [bottle of pancake mix]{"entity": "food", "role": "Item"}.
+    - I would like to get [pringles]{"entity": "food", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [pringles chips can]{"entity": "food", "role": "Item"} and [chili sin carne]{"entity": "food", "role": "Item"} and [plum]{"entity": "food", "role": "Item"}.
+    - I would like to get [sandwich]{"entity": "food", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [sausages]{"entity": "food", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"}.
+    - I would like to get [sprite]{"entity": "drink", "role": "Item"} and [banana]{"entity": "food", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"}.
+    - I would like to get [sugar]{"entity": "food", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I would like to get [sugar]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to get [sugar]{"entity": "food", "role": "Item"} and [coffee can]{"entity": "drink", "role": "Item"} and [corny box]{"entity": "food", "role": "Item"}.
+    - I would like to get [sugar box]{"entity": "food", "role": "Item"} and [curryy]{"entity": "food", "role": "Item"}.
+    - I would like to get [tea]{"entity": "drink", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"}.
+    - I would like to get [tea]{"entity": "drink", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"}.
+    - I would like to get [toast]{"entity": "food", "role": "Item"} and [cereal box robo cup]{"entity": "food", "role": "Item"}.
+    - I would like to get [tomato]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to get [tomato]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"}.
+    - I would like to get [tomato soup can]{"entity": "food", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I would like to get [tropical juice bottle]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"}.
+    - I would like to get [tropical juice bottle]{"entity": "drink", "role": "Item"} and [liquorice]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to get [tuna fish can]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to get [vegetables]{"entity": "food", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I would like to get [water]{"entity": "drink", "role": "Item"} and [box of orange juice]{"entity": "drink", "role": "Item"} and [juice box]{"entity": "drink", "role": "Item"}.
+    - I would like to get [wine glass]{"entity": "drink", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"} and [chips can]{"entity": "food", "role": "Item"}.
+    - I would like to order [apple juice]{"entity": "drink", "role": "Item"} and [iced coffee]{"entity": "drink", "role": "Item"} and [pear]{"entity": "food", "role": "Item"}.
+    - I would like to order [apple juice]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to order [beer]{"entity": "drink", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"} and [glass of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [big cola]{"entity": "drink", "role": "Item"} and [orange juice]{"entity": "drink", "role": "Item"} and [sprite]{"entity": "drink", "role": "Item"}.
+    - I would like to order [bottle of pancake mix]{"entity": "food", "role": "Item"} and [chili sin carne]{"entity": "food", "role": "Item"}.
+    - I would like to order [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I would like to order [bottle of water]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to order [bottle of wine]{"entity": "drink", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"}.
+    - I would like to order [bottle of wine]{"entity": "drink", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"} and [can of potted meat]{"entity": "food", "role": "Item"}.
+    - I would like to order [bowl of soup]{"entity": "food", "role": "Item"} and [sausages]{"entity": "food", "role": "Item"} and [big coke]{"entity": "drink", "role": "Item"}.
+    - I would like to order [box of corny]{"entity": "food", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"} and [fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to order [box of orange juice]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [box of orange juice]{"entity": "drink", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"}.
+    - I would like to order [can of coke]{"entity": "drink", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"}.
+    - I would like to order [can of ice tea]{"entity": "drink", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I would like to order [can of ice tea]{"entity": "drink", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [can of ice tea]{"entity": "drink", "role": "Item"} and [soup]{"entity": "food", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [can of pea soup]{"entity": "food", "role": "Item"} and [mayo]{"entity": "food", "role": "Item"}.
+    - I would like to order [can of tuna fish]{"entity": "food", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"} and [potted meat can]{"entity": "food", "role": "Item"}.
+    - I would like to order [cereal box]{"entity": "food", "role": "Item"} and [banana]{"entity": "food", "role": "Item"}.
+    - I would like to order [cereal box]{"entity": "food", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [sandwich]{"entity": "food", "role": "Item"}.
+    - I would like to order [cereal box robo cup]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"}.
+    - I would like to order [cereal box robo cup]{"entity": "food", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"} and [steak]{"entity": "food", "role": "Item"}.
+    - I would like to order [chili con carne]{"entity": "food", "role": "Item"} and [glass of wine]{"entity": "drink", "role": "Item"}.
+    - I would like to order [chips can]{"entity": "food", "role": "Item"} and [bottle of wine]{"entity": "drink", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I would like to order [chips can]{"entity": "food", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"} and [soup]{"entity": "food", "role": "Item"}.
+    - I would like to order [chips can]{"entity": "food", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I would like to order [chips can]{"entity": "food", "role": "Item"} and [wine glass]{"entity": "drink", "role": "Item"}.
+    - I would like to order [chocolate pudding box]{"entity": "food", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"}.
+    - I would like to order [chocolate pudding box]{"entity": "food", "role": "Item"} and [crackers]{"entity": "food", "role": "Item"} and [can of fanta]{"entity": "drink", "role": "Item"}.
+    - I would like to order [coffee]{"entity": "drink", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [coffee can]{"entity": "drink", "role": "Item"} and [pear]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [coffee with milk]{"entity": "drink", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"}.
+    - I would like to order [coke]{"entity": "drink", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"} and [tuna fish can]{"entity": "food", "role": "Item"}.
+    - I would like to order [coke]{"entity": "drink", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"}.
+    - I would like to order [coke]{"entity": "drink", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"} and [pear]{"entity": "food", "role": "Item"}.
+    - I would like to order [cola]{"entity": "drink", "role": "Item"} and [can of tomato soup]{"entity": "food", "role": "Item"} and [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cola]{"entity": "drink", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cola]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cornflakes]{"entity": "food", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [corny box]{"entity": "food", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"} and [pickles]{"entity": "food", "role": "Item"}.
+    - I would like to order [cracker box]{"entity": "food", "role": "Item"} and [glass of water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cracker box]{"entity": "food", "role": "Item"} and [mayonaise]{"entity": "food", "role": "Item"} and [tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crackers]{"entity": "food", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crackers]{"entity": "food", "role": "Item"} and [lemon]{"entity": "food", "role": "Item"} and [juice pack]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crackers]{"entity": "food", "role": "Item"} and [meat]{"entity": "food", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crisps]{"entity": "food", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crisps]{"entity": "food", "role": "Item"} and [iced tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [crisps]{"entity": "food", "role": "Item"} and [soup]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"}.
+    - I would like to order [cup of coffee]{"entity": "drink", "role": "Item"} and [water bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [cup of tea]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [jello box]{"entity": "food", "role": "Item"}.
+    - I would like to order [curryy]{"entity": "food", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"}.
+    - I would like to order [curryy]{"entity": "food", "role": "Item"} and [cafe au lait]{"entity": "drink", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to order [curryy]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"} and [milk bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [dubbelfris]{"entity": "drink", "role": "Item"} and [ice tea can]{"entity": "drink", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I would like to order [fanta]{"entity": "drink", "role": "Item"} and [lemon]{"entity": "food", "role": "Item"} and [Tic tac]{"entity": "food", "role": "Item"}.
+    - I would like to order [fanta can]{"entity": "drink", "role": "Item"} and [fries]{"entity": "food", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I would like to order [fries]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"} and [jug of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [gin tonic]{"entity": "drink", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"} and [jello strawberry box]{"entity": "food", "role": "Item"}.
+    - I would like to order [gin tonic]{"entity": "drink", "role": "Item"} and [dubbelfris]{"entity": "drink", "role": "Item"} and [wine bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [glass of mineral water]{"entity": "drink", "role": "Item"} and [bottle of tropical juice]{"entity": "drink", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"}.
+    - I would like to order [glass of water]{"entity": "drink", "role": "Item"} and [mustard container]{"entity": "food", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [grapes]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"}.
+    - I would like to order [ice tea]{"entity": "drink", "role": "Item"} and [bottle of water]{"entity": "drink", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"}.
+    - I would like to order [ice tea]{"entity": "drink", "role": "Item"} and [cup of tea]{"entity": "drink", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I would like to order [jar of pickles]{"entity": "food", "role": "Item"} and [coffee can]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"}.
+    - I would like to order [jello box]{"entity": "food", "role": "Item"} and [bottle of pancake mix]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to order [jello strawberry box]{"entity": "food", "role": "Item"} and [corn flakes]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"}.
+    - I would like to order [jug of milk]{"entity": "drink", "role": "Item"} and [soup]{"entity": "food", "role": "Item"}.
+    - I would like to order [juice box]{"entity": "drink", "role": "Item"} and [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - I would like to order [juice box]{"entity": "drink", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I would like to order [juice pack]{"entity": "drink", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [lemon]{"entity": "food", "role": "Item"} and [sugar box]{"entity": "food", "role": "Item"} and [licorice]{"entity": "food", "role": "Item"}.
+    - I would like to order [lemonade]{"entity": "drink", "role": "Item"} and [Tic tac]{"entity": "food", "role": "Item"} and [apple juice]{"entity": "drink", "role": "Item"}.
+    - I would like to order [licorice]{"entity": "food", "role": "Item"} and [banana]{"entity": "food", "role": "Item"} and [vegetable]{"entity": "food", "role": "Item"}.
+    - I would like to order [licorice]{"entity": "food", "role": "Item"} and [tomato soup can]{"entity": "food", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I would like to order [liquorice]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [liquorice]{"entity": "food", "role": "Item"} and [pringles chips can]{"entity": "food", "role": "Item"} and [box of sugar]{"entity": "food", "role": "Item"}.
+    - I would like to order [mayonaise]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"}.
+    - I would like to order [meat]{"entity": "food", "role": "Item"} and [peach]{"entity": "food", "role": "Item"} and [juice box]{"entity": "drink", "role": "Item"}.
+    - I would like to order [milk coffee]{"entity": "drink", "role": "Item"} and [grapes]{"entity": "food", "role": "Item"} and [fries]{"entity": "food", "role": "Item"}.
+    - I would like to order [milk pack]{"entity": "drink", "role": "Item"} and [cola]{"entity": "drink", "role": "Item"} and [meat]{"entity": "food", "role": "Item"}.
+    - I would like to order [milk pack]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"} and [gin tonic]{"entity": "drink", "role": "Item"}.
+    - I would like to order [milk pack]{"entity": "drink", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I would like to order [mustard bottle]{"entity": "food", "role": "Item"} and [vegetables]{"entity": "food", "role": "Item"} and [milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [mustard container]{"entity": "food", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"}.
+    - I would like to order [orange juice]{"entity": "drink", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"}.
+    - I would like to order [orange juice box]{"entity": "drink", "role": "Item"} and [can of coffee]{"entity": "drink", "role": "Item"} and [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [orange juice box]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"} and [mustard bottle]{"entity": "food", "role": "Item"}.
+    - I would like to order [orange juice box]{"entity": "drink", "role": "Item"} and [kiwi]{"entity": "food", "role": "Item"} and [cola can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [oregano shaker]{"entity": "food", "role": "Item"} and [can of coke]{"entity": "drink", "role": "Item"} and [toast]{"entity": "food", "role": "Item"}.
+    - I would like to order [pack of juice]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"} and [fanta can]{"entity": "drink", "role": "Item"}.
+    - I would like to order [pancake mix]{"entity": "food", "role": "Item"} and [ginger ale]{"entity": "drink", "role": "Item"}.
+    - I would like to order [pancake mix bottle]{"entity": "food", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [pear]{"entity": "food", "role": "Item"} and [hagelslag]{"entity": "food", "role": "Item"}.
+    - I would like to order [pear]{"entity": "food", "role": "Item"} and [tomato]{"entity": "food", "role": "Item"}.
+    - I would like to order [piece of toast]{"entity": "food", "role": "Item"} and [cornflakes]{"entity": "food", "role": "Item"}.
+    - I would like to order [plum]{"entity": "food", "role": "Item"} and [Tic tac]{"entity": "food", "role": "Item"} and [strawberry]{"entity": "food", "role": "Item"}.
+    - I would like to order [potted meat can]{"entity": "food", "role": "Item"} and [chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I would like to order [potted meat can]{"entity": "food", "role": "Item"} and [piece of toast]{"entity": "food", "role": "Item"} and [beer]{"entity": "drink", "role": "Item"}.
+    - I would like to order [sandwich]{"entity": "food", "role": "Item"} and [apple]{"entity": "food", "role": "Item"}.
+    - I would like to order [soup]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"} and [mustard]{"entity": "food", "role": "Item"}.
+    - I would like to order [sprite]{"entity": "drink", "role": "Item"} and [candy]{"entity": "food", "role": "Item"} and [pancake mix bottle]{"entity": "food", "role": "Item"}.
+    - I would like to order [sugar]{"entity": "food", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"} and [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [sugar]{"entity": "food", "role": "Item"} and [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - I would like to order [sugar box]{"entity": "food", "role": "Item"} and [box of cereal]{"entity": "food", "role": "Item"}.
+    - I would like to order [tea]{"entity": "drink", "role": "Item"} and [crisps]{"entity": "food", "role": "Item"}.
+    - I would like to order [tictac]{"entity": "food", "role": "Item"} and [milk bottle]{"entity": "drink", "role": "Item"} and [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [tictac]{"entity": "food", "role": "Item"} and [sugar]{"entity": "food", "role": "Item"}.
+    - I would like to order [tomato]{"entity": "food", "role": "Item"} and [coffee]{"entity": "drink", "role": "Item"} and [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - I would like to order [tropical juice bottle]{"entity": "drink", "role": "Item"} and [cracker box]{"entity": "food", "role": "Item"}.
+    - I would like to order [tropical juice bottle]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [vegetable]{"entity": "food", "role": "Item"} and [pea soup]{"entity": "food", "role": "Item"} and [soup]{"entity": "food", "role": "Item"}.
+    - I would like to order [vegetable]{"entity": "food", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [vegetables]{"entity": "food", "role": "Item"} and [orange juice box]{"entity": "drink", "role": "Item"} and [mineral water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [water]{"entity": "drink", "role": "Item"} and [mayonaise]{"entity": "food", "role": "Item"} and [ice tea]{"entity": "drink", "role": "Item"}.
+    - I would like to order [water]{"entity": "drink", "role": "Item"} and [mayonnaise]{"entity": "food", "role": "Item"} and [jar of pickles]{"entity": "food", "role": "Item"}.
+    - I would like to order [water]{"entity": "drink", "role": "Item"} and [pea soup can]{"entity": "food", "role": "Item"}.
+    - I would like to order [water]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"} and [chili con carne]{"entity": "food", "role": "Item"}.
+    - I would like to order [water]{"entity": "drink", "role": "Item"} and [water]{"entity": "drink", "role": "Item"}.
+    - I would like to order [water bottle]{"entity": "drink", "role": "Item"} and [jello chocolate pudding box]{"entity": "food", "role": "Item"}.
+    - I would like to order [wine bottle]{"entity": "drink", "role": "Item"} and [coke]{"entity": "drink", "role": "Item"} and [Stroopwaffel]{"entity": "food", "role": "Item"}.
+
+- intent: Receptionist
+  examples: |
+    - I am [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [milk pack]{"entity": "drink", "role": "Item"}
+    - I am [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [glass of milk]{"entity": "drink", "role": "Item"}
+    - I am [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [dubbelfris]{"entity": "drink", "role": "Item"}
+    - I am [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [coffee can]{"entity": "drink", "role": "Item"}
+    - I am [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [jug of milk]{"entity": "drink", "role": "Item"}
+    - I am [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [lemonade]{"entity": "drink", "role": "Item"}
+    - I am [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [glass of mineral water]{"entity": "drink", "role": "Item"}
+    - I am [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [tropical juice bottle]{"entity": "drink", "role": "Item"}
+    - I am [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [coffee]{"entity": "drink", "role": "Item"}
+    - I am [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [orange juice box]{"entity": "drink", "role": "Item"}
+    - I am [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [can of coffee]{"entity": "drink", "role": "Item"}
+    - I am [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [cup of tea]{"entity": "drink", "role": "Item"}
+    - I am [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [dubbelfris]{"entity": "drink", "role": "Item"}
+    - I am [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I like to drink [mineral water]{"entity": "drink", "role": "Item"}
+    - I like [apple juice]{"entity": "drink", "role": "Item"}
+    - I like [cafe au lait]{"entity": "drink", "role": "Item"}
+    - I like [can of coffee]{"entity": "drink", "role": "Item"}
+    - I like [can of fanta]{"entity": "drink", "role": "Item"}
+    - I like [coke]{"entity": "drink", "role": "Item"}
+    - I like [cup of coffee]{"entity": "drink", "role": "Item"}
+    - I like [fanta can]{"entity": "drink", "role": "Item"}
+    - I like [ginger ale]{"entity": "drink", "role": "Item"}
+    - I like [glass of wine]{"entity": "drink", "role": "Item"}
+    - I like [ice tea]{"entity": "drink", "role": "Item"}
+    - I like [ice tea bottle]{"entity": "drink", "role": "Item"}
+    - I like [iced coffee]{"entity": "drink", "role": "Item"}
+    - I like [jug of milk]{"entity": "drink", "role": "Item"}
+    - I like [orange juice]{"entity": "drink", "role": "Item"}
+    - I like [sprite]{"entity": "drink", "role": "Item"}
+    - I like [tea]{"entity": "drink", "role": "Item"}
+    - I like [water]{"entity": "drink", "role": "Item"}
+    - I like [wine bottle]{"entity": "drink", "role": "Item"}
+    - I like [wine glass]{"entity": "drink", "role": "Item"}
+    - I prefer [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - I prefer [can of fanta]{"entity": "drink", "role": "Item"}
+    - I prefer [coffee with milk]{"entity": "drink", "role": "Item"}
+    - I prefer [cola]{"entity": "drink", "role": "Item"}
+    - I prefer [cup of coffee with milk]{"entity": "drink", "role": "Item"}
+    - I prefer [cup of tea]{"entity": "drink", "role": "Item"}
+    - I prefer [dubbelfris]{"entity": "drink", "role": "Item"}
+    - I prefer [glass of wine]{"entity": "drink", "role": "Item"}
+    - I prefer [ice tea bottle]{"entity": "drink", "role": "Item"}
+    - I prefer [ice tea can]{"entity": "drink", "role": "Item"}
+    - I prefer [juice box]{"entity": "drink", "role": "Item"}
+    - I prefer [lemonade]{"entity": "drink", "role": "Item"}
+    - I prefer [milk bottle]{"entity": "drink", "role": "Item"}
+    - I prefer [milk coffee]{"entity": "drink", "role": "Item"}
+    - I prefer [milk pack]{"entity": "drink", "role": "Item"}
+    - I prefer [orange juice]{"entity": "drink", "role": "Item"}
+    - I prefer [tropical juice bottle]{"entity": "drink", "role": "Item"}
+    - I prefer [wine bottle]{"entity": "drink", "role": "Item"}
+    - good day, my name is [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [water bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [glass of water]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [orange juice]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Elizabeth]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [sprite]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Gabrielle]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [iced coffee]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [bottle of water]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [fanta]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [ice tea can]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [ginger ale]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [milk pack]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Michael]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [gin tonic]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Morgan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [glass of milk]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [milk bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [water bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Sara]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [glass of water]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [apple juice]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [cup of tea]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [can of fanta]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [ice tea]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [gin tonic]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [mister]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [milk pack]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [milk bottle]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [can of fanta]{"entity": "drink", "role": "Item"}.
+    - good day, my name is [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and i prefer [coke]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [beer]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Emma]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [milk pack]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Gabrielle]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [lemonade]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [water bottle]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [orange juice box]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [sprite]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Michael]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [cola]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [coffee]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [beer]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [iced coffee]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [sprite]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [man]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [glass of water]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [pack of juice]{"entity": "drink", "role": "Item"}.
+    - greetings! i 'm [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy sipping on [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [milk]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [fanta]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [glass of water]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [glass of wine]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [apple juice]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [wine glass]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [bottle of water]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [mineral water]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [cola]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [cola can]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [wine glass]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [juice pack]{"entity": "drink", "role": "Item"}.
+    - greetings, i 'm [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - hello my name is [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Elizabeth]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [Stephanie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello my name is [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}
+    - hello, [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [ice tea can]{"entity": "drink", "role": "Item"}.
+    - hello, [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [dubbelfris]{"entity": "drink", "role": "Item"}.
+    - hello, [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hello, [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [jug of milk]{"entity": "drink", "role": "Item"}.
+    - hello, [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - hello, [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - hello, [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [cola]{"entity": "drink", "role": "Item"}.
+    - hello, [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [lemonade]{"entity": "drink", "role": "Item"}.
+    - hello, [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [wine bottle]{"entity": "drink", "role": "Item"}.
+    - hello, [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [lemonade]{"entity": "drink", "role": "Item"}.
+    - hello, [Gabrielle]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [big coke]{"entity": "drink", "role": "Item"}.
+    - hello, [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [coke]{"entity": "drink", "role": "Item"}.
+    - hello, [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [can of fanta]{"entity": "drink", "role": "Item"}.
+    - hello, [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [glass of wine]{"entity": "drink", "role": "Item"}.
+    - hello, [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hello, [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [wine glass]{"entity": "drink", "role": "Item"}.
+    - hello, [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [fanta can]{"entity": "drink", "role": "Item"}.
+    - hello, [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [bottle of tropical juice]{"entity": "drink", "role": "Item"}.
+    - hello, [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - hello, [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [sprite]{"entity": "drink", "role": "Item"}.
+    - hello, [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [big cola]{"entity": "drink", "role": "Item"}.
+    - hello, [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [glass of wine]{"entity": "drink", "role": "Item"}.
+    - hello, [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [fanta]{"entity": "drink", "role": "Item"}.
+    - hello, [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [ice tea can]{"entity": "drink", "role": "Item"}.
+    - hello, [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [milk]{"entity": "drink", "role": "Item"}.
+    - hello, [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [gin tonic]{"entity": "drink", "role": "Item"}.
+    - hello, [Morgan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [gin tonic]{"entity": "drink", "role": "Item"}.
+    - hello, [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - hello, [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [milk pack]{"entity": "drink", "role": "Item"}.
+    - hello, [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [wine glass]{"entity": "drink", "role": "Item"}.
+    - hello, [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [orange juice box]{"entity": "drink", "role": "Item"}.
+    - hello, [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [pack of juice]{"entity": "drink", "role": "Item"}.
+    - hello, [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [pack of juice]{"entity": "drink", "role": "Item"}.
+    - hello, [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [milk coffee]{"entity": "drink", "role": "Item"}.
+    - hello, [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [glass of wine]{"entity": "drink", "role": "Item"}.
+    - hello, [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [cola can]{"entity": "drink", "role": "Item"}.
+    - hello, [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - hello, [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hello, [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [water bottle]{"entity": "drink", "role": "Item"}.
+    - hello, [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [juice box]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [coffee can]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [jug of milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [milk coffee]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [water bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [coke]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Emma]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [pack of juice]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [sprite]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [bottle of ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [cup of coffee]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [glass of milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [wine glass]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Joshua]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [beer]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [can of fanta]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [coffee]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [gin tonic]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [juice box]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [water bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Morgan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [sprite]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Morgan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Morgan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [milk bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [water bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [can of coke]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [can of fanta]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [big coke]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [water]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [big coke]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [milk coffee]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [ice tea can]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, i 'm [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [iced coffee]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [orange juice]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy drinking [ginger ale]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [milk pack]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [man]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [coffee can]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to indulge in [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hello, i 'm [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hello, [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [cola]{"entity": "drink", "role": "Item"}.
+    - hello, [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my go-to drink is [orange juice box]{"entity": "drink", "role": "Item"}.
+    - hello, [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [gin tonic]{"entity": "drink", "role": "Item"}.
+    - hello, [man]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hello, [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [ice tea]{"entity": "drink", "role": "Item"}.
+    - hello, [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [apple juice]{"entity": "drink", "role": "Item"}.
+    - hello, [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my preferred beverage is [coffee can]{"entity": "drink", "role": "Item"}.
+    - hey I 'm [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [can of fanta]{"entity": "drink", "role": "Item"}
+    - hey I 'm [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [coke]{"entity": "drink", "role": "Item"}
+    - hey I 'm [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [cup of tea]{"entity": "drink", "role": "Item"}
+    - hey I 'm [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [jug of milk]{"entity": "drink", "role": "Item"}
+    - hey I 'm [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [ginger ale]{"entity": "drink", "role": "Item"}
+    - hey I 'm [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [juice pack]{"entity": "drink", "role": "Item"}
+    - hey I 'm [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [glass of milk]{"entity": "drink", "role": "Item"}
+    - hey I 'm [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [iced coffee]{"entity": "drink", "role": "Item"}
+    - hey I 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [ice tea can]{"entity": "drink", "role": "Item"}
+    - hey I 'm [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [coffee]{"entity": "drink", "role": "Item"}
+    - hey I 'm [me]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - hey I 'm [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [glass of mineral water]{"entity": "drink", "role": "Item"}
+    - hey I 'm [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [milk]{"entity": "drink", "role": "Item"}
+    - hey I 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [sprite]{"entity": "drink", "role": "Item"}
+    - hey I 'm [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I enjoy [bottle of wine]{"entity": "drink", "role": "Item"}
+    - hey, i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [coffee can]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [fanta]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [lemonade]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Paris]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [pack of juice]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [orange juice box]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [can of coke]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [juice pack]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [tea]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [ginger ale]{"entity": "drink", "role": "Item"}.
+    - hey, i 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my preferred beverage is [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - hi there, [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [can of fanta]{"entity": "drink", "role": "Item"}.
+    - hi there, [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [milk pack]{"entity": "drink", "role": "Item"}.
+    - hi there, [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [gin tonic]{"entity": "drink", "role": "Item"}.
+    - hi there, [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - hi there, [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [big coke]{"entity": "drink", "role": "Item"}.
+    - hi there, [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [mineral water]{"entity": "drink", "role": "Item"}.
+    - hi there, [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - hi there, [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [big coke]{"entity": "drink", "role": "Item"}.
+    - hi there, [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}.
+    - hi there, [Justin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [can of coke]{"entity": "drink", "role": "Item"}.
+    - hi there, [Justin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [glass of water]{"entity": "drink", "role": "Item"}.
+    - hi there, [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [coke]{"entity": "drink", "role": "Item"}.
+    - hi there, [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [milk]{"entity": "drink", "role": "Item"}.
+    - hi there, [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - hi there, [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - hi there, [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [apple juice]{"entity": "drink", "role": "Item"}.
+    - hi there, [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [beer]{"entity": "drink", "role": "Item"}.
+    - hi there, [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}.
+    - hi there, [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [jug of milk]{"entity": "drink", "role": "Item"}.
+    - hi there, [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - hi there, [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [coffee]{"entity": "drink", "role": "Item"}.
+    - hi there, [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - hi there, [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [glass of wine]{"entity": "drink", "role": "Item"}.
+    - hi there, [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [ice tea bottle]{"entity": "drink", "role": "Item"}.
+    - hi there, [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} here. my favorite drink is [coffee]{"entity": "drink", "role": "Item"}.
+    - hi, I am [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [can of coffee]{"entity": "drink", "role": "Item"}
+    - hi, I am [Andrew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [juice box]{"entity": "drink", "role": "Item"}
+    - hi, I am [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [cafe au lait]{"entity": "drink", "role": "Item"}
+    - hi, I am [Brittany]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [fanta]{"entity": "drink", "role": "Item"}
+    - hi, I am [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [bottle of wine]{"entity": "drink", "role": "Item"}
+    - hi, I am [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [water]{"entity": "drink", "role": "Item"}
+    - hi, I am [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [coke]{"entity": "drink", "role": "Item"}
+    - hi, I am [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [gin tonic]{"entity": "drink", "role": "Item"}
+    - hi, I am [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [lemonade]{"entity": "drink", "role": "Item"}
+    - hi, I am [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [jug of milk]{"entity": "drink", "role": "Item"}
+    - hi, I am [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [wine glass]{"entity": "drink", "role": "Item"}
+    - hi, I am [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [coke]{"entity": "drink", "role": "Item"}
+    - hi, I am [Lauren]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [pack of juice]{"entity": "drink", "role": "Item"}
+    - hi, I am [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [bottle of wine]{"entity": "drink", "role": "Item"}
+    - hi, I am [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [box of orange juice]{"entity": "drink", "role": "Item"}
+    - hi, I am [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [milk]{"entity": "drink", "role": "Item"}
+    - hi, I am [Stephanie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [coke]{"entity": "drink", "role": "Item"}
+    - hi, I am [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [cup of coffee with milk]{"entity": "drink", "role": "Item"}
+    - hi, I am [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}
+    - hi, I am [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - hi, I am [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [wine bottle]{"entity": "drink", "role": "Item"}
+    - hi, I am [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [glass of mineral water]{"entity": "drink", "role": "Item"}
+    - hi, I am [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}
+    - hi, I am [man]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and my favorite drink is [bottle of tropical juice]{"entity": "drink", "role": "Item"}
+    - hi, my favorite drink is [beer]{"entity": "drink", "role": "Item"}. i 'm [Sara]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [bottle of tropical juice]{"entity": "drink", "role": "Item"}. i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [bottle of tropical juice]{"entity": "drink", "role": "Item"}. i 'm [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [can of coffee]{"entity": "drink", "role": "Item"}. i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [coffee]{"entity": "drink", "role": "Item"}. i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [cola]{"entity": "drink", "role": "Item"}. i 'm [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [fanta]{"entity": "drink", "role": "Item"}. i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [gin tonic]{"entity": "drink", "role": "Item"}. i 'm [miss]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [ginger ale]{"entity": "drink", "role": "Item"}. i 'm [Michael]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [ice tea bottle]{"entity": "drink", "role": "Item"}. i 'm [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [ice tea bottle]{"entity": "drink", "role": "Item"}. i 'm [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}. i 'm [Adel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [iced coffee]{"entity": "drink", "role": "Item"}. i 'm [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [jug of milk]{"entity": "drink", "role": "Item"}. i 'm [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [milk coffee]{"entity": "drink", "role": "Item"}. i 'm [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [orange juice box]{"entity": "drink", "role": "Item"}. i 'm [boy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my favorite drink is [wine bottle]{"entity": "drink", "role": "Item"}. i 'm [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [big coke]{"entity": "drink", "role": "Item"}. i 'm [Hayley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [bottle of wine]{"entity": "drink", "role": "Item"}. i 'm [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [can of coffee]{"entity": "drink", "role": "Item"}. i 'm [Laura]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [coffee can]{"entity": "drink", "role": "Item"}. i 'm [miss]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [cup of coffee with milk]{"entity": "drink", "role": "Item"}. i 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [glass of wine]{"entity": "drink", "role": "Item"}. i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [glass of wine]{"entity": "drink", "role": "Item"}. i 'm [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [ice tea]{"entity": "drink", "role": "Item"}. i 'm [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [ice tea]{"entity": "drink", "role": "Item"}. i 'm [miss]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [iced coffee]{"entity": "drink", "role": "Item"}. i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [juice box]{"entity": "drink", "role": "Item"}. i 'm [Liam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [milk pack]{"entity": "drink", "role": "Item"}. i 'm [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - hi, my go-to drink is [water bottle]{"entity": "drink", "role": "Item"}. i 'm [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}.
+    - i 'm [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [water bottle]{"entity": "drink", "role": "Item"}.
+    - i 'm [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [juice box]{"entity": "drink", "role": "Item"}.
+    - i 'm [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [ice tea]{"entity": "drink", "role": "Item"}.
+    - i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [fanta]{"entity": "drink", "role": "Item"}.
+    - i 'm [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [milk bottle]{"entity": "drink", "role": "Item"}.
+    - i 'm [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [ginger ale]{"entity": "drink", "role": "Item"}.
+    - i 'm [Charlie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [sprite]{"entity": "drink", "role": "Item"}.
+    - i 'm [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [mineral water]{"entity": "drink", "role": "Item"}.
+    - i 'm [Christopher]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [coffee can]{"entity": "drink", "role": "Item"}.
+    - i 'm [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [milk pack]{"entity": "drink", "role": "Item"}.
+    - i 'm [Emma]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [glass of milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [fanta]{"entity": "drink", "role": "Item"}.
+    - i 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [iced tea]{"entity": "drink", "role": "Item"}.
+    - i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [coffee can]{"entity": "drink", "role": "Item"}.
+    - i 'm [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [can of coffee]{"entity": "drink", "role": "Item"}.
+    - i 'm [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [wine glass]{"entity": "drink", "role": "Item"}.
+    - i 'm [Kevin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [ice tea]{"entity": "drink", "role": "Item"}.
+    - i 'm [Peter]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [Sara]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [coffee]{"entity": "drink", "role": "Item"}.
+    - i 'm [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [jug of milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [tea]{"entity": "drink", "role": "Item"}.
+    - i 'm [child]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [water]{"entity": "drink", "role": "Item"}.
+    - i 'm [fellow]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [beer]{"entity": "drink", "role": "Item"}.
+    - i 'm [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [box of orange juice]{"entity": "drink", "role": "Item"}.
+    - i 'm [gentleman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [milk pack]{"entity": "drink", "role": "Item"}.
+    - i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [milk bottle]{"entity": "drink", "role": "Item"}.
+    - i 'm [guy]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [pack of juice]{"entity": "drink", "role": "Item"}.
+    - i 'm [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [ice tea can]{"entity": "drink", "role": "Item"}.
+    - i 'm [him]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [fanta can]{"entity": "drink", "role": "Item"}.
+    - i 'm [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [cola]{"entity": "drink", "role": "Item"}.
+    - i 'm [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [ginger ale]{"entity": "drink", "role": "Item"}.
+    - i 'm [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [jug of milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [mister]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [water]{"entity": "drink", "role": "Item"}.
+    - i 'm [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [apple juice]{"entity": "drink", "role": "Item"}.
+    - i 'm [person]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [wine glass]{"entity": "drink", "role": "Item"}.
+    - i 'm [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i enjoy [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - i 'm [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and love to drink [big coke]{"entity": "drink", "role": "Item"}.
+    - my favorite drink is [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [bottle of tropical juice]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [can of fanta]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [coke]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [glass of milk]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [jug of milk]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [juice pack]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [lemonade]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [milk coffee]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [milk pack]{"entity": "drink", "role": "Item"}
+    - my favorite drink is [tropical juice bottle]{"entity": "drink", "role": "Item"}
+    - my name is [Alice]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [wine glass]{"entity": "drink", "role": "Item"}.
+    - my name is [Amanda]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [can of ice tea]{"entity": "drink", "role": "Item"}
+    - my name is [Angel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [cup of tea]{"entity": "drink", "role": "Item"}
+    - my name is [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [juice box]{"entity": "drink", "role": "Item"}
+    - my name is [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [can of fanta]{"entity": "drink", "role": "Item"}.
+    - my name is [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [coke]{"entity": "drink", "role": "Item"}.
+    - my name is [David]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}.
+    - my name is [Fleur]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [cola]{"entity": "drink", "role": "Item"}
+    - my name is [Harrie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [can of ice tea]{"entity": "drink", "role": "Item"}.
+    - my name is [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [coffee can]{"entity": "drink", "role": "Item"}
+    - my name is [Jane]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [coke]{"entity": "drink", "role": "Item"}
+    - my name is [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [iced tea]{"entity": "drink", "role": "Item"}
+    - my name is [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [bottle of water]{"entity": "drink", "role": "Item"}
+    - my name is [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [can of fanta]{"entity": "drink", "role": "Item"}
+    - my name is [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [orange juice box]{"entity": "drink", "role": "Item"}
+    - my name is [John]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [bottle of milk]{"entity": "drink", "role": "Item"}
+    - my name is [Joseph]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [bottle of wine]{"entity": "drink", "role": "Item"}
+    - my name is [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [bottle of ice tea]{"entity": "drink", "role": "Item"}
+    - my name is [Julia]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [coke]{"entity": "drink", "role": "Item"}
+    - my name is [Justin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [iced coffee]{"entity": "drink", "role": "Item"}
+    - my name is [Matthew]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [mineral water]{"entity": "drink", "role": "Item"}.
+    - my name is [Samantha]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [water]{"entity": "drink", "role": "Item"}.
+    - my name is [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [glass of wine]{"entity": "drink", "role": "Item"}
+    - my name is [Simon]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [cup of coffee]{"entity": "drink", "role": "Item"}
+    - my name is [Susan]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [glass of milk]{"entity": "drink", "role": "Item"}.
+    - my name is [damsel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [coffee with milk]{"entity": "drink", "role": "Item"}.
+    - my name is [girl]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [milk pack]{"entity": "drink", "role": "Item"}
+    - my name is [her]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [water bottle]{"entity": "drink", "role": "Item"}.
+    - my name is [lady]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}.
+    - my name is [me]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [orange juice]{"entity": "drink", "role": "Item"}.
+    - my name is [mister]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [coffee can]{"entity": "drink", "role": "Item"}
+    - my name is [mister]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [juice box]{"entity": "drink", "role": "Item"}.
+    - my name is [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"} and I prefer [dubbelfris]{"entity": "drink", "role": "Item"}
+    - my name is [they]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - my name is [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [bottle of water]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [cola can]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Daniel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [beer]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [James]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [cup of coffee with milk]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Jennifer]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [orange juice box]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Jesse]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [ginger ale]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Lauren]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [water bottle]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Robin]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [milk]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [Sophie]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [cafe au lait]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [coffee]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [missus]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [milk coffee]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [glass of wine]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [juice pack]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [them]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [lemonade]{"entity": "drink", "role": "Item"}.
+    - nice to see you! i 'm [woman]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and i like to drink [bottle of wine]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Ashley]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [cup of tea]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [cup of tea]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Axel]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [wine bottle]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Bob]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [fanta]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Elizabeth]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Gabrielle]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [fanta]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Jessica]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [glass of mineral water]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Jules]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [bottle of milk]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Lucas]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [iced tea]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Noah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [juice pack]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [Sarah]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [juice box]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [William]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [cola]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [dame]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [jug of milk]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [lord]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [milk coffee]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [madam]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [can of coffee]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [mr]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [tropical juice bottle]{"entity": "drink", "role": "Item"}.
+    - pleasure to meet you! i 'm [mrs]{"entity": "NaturalPerson", "role": "BeneficiaryRole"}, and my favorite drink is [fanta]{"entity": "drink", "role": "Item"}.
+    - what I like most to drink is [apple juice]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [cafe au lait]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [can of fanta]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [can of ice tea]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [coffee can]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [coke]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [cola can]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [cup of coffee with milk]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [dubbelfris]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [glass of milk]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [glass of mineral water]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [glass of water]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [glass of wine]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [ice tea]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [ice tea bottle]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [juice pack]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [lemonade]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [milk]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [milk bottle]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [pack of juice]{"entity": "drink", "role": "Item"}
+    - what I like most to drink is [tea]{"entity": "drink", "role": "Item"}
+
+- lookup: Clothing
+  examples: |
+    - blouse
+    - blue jeans
+    - coat
+    - dress
+    - gloves
+    - hat
+    - hoodie
+    - jacket
+    - leggings
+    - pants
+    - pullover
+    - shirt
+    - shoes
+    - socks
+    - sweater
+    - t-shirt
+    - tie
+    - trousers
+    - vest
+
+- lookup: DesignedFurniture
+  examples: |
+    - bed
+    - book case
+    - chair
+    - coat hanger
+    - coffee table
+    - couch
+    - cupboard
+    - desk
+    - dining table
+    - dinner table
+    - dishwasher
+    - dishwasher tray
+    - door
+    - drawer
+    - hallway cabinet
+    - kitchen cabinet
+    - kitchen counter
+    - kitchen table
+    - lamp
+    - lounge chair
+    - rack
+    - shelf
+    - shelf unit
+    - sink
+    - sofa
+    - table
+    - there
+    - trash can
+    - tv table
+
+- lookup: NaturalPerson
+  examples: |
+    - Adel
+    - Alice
+    - Amanda
+    - Andrew
+    - Angel
+    - Ashley
+    - Axel
+    - Bob
+    - Brittany
+    - Charlie
+    - Christopher
+    - Daniel
+    - David
+    - Elizabeth
+    - Emma
+    - Fleur
+    - Gabrielle
+    - Harrie
+    - Hayley
+    - James
+    - Jane
+    - Jennifer
+    - Jesse
+    - Jessica
+    - John
+    - Joseph
+    - Joshua
+    - Jules
+    - Julia
+    - Justin
+    - Kevin
+    - Laura
+    - Lauren
+    - Liam
+    - Lucas
+    - Matthew
+    - Michael
+    - Morgan
+    - Noah
+    - Paris
+    - Peter
+    - Robin
+    - Samantha
+    - Sara
+    - Sarah
+    - Simon
+    - Sophie
+    - Stephanie
+    - Susan
+    - William
+    - boy
+    - child
+    - dame
+    - damsel
+    - fellow
+    - gentleman
+    - girl
+    - guy
+    - her
+    - him
+    - lady
+    - lord
+    - madam
+    - man
+    - me
+    - miss
+    - missus
+    - mister
+    - mr
+    - mrs
+    - person
+    - them
+    - they
+    - woman
+
+- lookup: Room
+  examples: |
+    - arena
+    - bathroom
+    - bedroom
+    - dining room
+    - hallway
+    - kitchen
+    - living room
+    - lobby
+    - office
+    - study room
+
+- lookup: Transportable
+  examples: |
+    - abrasive sponge
+    - apple
+    - apple juice
+    - bag
+    - baked good
+    - banana
+    - baseball
+    - beer
+    - big coke
+    - blank credit card
+    - bleach
+    - bleach cleanser bottle
+    - bolt
+    - bottle
+    - bowl
+    - bread
+    - breakfast plate
+    - can
+    - candle
+    - candy
+    - cereal
+    - cereal bowl
+    - cereal box
+    - cheezit
+    - cheezit cracker box
+    - chili
+    - chili con carne
+    - chili sin carne
+    - chips can
+    - chocolate jello
+    - chocolate sprinkles
+    - cleanser
+    - cleanser bottle
+    - clear box
+    - cocoa box
+    - coffee
+    - coffee can
+    - coffee grounds
+    - coffee pack
+    - coke
+    - cola
+    - cola bottle
+    - cola can
+    - colored wood block
+    - condiment
+    - cookie
+    - cookie box
+    - cookie mix
+    - cornflakes
+    - corny box
+    - cracker box
+    - credit card
+    - crips
+    - cup
+    - curry
+    - cutlery
+    - cutting board
+    - dice
+    - dinner plate
+    - dish
+    - dishwasher tab
+    - domino sugar box
+    - drink
+    - dubbelfris
+    - fanta
+    - fastener
+    - fish
+    - foam brick
+    - fork
+    - fruit
+    - gelatine box
+    - gin tonic
+    - ginger ale
+    - glass
+    - glass cleaner spray bottle
+    - golf ball
+    - grapes
+    - grocery bag
+    - hagelslag
+    - hammer
+    - hot chocolate
+    - ice tea
+    - ice tea bottle
+    - iced coffee
+    - iced tea
+    - it
+    - jello box
+    - jello chocolate pudding box
+    - jello strawberry box
+    - jug
+    - juice
+    - juice bottle
+    - juice box
+    - juice pack
+    - ketchup
+    - kitchen knife
+    - kiwi
+    - knife
+    - large marker
+    - lego
+    - lego duplo
+    - lemon
+    - lemonade
+    - liquid
+    - liquorice
+    - low fat long lasting milk
+    - mayonaise
+    - meat
+    - metal bowl
+    - metal cup
+    - metal knife
+    - metal mug
+    - milk
+    - milk bottle
+    - milk coffee
+    - milk glass
+    - milk jug
+    - milk pack
+    - mineral water
+    - mini soccer ball
+    - muesli
+    - mueslibox
+    - mug
+    - mulled wine tea
+    - mustard
+    - mustard bottle
+    - nail
+    - napkin
+    - nesquick cereal box
+    - nut
+    - object
+    - orange
+    - orange juice
+    - orange juice box
+    - oregano
+    - oregano shaker
+    - padlock and keys
+    - pancake
+    - pancake mix
+    - pancake mix bottle
+    - paper bag
+    - pasta bowl
+    - pastry box
+    - pea soup
+    - peach
+    - pear
+    - pickles jar
+    - pitcher
+    - plastic chain
+    - plastic knife
+    - plate
+    - plum
+    - pot
+    - potted meat can
+    - pringles
+    - processed food
+    - pudding box
+    - racquet ball
+    - raspberry juice
+    - raspberry juice box
+    - red wine
+    - rope
+    - rubiks cube
+    - salad bowl
+    - salt
+    - salt shaker
+    - sandwich
+    - sausages
+    - scissors
+    - scotch brite dobie sponge
+    - screw
+    - screwdriver
+    - scrub cleaner
+    - serving mat
+    - shampoo
+    - skillet
+    - small marker
+    - soap
+    - soccer ball
+    - soft ball
+    - soup
+    - soup can
+    - spam
+    - spatula
+    - spice
+    - sponge
+    - spoon
+    - spray bottle
+    - sprite
+    - stacking blocks
+    - stapel chips
+    - steak
+    - strawberry
+    - strawberry jello
+    - stroopwafels
+    - sugar
+    - sugar box
+    - sweets
+    - table cloth
+    - tea
+    - tea bag box
+    - tennis ball
+    - tictac
+    - tiger cup
+    - toast
+    - tomato
+    - tomato soup
+    - tomato soup can
+    - toothpaste
+    - towel
+    - toy airplane
+    - tray
+    - tropical juice
+    - tropical juice bottle
+    - tuna
+    - tuna fish can
+    - vegetable
+    - washcloth
+    - washer
+    - water
+    - water bottle
+    - water glass
+    - wine bottle
+    - wine glass
+    - wood block
+    - writing tool
+    - yellow mustard bottle
+
+- lookup: drink
+  examples: |
+    - apple juice
+    - beer
+    - big coke
+    - big cola
+    - bottle of ice tea
+    - bottle of milk
+    - bottle of tropical juice
+    - bottle of water
+    - bottle of wine
+    - box of orange juice
+    - cafe au lait
+    - can of coffee
+    - can of coke
+    - can of fanta
+    - can of ice tea
+    - coffee
+    - coffee can
+    - coffee with milk
+    - coke
+    - cola
+    - cola can
+    - cup of coffee
+    - cup of coffee with milk
+    - cup of tea
+    - dubbelfris
+    - fanta
+    - fanta can
+    - gin tonic
+    - ginger ale
+    - glass of milk
+    - glass of mineral water
+    - glass of water
+    - glass of wine
+    - ice tea
+    - ice tea bottle
+    - ice tea can
+    - iced coffee
+    - iced tea
+    - jug of milk
+    - juice box
+    - juice pack
+    - lemonade
+    - milk
+    - milk bottle
+    - milk coffee
+    - milk pack
+    - mineral water
+    - orange juice
+    - orange juice box
+    - pack of juice
+    - sprite
+    - tea
+    - tropical juice bottle
+    - water
+    - water bottle
+    - wine bottle
+    - wine glass
+
+- lookup: food
+  examples: |
+    - Stroopwaffel
+    - Tic tac
+    - apple
+    - banana
+    - bottle of pancake mix
+    - bowl of soup
+    - box of cereal
+    - box of corny
+    - box of sugar
+    - can of pea soup
+    - can of potted meat
+    - can of tomato soup
+    - can of tuna fish
+    - candy
+    - cereal box
+    - cereal box robo cup
+    - chili con carne
+    - chili sin carne
+    - chips can
+    - chocolate pudding box
+    - corn flakes
+    - cornflakes
+    - corny box
+    - cracker box
+    - crackers
+    - crisps
+    - curryy
+    - french fries
+    - fries
+    - gelatin box
+    - grapes
+    - hagelslag
+    - jar of pickles
+    - jello box
+    - jello chocolate pudding box
+    - jello strawberry box
+    - kiwi
+    - lemon
+    - licorice
+    - liquorice
+    - mayo
+    - mayonaise
+    - mayonnaise
+    - meat
+    - mustard
+    - mustard bottle
+    - mustard container
+    - orange
+    - oregano shaker
+    - pancake mix
+    - pancake mix bottle
+    - pastry box
+    - pea soup
+    - pea soup can
+    - peach
+    - pear
+    - pickles
+    - piece of toast
+    - plum
+    - potted meat can
+    - pringles
+    - pringles chips can
+    - sandwich
+    - sausages
+    - soup
+    - steak
+    - strawberry
+    - sugar
+    - sugar box
+    - tictac
+    - toast
+    - tomato
+    - tomato soup can
+    - tuna fish can
+    - vegetable
+    - vegetables
+

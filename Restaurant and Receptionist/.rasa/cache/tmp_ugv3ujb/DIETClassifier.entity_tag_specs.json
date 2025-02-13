@@ -1,0 +1,62 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-NaturalPerson",
+      "2": "I-NaturalPerson",
+      "3": "L-NaturalPerson",
+      "4": "U-NaturalPerson",
+      "5": "B-drink",
+      "6": "I-drink",
+      "7": "L-drink",
+      "8": "U-drink",
+      "9": "B-food",
+      "10": "I-food",
+      "11": "L-food",
+      "12": "U-food",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-NaturalPerson": 1,
+      "I-NaturalPerson": 2,
+      "L-NaturalPerson": 3,
+      "U-NaturalPerson": 4,
+      "B-drink": 5,
+      "I-drink": 6,
+      "L-drink": 7,
+      "U-drink": 8,
+      "B-food": 9,
+      "I-food": 10,
+      "L-food": 11,
+      "U-food": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  },
+  {
+    "tag_name": "role",
+    "ids_to_tags": {
+      "1": "B-BeneficiaryRole",
+      "2": "I-BeneficiaryRole",
+      "3": "L-BeneficiaryRole",
+      "4": "U-BeneficiaryRole",
+      "5": "B-Item",
+      "6": "I-Item",
+      "7": "L-Item",
+      "8": "U-Item",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-BeneficiaryRole": 1,
+      "I-BeneficiaryRole": 2,
+      "L-BeneficiaryRole": 3,
+      "U-BeneficiaryRole": 4,
+      "B-Item": 5,
+      "I-Item": 6,
+      "L-Item": 7,
+      "U-Item": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
