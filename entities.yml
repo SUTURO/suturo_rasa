@@ -57,56 +57,180 @@ DesignedFurniture:
   - hallway cabinet
 NaturalPerson:
   entities:
+  - Abigail
+  - Adam
   - Adel
+  - Aiden
+  - Alexander
   - Alice
+  - Alina
+  - Amelia
   - Amanda
+  - Amy
   - Andrew
   - Angel
+  - Aria
+  - Asher
   - Ashley
+  - Aurora
+  - Ava
   - Axel
+  - Benjamin
+  - Bernd
   - Bob
+  - Brandon
   - Brittany
+  - Caleb
+  - Cameron
+  - Carl
+  - Caroline
+  - Charlotte
+  - Chloe
   - Charlie
+  - Christian
   - Christopher
+  - Claire
+  - Connor
   - Daniel
   - David
+  - Dieter
+  - Dylan
+  - Edward
+  - Eleanor
+  - Elijah
   - Elizabeth
+  - Elke
+  - Eliana
+  - Ellie
+  - Emily
   - Emma
+  - Erika
+  - Ethan
+  - Evan
+  - Evelyn
+  - Ezra
+  - Finn
   - Fleur
+  - Frank
+  - Franz
+  - Friedrich
+  - Fritz
   - Gabrielle
+  - George
+  - Gisela
+  - Grace
+  - Günter
+  - Hannah
+  - Hans
   - Harrie
+  - Harper
+  - Hartmut
   - Hayley
+  - Heike
+  - Heinz
+  - Helga
+  - Henry
+  - Hudson
+  - Isaac
+  - Isabella
+  - Jack
+  - Jackson
+  - Jacob
   - James
   - Jane
+  - Jasmine
+  - Jeffrey
   - Jennifer
+  - Jeremy
   - Jesse
   - Jessica
+  - Joachim
   - John
+  - Jordan
   - Joseph
+  - Josephine
   - Joshua
   - Jules
   - Julia
   - Justin
+  - Jürgen
+  - Kaitlyn
+  - Karin
+  - Katherine
   - Kevin
+  - Kimberly
+  - Klaus
+  - Kyle
   - Laura
   - Lauren
+  - Levi
+  - Leo
+  - Lily
   - Liam
+  - Logan
+  - Luca
   - Lucas
+  - Luna
+  - Madison
+  - Manfred
+  - Maria
+  - Marlene
+  - Mark
+  - Mason
+  - Mateo
   - Matthew
+  - Megan
   - Michael
+  - Mia
   - Morgan
+  - Nadine
+  - Nathan
+  - Natalie
+  - Nicholas
+  - Nicole
   - Noah
+  - Oliver
+  - Olivia
+  - Otto
+  - Owen
   - Paris
+  - Patrick
+  - Penelope
   - Peter
+  - Rachel
+  - Rainer
+  - Rebecca
+  - Renate
+  - Richard
+  - Robert
   - Robin
+  - Ryan
+  - Sabine
   - Samantha
+  - Samuel
   - Sara
   - Sarah
-  - Simone
+  - Sascha
+  - Savannah
+  - Sebastian
+  - Siegfried
+  - Simon
+  - Sophia
   - Sophie
   - Stephanie
+  - Stefan
+  - Stella
   - Susan
+  - Theodore
+  - Thomas
+  - Timothy
+  - Uwe
+  - Vanessa
+  - Victoria
   - William
+  - Wolfgang
+  - Wyatt
+  - Zachary
   - boy
   - child
   - dame
@@ -383,5 +507,22 @@ Transportable:
   - wood block
   - shampoo
   - it
+  - cleaning rag
+  - dust cloth
+  - kitchen cleaner
+  - cornflakes container
+  - mezzo mix
+  - oat milk
+  - creamer
+  - instant noodles
+  - pasta
+  - red cabbage
+  - sweetener
+  - chocolate peanuts
+  - cracker
+  - gum
+  - cotton pads
+  - q tips
+  - tissue
 
 
