@@ -33,14 +33,14 @@ DesignedFurniture:
   - book case
   - lounge chair
   - drawer
-#  - coat rack
+  - coat rack
   - coat hanger
   - dishwasher
 #  - microwave
   - chair
   - sofa
   - couch
-#  - couch table
+  - couch table
   - coffee table
   - table
   - bed
@@ -55,6 +55,19 @@ DesignedFurniture:
   - cupboard
   - there
   - hallway cabinet
+  - bookshelf
+  - office chair
+  - plant
+  - fridge
+  - dresser
+  - side table
+  - tv sideboard
+  - cabinet
+  - bar 
+  - arm chair
+
+
+  
 NaturalPerson:
   entities:
   - Abigail
@@ -269,6 +282,7 @@ Room:
 #  - pantry
   - kitchen
 #  - balcony
+
 Transportable:
   entities:
   - ginger ale
