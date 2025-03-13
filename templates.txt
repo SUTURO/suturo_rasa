@@ -132,7 +132,6 @@ TellSomething: share a little bit about yourself
 TellSomething: please tell me something about yourself
 TellSomething: could you tell me something about yourself please?
 
-
 EindhovenMountain: What is the highest mountain in the Netherlands? 
 EindhovenMountain: Which one is the highest mountain in the Netherlands? 
 
@@ -165,7 +164,30 @@ EindhovenCurrency: What was the dutch currency before the Euro?
 EindhovenCurrency: Which kind of currency did the dutch have before the Euro?
 EindhovenCurrency: What kind of currency was used in the Netherlands before the Euro?
 
+NuernbergFood: What traditional food is Nuremberg famous for?
+NuernbergFood: What is Nuremberg best known for in terms of traditional food?
+NuernbergFood: Which traditional dish is Nuremberg most famous for?
+NuernbergFood: What classic food specialty is Nuremberg renowned for?
 
+NuernbergArtist: Which famous renaissance artist was born in Nuremberg?
+NuernbergArtist: Which renowned Renaissance artist was born in Nuremberg?
+NuernbergArtist: Who is the famous Renaissance artist native to Nuremberg?
+NuernbergArtist: Which well-known artist of the Renaissance era was born in Nuremberg?
+
+NuernbergCastles: Can you name two castles that can be found in Nuremberg?
+NuernbergCastles: Can you name two castles located in Nuremberg?
+NuernbergCastles: Which two castles can be found in Nuremberg?
+NuernbergCastles: Could you list two castles situated in Nuremberg?
+
+NuernbergRiver: Which river flows through Nuremberg?
+NuernbergRiver: What river runs through Nuremberg?
+NuernbergRiver: Which river passes through Nuremberg?
+NuernbergRiver: What is the name of the river that flows through Nuremberg?
+
+NuernbergPopulation: What is the population of Nuremberg?
+NuernbergPopulation: How many people live in Nuremberg?
+NuernbergPopulation: What is the current population of Nuremberg?
+NuernbergPopulation: What is the number of inhabitants in Nuremberg?
 
 AssertSpeaker: hello, my name is NaturalPerson|AgentRole
 AssertSpeaker: hi, I am NaturalPerson|AgentRole
