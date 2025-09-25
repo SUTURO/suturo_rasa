@@ -2,31 +2,30 @@
 This repository contains the files for the rasa action server used in [suturo_nlp](https://github.com/SUTURO/suturo_nlp).
 
 ### Installing rasa
-[Suturo wiki: Rasa](https://github.com/SUTURO/SUTURO-documentation/wiki/Rasa)
+It is recommended to follow the entire [Installation Guide](https://github.com/SUTURO/SUTURO-documentation/wiki/NLP-Home#-set-up-and-tutorials) that covers everything you need to install and run the NLP Pipeline. In any case, here is a list of libraries, that one needs to install, to utilize this repository:
+```
+keras==2.12.0 
+rasa==3.6.20 
+rasa-sdk==3.6.2 
+redis==4.6.0 
+regex==2022.10.31 
+requests==2.32.3 
+requests-oauthlib==2.0.0 
+requests-toolbelt==1.0.0 
+rocketchat-API==1.30.0 
+tensorboard==2.12.3 
+tensorboard-data-server==0.7.2 
+tensorflow==2.12.0 
+tensorflow-estimator==2.12.0 
+tensorflow-hub==0.13.0 
+tensorflow-io-gcs-filesystem==0.32.0 
+tensorflow-text==2.12.0 
+```
 
 ### How to use:
 Prerequisites:
-
-Assumes python3 and rasa are already installed. Open a terminal, and type in the following commands, one by one.
-```bash
-sudo pip install nltk
-python3
-import nltk
-nltk.download('punkt')
-exit()
-```
-
-Once the above is done, here is the generate-train-test procedure:
-
-Open a terminal and go to this folder. Then run the following commands, one by one:
-```bash
-rasa init
-python3 ./command_and_test_generator.py
-rasa train
-rasa run --enable-api
-```
-For automated testing, open a different terminal and go to this folder. Then run
-python3 ./testing.py
-
-The results are in errors.log.
+It is recommended to follow the entire guide, on [How to Use Rasa](https://github.com/SUTURO/SUTURO-documentation/wiki/How-to-use-Rasa), there you will learn how to:
+1. Initialize a new rasa model,
+2. Generate Training Data,
+3. Train and Run a New Rasa Model
 
