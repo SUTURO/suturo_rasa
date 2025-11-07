@@ -595,3 +595,44 @@ Interest:
     - programming
     - working
     - partying
+    
+Shapes:
+  entities:
+    - round
+    - square 
+    - cube
+    - cross
+    - oval
+    - diamond
+    - star
+    - rectangle
+    - triangle
+    - heart 
+    - ellipse
+    - sphere
+    - cylinder
+    - flat
+    
+Objects:
+  entities:
+   - Ball
+   - Box
+   - Bag
+   - Book
+   - Cup
+   - Plate
+   - Basket
+    
+    
+Comparison:
+  entities:
+    - smallest
+    - biggest
+    - largest
+    - tallest
+    - shortest
+    - longest
+    - shortest
+    - thickest
+    - thinnest
+   
