@@ -101,16 +101,6 @@ def parseEntities(entitiesFile):
 
 #ontology = loadOntology(ontologyLoader)
 
-templatesRaw = loadSharp('templates0.txt')
-templates = {}
-for t in templatesRaw:
-    idx = t.find(':')
-    intent = t[:idx].strip()
-    sentence = t[idx+1:].strip()
-    if intent not in templates:
-        templates[intent] = []
-    templates[intent].append(sentence)
-
 punctuation = set([',', ':', '.', ';', '"', '\'', '?', '!'])
 
 # We actually may want to generate MANY sentences at once for both training and testing purposes. One by one is silly.
@@ -234,6 +224,17 @@ def main():
     #parser.add_argument('-c', '--category', default="2", help='Category of templates to generate for. May be 1 or 2 (will be forced to 2 otherwise). TODO: add support for cat 3.')
     arguments = parser.parse_args()
     outputPath = arguments.outputPath
+
+    templatesRaw = loadSharp(arguments.templates)
+    templates = {}
+    for t in templatesRaw:
+        idx = t.find(':')
+        intent = t[:idx].strip()
+        sentence = t[idx + 1:].strip()
+        if intent not in templates:
+            templates[intent] = []
+        templates[intent].append(sentence)
+
     ontology = parseEntities(arguments.entities)
     Ntrain = int(arguments.numberTrainingExamples)
     if 20 > Ntrain:
