@@ -101,16 +101,6 @@ def parseEntities(entitiesFile):
 
 #ontology = loadOntology(ontologyLoader)
 
-# templatesRaw = loadSharp('templatesR.txt')
-# templates = {}
-# for t in templatesRaw:
-#     idx = t.find(':')
-#     intent = t[:idx].strip()
-#     sentence = t[idx+1:].strip()
-#     if intent not in templates:
-#         templates[intent] = []
-#     templates[intent].append(sentence)
-
 punctuation = set([',', ':', '.', ';', '"', '\'', '?', '!'])
 
 # We actually may want to generate MANY sentences at once for both training and testing purposes. One by one is silly.
@@ -251,7 +241,7 @@ def main():
     Ntrain = int(arguments.numberTrainingExamples)
     if 20 > Ntrain:
         Ntrain = 20
-    Ntest = int(arguments.numberTrainingExamples)
+    Ntest = int(arguments.numberTestingExamples)
     if 20 > Ntest:
         Ntest = 20
     Ntrials = int(arguments.numberTrials)
