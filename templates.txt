@@ -5,6 +5,10 @@
 
 Fetching: go grab a drink|Item from the PhysicalPlace|Origin
 Fetching: grab a PhysicalArtifact|Item from the PhysicalPlace|Origin.
+Fetching: go grab a Transportable|Item
+Fetching: go grab a red Transportable|Item
+Fetching: go grab a Transportable|Item from the Room|Location
+Fetching: go grab a red Transportable|Item from the Room|Location
 
 LookingFor: look for a PhysicalArtifact|Item
 LookingFor: find a PhysicalArtifact|Item
@@ -33,6 +37,14 @@ LookingFor: could you please search for a PhysicalArtifact|Item?
 LookingFor: is it possible for you to seek out a PhysicalArtifact|Item?
 LookingFor: would you mind locating a PhysicalArtifact|Item?
 LookingFor: would you be able to find a PhysicalArtifact|Item?
+LookingFor: can you look for a Transportable|Item?
+LookingFor: can you look for a red Transportable|Item?
+LookingFor: could you please find a Transportable|Item?
+LookingFor: could you please find a red Transportable|Item?
+LookingFor: search for a Transportable|Item
+LookingFor: search for a red Transportable|Item
+LookingFor: can you check if there's a Transportable|Item around?
+LookingFor: can you check if there's a red Transportable|Item around?
 
 MovingTo: go to the PhysicalArtifact|Destination
 MovingTo: go to the PhysicalPlace|Destination
@@ -102,6 +114,10 @@ Transporting: would you be able to move the PhysicalArtifact|Item holder to the 
 Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalArtifact|Destination?
 Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalPlace|Destination?
 Transporting: would you mind moving the PhysicalArtifact|Item to the PhysicalPlace|Destination?
+Transporting: can you bring the Transportable|Item to the Room|Location?
+Transporting: can you bring the red Transportable|Item to the Room|Location?
+Transporting: take the Transportable|Item from the Room|Location
+Transporting: take the red Transportable|Item from the Room|Location
 
 Arranging: can you assist NaturalPerson|BeneficiaryRole in arranging the PhysicalArtifact|Item on the PhysicalPlace|Location PhysicalArtifact|Destination, please?
 Arranging: can you collaborate with NaturalPerson|BeneficiaryRole to arrange the PhysicalArtifact|Item on the PhysicalArtifact|Destination?
