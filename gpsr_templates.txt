@@ -83,28 +83,68 @@ Search: Please locate a Transportable|Item in the Room|Location
 
 Search: Find a drink|drink
 Search: Find a drink|drink in the Room|Location
+Search: Find a drink|drink on the DesignedFurniture|Furniture
+
+Search: Please find a drink|drink
+Search: Please find a drink|drink in the Room|Location
+Search: Please find a drink|drink on the DesignedFurniture|Furniture
+
 Search: Look for a drink|drink
 Search: Look for a drink|drink in the Room|Location
+Search: Look for a drink|drink on the DesignedFurniture|Furniture
+
 Search: Search for a drink|drink
 Search: Search for a drink|drink in the Room|Location
+Search: Search for a drink|drink on the DesignedFurniture|Furniture
+
 Search: Please look for a drink|drink
-Search: Please look for a drink in the Room|Location
-Search: Please search for a drink in the Room|Location
+Search: Please look for a drink|drink in the Room|Location
+Search: Please look for a drink|drink on the DesignedFurniture|Furniture
+
+Search: Please search for a drink|drink
+Search: Please search for a drink|drink in the Room|Location
+Search: Please search for a drink|drink on the DesignedFurniture|Furniture
+
 Search: Locate a drink|drink
 Search: Locate a drink|drink in the Room|Location
+Search: Locate a drink|drink on the DesignedFurniture|Furniture
+
+Search: Please locate a drink|drink
+Search: Please locate a drink|drink in the Room|Location
+Search: Please locate a drink|drink on the DesignedFurniture|Furniture 
 
 # food
 
 Search: Find food|food
 Search: Find food|food in the Room|Location
-Search: Search for food|food in the Room|Location
+Search: Find food|food on the DesignedFurniture|Furniture
+Search: Please find food|food
+Search: Please find food|food in the Room|Location
+Search: Please find food|food on the DesignedFurniture|Furniture
+
 Search: Search for food|food
 Search: Search for food|food in the Room|Location
+Search: Search for food|food on the DesignedFurniture|Furniture
+
+Search: Please search for food|food
+Search: Please search for food|food in the Room|Location
+Search: Please search for food|food on the DesignedFurniture|Furniture
+
 Search: Look for food|food
 Search: Look for food|food in the Room|Location
-Search: Please search for food|food
-Search: Please search for food|food in the Room
-Search: Please look for food|food in the Room
+Search: Look for food|food on the DesignedFurniture|Furniture
+
+Search: Please look for food|food
+Search: Please look for food|food in the Room|Location
+Search: Please look for food|food on the DesignedFurniture|Furniture
+
+Search: Locate a drink|drink
+Search: Locate a drink|drink in the Room|Location
+Search: Locate a drink|drink on the DesignedFurniture|Furniture
+
+Search: Please locate a drink|drink
+Search: Please locate a drink|drink in the Room|Location
+Search: Please locate a drink|drink on the DesignedFurniture|Furniture 
 
 
 # Room / Furniture
@@ -121,6 +161,46 @@ Search: Locate a Transportable|Item on the DesignedFurniture|Furniture
 Search: Look for a Transportable|Item on the DesignedFurniture|Furniture
 Search: Please look for a Transportable|Item on the DesignedFurniture|Furniture
 Search: Please search for a Transportable|Item on the DesignedFurniture|Furniture
+
+
+# Question 
+Search: Would you find the Transportable|Item 
+Search: Would you find the Transportable|Item in the Room|Location
+Search: Would you find NaturalPerson|Person
+Search: Would you find NaturalPerson|Person in the Room|Location
+
+Search: Can you find the Transportable|Item 
+Search: Can you find the Transportable|Item in the Room|Location
+Search: Can you find NaturalPerson|Person
+Search: Can you find NaturalPerson|Person in the Room|Location
+
+Search: Locate NaturalPerson|Person
+Search: Locate NaturalPerson|Person in the Room|Location
+Search: Locate the Transportable|Item
+Search: Locate the Transportable|Item in the Room|Location
+Search: Locate a Transportable|Item
+Search: Locate a Transportable|Item in the Room|Location
+Search: Locate an Transportable|Item
+Search: Locate an Transportable|Item in the Room|Location
+
+Search: Could you locate NaturalPerson|Person
+Search: Could you locate NaturalPerson|Person in the Room|Location
+Search: Could you locate the Transportable|Item
+Search: Could you locate the Transportable|Item in the Room|Location
+Search: Could you locate a Transportable|Item
+Search: Could you locate a Transportable|Item in the Room|Location
+Search: Could you locate an Transportable|Item
+Search: Could you locate an Transportable|Item in the Room|Location
+
+Search: Can you locate NaturalPerson|Person
+Search: Can you locate NaturalPerson|Person in the Room|Location
+Search: Can you locate the Transportable|Item
+Search: Can you locate the Transportable|Item in the Room|Location
+Search: Can you locate a Transportable|Item
+Search: Can you locate a Transportable|Item in the Room|Location
+Search: Can you locate an Transportable|Item
+Search: Can you locate an Transportable|Item in the Room|Location
+
 
 # ----- Guide -----
 
@@ -143,6 +223,45 @@ Guide: Guide persons raising their right arm to the Room|Location
 Guide: Escort persons raising their right arm to the Room|Location
 Guide: Take persons raising their right arm to the Room|Location
 Guide: Lead persons raising their right arm to the Room|Location
+
+
+# Question 
+Guide: Could you guide NaturalPerson|Person to the Room|Location
+Guide: Could you guide NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Could you guide NaturalPerson|Person to the Room|Location
+Guide: Could you guide NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Can you guide NaturalPerson|Person to the Room|Location
+Guide: Can you guide NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Would you like to guide NaturalPerson|Person to the Room|Location
+Guide: Would you like to guide NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Escort NaturalPerson|Person to the Room|Location
+Guide: Escort NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Can you escort NaturalPerson|Person to the Room|Location
+Guide: Can you escort NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Could you escort NaturalPerson|Person to the Room|Location
+Guide: Could you escort NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Would you like to escort NaturalPerson|Person to the Room|Location
+Guide: Would you like to escort NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Can you take NaturalPerson|Person to the Room|Location
+Guide: Can you take NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Lead NaturalPerson|Person to the Room|Location
+Guide: Lead NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Could you lead NaturalPerson|Person to the Room|Location
+Guide: Could you lead NaturalPerson|Person to the DesignedFurniture|Furniture
+
+Guide: Can you lead NaturalPerson|Person to the Room|Location
+Guide: Can you lead NaturalPerson|Person to the DesignedFurniture|Furniture
+
 
 # ----- Follow -----
 
