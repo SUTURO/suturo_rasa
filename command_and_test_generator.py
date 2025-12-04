@@ -73,35 +73,7 @@ def parseEntities(entitiesFile):
         except yaml.YAMLError as exc:
             print(exc)
 
-#ontologyLoader = []
-#ontologyLoader.append(("NaturalPerson", "naturalPersons.txt", None, "NaturalPersons"))
-#ontologyLoader.append(("drink", "drinks.txt", None, "drinks"))
-#ontologyLoader.append(("food", "foods.txt", None, "foods"))
-#ontologyLoader.append(("PhysicalArtifact", "physicalArtifacts.txt", None, "PhysicalArtifacts"))
-#ontologyLoader.append(("PhysicalPlace", "physicalPlaces.txt", None, "PhysicalPlaces"))
-
-#ontologyLoader.append(('LOCATION', 'locations.txt', 'location_categories.txt', 'locations'))
-#ontologyLoader.append(('ITEM', 'items.txt', 'item_categories.txt', 'items'))
-#ontologyLoader.append(('LOCATION_CATEGORY', 'location_categories.txt', None, 'locations'))
-#ontologyLoader.append(('ITEM_CATEGORY', 'item_categories.txt', None, 'items'))
-#ontologyLoader.append(('NAME', 'names.txt', None, 'names'))
-#ontologyLoader.append(('TASK', 'tasks.txt', None, 'tasks'))
-
-#ontologyLoader.append(('object', 'objects.txt', 'object_categories.txt', 'objects'))
-#ontologyLoader.append(('object_category', 'object_categories.txt', None, 'object_categories'))
-#ontologyLoader.append(('location', 'locations.txt', 'location_categories.txt', 'locations'))
-#ontologyLoader.append(('location_category', 'location_categories.txt', None, 'location_categories'))
-#ontologyLoader.append(('room', 'rooms.txt', None, 'rooms'))
-#ontologyLoader.append(('colours', 'colours.txt', None, 'colours'))
-#ontologyLoader.append(('attributes', 'attributes.txt', None, 'attributes'))
-#ontologyLoader.append(('gestures', 'gestures.txt', None, 'gestures'))
-#ontologyLoader.append(('number', 'numbers.txt', None, 'numbers'))
-#ontologyLoader.append(('person_name', 'person_names.txt', None, 'person_names'))
-#ontologyLoader.append(('person', 'persons.txt', None, 'persons'))
-
-#ontology = loadOntology(ontologyLoader)
-
-punctuation = set([',', ':', '.', ';', '"', '\'', '?', '!'])
+punctuation = {',', ':', '.', ';', '"', '\'', '?', '!'}
 
 # We actually may want to generate MANY sentences at once for both training and testing purposes. One by one is silly.
 def generateN(N, Ntrials, templates, ontology):
