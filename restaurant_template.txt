@@ -93,3 +93,56 @@ Order: I'd like to have the food|Item and food|Item and drink|Item.
 Order: I'd like to have the drink|Item and drink|Item.
 Order: I'd like to have the drink|Item and drink|Item and food|Item.
 Order: I'd like to have the drink|Item and drink|Item and drink|Item.
+
+Order: I'd like to order food|Item and drink|Item.
+Order: I'd like to order food|Item and drink|Item and drink|Item.
+Order: I'd like to order food|Item and drink|Item and food|Item.
+Order: I'd like to order drink|Item and food|Item.
+Order: I'd like to order drink|Item and food|Item and food|Item.
+Order: I'd like to order drink|Item and food|Item and drink|Item.
+Order: I'd like to order food|Item and food|Item.
+Order: I'd like to order food|Item and food|Item and food|Item.
+Order: I'd like to order food|Item and food|Item and drink|Item.
+Order: I'd like to order drink|Item and drink|Item.
+Order: I'd like to order drink|Item and drink|Item and food|Item.
+Order: I'd like to order drink|Item and drink|Item and drink|Item.
+
+Order: I'd like to get food|Item and drink|Item.
+Order: I'd like to get food|Item and drink|Item and drink|Item.
+Order: I'd like to get food|Item and drink|Item and food|Item.
+Order: I'd like to get drink|Item and food|Item.
+Order: I'd like to get drink|Item and food|Item and food|Item.
+Order: I'd like to get drink|Item and food|Item and drink|Item.
+Order: I'd like to get food|Item and food|Item.
+Order: I'd like to get food|Item and food|Item and food|Item.
+Order: I'd like to get food|Item and food|Item and drink|Item.
+Order: I'd like to get drink|Item and drink|Item.
+Order: I'd like to get drink|Item and drink|Item and food|Item.
+Order: I'd like to get drink|Item and drink|Item and drink|Item.
+
+Order: Could I order food|Item and drink|Item.
+Order: Could I order food|Item and drink|Item and drink|Item.
+Order: Could I order food|Item and drink|Item and food|Item.
+Order: Could I order drink|Item and food|Item.
+Order: Could I order drink|Item and food|Item and food|Item.
+Order: Could I order drink|Item and food|Item and drink|Item.
+Order: Could I order food|Item and food|Item.
+Order: Could I order food|Item and food|Item and food|Item.
+Order: Could I order food|Item and food|Item and drink|Item.
+Order: Could I order drink|Item and drink|Item.
+Order: Could I order drink|Item and drink|Item and food|Item.
+Order: Could I order drink|Item and drink|Item and drink|Item.
+
+Order: Could I get food|Item and drink|Item.
+Order: Could I get food|Item and drink|Item and drink|Item.
+Order: Could I get food|Item and drink|Item and food|Item.
+Order: Could I get drink|Item and food|Item.
+Order: Could I get drink|Item and food|Item and food|Item.
+Order: Could I get drink|Item and food|Item and drink|Item.
+Order: Could I get food|Item and food|Item.
+Order: Could I get food|Item and food|Item and food|Item.
+Order: Could I get food|Item and food|Item and drink|Item.
+Order: Could I get drink|Item and drink|Item.
+Order: Could I get drink|Item and drink|Item and food|Item.
+Order: Could I get drink|Item and drink|Item and drink|Item.
+
