@@ -10,9 +10,9 @@
 # TODO: food and drink entities in Discover and Transporting!
 # TODO: Greet / meet person, offer, describe
 
-##############
-# Navigation #
-##############
+# -----------
+# Navigation
+# -----------
 
 # TODO: More templates?
 Navigation: Go to the Room|Location
@@ -54,9 +54,9 @@ Navigation: Leave the Room|Location
 Navigation: Leave this Room|Location
 
 
-#######################################
-# Interaction with Objects and Humans #
-#######################################
+# -------------------------------------
+# Interaction with Objects and Humans
+# -------------------------------------
 
 # ---- Searching ----
 
@@ -252,18 +252,18 @@ Discover: can you locate a NaturalPerson|BeneficiaryRole standing next to the De
 
 # ---- Transporting ----
 
-# Transport: Find a Transportable|Item and bring it to me
-# Transport: Bring me a Transportable|Item from the Room|Location
-# Transport: Bring me a Transportable|Item from the DesignedFurniture|Furniture
-# Transport: Pick up a Transportable|Item and give it to NaturalPerson|Person
-# Transport: Retrieve a Transportable|Item from the Room|Location and deliver it to NaturalPerson|Person
-# Transport: Take a Transportable|Item from the DesignedFurniture|Furniture and place it on the DesignedFurniture|Furniture
-Transport: Bring me the Transportable|Item
-Transport: Give me the Transportable|Item
-Transport: Please bring me the Transportable|Item
-Transport: Please give me the Transportable|Item
-Transport: Bring me a Transportable|Item
-Transport: Please bring me a Transportable|Item
+# Transporting: Find a Transportable|Item and bring it to me
+# Transporting: Bring me a Transportable|Item from the Room|Location
+# Transporting: Bring me a Transportable|Item from the DesignedFurniture|Furniture
+# Transporting: Pick up a Transportable|Item and give it to NaturalPerson|Person
+# Transporting: Retrieve a Transportable|Item from the Room|Location and deliver it to NaturalPerson|Person
+# Transporting: Take a Transportable|Item from the DesignedFurniture|Furniture and place it on the DesignedFurniture|Furniture
+Transporting: Bring me the Transportable|Item
+Transporting: Give me the Transportable|Item
+Transporting: Please bring me the Transportable|Item
+Transporting: Please give me the Transportable|Item
+Transporting: Bring me a Transportable|Item
+Transporting: Please bring me a Transportable|Item
 
 
 Transporting: take a Transportable|Item to the Room|DestinationRoom
@@ -456,9 +456,9 @@ Transporting: can you deliver some Transportable|Item from the DesignedFurniture
 Transporting: could you move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom please?
 
 
-###########################
-# Interaction with person #
-###########################
+# -------------------------
+# Interaction with person
+# -------------------------
 
 # ---- Conversation ----
 
@@ -691,9 +691,9 @@ Offer: offer a Transportable|Item to the NaturalPerson|BeneficiaryRole
 Offer: offer the NaturalPerson|BeneficiaryRole a Transportable|Item
 
 
-#########################################
-# Mixed commands with the other Intents #
-#########################################
+# ---------------------------------------
+# Mixed commands with the other Intents
+# ---------------------------------------
 
 # Complex: Go to the Room|Location then find a Transportable|Item and bring it to me
 # Complex: Navigate to the Room|Location then find NaturalPerson|Person and follow them to the Room|Location
@@ -710,9 +710,9 @@ Offer: offer the NaturalPerson|BeneficiaryRole a Transportable|Item
 # Complex: Fetch a Transportable|Item from the Room|Location and give it to NaturalPerson|Person in the Room|Location
 # Complex: Go to the Room|Location then meet NaturalPerson|Person and guide them to the Room|Location
 
-###################
-# Deny and Affirm #
-###################
+# -----------------
+# Deny and Affirm
+# -----------------
 
 affirm: Yes.
 affirm: That is correct.
