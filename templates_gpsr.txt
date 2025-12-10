@@ -5,16 +5,10 @@
 
 # GPSR (General Purpose Service Robot)
 
-# Discover: Tell me how many Transportable|Item are on the DesignedFurniture|Furniture
-
-# TODO: food and drink entities in Discover and Transporting!
-# TODO: Greet / meet person, offer, describe
-
 # -----------
 # Navigation
 # -----------
 
-# TODO: More templates?
 Navigation: Go to the Room|Location
 Navigation: Drive to the Room|Location
 Navigation: Please go to the Room|Location
@@ -27,13 +21,11 @@ Navigation: Please move to the Room|Location
 Navigation: Can you move to the Room|Location?
 Navigation: Can you please move to the Room|Location?
 Navigation: Can you please drive to the Room|Location?
-
 Navigation: Go to the DesignedFurniture|Furniture
 Navigation: Please go to the DesignedFurniture|Furniture
 Navigation: Can you go to the DesignedFurniture|Furniture?
 Navigation: Could you go to the DesignedFurniture|Furniture?
 Navigation: Could you please go to the DesignedFurniture|Furniture?
-
 Navigation: Go to the DesignedFurniture|Furniture in the Room|Location
 Navigation: Please go to the DesignedFurniture|Furniture in the Room|Location
 Navigation: Can you go to the DesignedFurniture|Furniture in the Room|Location?
@@ -52,13 +44,35 @@ Navigation: In the Room|Location drive to NaturalPerson|Person
 
 Navigation: Leave the Room|Location
 Navigation: Leave this Room|Location
+Navigation: Exit the Room|Location
+Navigation: Please exit the Room|Location
 
+Navigation: Make your way to the Room|Location
+Navigation: Head over to the DesignedFurniture|Furniture
+Navigation: Travel to the Room|Location
+Navigation: Proceed to the DesignedFurniture|Furniture
+Navigation: Make your way to the DesignedFurniture|Furniture
+Navigation: Head to the Room|Location
+Navigation: Please head to the Room|Location
+Navigation: Advance to the Room|Location
+
+Navigation: Go to the waving NaturalPerson|Person
+Navigation: Navigate to the person raising their left arm
+Navigation: Go to the NaturalPerson|Person raising their right arm
+Navigation: Find the person pointing to the left
+Navigation: Go to the NaturalPerson|Person pointing to the right
+Navigation: Move to the sitting NaturalPerson|Person
+Navigation: Navigate to the standing NaturalPerson|Person
+Navigation: Go to the lying NaturalPerson|Person
+Navigation: Approach the waving person
+Navigation: Go to the person pointing to the left in the Room|Location
 
 # -------------------------------------
 # Interaction with Objects and Humans
 # -------------------------------------
 
-# ---- Searching ----
+# ---- Searching (Discover) ----
+# Atomic: Only "Find", "Locate", "Spot", "Look for"
 
 Discover: Find a Transportable|Item
 Discover: Please find a Transportable|Item
@@ -93,10 +107,6 @@ Discover: Locate a Transportable|Item in the Room|Location
 Discover: Please locate a Transportable|Item in the Room|Location
 Discover: Locate the Transportable|Item in the Room|Location
 Discover: Please locate the Transportable|Item in the Room|Location
-Discover: Bring me a Transportable|Item in the Room|Location
-Discover: Please bring me a Transportable|Item in the Room|Location
-Discover: Bring me the Transportable|Item in the Room|Location
-Discover: Please bring me the Transportable|Item in the Room|Location
 Discover: Look for a Transportable|Item in the Room|Location
 Discover: Please look for a Transportable|Item in the Room|Location
 Discover: Look for the Transportable|Item in the Room|Location
@@ -109,20 +119,16 @@ Discover: Can you please locate a Transportable|Item in the Room|Location?
 Discover: Can you look for a Transportable|Item in the Room|Location?
 Discover: Can you please look for a Transportable|Item in the Room|Location?
 
-# TODO: Apply questions in the sentences below
 Discover: In the Room|Location find a Transportable|Item
 Discover: In the Room|Location find the Transportable|Item
 Discover: In the Room|Location locate a Transportable|Item
 Discover: In the Room|Location locate the Transportable|Item
-Discover: In the Room|Location bring a Transportable|Item
-Discover: In the Room|Location bring the Transportable|Item
 Discover: In the Room|Location look for a Transportable|Item
 Discover: In the Room|Location look for the Transportable|Item
 
 Discover: Locate a Transportable|Item on the DesignedFurniture|Furniture
 Discover: Locate the Transportable|Item on the DesignedFurniture|Furniture
 Discover: Find a Transportable|Item on the DesignedFurniture|Furniture
-Discover: Find the Transportable|Item on the DesignedFurniture|Furniture
 Discover: Find the Transportable|Item on the DesignedFurniture|Furniture
 Discover: Look for a Transportable|Item on the DesignedFurniture|Furniture
 Discover: Look for the Transportable|Item on the DesignedFurniture|Furniture
@@ -133,7 +139,6 @@ Discover: On the DesignedFurniture|Furniture find a Transportable|Item
 Discover: On the DesignedFurniture|Furniture find the Transportable|Item
 Discover: On the DesignedFurniture|Furniture look for a Transportable|Item
 Discover: On the DesignedFurniture|Furniture look for the Transportable|Item
-
 
 Discover: look for some Transportable|Item
 Discover: find some Transportable|Item
@@ -160,12 +165,35 @@ Discover: can you locate a Transportable|Item next to the DesignedFurniture|Sour
 Discover: see if there is any Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: can you find a Transportable|Item from the Room|SourceRoom for me?
 
-# ---- With person ----
+Discover: Spot the Transportable|Item in the Room|Location
+Discover: Identify the position of the Transportable|Item
+Discover: Do you see a Transportable|Item near the DesignedFurniture|Furniture?
+Discover: Search the area for a Transportable|Item
+Discover: Check if there is a Transportable|Item on the DesignedFurniture|Furniture
+Discover: Detect the Transportable|Item in the Room|Location
+Discover: Is there a Transportable|Item on the DesignedFurniture|Furniture?
 
-# TODO: Templates with person
+Discover: Find the biggest Transportable|Item
+Discover: Locate the largest Transportable|Item
+Discover: Look for the smallest Transportable|Item
+Discover: Find the heaviest Transportable|Item
+Discover: Spot the lightest Transportable|Item
+Discover: Find the thinnest Transportable|Item
+Discover: Which one is the heaviest Transportable|Item?
+Discover: Find the lightest Transportable|Item on the DesignedFurniture|Furniture
+Discover: Look for the biggest Transportable|Item in the Room|Location
+
+Discover: Tell me how many Transportable|Item are on the DesignedFurniture|Furniture
+Discover: Count the Transportable|Item on the DesignedFurniture|Furniture
+Discover: How many Transportable|Item are there?
+Discover: Tell me how many NaturalPerson|Person are in the Room|Location
+Discover: Count the NaturalPerson|Person in the Room|Location
+Discover: How many people are in the Room|Location?
+Discover: Count the people at the DesignedFurniture|Furniture
+
+# ---- Searching for Person (Discover) ----
+
 Discover: Find NaturalPerson|Person in the Room|Location
-
-
 Discover: can you find NaturalPerson|BeneficiaryRole?
 Discover: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom
@@ -189,11 +217,6 @@ Discover: look for a NaturalPerson|BeneficiaryRole standing next to the Designed
 Discover: find a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source?
 Discover: search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: go find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom?
-
 Discover: please can you find NaturalPerson|BeneficiaryRole?
 Discover: please look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: please go find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom
@@ -216,15 +239,12 @@ Discover: please look for a NaturalPerson|BeneficiaryRole standing next to the D
 Discover: please find a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source?
 Discover: please search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: please look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: please look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
-Discover: please find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: please find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 Discover: please find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom?
-
 Discover: could you can you find NaturalPerson|BeneficiaryRole please?
 Discover: could you look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you  find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please
-Discover: could you  find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom please
+Discover: could you find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please
+Discover: could you find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom please
 Discover: could you look for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing please?
 Discover: could you find a NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing please?
 Discover: could you search for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source please?
@@ -233,9 +253,9 @@ Discover: could you find a NaturalPerson|BeneficiaryRole with a Clothing|Benefic
 Discover: could you search for a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you look for a NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you look for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you  find a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you  find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you  find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom please?
+Discover: could you find a NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
+Discover: could you find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
+Discover: could you find a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you look for a NaturalPerson|BeneficiaryRole please?
 Discover: could you find a NaturalPerson|BeneficiaryRole please?
 Discover: could you search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source please?
@@ -243,28 +263,36 @@ Discover: could you look for a NaturalPerson|BeneficiaryRole standing next to th
 Discover: could you find a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source please?
 Discover: could you search for a NaturalPerson|BeneficiaryRole next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you look for a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
-Discover: could you find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you find a NaturalPerson|BeneficiaryRole who is standing next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: could you find a NaturalPerson|BeneficiaryRole who is sitting next to the DesignedFurniture|Source in the Room|SourceRoom please?
 Discover: can you locate a NaturalPerson|BeneficiaryRole standing next to the DesignedFurniture|Source in the Room|SourceRoom?
 
+Discover: Find the waving NaturalPerson|Person
+Discover: Look for a person pointing to the left
+Discover: Locate the person raising their left arm
+Discover: Find the waving NaturalPerson|Person in the Room|Location
+Discover: Spot the person raising their right arm
+Discover: Find the sitting NaturalPerson|Person
+Discover: Look for the standing NaturalPerson|Person
+Discover: Locate the lying NaturalPerson|Person
+Discover: Can you find the person pointing to the right?
 
 # ---- Transporting ----
+# Atomic: Only "Bring", "Take", "Fetch", "Give", "Place", "Put"
 
-# Transporting: Find a Transportable|Item and bring it to me
-# Transporting: Bring me a Transportable|Item from the Room|Location
-# Transporting: Bring me a Transportable|Item from the DesignedFurniture|Furniture
-# Transporting: Pick up a Transportable|Item and give it to NaturalPerson|Person
-# Transporting: Retrieve a Transportable|Item from the Room|Location and deliver it to NaturalPerson|Person
-# Transporting: Take a Transportable|Item from the DesignedFurniture|Furniture and place it on the DesignedFurniture|Furniture
+Transporting: Bring me a Transportable|Item in the Room|Location
+Transporting: Please bring me a Transportable|Item in the Room|Location
+Transporting: Bring me the Transportable|Item in the Room|Location
+Transporting: Please bring me the Transportable|Item in the Room|Location
+Transporting: In the Room|Location bring a Transportable|Item
+Transporting: In the Room|Location bring the Transportable|Item
+
 Transporting: Bring me the Transportable|Item
 Transporting: Give me the Transportable|Item
 Transporting: Please bring me the Transportable|Item
 Transporting: Please give me the Transportable|Item
 Transporting: Bring me a Transportable|Item
 Transporting: Please bring me a Transportable|Item
-
 
 Transporting: take a Transportable|Item to the Room|DestinationRoom
 Transporting: get a Transportable|Item to the Room|DestinationRoom
@@ -300,14 +328,9 @@ Transporting: move the Transportable|Item from the DesignedFurniture|Source in t
 Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: bring a Transportable|Item to the DesignedFurniture|Destination
-Transporting: bring a Transportable|Item to the DesignedFurniture|Destination
-Transporting: bring a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: bring a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
-Transporting: bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: bring a Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
-Transporting: bring a Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
-Transporting: bring a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: bring a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: take a Transportable|Item to the NaturalPerson|BeneficiaryRole
 Transporting: fetch a Transportable|Item for a NaturalPerson|BeneficiaryRole
@@ -393,16 +416,13 @@ Transporting: please move the Transportable|Item from the DesignedFurniture|Sour
 Transporting: deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom please
 Transporting: could you move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom please?
 Transporting: please bring some Transportable|Item to the DesignedFurniture|Destination
-Transporting: please bring some Transportable|Item to the DesignedFurniture|Destination
 Transporting: could you bring some Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom please?
 Transporting: could you bring a Transportable|Item to the DesignedFurniture|Destination in the Room|DestinationRoom please?
 Transporting: please bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: can you bring a Transportable|Item from the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom?
 Transporting: bring some Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
-Transporting: bring some Transportable|Item from the DesignedFurniture|Source to the DesignedFurniture|Destination
 Transporting: bring some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: can you bring some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom?
-
 Transporting: please take some Transportable|Item to the NaturalPerson|BeneficiaryRole
 Transporting: please fetch a Transportable|Item for a NaturalPerson|BeneficiaryRole
 Transporting: could you get the NaturalPerson|BeneficiaryRole a Transportable|Item please?
@@ -446,7 +466,6 @@ Transporting: bring NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryC
 Transporting: give the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom please
 Transporting: could you deliver a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing please?
 Transporting: please move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing
-
 Transporting: please take a Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing who sits on the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: could you fetch some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom for a NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing next to the DesignedFurniture|Destination in the Room|DestinationRoom
 Transporting: get the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom
@@ -455,6 +474,22 @@ Transporting: could you give the NaturalPerson|BeneficiaryRole wearing a Clothin
 Transporting: can you deliver some Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing and standing next to the DesignedFurniture|Destination in the Room|DestinationRoom?
 Transporting: could you move the Transportable|Item from the DesignedFurniture|Source in the Room|SourceRoom to the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near the DesignedFurniture|Destination in the Room|DestinationRoom please?
 
+Transporting: Grab the Transportable|Item and take it to NaturalPerson|Person
+Transporting: Hand the Transportable|Item to NaturalPerson|Person
+Transporting: Pass the Transportable|Item to NaturalPerson|Person
+Transporting: Pick up the Transportable|Item from Room|SourceRoom
+Transporting: Grab the Transportable|Item
+Transporting: Collect the Transportable|Item from the Room|SourceRoom
+Transporting: Please pick up the Transportable|Item
+Transporting: Hand over the Transportable|Item to NaturalPerson|BeneficiaryRole
+
+Transporting: Bring me the biggest Transportable|Item
+Transporting: Fetch the largest Transportable|Item
+Transporting: Give me the smallest Transportable|Item
+Transporting: Bring me the heaviest Transportable|Item
+Transporting: Get the lightest Transportable|Item
+Transporting: Deliver the thinnest Transportable|Item to NaturalPerson|BeneficiaryRole
+Transporting: Bring me the biggest Transportable|Item from the Room|SourceRoom
 
 # -------------------------
 # Interaction with person
@@ -462,7 +497,6 @@ Transporting: could you move the Transportable|Item from the DesignedFurniture|S
 
 # ---- Conversation ----
 
-# TODO: More templates
 Conversation: Tell NaturalPerson|Person what day is today
 Conversation: Tell me how many people are in the Room|Location
 Conversation: Tell me something about yourself.
@@ -482,22 +516,35 @@ Conversation: Tell something about yourself to NaturalPerson|Person.
 Conversation: Tell NaturalPerson|Person the time.
 Conversation: Tell NaturalPerson|Person the day.
 
-# ---- Guide ----
+Conversation: What time is it?
+Conversation: Do you know what time it is?
+Conversation: What is the date today?
+Conversation: Can you tell me the current time?
+Conversation: Introduce yourself to NaturalPerson|Person
+Conversation: What is the name of your team?
+Conversation: Answer the question from NaturalPerson|Person
+Conversation: Tell me your teams affiliation
+Conversation: What is your teams affiliation?
+Conversation: Tell NaturalPerson|Person your teams affiliation
+Conversation: Tell me the day of the week
+Conversation: Tell me the day of the month
+Conversation: What day of the week is it?
+Conversation: What day of the month is it?
 
-Guide: Greet NaturalPerson|Person in the Room|Location and tell something about yourself
+# ---- Guide ----
+# Atomic: Only "Guide", "Escort", "Lead", "Show the way", "Take"
+
+Guide: Greet NaturalPerson|Person in the Room|Location
 Guide: Meet NaturalPerson|Person in the Room|Location
 Guide: Guide NaturalPerson|Person to the Room|Location
 Guide: Escort NaturalPerson|Person to the Room|Location
 
 Guide: Could you guide NaturalPerson|Person to the Room|Location
 Guide: Could you guide NaturalPerson|Person to the DesignedFurniture|Furniture
-Guide: Could you guide NaturalPerson|Person to the Room|Location
-Guide: Could you guide NaturalPerson|Person to the DesignedFurniture|Furniture
 Guide: Can you guide NaturalPerson|Person to the Room|Location
 Guide: Can you guide NaturalPerson|Person to the DesignedFurniture|Furniture
 Guide: Would you like to guide NaturalPerson|Person to the Room|Location
 Guide: Would you like to guide NaturalPerson|Person to the DesignedFurniture|Furniture
-Guide: Escort NaturalPerson|Person to the Room|Location
 Guide: Escort NaturalPerson|Person to the DesignedFurniture|Furniture
 Guide: Can you escort NaturalPerson|Person to the Room|Location
 Guide: Can you escort NaturalPerson|Person to the DesignedFurniture|Furniture
@@ -513,7 +560,6 @@ Guide: Could you lead NaturalPerson|Person to the Room|Location
 Guide: Could you lead NaturalPerson|Person to the DesignedFurniture|Furniture
 Guide: Can you lead NaturalPerson|Person to the Room|Location
 Guide: Can you lead NaturalPerson|Person to the DesignedFurniture|Furniture
-
 
 Guide: guide NaturalPerson|BeneficiaryRole from the Room|SourceRoom to Room|DestinationRoom
 Guide: escort the NaturalPerson|BeneficiaryRole from the Room|SourceRoom to the Room|DestinationRoom
@@ -541,6 +587,12 @@ Guide: lead the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClot
 Guide: show the NaturalPerson|BeneficiaryRole having a Clothing|BeneficiaryClothing next the DesignedFurniture|Source in the Room|SourceRoom the way to the DesignedFurniture|Destination in the Room|DestinationRoom
 Guide: take the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom to the DesignedFurniture|Destination in the Room|DestinationRoom
 
+Guide: Accompany NaturalPerson|Person to the Room|Location
+Guide: Direct NaturalPerson|Person to the DesignedFurniture|Furniture
+Guide: Show NaturalPerson|Person the way to the Room|Location
+Guide: Help NaturalPerson|Person get to the Room|Location
+Guide: Bring NaturalPerson|Person along to the Room|Location
+Guide: Accompany the NaturalPerson|Person to the DesignedFurniture|Furniture
 
 # ---- Follow ----
 
@@ -563,6 +615,11 @@ Follow: follow NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing
 Follow: follow around the NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing sitting on the DesignedFurniture|Source in the Room|SourceRoom
 Follow: go after the NaturalPerson|BeneficiaryRole wearing a Clothing|BeneficiaryClothing near the DesignedFurniture|Source in the Room|SourceRoom
 
+Follow: Shadow the NaturalPerson|Person
+Follow: Tail the NaturalPerson|Person
+Follow: Stay behind NaturalPerson|Person
+Follow: Keep up with NaturalPerson|Person
+Follow: Walk behind NaturalPerson|Person
 
 # ---- Greet ----
 
@@ -640,6 +697,16 @@ Greet: please say hello to NaturalPerson|BeneficiaryRole with a Clothing|Benefic
 Greet: could you introduce yourself to NaturalPerson|BeneficiaryRole who has a Clothing|BeneficiaryClothing next to the DesignedFurniture|Source in the Room|SourceRoom please
 Greet: please salute NaturalPerson|BeneficiaryRole in a Clothing|BeneficiaryClothing near a DesignedFurniture|Source in the Room|SourceRoom
 
+Greet: Give a warm welcome to NaturalPerson|BeneficiaryRole
+Greet: Make NaturalPerson|BeneficiaryRole feel welcome
+Greet: Bid hello to NaturalPerson|BeneficiaryRole
+Greet: Send my regards to NaturalPerson|BeneficiaryRole
+Greet: Say a quick hello to NaturalPerson|BeneficiaryRole
+Greet: Get to know NaturalPerson|Person
+Greet: Contact NaturalPerson|Person
+Greet: Get acquainted with NaturalPerson|Person
+Greet: Please get to know NaturalPerson|Person in the Room|Location
+Greet: Go and contact the NaturalPerson|Person
 
 # ---- Describe ----
 
@@ -676,6 +743,11 @@ Describe: what can you tell me about the Transportable|Item on the DesignedFurni
 Describe: what do you know about the NaturalPerson|BeneficiaryRole with a Clothing|BeneficiaryClothing standing next to the DesignedFurniture|Source in the Room|SourceRoom
 Describe: what do you know about the Transportable|Item on the DesignedFurniture|Source in the Room|SourceRoom
 
+Describe: Give me a description of the NaturalPerson|Person
+Describe: What does the Transportable|Item look like?
+Describe: List the features of the Transportable|Item
+Describe: Explain the appearance of NaturalPerson|Person
+Describe: Can you describe the Transportable|Item?
 
 # ---- Offer ----
 
@@ -689,26 +761,6 @@ Offer: offer a Transportable|Item from Room|SourceRoom to the NaturalPerson|Bene
 Offer: offer the NaturalPerson|BeneficiaryRole in the Room|DestinationRoom a Transportable|Item from the Room|SourceRoom
 Offer: offer a Transportable|Item to the NaturalPerson|BeneficiaryRole
 Offer: offer the NaturalPerson|BeneficiaryRole a Transportable|Item
-
-
-# ---------------------------------------
-# Mixed commands with the other Intents
-# ---------------------------------------
-
-# Complex: Go to the Room|Location then find a Transportable|Item and bring it to me
-# Complex: Navigate to the Room|Location then find NaturalPerson|Person and follow them to the Room|Location
-# Complex: Find a Transportable|Item in the Room|Location and deliver it to NaturalPerson|Person in the Room|Location
-# Complex: Find NaturalPerson|Person and guide them to the Room|Location
-# Complex: Go to the Room|Location then find a Transportable|Item and place it on the DesignedFurniture|Furniture
-# Complex: Take a Transportable|Item from the DesignedFurniture|Furniture and deliver it to NaturalPerson|Person
-# Complex: Meet NaturalPerson|Person in the Room|Location then answer a question
-# Complex: Find a standing person in the Room|Location and tell them your teams name
-# Complex: Go to the Room|Location then take a Transportable|Item and bring it to NaturalPerson|Person
-# Complex: Navigate to the Room|Location then find NaturalPerson|Person and tell them the time
-# Complex: Find a Transportable|Item on the DesignedFurniture|Furniture and place it on the DesignedFurniture|Furniture in the Room|Location
-# Complex: Locate NaturalPerson|Person in the Room|Location, greet them and guide them to the Room|Location
-# Complex: Fetch a Transportable|Item from the Room|Location and give it to NaturalPerson|Person in the Room|Location
-# Complex: Go to the Room|Location then meet NaturalPerson|Person and guide them to the Room|Location
 
 # -----------------
 # Deny and Affirm
@@ -795,4 +847,4 @@ deny: That doesn't hold up.
 deny: Completely false.
 deny: That's not accurate.
 deny: Not at all true.
-deny: I'd say no.w
+deny: I'd say no.
