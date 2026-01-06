@@ -4,148 +4,148 @@
 # intent_name: annotated sentence
 
 
-Order: I would like to order food|Item and drink|Item.
-Order: I would like to order food|Item and drink|Item and drink|Item.
-Order: I would like to order food|Item and drink|Item and food|Item.
-Order: I would like to order drink|Item and food|Item.
-Order: I would like to order drink|Item and food|Item and food|Item.
-Order: I would like to order drink|Item and food|Item and drink|Item.
-Order: I would like to order food|Item and food|Item.
-Order: I would like to order food|Item and food|Item and food|Item.
-Order: I would like to order food|Item and food|Item and drink|Item.
-Order: I would like to order drink|Item and drink|Item.
-Order: I would like to order drink|Item and drink|Item and food|Item.
-Order: I would like to order drink|Item and drink|Item and drink|Item.
+Order: I would like to order food|Food and drink|Drink.
+Order: I would like to order food|Food and drink|Drink and drink|Drink.
+Order: I would like to order food|Food and drink|Drink and food|Food.
+Order: I would like to order drink|Drink and food|Food.
+Order: I would like to order drink|Drink and food|Food and food|Food.
+Order: I would like to order drink|Drink and food|Food and drink|Drink.
+Order: I would like to order food|Food and food|Food.
+Order: I would like to order food|Food and food|Food and food|Food.
+Order: I would like to order food|Food and food|Food and drink|Drink.
+Order: I would like to order drink|Drink and drink|Drink.
+Order: I would like to order drink|Drink and drink|Drink and food|Food.
+Order: I would like to order drink|Drink and drink|Drink and drink|Drink.
 
-Order: I would like to get food|Item and drink|Item.
-Order: I would like to get food|Item and drink|Item and drink|Item.
-Order: I would like to get food|Item and drink|Item and food|Item.
-Order: I would like to get drink|Item and food|Item.
-Order: I would like to get drink|Item and food|Item and food|Item.
-Order: I would like to get drink|Item and food|Item and drink|Item.
-Order: I would like to get food|Item and food|Item.
-Order: I would like to get food|Item and food|Item and food|Item.
-Order: I would like to get food|Item and food|Item and drink|Item.
-Order: I would like to get drink|Item and drink|Item.
-Order: I would like to get drink|Item and drink|Item and food|Item.
-Order: I would like to get drink|Item and drink|Item and drink|Item.
+Order: I would like to get food|Food and drink|Drink.
+Order: I would like to get food|Food and drink|Drink and drink|Drink.
+Order: I would like to get food|Food and drink|Drink and food|Food.
+Order: I would like to get drink|Drink and food|Food.
+Order: I would like to get drink|Drink and food|Food and food|Food.
+Order: I would like to get drink|Drink and food|Food and drink|Drink.
+Order: I would like to get food|Food and food|Food.
+Order: I would like to get food|Food and food|Food and food|Food.
+Order: I would like to get food|Food and food|Food and drink|Drink.
+Order: I would like to get drink|Drink and drink|Drink.
+Order: I would like to get drink|Drink and drink|Drink and food|Food.
+Order: I would like to get drink|Drink and drink|Drink and drink|Drink.
 
-Order: I'll go with the food|Item and drink|Item.
-Order: I'll go with the food|Item and drink|Item and drink|Item.
-Order: I'll go with the food|Item and drink|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item and food|Item.
-Order: I'll go with the drink|Item and food|Item and drink|Item.
-Order: I'll go with the food|Item and food|Item.
-Order: I'll go with the food|Item and food|Item and food|Item.
-Order: I'll go with the food|Item and food|Item and drink|Item.
-Order: I'll go with the drink|Item and drink|Item.
-Order: I'll go with the drink|Item and drink|Item and food|Item.
-Order: I'll go with the drink|Item and drink|Item and drink|Item.
+Order: I'll go with the food|Food and drink|Drink.
+Order: I'll go with the food|Food and drink|Drink and drink|Drink.
+Order: I'll go with the food|Food and drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and food|Food and food|Food.
+Order: I'll go with the drink|Drink and food|Food and drink|Drink.
+Order: I'll go with the food|Food and food|Food.
+Order: I'll go with the food|Food and food|Food and food|Food.
+Order: I'll go with the food|Food and food|Food and drink|Drink.
+Order: I'll go with the drink|Drink and drink|Drink.
+Order: I'll go with the drink|Drink and drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and drink|Drink and drink|Drink.
 
-Order: I'll take the food|Item and drink|Item.
-Order: I'll take the food|Item and drink|Item and drink|Item.
-Order: I'll take the food|Item and drink|Item and food|Item.
-Order: I'll take the drink|Item and food|Item.
-Order: I'll take the drink|Item and food|Item and food|Item.
-Order: I'll take the drink|Item and food|Item and drink|Item.
-Order: I'll take the food|Item and food|Item.
-Order: I'll take the food|Item and food|Item and food|Item.
-Order: I'll take the food|Item and food|Item and drink|Item.
-Order: I'll take the drink|Item and drink|Item.
-Order: I'll take the drink|Item and drink|Item and food|Item.
-Order: I'll take the drink|Item and drink|Item and drink|Item.
+Order: I'll take the food|Food and drink|Drink.
+Order: I'll take the food|Food and drink|Drink and drink|Drink.
+Order: I'll take the food|Food and drink|Drink and food|Food.
+Order: I'll take the drink|Drink and food|Food.
+Order: I'll take the drink|Drink and food|Food and food|Food.
+Order: I'll take the drink|Drink and food|Food and drink|Drink.
+Order: I'll take the food|Food and food|Food.
+Order: I'll take the food|Food and food|Food and food|Food.
+Order: I'll take the food|Food and food|Food and drink|Drink.
+Order: I'll take the drink|Drink and drink|Drink.
+Order: I'll take the drink|Drink and drink|Drink and food|Food.
+Order: I'll take the drink|Drink and drink|Drink and drink|Drink.
 
-Order: I will go with the food|Item and drink|Item.
-Order: I will go with the food|Item and drink|Item and drink|Item.
-Order: I will go with the food|Item and drink|Item and food|Item.
-Order: I will go with the drink|Item and food|Item.
-Order: I will go with the drink|Item and food|Item and food|Item.
-Order: I will go with the drink|Item and food|Item and drink|Item.
-Order: I will go with the food|Item and food|Item.
-Order: I will go with the food|Item and food|Item and food|Item.
-Order: I will go with the food|Item and food|Item and drink|Item.
-Order: I will go with the drink|Item and drink|Item.
-Order: I will go with the drink|Item and drink|Item and food|Item.
-Order: I will go with the drink|Item and drink|Item and drink|Item.
+Order: I will go with the food|Food and drink|Drink.
+Order: I will go with the food|Food and drink|Drink and drink|Drink.
+Order: I will go with the food|Food and drink|Drink and food|Food.
+Order: I will go with the drink|Drink and food|Food.
+Order: I will go with the drink|Drink and food|Food and food|Food.
+Order: I will go with the drink|Drink and food|Food and drink|Drink.
+Order: I will go with the food|Food and food|Food.
+Order: I will go with the food|Food and food|Food and food|Food.
+Order: I will go with the food|Food and food|Food and drink|Drink.
+Order: I will go with the drink|Drink and drink|Drink.
+Order: I will go with the drink|Drink and drink|Drink and food|Food.
+Order: I will go with the drink|Drink and drink|Drink and drink|Drink.
 
-Order: I will take the food|Item and drink|Item.
-Order: I will take the food|Item and drink|Item and drink|Item.
-Order: I will take the food|Item and drink|Item and food|Item.
-Order: I will take the drink|Item and food|Item.
-Order: I will take the drink|Item and food|Item and food|Item.
-Order: I will take the drink|Item and food|Item and drink|Item.
-Order: I will take the food|Item and food|Item.
-Order: I will take the food|Item and food|Item and food|Item.
-Order: I will take the food|Item and food|Item and drink|Item.
-Order: I will take the drink|Item and drink|Item.
-Order: I will take the drink|Item and drink|Item and food|Item.
-Order: I will take the drink|Item and drink|Item and drink|Item.
+Order: I will take the food|Food and drink|Drink.
+Order: I will take the food|Food and drink|Drink and drink|Drink.
+Order: I will take the food|Food and drink|Drink and food|Food.
+Order: I will take the drink|Drink and food|Food.
+Order: I will take the drink|Drink and food|Food and food|Food.
+Order: I will take the drink|Drink and food|Food and drink|Drink.
+Order: I will take the food|Food and food|Food.
+Order: I will take the food|Food and food|Food and food|Food.
+Order: I will take the food|Food and food|Food and drink|Drink.
+Order: I will take the drink|Drink and drink|Drink.
+Order: I will take the drink|Drink and drink|Drink and food|Food.
+Order: I will take the drink|Drink and drink|Drink and drink|Drink.
 
-Order: I'd like to have the food|Item and drink|Item.
-Order: I'd like to have the food|Item and drink|Item and drink|Item.
-Order: I'd like to have the food|Item and drink|Item and food|Item.
-Order: I'd like to have the drink|Item and food|Item.
-Order: I'd like to have the drink|Item and food|Item and food|Item.
-Order: I'd like to have the drink|Item and food|Item and drink|Item.
-Order: I'd like to have the food|Item and food|Item.
-Order: I'd like to have the food|Item and food|Item and food|Item.
-Order: I'd like to have the food|Item and food|Item and drink|Item.
-Order: I'd like to have the drink|Item and drink|Item.
-Order: I'd like to have the drink|Item and drink|Item and food|Item.
-Order: I'd like to have the drink|Item and drink|Item and drink|Item.
+Order: I'd like to have the food|Food and drink|Drink.
+Order: I'd like to have the food|Food and drink|Drink and drink|Drink.
+Order: I'd like to have the food|Food and drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and food|Food and food|Food.
+Order: I'd like to have the drink|Drink and food|Food and drink|Drink.
+Order: I'd like to have the food|Food and food|Food.
+Order: I'd like to have the food|Food and food|Food and food|Food.
+Order: I'd like to have the food|Food and food|Food and drink|Drink.
+Order: I'd like to have the drink|Drink and drink|Drink.
+Order: I'd like to have the drink|Drink and drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and drink|Drink and drink|Drink.
 
-Order: I'd like to order food|Item and drink|Item.
-Order: I'd like to order food|Item and drink|Item and drink|Item.
-Order: I'd like to order food|Item and drink|Item and food|Item.
-Order: I'd like to order drink|Item and food|Item.
-Order: I'd like to order drink|Item and food|Item and food|Item.
-Order: I'd like to order drink|Item and food|Item and drink|Item.
-Order: I'd like to order food|Item and food|Item.
-Order: I'd like to order food|Item and food|Item and food|Item.
-Order: I'd like to order food|Item and food|Item and drink|Item.
-Order: I'd like to order drink|Item and drink|Item.
-Order: I'd like to order drink|Item and drink|Item and food|Item.
-Order: I'd like to order drink|Item and drink|Item and drink|Item.
+Order: I'd like to order food|Food and drink|Drink.
+Order: I'd like to order food|Food and drink|Drink and drink|Drink.
+Order: I'd like to order food|Food and drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and food|Food and food|Food.
+Order: I'd like to order drink|Drink and food|Food and drink|Drink.
+Order: I'd like to order food|Food and food|Food.
+Order: I'd like to order food|Food and food|Food and food|Food.
+Order: I'd like to order food|Food and food|Food and drink|Drink.
+Order: I'd like to order drink|Drink and drink|Drink.
+Order: I'd like to order drink|Drink and drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and drink|Drink and drink|Drink.
 
-Order: I'd like to get food|Item and drink|Item.
-Order: I'd like to get food|Item and drink|Item and drink|Item.
-Order: I'd like to get food|Item and drink|Item and food|Item.
-Order: I'd like to get drink|Item and food|Item.
-Order: I'd like to get drink|Item and food|Item and food|Item.
-Order: I'd like to get drink|Item and food|Item and drink|Item.
-Order: I'd like to get food|Item and food|Item.
-Order: I'd like to get food|Item and food|Item and food|Item.
-Order: I'd like to get food|Item and food|Item and drink|Item.
-Order: I'd like to get drink|Item and drink|Item.
-Order: I'd like to get drink|Item and drink|Item and food|Item.
-Order: I'd like to get drink|Item and drink|Item and drink|Item.
+Order: I'd like to get food|Food and drink|Drink.
+Order: I'd like to get food|Food and drink|Drink and drink|Drink.
+Order: I'd like to get food|Food and drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and food|Food and food|Food.
+Order: I'd like to get drink|Drink and food|Food and drink|Drink.
+Order: I'd like to get food|Food and food|Food.
+Order: I'd like to get food|Food and food|Food and food|Food.
+Order: I'd like to get food|Food and food|Food and drink|Drink.
+Order: I'd like to get drink|Drink and drink|Drink.
+Order: I'd like to get drink|Drink and drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and drink|Drink and drink|Drink.
 
-Order: Could I order food|Item and drink|Item.
-Order: Could I order food|Item and drink|Item and drink|Item.
-Order: Could I order food|Item and drink|Item and food|Item.
-Order: Could I order drink|Item and food|Item.
-Order: Could I order drink|Item and food|Item and food|Item.
-Order: Could I order drink|Item and food|Item and drink|Item.
-Order: Could I order food|Item and food|Item.
-Order: Could I order food|Item and food|Item and food|Item.
-Order: Could I order food|Item and food|Item and drink|Item.
-Order: Could I order drink|Item and drink|Item.
-Order: Could I order drink|Item and drink|Item and food|Item.
-Order: Could I order drink|Item and drink|Item and drink|Item.
+Order: Could I order food|Food and drink|Drink.
+Order: Could I order food|Food and drink|Drink and drink|Drink.
+Order: Could I order food|Food and drink|Drink and food|Food.
+Order: Could I order drink|Drink and food|Food.
+Order: Could I order drink|Drink and food|Food and food|Food.
+Order: Could I order drink|Drink and food|Food and drink|Drink.
+Order: Could I order food|Food and food|Food.
+Order: Could I order food|Food and food|Food and food|Food.
+Order: Could I order food|Food and food|Food and drink|Drink.
+Order: Could I order drink|Drink and drink|Drink.
+Order: Could I order drink|Drink and drink|Drink and food|Food.
+Order: Could I order drink|Drink and drink|Drink and drink|Drink.
 
-Order: Could I get food|Item and drink|Item.
-Order: Could I get food|Item and drink|Item and drink|Item.
-Order: Could I get food|Item and drink|Item and food|Item.
-Order: Could I get drink|Item and food|Item.
-Order: Could I get drink|Item and food|Item and food|Item.
-Order: Could I get drink|Item and food|Item and drink|Item.
-Order: Could I get food|Item and food|Item.
-Order: Could I get food|Item and food|Item and food|Item.
-Order: Could I get food|Item and food|Item and drink|Item.
-Order: Could I get drink|Item and drink|Item.
-Order: Could I get drink|Item and drink|Item and food|Item.
-Order: Could I get drink|Item and drink|Item and drink|Item.
+Order: Could I get food|Food and drink|Drink.
+Order: Could I get food|Food and drink|Drink and drink|Drink.
+Order: Could I get food|Food and drink|Drink and food|Food.
+Order: Could I get drink|Drink and food|Food.
+Order: Could I get drink|Drink and food|Food and food|Food.
+Order: Could I get drink|Drink and food|Food and drink|Drink.
+Order: Could I get food|Food and food|Food.
+Order: Could I get food|Food and food|Food and food|Food.
+Order: Could I get food|Food and food|Food and drink|Drink.
+Order: Could I get drink|Drink and drink|Drink.
+Order: Could I get drink|Drink and drink|Drink and food|Food.
+Order: Could I get drink|Drink and drink|Drink and drink|Drink.
 
 affirm: Yes.
 affirm: That is correct.
