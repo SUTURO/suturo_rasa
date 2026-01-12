@@ -1,0 +1,37 @@
+# Sentence templates for the various intents recognized by the robot.
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+Start: Start Demo Challenge|Challenge.
+Start: Start Demo Challenge Challenge|Challenge.
+Start: Start the Demo Challenge Challenge|Challenge.
+
+Start: Please start Demo Challenge|Challenge.
+Start: Please start Demo Challenge Challenge|Challenge.
+Start: Please start the Demo Challenge Challenge|Challenge.
+
+Start: Could you please start Demo Challenge|Challenge.
+Start: Could you please start Demo Challenge Challenge|Challenge.
+Start: Could you please start the Demo Challenge Challenge|Challenge.
+
+Start: Could you start Demo Challenge|Challenge.
+Start: Could you start Demo Challenge Challenge|Challenge.
+Start: Could you start the Demo Challenge Challenge|Challenge.
+
+Change: Change to Demo Challenge|Challenge
+Change: Change to Demo Challenge Challenge|Challenge
+Change: Change to the Demo ChallengeChallenge|Challenge
+
+Change: Please change to Demo Challenge|Challenge
+Change: Please change to Demo Challenge Challenge|Challenge
+Change: Please change to the Demo ChallengeChallenge|Challenge
+
+Change: Could you please change to Demo Challenge|Challenge
+Change: Could you please change to Demo Challenge Challenge|Challenge
+Change: Could you please change to the Demo ChallengeChallenge|Challenge
+
+Change: Could you change to Demo Challenge|Challenge
+Change: Could you change to Demo Challenge Challenge|Challenge
+Change: Could you change to the Demo ChallengeChallenge|Challenge
+
