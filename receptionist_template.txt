@@ -1,0 +1,181 @@
+# Sentence templates for the various intents recognized by the robot.
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+Receptionist: Hello my name is NaturalPerson|Person
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my Hobby is playing Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my Hobby is watching Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite drink is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
+
+Receptionist: Hi, I am NaturalPerson|Person, my Hobby is playing Interest|Hobby and my favorite drink is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is playing Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is watching Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, my Hobby is playing Interest|Hobby and my favorite beverage is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite beverage is drink|Drink.
+
+Receptionist: I am NaturalPerson|Person, I like to drink drink|Drink and my Hobby is playing Interest|Hobby
+Receptionist: I like to play Interest|Hobby
+
+Receptionist: Hi, I'm NaturalPerson|Person and my favorite drink is drink|Drink
+Receptionist: Hi, I'm NaturalPerson|Person and my favorite beverage is drink|Drink
+
+Receptionist: I'm NaturalPerson|Person and I like to drink drink|Drink
+Receptionist: I'm NaturalPerson|Person and I like to beverage drink|Drink
+
+Receptionist: Hey I'm NaturalPerson|Person and I enjoy drink|Drink
+Receptionist: Hey I am NaturalPerson|Person and I enjoy drink|Drink
+
+Receptionist: My name is NaturalPerson|Person and I prefer drink|Drink
+Receptionist: I prefer drink|Drink
+Receptionist: I like drink|Drink
+Receptionist: My favorite drink is drink|Drink
+Receptionist: My favorite beverage is drink|Drink
+Receptionist: What I like most to drink is drink|Drink
+Receptionist: Most of the time I drink dink|Drink
+
+Receptionist: Hello, I'm NaturalPerson|Person.
+Receptionist: Hello, I am NaturalPerson|Person.
+
+Receptionist: Hi there, NaturalPerson|Person here. My favorite drink is drink|Drink.
+Receptionist: I'm NaturalPerson|Person, and I enjoy drink|Drink.
+Receptionist: I'm NaturalPerson|Person, and I enjoy drinking drink|Drink.
+
+Receptionist: Hey, I'm NaturalPerson|Person, and my preferred beverage is drink|Drink.
+Receptionist: Hey, I am NaturalPerson|Person, and my preferred beverage is drink|Drink.
+
+Receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to drink drink|Drink.
+Receptionist: Nice to see you! I am NaturalPerson|Person, and I like to drink drink|Drink.
+
+Receptionist: My name is NaturalPerson|Person, and my favorite drink is drink|Drink.
+Receptionist: My name is NaturalPerson|Person, and my favorite beverage is drink|Drink.
+
+Receptionist: Hello, I'm NaturalPerson|Person, and I enjoy drinking drink|Drink.
+Receptionist: Hello, I am NaturalPerson|Person, and I enjoy drinking drink|Drink.
+
+Receptionist: Hi, my favorite drink is drink|Drink. I'm NaturalPerson|Person.
+Receptionist: Hi, my favorite beverage is drink|Drink. I'm NaturalPerson|Person.
+Receptionist: Hi, my favorite drink is drink|Drink. I am NaturalPerson|Person.
+Receptionist: Hi, my favorite beverage is drink|Drink. I am NaturalPerson|Person.
+
+
+Receptionist: I'm NaturalPerson|Person and love to drink drink|Drink.
+Receptionist: I am NaturalPerson|Person and love to drink drink|Drink.
+
+Receptionist: Good day, my name is NaturalPerson|Person and I prefer drink|Drink.
+
+Receptionist: Hello, I'm NaturalPerson|Person, and I like to indulge in drink|Drink.
+Receptionist: Hello, NaturalPerson|Person here. My go-to drink is drink|Drink.
+
+Receptionist: Greetings! I'm NaturalPerson|Person, and I enjoy sipping on drink|Drink.
+Receptionist: Greetings! I am NaturalPerson|Person, and I enjoy sipping on drink|Drink.
+
+Receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite drink is drink|Drink.
+Receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite drink is drink|Drink.
+
+Receptionist: Hi, my go-to drink is drink|Drink. I'm NaturalPerson|Person.
+Receptionist: Hi, my go-to drink is drink|Drink. I am NaturalPerson|Person.
+
+Receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy drink|Drink.
+Receptionist: Greetings, I am NaturalPerson|Person, and I enjoy drink|Drink.
+
+Receptionist: Hello, NaturalPerson|Person here. My preferred beverage is drink|Drink.
+
+Receptionist: Hello, nice to meet you. My name is NaturalPerson|Person.
+Receptionist: Hello, nice to meet you. I'm NaturalPerson|Person.
+Receptionist: Hello, nice to meet you. I am NaturalPerson|Person.
+
+affirm: Yes.
+affirm: That is correct.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: That's right.
+affirm: Correct.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Exactly.
+affirm: Sure.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Affirmative.
+affirm: Agreed.
+affirm: For sure.
+affirm: True.
+affirm: Quite so.
+affirm: Naturally.
+affirm: Yep.
+affirm: Right.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: Precisely.
+affirm: That's spot on.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: Sure thing.
+affirm: By all means.
+affirm: That's exactly it.
+affirm: Indisputably.
+affirm: You're absolutely correct.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: One hundred percent.
+affirm: Completely true.
+affirm: You're right.
+
+deny: No.
+deny: That is incorrect.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: That's not true.
+deny: Incorrect.
+deny: False.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Nope.
+deny: Negative.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: No way.
+deny: That's a mistake.
+deny: That's false.
+deny: Not exactly.
+deny: Far from it.
+deny: That's not the case.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Untrue.
+deny: Out of the question.
+deny: No chance.
+deny: I'm afraid not.
+deny: That's a misconception.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: I'd say no.

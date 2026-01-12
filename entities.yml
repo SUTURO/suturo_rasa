@@ -596,5 +596,10 @@ Interest:
     - programming
     - working
     - partying
-    
+   
+Challenge:
+  entities: 
+    - Receptionist 
+    - GPRSR
+    - Restaurant
 
