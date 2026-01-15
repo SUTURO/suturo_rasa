@@ -721,6 +721,6 @@ Interest:
 Challenge:
   entities: 
     - Receptionist 
-    - GPRSR
+    - GPSR
     - Restaurant
 
