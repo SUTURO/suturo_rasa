@@ -191,8 +191,22 @@ Receptionist: Hi, my go-to food is food|Food. I am NaturalPerson|Person.
 Receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy food|Food.
 Receptionist: Greetings, I am NaturalPerson|Person, and I enjoy food|Food.
 
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my favorite drink is drink|Drink.
 
+Receptionist: Hello, I'm NaturalPerson|Person. My favorite food is food|Food and my favorite drink is drink|Drink.
+Receptionist: Hi, my name is NaturalPerson|Person, I prefer food|Food and drink|Drink.
+Receptionist: I'm NaturalPerson|Person, and I enjoy food|Food with drink|Drink.
+Receptionist: My name is NaturalPerson|Person, my go-to food is food|Food and my go-to drink is drink|Drink.
+Receptionist: Greetings! I'm NaturalPerson|Person, my favorite food is food|Food and I love drinking drink|Drink.
 
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food, my favorite drink is drink|Drink and I like to play Interest|Hobby.
+Receptionist: Hi, I'm NaturalPerson|Person. I enjoy eating food|Food, drinking drink|Drink, and watching Interest|Hobby.
+Receptionist: My name is NaturalPerson|Person, I prefer food|Food and drink|Drink, and my hobby is Interest|Hobby.
+Receptionist: I'm NaturalPerson|Person, I like to eat food|Food, drink drink|Drink, and play Interest|Hobby.
+
+Receptionist: My favorite food is food|Food and my favorite drink is drink|Drink.
+Receptionist: I prefer food|Food and drink|Drink.
+Receptionist: What I like most to eat is food|Food and to drink is drink|Drink.
 
 affirm: Yes.
 affirm: That is correct.
