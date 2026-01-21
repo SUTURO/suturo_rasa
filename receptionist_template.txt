@@ -8,13 +8,13 @@ Receptionist: Hello my name is NaturalPerson|Person
 Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
 Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
 
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my Hobby is playing Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my Hobby is watching Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is playing Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is watching Interest|Hobby
 
 Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite drink is drink|Drink.
 Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
 
-Receptionist: Hi, I am NaturalPerson|Person, my Hobby is playing Interest|Hobby and my favorite drink is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite drink is drink|Drink.
 Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
 
 Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
@@ -23,28 +23,43 @@ Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink an
 Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is playing Interest|Hobby
 Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is watching Interest|Hobby
 
-Receptionist: Hi, I am NaturalPerson|Person, my Hobby is playing Interest|Hobby and my favorite beverage is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite beverage is drink|Drink.
 Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite beverage is drink|Drink.
+Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite beverage is drink|Drink.
 
 Receptionist: I am NaturalPerson|Person, I like to drink drink|Drink and my Hobby is playing Interest|Hobby
 Receptionist: I like to play Interest|Hobby
 
-Receptionist: Hi, I'm NaturalPerson|Person and my favorite drink is drink|Drink
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
 Receptionist: Hi, I'm NaturalPerson|Person and my favorite beverage is drink|Drink
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and my hobby is Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to play Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to watch Interest|Hobby
 
-Receptionist: I'm NaturalPerson|Person and I like to drink drink|Drink
-Receptionist: I'm NaturalPerson|Person and I like to beverage drink|Drink
+Receptionist: I'm NaturalPerson|Person, I like to drink drink|Drink and my hobby is Interest|Hobby
+Receptionist: I'm NaturalPerson|Person and,  I like to beverage drink|Drink and I like to play Interest|Hobby
 
-Receptionist: Hey I'm NaturalPerson|Person and I enjoy drink|Drink
-Receptionist: Hey I am NaturalPerson|Person and I enjoy drink|Drink
+Receptionist: Hey I'm NaturalPerson|Person, I enjoy drinking drink|Drink and I like to play Interest|Hobby
+Receptionist: Hey I am NaturalPerson|Person, I enjoy drink|Drink and I like to play Interest|Hobby
 
-Receptionist: My name is NaturalPerson|Person and I prefer drink|Drink
+Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to play Interest|Hobby
+Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to watch Interest|Hobby
+Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and my hobby is Interest|Hobby
+
+Receptionist: I like to watch Interest|Hobby
+Receptionist: I like to play Interest|Hobby
+Receptionist: My hobby is Interest|Hobby
+
 Receptionist: I prefer drink|Drink
 Receptionist: I like drink|Drink
 Receptionist: My favorite drink is drink|Drink
 Receptionist: My favorite beverage is drink|Drink
 Receptionist: What I like most to drink is drink|Drink
 Receptionist: Most of the time I drink dink|Drink
+
+
 
 Receptionist: Hello, I'm NaturalPerson|Person.
 Receptionist: Hello, I am NaturalPerson|Person.
@@ -62,8 +77,8 @@ Receptionist: Nice to see you! I am NaturalPerson|Person, and I like to drink dr
 Receptionist: My name is NaturalPerson|Person, and my favorite drink is drink|Drink.
 Receptionist: My name is NaturalPerson|Person, and my favorite beverage is drink|Drink.
 
-Receptionist: Hello, I'm NaturalPerson|Person, and I enjoy drinking drink|Drink.
-Receptionist: Hello, I am NaturalPerson|Person, and I enjoy drinking drink|Drink.
+Receptionist: Hello, I'm NaturalPerson|Person, I enjoy drinking drink|Drink.
+Receptionist: Hello, I am NaturalPerson|Person, I enjoy drinking drink|Drink.
 
 Receptionist: Hi, my favorite drink is drink|Drink. I'm NaturalPerson|Person.
 Receptionist: Hi, my favorite beverage is drink|Drink. I'm NaturalPerson|Person.
@@ -96,6 +111,88 @@ Receptionist: Hello, NaturalPerson|Person here. My preferred beverage is drink|D
 Receptionist: Hello, nice to meet you. My name is NaturalPerson|Person.
 Receptionist: Hello, nice to meet you. I'm NaturalPerson|Person.
 Receptionist: Hello, nice to meet you. I am NaturalPerson|Person.
+
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is playing Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is watching Interest|Hobby
+
+Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite food is food|Food.
+Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite food is food|Food.
+
+Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite food is food|Food.
+Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite food is food|Food.
+
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
+Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
+
+Receptionist: I am NaturalPerson|Person, I like to eat food|Food and my Hobby is playing Interest|Hobby
+Receptionist: I like to play Interest|Hobby
+
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and my hobby is Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
+Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
+
+Receptionist: I'm NaturalPerson|Person, I like to eat food|Food and my hobby is Interest|Hobby
+
+Receptionist: Hey I'm NaturalPerson|Person, I enjoy eating food|Food and I like to play Interest|Hobby
+Receptionist: Hey I am NaturalPerson|Person, I enjoy food|Food and I like to play Interest|Hobby
+
+Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to play Interest|Hobby
+Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to watch Interest|Hobby
+Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and my hobby is Interest|Hobby
+
+
+Receptionist: I prefer eating food|Food
+Receptionist: I like to eat food|Food
+Receptionist: My favorite food is food|Food
+Receptionist: What I like most to eat is food|Food
+Receptionist: Most of the time I eat foot|Food
+
+
+
+Receptionist: Hello, I'm NaturalPerson|Person.
+Receptionist: Hello, I am NaturalPerson|Person.
+
+Receptionist: Hi there, NaturalPerson|Person here. My favorite food is food|Food.
+Receptionist: I'm NaturalPerson|Person, and I enjoy food|Food.
+Receptionist: I'm NaturalPerson|Person, and I enjoy eating food|Food.
+
+
+Receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to eat food|Food.
+
+Receptionist: My name is NaturalPerson|Person, and my favorite food is food|Food.
+
+
+Receptionist: Hello, I'm NaturalPerson|Person, I enjoy eating food|Food.
+
+
+Receptionist: Hi, my favorite food is food|Food. I'm NaturalPerson|Person.
+
+Receptionist: Hi, my favorite food is food|Food. I am NaturalPerson|Person.
+
+
+
+Receptionist: I'm NaturalPerson|Person and love to eat food|Food.
+Receptionist: I am NaturalPerson|Person and love to eat food|Food.
+
+Receptionist: Good day, my name is NaturalPerson|Person and I prefer food|Food.
+
+Receptionist: Hello, NaturalPerson|Person here. My go-to food is food|Food.
+
+Receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite food is food|Food.
+Receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite food is food|Food.
+
+Receptionist: Hi, my go-to food is food|Food. I'm NaturalPerson|Person.
+Receptionist: Hi, my go-to food is food|Food. I am NaturalPerson|Person.
+
+Receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy food|Food.
+Receptionist: Greetings, I am NaturalPerson|Person, and I enjoy food|Food.
+
+
+
 
 affirm: Yes.
 affirm: That is correct.
