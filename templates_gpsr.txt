@@ -23,12 +23,14 @@ go: Make your way to the Room|Location.
 go: Make your way to the DesignedFurniture|Furniture.
 go: Leave the Room|Location.
 go: Leave this Room|Location.
-go: Exit the Room|Location.
+# go: Exit the Room|Location.
+# go: Exit this Room|Location.
 
 go: Go to NaturalPerson|Person.
 go: Move to the sitting NaturalPerson|Person.
 go: Navigate to the standing NaturalPerson|Person.
 go: Approach the waving person.
+go: Approach NaturalPerson|Person.
 
 go: Go to the DesignedFurniture|Furniture in the Room|Location.
 go: Go to NaturalPerson|Person in the Room|Location.
@@ -60,7 +62,7 @@ go: Please move to the Room|Location.
 go: Please navigate to the Room|Location.
 go: Please navigate to NaturalPerson|Person in the Room|Location.
 go: Please head to the Room|Location.
-go: Please exit the Room|Location.
+# go: Please exit the Room|Location.
 
 go: Can you go to the Room|Location?
 go: Can you go to the DesignedFurniture|Furniture?
@@ -428,44 +430,78 @@ deliver: Could you move the Transportable|Item from the DesignedFurniture|Furnit
 
 # ---- Talk ----
 
-talk: Tell me the time.
-talk: Tell me what day is today.
-talk: Tell me what day is tomorrow.
-talk: Tell me the day of the week.
-talk: Tell me the day of the month.
-talk: What is the current time?
-talk: What day is it?
-talk: Tell me your team name.
-talk: Tell me your team's name.
-talk: What is your team called?
-talk: Tell me your teams country.
-talk: Tell me which country your team is from.
-talk: Tell me your teams affiliation.
-talk: Tell me about your team.
-talk: Tell me something about yourself.
+# Using NaturalPerson for 'me'
 
-talk: Tell NaturalPerson|Person what day is today.
-talk: Tell NaturalPerson|Person about yourself.
-talk: Say something about yourself to NaturalPerson|Person.
-talk: Tell something about yourself to NaturalPerson|Person.
-talk: Tell NaturalPerson|Person the time.
-talk: Tell NaturalPerson|Person the day.
-talk: Tell NaturalPerson|Person your teams affiliation.
-talk: Tell NaturalPerson|Person what day it is.
-talk: Say the time to NaturalPerson|Person.
+talk: Tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Tell NaturalPerson|Person current TalkTopic|Topic.
+talk: Tell NaturalPerson|Person your TalkTopic|Topic.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is tomorrow.
+talk: Tell NaturalPerson|Person about your TalkTopic|Topic.
 
-talk: Please tell me the time.
-talk: Please tell me what time it is.
-talk: Please tell me your team name.
-talk: Please tell me your teams country.
-talk: Please tell NaturalPerson|Person about yourself.
-talk: Please tell me about your team.
-talk: Please tell me the date.
+talk: Say NaturalPerson|Person the TalkTopic|Topic.
+talk: Say NaturalPerson|Person current TalkTopic|Topic.
+talk: Say NaturalPerson|Person your TalkTopic|Topic.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is tomorrow.
+talk: Say NaturalPerson|Person about your TalkTopic|Topic.
 
-talk: Could you tell me what day is today?
-talk: Can you tell me the time?
-talk: Can you tell NaturalPerson|Person what time it is?
-talk: Can you tell me the date?
+talk: What is the TalkTopic|Topic?
+talk: What is the current TalkTopic|Topic?
+talk: What TalkTopic|Topic is it?
+talk: What TalkTopic|Topic is today?
+talk: What TalkTopic|Topic is tomorrow?
+talk: What TalkTopic|Topic do we have?
+
+talk: Tell NaturalPerson|Person which TalkTopic|Topic your TalkTopic|Topic is from.
+talk: Tell NaturalPerson|Person your TalkTopic|Topic TalkTopic|Topic.
+talk: Say NaturalPerson|Person which TalkTopic|Topic your TalkTopic|Topic is from.
+talk: Say NaturalPerson|Person your TalkTopic|Topic TalkTopic|Topic.
+
+talk: Tell NaturalPerson|Person something about NaturalPerson|Person.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Tell NaturalPerson|Person about TalkTopic|Topic.
+talk: Tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Tell NaturalPerson|Person your teams TalkTopic|Topic.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Tell something about TalkTopic|Topic to NaturalPerson|Person.
+talk: Say something about TalkTopic|Topic to NaturalPerson|Person.
+talk: Say NaturalPerson|Person something about NaturalPerson|Person.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Say NaturalPerson|Person about TalkTopic|Topic.
+talk: Say NaturalPerson|Person the TalkTopic|Topic.
+talk: Say NaturalPerson|Person your teams TalkTopic|Topic.
+talk: Say NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Say NaturalPerson|Person what TalkTopic|Topic it is.
+
+talk: Please tell NaturalPerson|Person TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person your TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Please tell NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Please tell NaturalPerson|Person about TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person about your TalkTopic|Topic.
+talk: Please tell something about NaturalPerson|Person.
+talk: Please say something about NaturalPerson|Person.
+talk: Please say NaturalPerson|Person TalkTopic|Topic.
+talk: Please say NaturalPerson|Person the TalkTopic|Topic.
+talk: Please say NaturalPerson|Person your TalkTopic|Topic.
+talk: Please say NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Please say NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Please say NaturalPerson|Person about TalkTopic|Topic.
+talk: Please say NaturalPerson|Person about your TalkTopic|Topic.
+
+talk: Could you tell NaturalPerson|Person what TalkTopic|Topic is today?
+talk: Can you tell NaturalPerson|Person what TalkTopic|Topic it is?
+talk: Can you tell NaturalPerson|Person what TalkTopic|Topic we have?
+talk: Can you tell NaturalPerson|Person the TalkTopic|Topic?
+talk: Can you tell something about NaturalPerson|Person?
+talk: Could you say NaturalPerson|Person what TalkTopic|Topic is today?
+talk: Can you say NaturalPerson|Person what TalkTopic|Topic it is?
+talk: Can you say NaturalPerson|Person what TalkTopic|Topic we have?
+talk: Can you say NaturalPerson|Person the TalkTopic|Topic?
+talk: Can you say something about NaturalPerson|Person?
 
 # ---- Answer ----
 
@@ -691,13 +727,17 @@ describe: Can you describe the Transportable|Item?
 count: Tell me how many Transportable|Item are on the DesignedFurniture|Furniture.
 count: Count the Transportable|Item on the DesignedFurniture|Furniture.
 count: Tell me how many NaturalPerson|Person are in the Room|Location.
-count: Count the NaturalPerson|Person in the Room|Location.
+# count: Count the NaturalPerson|Person in the Room|Location.
+count: Count the people at in the Room|Location.
+count: Count how many people are in the Room|Location.
 count: Count the people at the DesignedFurniture|Furniture.
+count: Count how many people are at the DesignedFurniture|Furniture.
 count: Tell me how many people are in the Room|Location.
 count: Tell me the number of Transportable|Item on the DesignedFurniture|Furniture.
 count: Tell me the number of people in the Room|Location.
 count: Count how many Transportable|Item there are.
 count: Count how many people are in the Room|Location.
+count: Count the people.
 
 count: How many Transportable|Item are there?
 count: How many people are in the Room|Location?
