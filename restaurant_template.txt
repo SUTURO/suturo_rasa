@@ -1,0 +1,231 @@
+# Sentence template for the various intents recognized by robot
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+
+Order: I would like to order food|Food and drink|Drink.
+Order: I would like to order food|Food and drink|Drink and drink|Drink.
+Order: I would like to order food|Food and drink|Drink and food|Food.
+Order: I would like to order drink|Drink and food|Food.
+Order: I would like to order drink|Drink and food|Food and food|Food.
+Order: I would like to order drink|Drink and food|Food and drink|Drink.
+Order: I would like to order food|Food and food|Food.
+Order: I would like to order food|Food and food|Food and food|Food.
+Order: I would like to order food|Food and food|Food and drink|Drink.
+Order: I would like to order drink|Drink and drink|Drink.
+Order: I would like to order drink|Drink and drink|Drink and food|Food.
+Order: I would like to order drink|Drink and drink|Drink and drink|Drink.
+
+Order: I would like to get food|Food and drink|Drink.
+Order: I would like to get food|Food and drink|Drink and drink|Drink.
+Order: I would like to get food|Food and drink|Drink and food|Food.
+Order: I would like to get drink|Drink and food|Food.
+Order: I would like to get drink|Drink and food|Food and food|Food.
+Order: I would like to get drink|Drink and food|Food and drink|Drink.
+Order: I would like to get food|Food and food|Food.
+Order: I would like to get food|Food and food|Food and food|Food.
+Order: I would like to get food|Food and food|Food and drink|Drink.
+Order: I would like to get drink|Drink and drink|Drink.
+Order: I would like to get drink|Drink and drink|Drink and food|Food.
+Order: I would like to get drink|Drink and drink|Drink and drink|Drink.
+
+Order: I'll go with the food|Food and drink|Drink.
+Order: I'll go with the food|Food and drink|Drink and drink|Drink.
+Order: I'll go with the food|Food and drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and food|Food and food|Food.
+Order: I'll go with the drink|Drink and food|Food and drink|Drink.
+Order: I'll go with the food|Food and food|Food.
+Order: I'll go with the food|Food and food|Food and food|Food.
+Order: I'll go with the food|Food and food|Food and drink|Drink.
+Order: I'll go with the drink|Drink and drink|Drink.
+Order: I'll go with the drink|Drink and drink|Drink and food|Food.
+Order: I'll go with the drink|Drink and drink|Drink and drink|Drink.
+
+Order: I'll take the food|Food and drink|Drink.
+Order: I'll take the food|Food and drink|Drink and drink|Drink.
+Order: I'll take the food|Food and drink|Drink and food|Food.
+Order: I'll take the drink|Drink and food|Food.
+Order: I'll take the drink|Drink and food|Food and food|Food.
+Order: I'll take the drink|Drink and food|Food and drink|Drink.
+Order: I'll take the food|Food and food|Food.
+Order: I'll take the food|Food and food|Food and food|Food.
+Order: I'll take the food|Food and food|Food and drink|Drink.
+Order: I'll take the drink|Drink and drink|Drink.
+Order: I'll take the drink|Drink and drink|Drink and food|Food.
+Order: I'll take the drink|Drink and drink|Drink and drink|Drink.
+
+Order: I will go with the food|Food and drink|Drink.
+Order: I will go with the food|Food and drink|Drink and drink|Drink.
+Order: I will go with the food|Food and drink|Drink and food|Food.
+Order: I will go with the drink|Drink and food|Food.
+Order: I will go with the drink|Drink and food|Food and food|Food.
+Order: I will go with the drink|Drink and food|Food and drink|Drink.
+Order: I will go with the food|Food and food|Food.
+Order: I will go with the food|Food and food|Food and food|Food.
+Order: I will go with the food|Food and food|Food and drink|Drink.
+Order: I will go with the drink|Drink and drink|Drink.
+Order: I will go with the drink|Drink and drink|Drink and food|Food.
+Order: I will go with the drink|Drink and drink|Drink and drink|Drink.
+
+Order: I will take the food|Food and drink|Drink.
+Order: I will take the food|Food and drink|Drink and drink|Drink.
+Order: I will take the food|Food and drink|Drink and food|Food.
+Order: I will take the drink|Drink and food|Food.
+Order: I will take the drink|Drink and food|Food and food|Food.
+Order: I will take the drink|Drink and food|Food and drink|Drink.
+Order: I will take the food|Food and food|Food.
+Order: I will take the food|Food and food|Food and food|Food.
+Order: I will take the food|Food and food|Food and drink|Drink.
+Order: I will take the drink|Drink and drink|Drink.
+Order: I will take the drink|Drink and drink|Drink and food|Food.
+Order: I will take the drink|Drink and drink|Drink and drink|Drink.
+
+Order: I'd like to have the food|Food and drink|Drink.
+Order: I'd like to have the food|Food and drink|Drink and drink|Drink.
+Order: I'd like to have the food|Food and drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and food|Food and food|Food.
+Order: I'd like to have the drink|Drink and food|Food and drink|Drink.
+Order: I'd like to have the food|Food and food|Food.
+Order: I'd like to have the food|Food and food|Food and food|Food.
+Order: I'd like to have the food|Food and food|Food and drink|Drink.
+Order: I'd like to have the drink|Drink and drink|Drink.
+Order: I'd like to have the drink|Drink and drink|Drink and food|Food.
+Order: I'd like to have the drink|Drink and drink|Drink and drink|Drink.
+
+Order: I'd like to order food|Food and drink|Drink.
+Order: I'd like to order food|Food and drink|Drink and drink|Drink.
+Order: I'd like to order food|Food and drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and food|Food and food|Food.
+Order: I'd like to order drink|Drink and food|Food and drink|Drink.
+Order: I'd like to order food|Food and food|Food.
+Order: I'd like to order food|Food and food|Food and food|Food.
+Order: I'd like to order food|Food and food|Food and drink|Drink.
+Order: I'd like to order drink|Drink and drink|Drink.
+Order: I'd like to order drink|Drink and drink|Drink and food|Food.
+Order: I'd like to order drink|Drink and drink|Drink and drink|Drink.
+
+Order: I'd like to get food|Food and drink|Drink.
+Order: I'd like to get food|Food and drink|Drink and drink|Drink.
+Order: I'd like to get food|Food and drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and food|Food and food|Food.
+Order: I'd like to get drink|Drink and food|Food and drink|Drink.
+Order: I'd like to get food|Food and food|Food.
+Order: I'd like to get food|Food and food|Food and food|Food.
+Order: I'd like to get food|Food and food|Food and drink|Drink.
+Order: I'd like to get drink|Drink and drink|Drink.
+Order: I'd like to get drink|Drink and drink|Drink and food|Food.
+Order: I'd like to get drink|Drink and drink|Drink and drink|Drink.
+
+Order: Could I order food|Food and drink|Drink.
+Order: Could I order food|Food and drink|Drink and drink|Drink.
+Order: Could I order food|Food and drink|Drink and food|Food.
+Order: Could I order drink|Drink and food|Food.
+Order: Could I order drink|Drink and food|Food and food|Food.
+Order: Could I order drink|Drink and food|Food and drink|Drink.
+Order: Could I order food|Food and food|Food.
+Order: Could I order food|Food and food|Food and food|Food.
+Order: Could I order food|Food and food|Food and drink|Drink.
+Order: Could I order drink|Drink and drink|Drink.
+Order: Could I order drink|Drink and drink|Drink and food|Food.
+Order: Could I order drink|Drink and drink|Drink and drink|Drink.
+
+Order: Could I get food|Food and drink|Drink.
+Order: Could I get food|Food and drink|Drink and drink|Drink.
+Order: Could I get food|Food and drink|Drink and food|Food.
+Order: Could I get drink|Drink and food|Food.
+Order: Could I get drink|Drink and food|Food and food|Food.
+Order: Could I get drink|Drink and food|Food and drink|Drink.
+Order: Could I get food|Food and food|Food.
+Order: Could I get food|Food and food|Food and food|Food.
+Order: Could I get food|Food and food|Food and drink|Drink.
+Order: Could I get drink|Drink and drink|Drink.
+Order: Could I get drink|Drink and drink|Drink and food|Food.
+Order: Could I get drink|Drink and drink|Drink and drink|Drink.
+
+affirm: Yes.
+affirm: That is correct.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: That's right.
+affirm: Correct.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Exactly.
+affirm: Sure.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Affirmative.
+affirm: Agreed.
+affirm: For sure.
+affirm: True.
+affirm: Quite so.
+affirm: Naturally.
+affirm: Yep.
+affirm: Right.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: Precisely.
+affirm: That's spot on.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: Sure thing.
+affirm: By all means.
+affirm: That's exactly it.
+affirm: Indisputably.
+affirm: You're absolutely correct.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: One hundred percent.
+affirm: Completely true.
+affirm: You're right.
+
+deny: No.
+deny: That is incorrect.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: That's not true.
+deny: Incorrect.
+deny: False.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Nope.
+deny: Negative.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: No way.
+deny: That's a mistake.
+deny: That's false.
+deny: Not exactly.
+deny: Far from it.
+deny: That's not the case.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Untrue.
+deny: Out of the question.
+deny: No chance.
+deny: I'm afraid not.
+deny: That's a misconception.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: I'd say no.

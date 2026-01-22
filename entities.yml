@@ -66,6 +66,7 @@ NaturalPerson:
   - Angel
   - Ashley
   - Axel
+  - Ben
   - Bob
   - Brittany
   - Charlie
@@ -139,6 +140,127 @@ NaturalPerson:
   - him
   - her
   - me
+  - Ali
+  - Falco
+  - Hanna
+  - Marc
+  - Mark
+  - Franco
+  - Yannick
+  - Ansgar
+  - Rody
+  - Alim
+  - Marvin
+  - Jehanzeb
+  - Jan
+  - Dalia
+  - Patrick
+  - Rafayel
+  - Zayne
+  - Caleb
+  - Xavier
+  - Sylus
+
+  - Maria
+  - Mohammed
+  - Muhammad
+  - José
+  - Ana
+  - Anna
+  - Li
+  - Wei
+  - Chen
+  - Ming
+  - Jun
+  - Mei
+  - Juan
+  - Carlos
+  - Luis
+  - Miguel
+  - Jorge
+  - Diego
+  - Pablo
+  - Sergio
+  - Manuel
+  - Antonio
+  - Francisco
+  - Javier
+  - Rafael
+  - Eduardo
+  - Fernando
+  - Bruno
+  - Marco
+  - Luca
+  - Matteo
+  - Giovanni
+  - Stefano
+  - Andrea
+  - Chiara
+  - Francesca
+  - Martina
+  - Valentina
+  - Elena
+  - Nina
+  - Olga
+  - Irina
+  - Natalia
+  - Tatiana
+  - Ivan
+  - Dmitri
+  - Sergei
+  - Nikolai
+  - Yuri
+  - Pavel
+  - Ahmed
+  - Ali
+  - Hassan
+  - Hussein
+  - Omar
+  - Fatima
+  - Aisha
+  - Zainab
+  - Noor
+  - Leila
+  - Amir
+  - Samir
+  - Karim
+  - Farah
+  - Sarae
+  - Priya
+  - Rahul
+  - Amit
+  - Anjali
+  - Suresh
+  - Ramesh
+  - Sunita
+  - Pooja
+  - Arjun
+  - Neha
+  - Min
+  - Jae
+  - Hyun
+  - Soo
+  - Yuki
+  - Hiroshi
+  - Kenji
+  - Satoshi
+  - Takeshi
+  - Aiko
+  - Thabo
+  - Sipho
+  - Nkulunkulu
+  - Chinedu
+  - Oluwaseun
+  - Ade
+  - Kwame
+  - Kofi
+  - Ama
+  - Sofia
+  - Isabella
+  - Camila
+  - Valeria
+  - Daniela
+  - Mariana
 
 Room:
   entities:
@@ -396,7 +518,7 @@ Transportable:
   - redbull
   - lactosefree milk
   - snacks
-  
+
 drink:
   entities:
    - apple juice
@@ -597,6 +719,12 @@ Interest:
     - working
     - partying
 
+Challenge:
+  entities:
+    - Receptionist
+    - GPSR
+    - Restaurant
+
 TalkTopic:
   entities:
     - time
@@ -612,3 +740,4 @@ TalkTopic:
     - team
     - team name
     - team country
+
