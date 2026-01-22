@@ -395,6 +395,7 @@ Transportable:
   - red bull
   - redbull
   - lactosefree milk
+  - snacks
   
 drink:
   entities:
@@ -595,3 +596,19 @@ Interest:
     - programming
     - working
     - partying
+
+TalkTopic:
+  entities:
+    - time
+    - date
+    - name
+    - country
+    - yourself
+    - something about yourself
+    - affiliation
+    - day
+    - day of the week
+    - day of the month
+    - team
+    - team name
+    - team country
