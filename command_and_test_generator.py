@@ -213,7 +213,7 @@ def main():
     Ntrain = int(arguments.numberTrainingExamples)
     if 20 > Ntrain:
         Ntrain = 20
-    Ntest = int(arguments.numberTrainingExamples)
+    Ntest = int(arguments.numberTestingExamples)
     if 20 > Ntest:
         Ntest = 20
     Ntrials = int(arguments.numberTrials)
