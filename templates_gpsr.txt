@@ -1,0 +1,900 @@
+# Sentence templates for the various intents recognized by the robot.
+# a single '#' character starts a comment
+# Each line defining a template should have the format
+# intent_name: annotated sentence
+
+# GPSR (General Purpose Service Robot)
+
+# --------------------------
+# NAVIGATION
+# --------------------------
+
+# ---- Go ----
+
+go: Go to the Room|Location.
+go: Go to the DesignedFurniture|Furniture.
+go: Move to the Room|Location.
+go: Drive to the Room|Location.
+go: Navigate to the Room|Location.
+go: Advance to the Room|Location.
+go: Head to the Room|Location.
+go: Head over to the DesignedFurniture|Furniture.
+go: Make your way to the Room|Location.
+go: Make your way to the DesignedFurniture|Furniture.
+go: Leave the Room|Location.
+go: Leave this Room|Location.
+# go: Exit the Room|Location.
+# go: Exit this Room|Location.
+
+go: Go to NaturalPerson|Person.
+go: Move to the sitting NaturalPerson|Person.
+go: Navigate to the standing NaturalPerson|Person.
+go: Approach the waving person.
+go: Approach NaturalPerson|Person.
+
+go: Go to the DesignedFurniture|Furniture in the Room|Location.
+go: Go to NaturalPerson|Person in the Room|Location.
+go: Navigate to NaturalPerson|Person in the Room|Location.
+go: In the Room|Location go to the DesignedFurniture|Furniture.
+go: In the Room|Location go to NaturalPerson|Person.
+go: In the Room|Location navigate to the DesignedFurniture|Furniture.
+go: In the Room|Location navigate to NaturalPerson|Person.
+go: In the Room|Location drive to NaturalPerson|Person.
+go: Go to the waving NaturalPerson|Person.
+go: Go to the person waving their arm.
+go: Navigate to the waving NaturalPerson|Person.
+go: Find the waving person in the Room|Location.
+go: Go to the lying NaturalPerson|Person.
+go: Move to the person lying on the DesignedFurniture|Furniture.
+go: Go to the person sitting on the DesignedFurniture|Furniture.
+go: Navigate to the person standing near the DesignedFurniture|Furniture.
+go: Navigate to the person raising their left arm.
+go: Go to the NaturalPerson|Person raising their right arm.
+go: Find the person pointing to the left.
+go: Go to the person pointing to the left in the Room|Location.
+go: Go to the NaturalPerson|Person pointing to the right.
+
+go: Please go to the Room|Location.
+go: Please go to the DesignedFurniture|Furniture.
+go: Please go to the DesignedFurniture|Furniture in the Room|Location.
+go: Please go to NaturalPerson|Person in the Room|Location.
+go: Please move to the Room|Location.
+go: Please navigate to the Room|Location.
+go: Please navigate to NaturalPerson|Person in the Room|Location.
+go: Please head to the Room|Location.
+# go: Please exit the Room|Location.
+
+go: Can you go to the Room|Location?
+go: Can you go to the DesignedFurniture|Furniture?
+go: Can you go to the DesignedFurniture|Furniture in the Room|Location?
+go: Can you move to the Room|Location?
+go: Can you navigate to NaturalPerson|Person in the Room|Location?
+go: Can you please move to the Room|Location?
+go: Can you please drive to the Room|Location?
+go: Can you please navigate to the Room|Location?
+go: Could you go to the Room|Location?
+go: Could you go to the DesignedFurniture|Furniture?
+go: Could you drive to the Room|Location?
+go: Could you please go to the DesignedFurniture|Furniture?
+
+# ---- Follow ----
+
+follow: Follow NaturalPerson|Person.
+follow: Stay behind NaturalPerson|Person.
+follow: Keep up with NaturalPerson|Person.
+follow: Walk behind NaturalPerson|Person.
+
+follow: Follow NaturalPerson|Person in the Room|Location.
+follow: Follow around the NaturalPerson|Person in the Room|Location.
+follow: Go after the NaturalPerson|Person in the Room|Location.
+follow: In the Room|Location follow NaturalPerson|Person.
+follow: Follow NaturalPerson|Person from the Room|Location to the Room|Location.
+
+follow: Follow NaturalPerson|Person standing next to the DesignedFurniture|Furniture.
+follow: Follow NaturalPerson|Person standing next to the DesignedFurniture|Furniture in the Room|Location.
+follow: Follow around the NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
+follow: Go after the NaturalPerson|Person near the DesignedFurniture|Furniture.
+follow: Follow NaturalPerson|Person with a Clothing|Clothes in the Room|Location.
+follow: Follow around the NaturalPerson|Person in a Clothing|Clothes in the Room|Location.
+follow: Go after the NaturalPerson|Person wearing a Clothing|Clothes in the Room|Location.
+follow: Follow NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture.
+follow: Follow NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture in the Room|Location.
+follow: Follow around the NaturalPerson|Person in a Clothing|Clothes sitting on the DesignedFurniture|Furniture.
+follow: Follow around the NaturalPerson|Person in a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location.
+follow: Go after the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture.
+follow: Go after the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location.
+
+follow: Please follow NaturalPerson|Person.
+follow: Please follow NaturalPerson|Person in the Room|Location.
+follow: Please follow NaturalPerson|Person from the Room|Location to the Room|Location.
+follow: In the Room|Location please follow NaturalPerson|Person.
+follow: Can you follow NaturalPerson|Person in the Room|Location?
+follow: Can you follow NaturalPerson|Person from the Room|Location to the Room|Location?
+follow: Could you follow NaturalPerson|Person in the Room|Location?
+
+# ---- Guide ----
+
+guide: Guide NaturalPerson|Person to the Room|Location.
+guide: Escort NaturalPerson|Person to the Room|Location.
+guide: Lead NaturalPerson|Person to the Room|Location.
+guide: Show NaturalPerson|Person the way to the Room|Location.
+guide: Help NaturalPerson|Person get to the Room|Location.
+guide: Guide NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Escort NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Lead NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Direct NaturalPerson|Person to the DesignedFurniture|Furniture.
+
+guide: Guide NaturalPerson|Person from the Room|Location to Room|Location.
+guide: Escort the NaturalPerson|Person from the Room|Location to the Room|Location.
+guide: Lead the NaturalPerson|Person from the Room|Location to Room|Location.
+guide: Show the NaturalPerson|Person from the Room|Location the way to the Room|Location.
+guide: Take the NaturalPerson|Person from the Room|Location to the Room|Location.
+
+guide: Guide NaturalPerson|Person standing next to the DesignedFurniture|Furniture in the Room|Location to Room|Location.
+guide: Escort the NaturalPerson|Person sitting on the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+guide: Lead the NaturalPerson|Person near the DesignedFurniture|Furniture in the Room|Location to Room|Location.
+guide: Show the NaturalPerson|Person next the DesignedFurniture|Furniture in the Room|Location the way to the Room|Location.
+guide: Take the NaturalPerson|Person sitting on the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+guide: Guide NaturalPerson|Person with a Clothing|Clothes from the Room|Location to Room|Location.
+guide: Escort the NaturalPerson|Person in a Clothing|Clothes from the Room|Location to the Room|Location.
+guide: Lead the NaturalPerson|Person wearing a Clothing|Clothes from the Room|Location to Room|Location.
+guide: Show the NaturalPerson|Person having a Clothing|Clothes from the Room|Location the way to the Room|Location.
+guide: Take the NaturalPerson|Person wearing a Clothing|Clothes from the Room|Location to the Room|Location.
+guide: Guide NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture in the Room|Location to Room|Location.
+guide: Escort the NaturalPerson|Person in a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+guide: Lead the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location to Room|Location.
+guide: Show the NaturalPerson|Person having a Clothing|Clothes next the DesignedFurniture|Furniture in the Room|Location the way to the Room|Location.
+guide: Take the NaturalPerson|Person wearing a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+guide: Guide NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+guide: Escort the NaturalPerson|Person in a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+guide: Lead the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+guide: Show the NaturalPerson|Person having a Clothing|Clothes next the DesignedFurniture|Furniture in the Room|Location the way to the DesignedFurniture|Furniture in the Room|Location.
+guide: Take the NaturalPerson|Person wearing a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+
+guide: Can you guide NaturalPerson|Person to the Room|Location?
+guide: Can you guide NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Can you escort NaturalPerson|Person to the Room|Location?
+guide: Can you escort NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Can you lead NaturalPerson|Person to the Room|Location?
+guide: Can you lead NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Can you take NaturalPerson|Person to the Room|Location?
+guide: Can you take NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Could you guide NaturalPerson|Person to the Room|Location?
+guide: Could you guide NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Could you escort NaturalPerson|Person to the Room|Location?
+guide: Could you escort NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Could you lead NaturalPerson|Person to the Room|Location?
+guide: Could you lead NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Could you please guide NaturalPerson|Person to the Room|Location?
+guide: Could you please escort NaturalPerson|Person to the Room|Location?
+guide: Would you like to guide NaturalPerson|Person to the Room|Location?
+guide: Would you like to guide NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Would you like to escort NaturalPerson|Person to the Room|Location?
+guide: Would you like to escort NaturalPerson|Person to the DesignedFurniture|Furniture?
+guide: Would you guide NaturalPerson|Person to the Room|Location?
+guide: Would you escort NaturalPerson|Person to the Room|Location?
+guide: Would you please lead NaturalPerson|Person to the Room|Location?
+
+# --------------------------
+# SIMPLE MANIPULATION 
+# --------------------------
+
+# ---- Take ----
+
+take: Take a Transportable|Item to the Room|Location.
+take: Get a Transportable|Item to the Room|Location.
+take: Fetch a Transportable|Item to the Room|Location.
+take: Get some Transportable|Item to the Room|Location.
+take: Take a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
+take: Get a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
+take: Fetch a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
+
+take: Take a Transportable|Item from the Room|Location to the Room|Location.
+take: Get a Transportable|Item from the Room|Location to the Room|Location.
+take: Fetch a Transportable|Item from the Room|Location to Room|Location.
+take: Take a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Get a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Fetch a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Get a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Get some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+
+take: Grasp a Transportable|Item from the Room|Location.
+take: Grasp some Transportable|Item from the Room|Location.
+take: Grasp a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+take: Retrieve a Transportable|Item from the Room|Location.
+take: Bring a Transportable|Item from the Room|Location.
+take: Bring me the biggest Transportable|Item from the Room|Location.
+take: Go get a Transportable|Item from the Room|Location.
+take: Pick up the Transportable|Item from Room|Location.
+take: Collect the Transportable|Item from the Room|Location.
+take: Grab the Transportable|Item.
+take: Fetch the largest Transportable|Item.
+take: Get the lightest Transportable|Item.
+
+take: Take a Transportable|Item to the NaturalPerson|Person.
+take: Fetch a Transportable|Item for a NaturalPerson|Person.
+take: Get the NaturalPerson|Person a Transportable|Item.
+take: Grab the Transportable|Item and take it to NaturalPerson|Person.
+take: Take a Transportable|Item from the Room|Location to the NaturalPerson|Person.
+take: Take some Transportable|Item from the Room|Location to the NaturalPerson|Person.
+take: Fetch a Transportable|Item from the Room|Location for a NaturalPerson|Person.
+take: Get the NaturalPerson|Person Transportable|Item from the Room|Location.
+take: Get the NaturalPerson|Person some Transportable|Item from the Room|Location.
+take: Take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person.
+take: Take some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person.
+take: Fetch some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person.
+take: Get the NaturalPerson|Person Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+take: Get the NaturalPerson|Person some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+
+take: Take a Transportable|Item to the NaturalPerson|Person wearing a Clothing|Clothes.
+take: Fetch a Transportable|Item for a NaturalPerson|Person with a Clothing|Clothes.
+take: Get the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item.
+take: Pet the NaturalPerson|Person wearing a Clothing|Clothes some Transportable|Item.
+take: Take a Transportable|Item from the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes.
+take: Fetch a Transportable|Item from the Room|Location for a NaturalPerson|Person with a Clothing|Clothes.
+take: Get the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the Room|Location.
+take: Take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person with a Clothing|Clothes.
+take: Get the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+take: Take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes who sits on the DesignedFurniture|Furniture in the Room|Location.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person with a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location.
+take: Get the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+
+take: Please take some Transportable|Item to the Room|Location.
+take: Please take a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
+take: Please take some Transportable|Item from the Room|Location to the Room|Location.
+take: Please take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Fetch a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location please.
+take: Please fetch some Transportable|Item from the Room|Location to Room|Location.
+take: Please fetch some Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Please fetch some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+take: Please fetch a Transportable|Item for a NaturalPerson|Person.
+take: Please fetch a Transportable|Item from the Room|Location for a NaturalPerson|Person.
+take: Please fetch some Transportable|Item for a NaturalPerson|Person with a Clothing|Clothes.
+take: Please pick up the Transportable|Item.
+take: Please retrieve a Transportable|Item from the Room|Location.
+take: Please take some Transportable|Item to the NaturalPerson|Person.
+take: Take a Transportable|Item to the NaturalPerson|Person wearing a Clothing|Clothes please.
+take: Please get the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the Room|Location.
+take: Please take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes.
+take: Please take a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes who sits on the DesignedFurniture|Furniture in the Room|Location.
+
+take: Could you fetch a Transportable|Item to the Room|Location please?
+take: Could you please get some Transportable|Item to the DesignedFurniture|Furniture in the Room|Location?
+take: Can you get a Transportable|Item from the Room|Location to the Room|Location please?
+take: Could you take a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location please?
+take: Could you get some Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location?
+take: Could you grasp a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location?
+take: Could you get the NaturalPerson|Person a Transportable|Item please?
+take: Could you take a Transportable|Item from the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes please?
+take: Could you fetch some Transportable|Item from the Room|Location for a NaturalPerson|Person with a Clothing|Clothes?
+take: Could you get the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location?
+take: Could you fetch some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person with a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location?
+take: Can you retrieve a Transportable|Item from the Room|Location?
+
+# ---- Place ----
+
+place: Put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Put some Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Place a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Place some Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Set a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Position a Transportable|Item on the DesignedFurniture|Furniture.
+
+place: Put a Transportable|Item from the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Put some Transportable|Item from the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Place a Transportable|Item from the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Put a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Place a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+
+place: Please put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Please place a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Please set a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+place: Please position a Transportable|Item on the DesignedFurniture|Furniture.
+
+place: Can you place some Transportable|Item from the Room|Location on the DesignedFurniture|Furniture in the Room|Location?
+place: Can you put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+place: Can you place a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+place: Can you set a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+place: Could you please put some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Could you place a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location please?
+place: Could you put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+
+# ---- Deliver ----
+
+deliver: Bring me a Transportable|Item.
+deliver: Bring me the Transportable|Item.
+deliver: Bring me a Transportable|Item in the Room|Location.
+deliver: Bring me the Transportable|Item in the Room|Location.
+deliver: Give me the Transportable|Item.
+deliver: Bring me the biggest Transportable|Item.
+deliver: Bring me the heaviest Transportable|Item.
+deliver: Give me the smallest Transportable|Item.
+
+deliver: In the Room|Location bring a Transportable|Item.
+deliver: In the Room|Location bring the Transportable|Item.
+deliver: Transport a Transportable|Item to the Room|Location.
+deliver: Carry a Transportable|Item to the Room|Location.
+deliver: Move the Transportable|Item to the Room|Location.
+deliver: Deliver a Transportable|Item to the Room|Location.
+deliver: Deliver a Transportable|Item from the Room|Location to the Room|Location.
+deliver: Move the Transportable|Item from the Room|Location to the Room|Location.
+deliver: Deliver a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Move the Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+deliver: Move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+deliver: Deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring a Transportable|Item to the DesignedFurniture|Furniture.
+deliver: Bring a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring a Transportable|Item from the DesignedFurniture|Furniture to the DesignedFurniture|Furniture.
+deliver: Bring a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring some Transportable|Item from the DesignedFurniture|Furniture to the DesignedFurniture|Furniture.
+
+deliver: Bring NaturalPerson|Person a Transportable|Item.
+deliver: Give the NaturalPerson|Person a Transportable|Item.
+deliver: Deliver a Transportable|Item to the NaturalPerson|Person.
+deliver: Move the Transportable|Item to the NaturalPerson|Person.
+deliver: Take a Transportable|Item to the NaturalPerson|Person.
+deliver: Deliver the thinnest Transportable|Item to NaturalPerson|Person.
+deliver: Hand the Transportable|Item to NaturalPerson|Person.
+deliver: Pass the Transportable|Item to NaturalPerson|Person.
+deliver: Hand over the Transportable|Item to NaturalPerson|Person.
+deliver: Bring NaturalPerson|Person a Transportable|Item from the Room|Location.
+deliver: Give the NaturalPerson|Person a Transportable|Item from the Room|Location.
+deliver: Deliver a Transportable|Item from the Room|Location to the NaturalPerson|Person.
+deliver: Move the Transportable|Item from the Room|Location to the NaturalPerson|Person.
+deliver: Bring NaturalPerson|Person a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Give the NaturalPerson|Person a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person.
+deliver: Move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person.
+
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes a Transportable|Item.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item.
+deliver: Deliver a Transportable|Item to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Move the Transportable|Item to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes some Transportable|Item.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes a Transportable|Item from the Room|Location.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the Room|Location.
+deliver: Deliver a Transportable|Item from the Room|Location to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Move the Transportable|Item from the Room|Location to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes some Transportable|Item from the Room|Location.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Bring NaturalPerson|Person having a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location.
+
+deliver: Please bring me a Transportable|Item.
+deliver: Please bring me the Transportable|Item.
+deliver: Please bring me a Transportable|Item in the Room|Location.
+deliver: Please bring me the Transportable|Item in the Room|Location.
+deliver: Please give me the Transportable|Item.
+deliver: Deliver some Transportable|Item to the Room|Location please.
+deliver: Please move some Transportable|Item to the Room|Location.
+deliver: Please deliver a Transportable|Item from the Room|Location to the Room|Location.
+deliver: Please deliver some Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Please move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the Room|Location.
+deliver: Please bring some Transportable|Item to the DesignedFurniture|Furniture.
+deliver: Please bring a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+deliver: Please bring NaturalPerson|Person some Transportable|Item.
+deliver: Give the NaturalPerson|Person some Transportable|Item please.
+deliver: Please deliver some Transportable|Item to the NaturalPerson|Person.
+deliver: Bring NaturalPerson|Person a Transportable|Item from the Room|Location please.
+deliver: Please give the NaturalPerson|Person some Transportable|Item from the Room|Location.
+deliver: Please move the Transportable|Item from the Room|Location to the NaturalPerson|Person.
+deliver: Please give the NaturalPerson|Person a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+deliver: Please bring NaturalPerson|Person having a Clothing|Clothes some Transportable|Item.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes some Transportable|Item please.
+deliver: Please deliver a Transportable|Item to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Move the Transportable|Item to the NaturalPerson|Person in a Clothing|Clothes please.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes some Transportable|Item from the Room|Location please.
+deliver: Give the NaturalPerson|Person wearing a Clothing|Clothes some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location please.
+deliver: Please move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes.
+deliver: Please transport a Transportable|Item to the Room|Location.
+deliver: Please carry a Transportable|Item to the Room|Location.
+
+deliver: Could you move the Transportable|Item from the Room|Location to the Room|Location?
+deliver: Can you move the Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Could you deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the Room|Location please?
+deliver: Could you move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Could you bring some Transportable|Item to the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Could you bring a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Can you bring a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location?
+deliver: Can you bring some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location?
+deliver: Could you move the Transportable|Item to the NaturalPerson|Person?
+deliver: Could you deliver a Transportable|Item from the Room|Location to the NaturalPerson|Person?
+deliver: Could you bring NaturalPerson|Person a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location?
+deliver: Could you deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person please?
+deliver: Can you move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person?
+deliver: Could you deliver a Transportable|Item from the Room|Location to the NaturalPerson|Person in a Clothing|Clothes?
+deliver: Can you move the Transportable|Item from the Room|Location to the NaturalPerson|Person in a Clothing|Clothes please?
+deliver: Could you deliver a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes please?
+deliver: Can you bring NaturalPerson|Person having a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Could you give the NaturalPerson|Person wearing a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location please?
+deliver: Can you deliver some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location?
+deliver: Could you move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location please?
+
+# --------------------------
+# SOCIAL
+# --------------------------
+
+# ---- Talk ----
+
+# Using NaturalPerson for 'me'
+
+talk: Tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Tell NaturalPerson|Person current TalkTopic|Topic.
+talk: Tell NaturalPerson|Person your TalkTopic|Topic.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is tomorrow.
+talk: Tell NaturalPerson|Person about your TalkTopic|Topic.
+
+talk: Say NaturalPerson|Person the TalkTopic|Topic.
+talk: Say NaturalPerson|Person current TalkTopic|Topic.
+talk: Say NaturalPerson|Person your TalkTopic|Topic.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is tomorrow.
+talk: Say NaturalPerson|Person about your TalkTopic|Topic.
+
+talk: What is the TalkTopic|Topic?
+talk: What is the current TalkTopic|Topic?
+talk: What TalkTopic|Topic is it?
+talk: What TalkTopic|Topic is today?
+talk: What TalkTopic|Topic is tomorrow?
+talk: What TalkTopic|Topic do we have?
+
+talk: Tell NaturalPerson|Person which TalkTopic|Topic your TalkTopic|Topic is from.
+talk: Tell NaturalPerson|Person your TalkTopic|Topic TalkTopic|Topic.
+talk: Say NaturalPerson|Person which TalkTopic|Topic your TalkTopic|Topic is from.
+talk: Say NaturalPerson|Person your TalkTopic|Topic TalkTopic|Topic.
+
+talk: Tell NaturalPerson|Person something about NaturalPerson|Person.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Tell NaturalPerson|Person about TalkTopic|Topic.
+talk: Tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Tell NaturalPerson|Person your teams TalkTopic|Topic.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Tell NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Tell something about TalkTopic|Topic to NaturalPerson|Person.
+talk: Say something about TalkTopic|Topic to NaturalPerson|Person.
+talk: Say NaturalPerson|Person something about NaturalPerson|Person.
+talk: Say NaturalPerson|Person what TalkTopic|Topic is today.
+talk: Say NaturalPerson|Person about TalkTopic|Topic.
+talk: Say NaturalPerson|Person the TalkTopic|Topic.
+talk: Say NaturalPerson|Person your teams TalkTopic|Topic.
+talk: Say NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Say NaturalPerson|Person what TalkTopic|Topic it is.
+
+talk: Please tell NaturalPerson|Person TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person the TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person your TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Please tell NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Please tell NaturalPerson|Person about TalkTopic|Topic.
+talk: Please tell NaturalPerson|Person about your TalkTopic|Topic.
+talk: Please tell something about NaturalPerson|Person.
+talk: Please say something about NaturalPerson|Person.
+talk: Please say NaturalPerson|Person TalkTopic|Topic.
+talk: Please say NaturalPerson|Person the TalkTopic|Topic.
+talk: Please say NaturalPerson|Person your TalkTopic|Topic.
+talk: Please say NaturalPerson|Person what TalkTopic|Topic it is.
+talk: Please say NaturalPerson|Person what TalkTopic|Topic we have.
+talk: Please say NaturalPerson|Person about TalkTopic|Topic.
+talk: Please say NaturalPerson|Person about your TalkTopic|Topic.
+
+talk: Could you tell NaturalPerson|Person what TalkTopic|Topic is today?
+talk: Can you tell NaturalPerson|Person what TalkTopic|Topic it is?
+talk: Can you tell NaturalPerson|Person what TalkTopic|Topic we have?
+talk: Can you tell NaturalPerson|Person the TalkTopic|Topic?
+talk: Can you tell something about NaturalPerson|Person?
+talk: Could you say NaturalPerson|Person what TalkTopic|Topic is today?
+talk: Can you say NaturalPerson|Person what TalkTopic|Topic it is?
+talk: Can you say NaturalPerson|Person what TalkTopic|Topic we have?
+talk: Can you say NaturalPerson|Person the TalkTopic|Topic?
+talk: Can you say something about NaturalPerson|Person?
+
+# ---- Answer ----
+
+answer: Answer the question from NaturalPerson|Person.
+answer: Respond to NaturalPerson|Person.
+answer: Reply to NaturalPerson|Person.
+answer: Answer NaturalPerson|Person question.
+answer: Respond to NaturalPerson|Person question.
+answer: Reply to NaturalPerson|Person question.
+answer: Give an answer to NaturalPerson|Person.
+answer: Provide an answer to NaturalPerson|Person.
+answer: Tell NaturalPerson|Person the answer.
+
+answer: Please answer the question from NaturalPerson|Person.
+answer: Please respond to NaturalPerson|Person.
+answer: Please reply to NaturalPerson|Person.
+answer: Please answer NaturalPerson|Person question.
+answer: Please tell NaturalPerson|Person the answer.
+
+answer: Can you answer the question from NaturalPerson|Person?
+answer: Could you answer the question from NaturalPerson|Person?
+answer: Could you please answer the question from NaturalPerson|Person?
+answer: Can you respond to NaturalPerson|Person?
+answer: Can you reply to NaturalPerson|Person?
+answer: Can you answer NaturalPerson|Person question?
+answer: Can you give an answer to NaturalPerson|Person?
+
+# ---- Meet ----
+
+meet: Meet NaturalPerson|Person in the Room|Location.
+meet: Meet NaturalPerson|Person.
+meet: Meet with NaturalPerson|Person.
+meet: Meet NaturalPerson|Person at the Room|Location.
+meet: Go and meet NaturalPerson|Person.
+meet: Go and meet NaturalPerson|Person in the Room|Location.
+meet: Meet NaturalPerson|Person at the DesignedFurniture|Furniture.
+meet: Meet NaturalPerson|Person at the DesignedFurniture|Furniture in the Room|Location.
+
+meet: Please meet NaturalPerson|Person in the Room|Location.
+meet: Please meet NaturalPerson|Person.
+meet: Please meet with NaturalPerson|Person.
+meet: Please meet NaturalPerson|Person at the Room|Location.
+meet: Please go and meet NaturalPerson|Person.
+meet: Please meet NaturalPerson|Person at the DesignedFurniture|Furniture.
+meet: Please meet NaturalPerson|Person in the Room|Location.
+
+meet: Can you meet NaturalPerson|Person in the Room|Location?
+meet: Could you meet NaturalPerson|Person in the Room|Location?
+meet: Could you please meet NaturalPerson|Person in the Room|Location?
+meet: Can you meet NaturalPerson|Person?
+meet: Can you meet with NaturalPerson|Person?
+meet: Can you meet NaturalPerson|Person at the Room|Location?
+meet: Can you meet NaturalPerson|Person at the DesignedFurniture|Furniture?
+
+# ---- Greet ----
+
+greet: Greet NaturalPerson|Person.
+greet: Say hi to NaturalPerson|Person.
+greet: Welcome NaturalPerson|Person.
+greet: Say hello to NaturalPerson|Person.
+greet: Introduce yourself to NaturalPerson|Person.
+greet: Salute NaturalPerson|Person.
+greet: Give a warm warm welcome to NaturalPerson|Person.
+greet: Make NaturalPerson|Person feel welcome.
+greet: Bid hello to NaturalPerson|Person.
+greet: Send my regards to NaturalPerson|Person.
+greet: Say a quick hello to NaturalPerson|Person.
+greet: Greet NaturalPerson|Person warmly.
+greet: Say a friendly hello to NaturalPerson|Person.
+greet: Greet NaturalPerson|Person kindly.
+
+greet: Greet NaturalPerson|Person in a Clothing|Clothes.
+greet: Say hi to NaturalPerson|Person wearing a Clothing|Clothes.
+greet: Welcome NaturalPerson|Person having a Clothing|Clothes.
+greet: Say hello to NaturalPerson|Person with a Clothing|Clothes.
+greet: Introduce yourself to NaturalPerson|Person who has a Clothing|Clothes.
+greet: Salute NaturalPerson|Person in a Clothing|Clothes.
+greet: Greet NaturalPerson|Person in the Room|Location.
+greet: Say hi to NaturalPerson|Person in the Room|Location.
+greet: Welcome NaturalPerson|Person in the Room|Location.
+greet: Say hello to NaturalPerson|Person in the Room|Location.
+greet: Introduce yourself to NaturalPerson|Person in the Room|Location.
+greet: Salute NaturalPerson|Person in the Room|Location.
+greet: Greet NaturalPerson|Person near the DesignedFurniture|Furniture.
+greet: Say hi to NaturalPerson|Person next to the DesignedFurniture|Furniture.
+greet: Welcome NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
+greet: Say hello to NaturalPerson|Person standing near the DesignedFurniture|Furniture.
+greet: Introduce yourself to NaturalPerson|Person next to the DesignedFurniture|Furniture.
+greet: Salute NaturalPerson|Person near a DesignedFurniture|Furniture.
+greet: Greet NaturalPerson|Person near the DesignedFurniture|Furniture in the Room|Location.
+greet: Say hi to NaturalPerson|Person next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Welcome NaturalPerson|Person sitting on the DesignedFurniture|Furniture in the Room|Location.
+greet: Say hello to NaturalPerson|Person standing near the DesignedFurniture|Furniture in the Room|Location.
+greet: Introduce yourself to NaturalPerson|Person next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Salute NaturalPerson|Person near a DesignedFurniture|Furniture in the Room|Location.
+greet: Greet NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location.
+greet: Say hi to NaturalPerson|Person wearing a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Welcome NaturalPerson|Person having a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location.
+greet: Say hello to NaturalPerson|Person with a Clothing|Clothes standing near the DesignedFurniture|Furniture in the Room|Location.
+greet: Introduce yourself to NaturalPerson|Person who has a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Salute NaturalPerson|Person in a Clothing|Clothes near a DesignedFurniture|Furniture in the Room|Location.
+
+greet: Please greet NaturalPerson|Person.
+greet: Please welcome NaturalPerson|Person.
+greet: Please introduce yourself to NaturalPerson|Person.
+greet: Please greet NaturalPerson|Person in a Clothing|Clothes.
+greet: Please welcome NaturalPerson|Person having a Clothing|Clothes.
+greet: Please introduce yourself to NaturalPerson|Person who has a Clothing|Clothes.
+greet: Please say hi to NaturalPerson|Person in the Room|Location.
+greet: Please welcome NaturalPerson|Person in the Room|Location.
+greet: Please say hello to NaturalPerson|Person in the Room|Location.
+greet: Please salute NaturalPerson|Person in the Room|Location.
+greet: Please say hi to NaturalPerson|Person next to the DesignedFurniture|Furniture.
+greet: Please welcome NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
+greet: Please introduce yourself to NaturalPerson|Person next to the DesignedFurniture|Furniture.
+greet: Please greet NaturalPerson|Person near the DesignedFurniture|Furniture in the Room|Location.
+greet: Please say hi to NaturalPerson|Person next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Please welcome NaturalPerson|Person sitting on the DesignedFurniture|Furniture in the Room|Location.
+greet: Please say hello to NaturalPerson|Person standing near the DesignedFurniture|Furniture in the Room|Location.
+greet: Please introduce yourself to NaturalPerson|Person next to the DesignedFurniture|Furniture in the Room|Location.
+greet: Please say hello to NaturalPerson|Person with a Clothing|Clothes standing near the DesignedFurniture|Furniture in the Room|Location.
+greet: Please welcome NaturalPerson|Person warmly.
+
+greet: Could you please say hi to NaturalPerson|Person?
+greet: Could you please say hello to NaturalPerson|Person?
+greet: Could you please salute NaturalPerson|Person?
+greet: Could you please say hi to NaturalPerson|Person wearing a Clothing|Clothes?
+greet: Could you please say hello to NaturalPerson|Person with a Clothing|Clothes?
+greet: Could you please salute NaturalPerson|Person in a Clothing|Clothes?
+greet: Could you please greet NaturalPerson|Person in the Room|Location?
+greet: Could you please introduce yourself to NaturalPerson|Person in the Room|Location?
+greet: Could you please greet NaturalPerson|Person near the DesignedFurniture|Furniture?
+greet: Could you please say hello to NaturalPerson|Person standing near the DesignedFurniture|Furniture?
+greet: Could you please salute NaturalPerson|Person near a DesignedFurniture|Furniture?
+greet: Could you please salute NaturalPerson|Person near a DesignedFurniture|Furniture in the Room|Location?
+greet: Could you greet NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location please?
+greet: Could you say hi to NaturalPerson|Person wearing a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location please?
+greet: Could you welcome NaturalPerson|Person having a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location please?
+greet: Could you introduce yourself to NaturalPerson|Person who has a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location please?
+
+# --------------------------
+# PERCEPTION / STOREING
+# --------------------------
+
+# ---- Remember ----
+
+remember: Get to know NaturalPerson|Person.
+remember: Contact NaturalPerson|Person.
+remember: Get acquainted with NaturalPerson|Person.
+remember: Go and contact the NaturalPerson|Person.
+remember: Contact NaturalPerson|Person in the Room|Location.
+remember: Get acquainted with NaturalPerson|Person in the Room|Location.
+remember: Meet and get to know NaturalPerson|Person.
+remember: Go and get acquainted with NaturalPerson|Person.
+remember: Introduce yourself and get to know NaturalPerson|Person.
+remember: Learn about NaturalPerson|Person.
+remember: Get to know NaturalPerson|Person in the Room|Location.
+
+remember: Please get to know NaturalPerson|Person in the Room|Location.
+remember: Please get to know NaturalPerson|Person.
+remember: Please contact NaturalPerson|Person.
+remember: Please get acquainted with NaturalPerson|Person.
+
+remember: Can you get to know NaturalPerson|Person?
+remember: Could you get to know NaturalPerson|Person?
+remember: Can you contact NaturalPerson|Person?
+remember: Could you contact NaturalPerson|Person?
+remember: Can you get acquainted with NaturalPerson|Person?
+
+# ---- Describe ----
+
+describe: Describe the NaturalPerson|Person in the Room|Location.
+describe: Tell me about the NaturalPerson|Person in the Room|Location.
+describe: Describe the NaturalPerson|Person near a DesignedFurniture|Furniture.
+describe: Tell me about the NaturalPerson|Person next to the DesignedFurniture|Furniture.
+describe: Describe the NaturalPerson|Person wearing a Clothing|Clothes in the Room|Location.
+describe: Tell me about the NaturalPerson|Person in a Clothing|Clothes in the Room|Location.
+describe: Describe the NaturalPerson|Person wearing a Clothing|Clothes near a DesignedFurniture|Furniture.
+describe: Tell me about the NaturalPerson|Person in a Clothing|Clothes next to the DesignedFurniture|Furniture.
+describe: Describe the NaturalPerson|Person wearing a Clothing|Clothes near a DesignedFurniture|Furniture in the Room|Location.
+describe: Tell me about the NaturalPerson|Person in a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location.
+describe: Give me a description of the NaturalPerson|Person.
+describe: Explain the appearance of NaturalPerson|Person.
+describe: Provide details about the NaturalPerson|Person.
+
+describe: Describe the Transportable|Item in the Room|Location.
+describe: Tell me about the Transportable|Item in the Room|Location.
+describe: Describe the Transportable|Item on the DesignedFurniture|Furniture.
+describe: Tell me about the Transportable|Item on the DesignedFurniture|Furniture.
+describe: Describe the Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+describe: Tell me about the Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
+describe: List the features of the Transportable|Item.
+
+describe: What can you tell me about the NaturalPerson|Person in the Room|Location.
+describe: What do you know about the NaturalPerson|Person in the Room|Location?
+describe: What can you tell me about the NaturalPerson|Person sitting on the DesignedFurniture|Furniture?
+describe: What do you know about the NaturalPerson|Person standing next to the DesignedFurniture|Furniture?
+describe: What can you tell me about the NaturalPerson|Person having a Clothing|Clothes in the Room|Location?
+describe: What do you know about the NaturalPerson|Person with a Clothing|Clothes in the Room|Location?
+describe: What can you tell me about the NaturalPerson|Person having a Clothing|Clothes sitting on the DesignedFurniture|Furniture?
+describe: What do you know about the NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture?
+describe: What can you tell me about the NaturalPerson|Person having a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location?
+describe: What do you know about the NaturalPerson|Person with a Clothing|Clothes standing next to the DesignedFurniture|Furniture in the Room|Location?
+describe: What can you tell me about the Transportable|Item in the Room|Location?
+describe: What do you know about the Transportable|Item in the Room|Location?
+describe: What can you tell me about the Transportable|Item on the DesignedFurniture|Furniture?
+describe: What do you know about the Transportable|Item on the DesignedFurniture|Furniture?
+describe: What can you tell me about the Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+describe: What do you know about the Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+describe: What does the Transportable|Item look like?
+
+describe: Please describe the NaturalPerson|Person in the Room|Location.
+describe: Can you describe the NaturalPerson|Person in the Room|Location?
+describe: Could you describe the NaturalPerson|Person in the Room|Location?
+describe: Please tell me about the Transportable|Item in the Room|Location.
+describe: Can you tell me about the Transportable|Item in the Room|Location?
+describe: Please describe the Transportable|Item on the DesignedFurniture|Furniture.
+describe: Can you describe the Transportable|Item on the DesignedFurniture|Furniture?
+describe: Can you describe the Transportable|Item?
+
+# ---- Count ----
+
+count: Tell me how many Transportable|Item are on the DesignedFurniture|Furniture.
+count: Count the Transportable|Item on the DesignedFurniture|Furniture.
+count: Tell me how many NaturalPerson|Person are in the Room|Location.
+# count: Count the NaturalPerson|Person in the Room|Location.
+count: Count the people at in the Room|Location.
+count: Count how many people are in the Room|Location.
+count: Count the people at the DesignedFurniture|Furniture.
+count: Count how many people are at the DesignedFurniture|Furniture.
+count: Tell me how many people are in the Room|Location.
+count: Tell me the number of Transportable|Item on the DesignedFurniture|Furniture.
+count: Tell me the number of people in the Room|Location.
+count: Count how many Transportable|Item there are.
+count: Count how many people are in the Room|Location.
+count: Count the people.
+
+count: How many Transportable|Item are there?
+count: How many people are in the Room|Location?
+count: How many Transportable|Item are on the DesignedFurniture|Furniture?
+count: How many NaturalPerson|Person are there?
+count: How many people are at the DesignedFurniture|Furniture?
+
+count: Can you count the Transportable|Item on the DesignedFurniture|Furniture?
+count: Please count the Transportable|Item on the DesignedFurniture|Furniture.
+count: Can you count the NaturalPerson|Person in the Room|Location?
+count: Please count the NaturalPerson|Person in the Room|Location.
+count: Please tell me how many Transportable|Item are there.
+
+# ---- Offer ----
+
+offer: Offer a Transportable|Item to the NaturalPerson|Person.
+offer: Offer the NaturalPerson|Person a Transportable|Item.
+offer: Offer some Transportable|Item to the NaturalPerson|Person.
+offer: Offer a Transportable|Item to the NaturalPerson|Person in the Room|Location.
+offer: Offer the NaturalPerson|Person in the Room|Location a Transportable|Item.
+offer: Present a Transportable|Item to the NaturalPerson|Person.
+offer: Show a Transportable|Item to the NaturalPerson|Person.
+offer: Present the NaturalPerson|Person with a Transportable|Item.
+
+offer: Offer a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person wearing a Clothing|Clothes who sits on the DesignedFurniture|Furniture in the Room|Location.
+offer: Offer the NaturalPerson|Person in a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+offer: Offer a Transportable|Item to the NaturalPerson|Person wearing a Clothing|Clothes who sits on the DesignedFurniture|Furniture.
+offer: Offer the NaturalPerson|Person in a Clothing|Clothes next to the DesignedFurniture|Furniture a Transportable|Item from the DesignedFurniture|Furniture.
+offer: Offer a Transportable|Item from Room|Location to the NaturalPerson|Person who sits on the DesignedFurniture|Furniture in the Room|Location.
+offer: Offer the NaturalPerson|Person next to the DesignedFurniture|Furniture in the Room|Location a Transportable|Item from the Room|Location.
+offer: Offer a Transportable|Item from Room|Location to the NaturalPerson|Person in the Room|Location.
+offer: Offer the NaturalPerson|Person in the Room|Location a Transportable|Item from the Room|Location.
+offer: Offer the NaturalPerson|Person wearing a Clothing|Clothes a Transportable|Item.
+
+offer: Please offer a Transportable|Item to the NaturalPerson|Person.
+offer: Please offer the NaturalPerson|Person a Transportable|Item.
+offer: Please offer some Transportable|Item to the NaturalPerson|Person.
+offer: Please offer a Transportable|Item from the Room|Location to the NaturalPerson|Person.
+
+offer: Can you offer a Transportable|Item to the NaturalPerson|Person?
+offer: Could you offer a Transportable|Item to the NaturalPerson|Person?
+offer: Can you offer the NaturalPerson|Person a Transportable|Item?
+offer: Can you offer a Transportable|Item from the Room|Location to the NaturalPerson|Person?
+
+# --------------------------
+# RECEPTIONIST
+# --------------------------
+
+# ---- Accompany ----
+
+accompany: Accompany NaturalPerson|Person to the Room|Location.
+accompany: Bring NaturalPerson|Person along to the Room|Location.
+accompany: Accompany the NaturalPerson|Person to the DesignedFurniture|Furniture.
+accompany: Accompany NaturalPerson|Person.
+accompany: Go with NaturalPerson|Person to the Room|Location.
+accompany: Walk with NaturalPerson|Person to the Room|Location.
+accompany: Accompany NaturalPerson|Person to the DesignedFurniture|Furniture in the Room|Location.
+
+accompany: Please accompany NaturalPerson|Person to the Room|Location.
+accompany: Please bring NaturalPerson|Person along to the Room|Location.
+accompany: Please accompany the NaturalPerson|Person to the DesignedFurniture|Furniture.
+accompany: Please accompany NaturalPerson|Person.
+accompany: Please go with NaturalPerson|Person to the Room|Location.
+accompany: Please walk with NaturalPerson|Person to the Room|Location.
+
+accompany: Can you accompany NaturalPerson|Person to the Room|Location?
+accompany: Could you accompany NaturalPerson|Person to the Room|Location?
+accompany: Could you please accompany NaturalPerson|Person to the Room|Location?
+accompany: Can you bring NaturalPerson|Person along to the Room|Location?
+accompany: Can you accompany the NaturalPerson|Person to the DesignedFurniture|Furniture?
+
+# --------------------------
+# AFFIRM & DENY
+# --------------------------
+
+# ---- Affirm ----
+
+affirm: Yes.
+affirm: Affirmative.
+affirm: Yep.
+affirm: Sure.
+affirm: Sure thing.
+affirm: For sure.
+affirm: Naturally.
+affirm: That is correct.
+affirm: Correct.
+affirm: That's right.
+affirm: That's exactly it.
+affirm: That's spot on.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: You're absolutely correct.
+affirm: You're right.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: Precisely.
+affirm: Exactly.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Agreed.
+affirm: True.
+affirm: Quite so.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: By all means.
+affirm: Indisputably.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: One hundred percent.
+affirm: Completely true.
+
+# ---- Deny ----
+
+deny: No.
+deny: Nope.
+deny: Negative.
+deny: No way.
+deny: No chance.
+deny: That is incorrect.
+deny: Incorrect.
+deny: False.
+deny: That's not true.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: That's a mistake.
+deny: That's false.
+deny: That's not the case.
+deny: Untrue.
+deny: That's a misconception.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: Not exactly.
+deny: Far from it.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Out of the question.
+deny: I'm afraid not.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: I'd say no.
