@@ -459,4 +459,88 @@ lookup: May I know what is on DesignedFurniture|Furniture?
 lookup: Could you provide details about what is on DesignedFurniture|Furniture?
 lookup: What contents are currently on DesignedFurniture|Furniture?
 
+# ---- Affirm ----
 
+affirm: Yes.
+affirm: Affirmative.
+affirm: Yep.
+affirm: Sure.
+affirm: Sure thing.
+affirm: For sure.
+affirm: Naturally.
+affirm: That is correct.
+affirm: Correct.
+affirm: That's right.
+affirm: That's exactly it.
+affirm: That's spot on.
+affirm: You got it.
+affirm: Absolutely right.
+affirm: You're absolutely correct.
+affirm: You're right.
+affirm: You're spot on.
+affirm: Right on the money.
+affirm: Precisely.
+affirm: Exactly.
+affirm: Absolutely.
+affirm: Certainly.
+affirm: Of course.
+affirm: Indeed.
+affirm: Definitely.
+affirm: Without a doubt.
+affirm: Totally.
+affirm: Undoubtedly.
+affirm: Agreed.
+affirm: True.
+affirm: Quite so.
+affirm: I agree completely.
+affirm: No doubt about it.
+affirm: Clearly.
+affirm: By all means.
+affirm: Indisputably.
+affirm: Couldn't agree more.
+affirm: Perfectly true.
+affirm: Undeniably.
+affirm: One hundred percent.
+affirm: Completely true.
+
+# ---- Deny ----
+
+deny: No.
+deny: Nope.
+deny: Negative.
+deny: No way.
+deny: No chance.
+deny: That is incorrect.
+deny: Incorrect.
+deny: False.
+deny: That's not true.
+deny: That's wrong.
+deny: Absolutely wrong.
+deny: Certainly wrong.
+deny: That's a mistake.
+deny: That's false.
+deny: That's not the case.
+deny: Untrue.
+deny: That's a misconception.
+deny: Completely false.
+deny: That's not accurate.
+deny: Not at all true.
+deny: Not at all.
+deny: Absolutely not.
+deny: Certainly not.
+deny: I don't agree.
+deny: Not quite.
+deny: I disagree.
+deny: Definitely not.
+deny: Not in the slightest.
+deny: I don't think so.
+deny: Not exactly.
+deny: Far from it.
+deny: That doesn't seem right.
+deny: I wouldn't say so.
+deny: Not likely.
+deny: Out of the question.
+deny: I'm afraid not.
+deny: Definitely no.
+deny: That doesn't hold up.
+deny: I'd say no.
