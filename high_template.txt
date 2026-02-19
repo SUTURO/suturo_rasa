@@ -2,6 +2,72 @@
 # a single '#' character starts a comment
 # Each line defining a template should have the format
 # intent_name: annotated sentence
+
+# ---- Go ----
+
+go: Go to the Room|Location.
+go: Go to the DesignedFurniture|Furniture.
+go: Move to the Room|Location.
+go: Drive to the Room|Location.
+go: Navigate to the Room|Location.
+go: Advance to the Room|Location.
+go: Head to the Room|Location.
+go: Head over to the DesignedFurniture|Furniture.
+go: Make your way to the Room|Location.
+go: Make your way to the DesignedFurniture|Furniture.
+go: Leave the Room|Location.
+go: Leave this Room|Location.
+go: Exit the Room|Location.
+
+go: Go to NaturalPerson|Person.
+go: Move to the sitting NaturalPerson|Person.
+go: Navigate to the standing NaturalPerson|Person.
+go: Approach the waving person.
+
+go: Go to the DesignedFurniture|Furniture in the Room|Location.
+go: Go to NaturalPerson|Person in the Room|Location.
+go: Navigate to NaturalPerson|Person in the Room|Location.
+go: In the Room|Location go to the DesignedFurniture|Furniture.
+go: In the Room|Location go to NaturalPerson|Person.
+go: In the Room|Location navigate to the DesignedFurniture|Furniture.
+go: In the Room|Location navigate to NaturalPerson|Person.
+go: In the Room|Location drive to NaturalPerson|Person.
+go: Go to the waving NaturalPerson|Person.
+go: Go to the person waving their arm.
+go: Navigate to the waving NaturalPerson|Person.
+go: Find the waving person in the Room|Location.
+go: Go to the lying NaturalPerson|Person.
+go: Move to the person lying on the DesignedFurniture|Furniture.
+go: Go to the person sitting on the DesignedFurniture|Furniture.
+go: Navigate to the person standing near the DesignedFurniture|Furniture.
+go: Navigate to the person raising their left arm.
+go: Go to the NaturalPerson|Person raising their right arm.
+go: Find the person pointing to the left.
+go: Go to the person pointing to the left in the Room|Location.
+go: Go to the NaturalPerson|Person pointing to the right.
+
+go: Please go to the Room|Location.
+go: Please go to the DesignedFurniture|Furniture.
+go: Please go to the DesignedFurniture|Furniture in the Room|Location.
+go: Please go to NaturalPerson|Person in the Room|Location.
+go: Please move to the Room|Location.
+go: Please navigate to the Room|Location.
+go: Please navigate to NaturalPerson|Person in the Room|Location.
+go: Please head to the Room|Location.
+go: Please exit the Room|Location.
+
+go: Can you go to the Room|Location?
+go: Can you go to the DesignedFurniture|Furniture?
+go: Can you go to the DesignedFurniture|Furniture in the Room|Location?
+go: Can you move to the Room|Location?
+go: Can you navigate to NaturalPerson|Person in the Room|Location?
+go: Can you please move to the Room|Location?
+go: Can you please drive to the Room|Location?
+go: Can you please navigate to the Room|Location?
+go: Could you go to the Room|Location?
+go: Could you go to the DesignedFurniture|Furniture?
+go: Could you drive to the Room|Location?
+go: Could you please go to the DesignedFurniture|Furniture?
 # ---- Guide ----
 
 guide: Guide NaturalPerson|Person to the Room|Location.
