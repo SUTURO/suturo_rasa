@@ -15,14 +15,15 @@ go: Head to the Room|Location.
 go: Head over to the DesignedFurniture|Furniture.
 go: Make your way to the Room|Location.
 go: Make your way to the DesignedFurniture|Furniture.
-go: Leave the Room|Location.
-go: Leave this Room|Location.
-go: Exit the Room|Location.
+# go: Leave the Room|Location.
+# go: Leave this Room|Location.
+# go: Exit the Room|Location.
 
 go: Go to NaturalPerson|Person.
 go: Move to the sitting NaturalPerson|Person.
 go: Navigate to the standing NaturalPerson|Person.
-go: Approach the waving person.
+# go: Approach the waving person.
+go: Approach the waving NaturalPerson|Person.
 
 go: Go to the DesignedFurniture|Furniture in the Room|Location.
 go: Go to NaturalPerson|Person in the Room|Location.
@@ -33,17 +34,17 @@ go: In the Room|Location navigate to the DesignedFurniture|Furniture.
 go: In the Room|Location navigate to NaturalPerson|Person.
 go: In the Room|Location drive to NaturalPerson|Person.
 go: Go to the waving NaturalPerson|Person.
-go: Go to the person waving their arm.
+go: Go to the NaturalPerson|Person waving their arm.
 go: Navigate to the waving NaturalPerson|Person.
-go: Find the waving person in the Room|Location.
+go: Find the waving NaturalPerson|Person in the Room|Location.
 go: Go to the lying NaturalPerson|Person.
-go: Move to the person lying on the DesignedFurniture|Furniture.
-go: Go to the person sitting on the DesignedFurniture|Furniture.
-go: Navigate to the person standing near the DesignedFurniture|Furniture.
-go: Navigate to the person raising their left arm.
+go: Move to the NaturalPerson|Person lying on the DesignedFurniture|Furniture.
+go: Go to the NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
+go: Navigate to the NaturalPerson|Person standing near the DesignedFurniture|Furniture.
+go: Navigate to the NaturalPerson|Person raising their left arm.
 go: Go to the NaturalPerson|Person raising their right arm.
-go: Find the person pointing to the left.
-go: Go to the person pointing to the left in the Room|Location.
+go: Find the NaturalPerson|Person pointing to the left.
+go: Go to the NaturalPerson|Person pointing to the left in the Room|Location.
 go: Go to the NaturalPerson|Person pointing to the right.
 
 go: Please go to the Room|Location.
@@ -68,6 +69,7 @@ go: Could you go to the Room|Location?
 go: Could you go to the DesignedFurniture|Furniture?
 go: Could you drive to the Room|Location?
 go: Could you please go to the DesignedFurniture|Furniture?
+
 # ---- Guide ----
 
 guide: Guide NaturalPerson|Person to the Room|Location.
@@ -130,6 +132,9 @@ guide: Would you like to escort NaturalPerson|Person to the DesignedFurniture|Fu
 guide: Would you guide NaturalPerson|Person to the Room|Location?
 guide: Would you escort NaturalPerson|Person to the Room|Location?
 guide: Would you please lead NaturalPerson|Person to the Room|Location?
+
+# ----- Take -----
+
 take: Take a Transportable|Item to the Room|Location.
 take: Get a Transportable|Item to the Room|Location.
 take: Fetch a Transportable|Item to the Room|Location.
@@ -153,8 +158,8 @@ take: Grasp a Transportable|Item from the Room|Location.
 take: Grasp some Transportable|Item from the Room|Location.
 take: Grasp a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
 take: Retrieve a Transportable|Item from the Room|Location.
-take: Bring a Transportable|Item from the Room|Location.
-take: Bring me the biggest Transportable|Item from the Room|Location.
+# take: Bring a Transportable|Item from the Room|Location.
+# take: Bring me the biggest Transportable|Item from the Room|Location.
 take: Go get a Transportable|Item from the Room|Location.
 take: Pick up the Transportable|Item from Room|Location.
 take: Collect the Transportable|Item from the Room|Location.
@@ -373,7 +378,7 @@ deliver: Could you give the NaturalPerson|Person wearing a Clothing|Clothes and 
 deliver: Can you deliver some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location?
 deliver: Could you move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location please?
 
-# ---- Place ----
+# ---- Open ----
 
 open: Open the DesignedFurniture|Furniture.
 open: Please open the DesignedFurniture|Furniture.
@@ -387,123 +392,119 @@ open: Kindly open the DesignedFurniture|Furniture.
 open: Open DesignedFurniture|Furniture, please.
 open: Please, open the DesignedFurniture|Furniture.
 open: I would like you to open the DesignedFurniture|Furniture.
-open: I’d like to open the DesignedFurniture|Furniture.
+open: I would like to open the DesignedFurniture|Furniture.
 open: Help me open the DesignedFurniture|Furniture.
 open: Let’s open the DesignedFurniture|Furniture.
 open: Hey, open DesignedFurniture|Furniture.
-open: Open DesignedFurniture|Furniture please.
+open: Open the DesignedFurniture|Furniture please.
 open: Open up DesignedFurniture|Furniture.
-open: Can you open up DesignedFurniture|Furniture?
-open: Could you open up DesignedFurniture|Furniture?
-open: Open DesignedFurniture|Furniture for me.
-open: Please open DesignedFurniture|Furniture for me.
-open: Let me through DesignedFurniture|Furniture.
-open: I want to get through DesignedFurniture|Furniture.
-open: I wanna go through DesignedFurniture|Furniture.
-open: Let me pass through DesignedFurniture|Furniture.
-open: Can I go through DesignedFurniture|Furniture?
-open: Mind opening DesignedFurniture|Furniture?
-open: Would you mind opening DesignedFurniture|Furniture?
-open: Hey, can you open DesignedFurniture|Furniture real quick?
-open: Lemme through DesignedFurniture|Furniture.
-open: Open DesignedFurniture|Furniture all the way.
-open: Open DesignedFurniture|Furniture so I can get through.
-open: I need DesignedFurniture|Furniture opened.
-open: Can you get DesignedFurniture|Furniture open?
-open: Could you get DesignedFurniture|Furniture open?
-open: Make DesignedFurniture|Furniture open.
-open: Please make DesignedFurniture|Furniture open.
-open: Get DesignedFurniture|Furniture open for me.
-open: Can you make DesignedFurniture|Furniture open?
-open: Would you make the DesignedFurniture|Furniture open?
-open: I can’t get through DesignedFurniture|Furniture.
-open: It won’t open, can you open DesignedFurniture|Furniture?
-open: DesignedFurniture|Furniture needs to be opened.
-open: DesignedFurniture|Furniture should be open.
-open: Open DesignedFurniture|Furniture enough for me to pass.
-open: I need to pass through DesignedFurniture|Furniture.
-open: Let me get past DesignedFurniture|Furniture.
-open: Help me get through DesignedFurniture|Furniture.
-open: Can you help open DesignedFurniture|Furniture?
-open: Open DesignedFurniture|Furniture wider.
-open: Please open DesignedFurniture|Furniture wider.
-open: Hey, I need DesignedFurniture|Furniture open.
-open: DesignedFurniture|Furniture isn’t open yet.
-open: Make sure DesignedFurniture|Furniture is open.
-open: Please open DesignedFurniture|Furniture, we have a guest.
-open: Open DesignedFurniture|Furniture, someone’s here.
-open: Can you open DesignedFurniture|Furniture for the guest?
-open: Could you open DesignedFurniture|Furniture, the guest arrived.
-open: Open DesignedFurniture|Furniture, they’re waiting.
-open: Let the guest in through DesignedFurniture|Furniture.
-open: The guest is here, open DesignedFurniture|Furniture.
-open: Please let the guest through DesignedFurniture|Furniture.
-open: Can you let them in via DesignedFurniture|Furniture?
-open: Someone’s at DesignedFurniture|Furniture, open it.
-open: We’re expecting someone, open DesignedFurniture|Furniture.
-open: Open DesignedFurniture|Furniture so they can come in.
-open: The visitor is outside, open DesignedFurniture|Furniture.
-open: Can you open DesignedFurniture|Furniture to welcome them?
-open: Go ahead and open DesignedFurniture|Furniture for them.
-open: Please open DesignedFurniture|Furniture, they’re waiting outside.
-open: Let them come in through DesignedFurniture|Furniture.
-open: The guest can’t get in, open DesignedFurniture|Furniture.
-open: Open DesignedFurniture|Furniture to let them enter.
-open: We have company, open DesignedFurniture|Furniture.
-open: The guest just arrived, open DesignedFurniture|Furniture.
-open: Someone’s trying to come in, open the DesignedFurniture|Furniture.
+open: Can you open up the DesignedFurniture|Furniture?
+open: Could you open up the DesignedFurniture|Furniture?
+open: Open the DesignedFurniture|Furniture for me.
+open: Please open the DesignedFurniture|Furniture for me.
+open: Let me through the DesignedFurniture|Furniture.
+open: I want to get through the DesignedFurniture|Furniture.
+open: I wanna go through the DesignedFurniture|Furniture.
+open: Let me pass through the DesignedFurniture|Furniture.
+open: Can I go through the DesignedFurniture|Furniture?
+open: Mind opening the DesignedFurniture|Furniture?
+open: Would you mind opening the DesignedFurniture|Furniture?
+open: Hey, can you open the DesignedFurniture|Furniture real quick?
+open: Lemme through the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture all the way.
+open: Open the DesignedFurniture|Furniture so I can get through.
+open: I need the DesignedFurniture|Furniture opened.
+open: Can you get the DesignedFurniture|Furniture open?
+open: Could you get the DesignedFurniture|Furniture open?
+open: Make the DesignedFurniture|Furniture open.
+open: Please make the DesignedFurniture|Furniture open.
+open: Get the DesignedFurniture|Furniture open for me.
+open: The DesignedFurniture|Furniture needs to be opened.
+open: The DesignedFurniture|Furniture should be open.
+open: Open the DesignedFurniture|Furniture enough for me to pass.
+open: I need to pass through the DesignedFurniture|Furniture.
+open: Let me get past the DesignedFurniture|Furniture.
+open: Help me get through the DesignedFurniture|Furniture.
+open: Can you help open the DesignedFurniture|Furniture?
+open: Open the DesignedFurniture|Furniture wider.
+open: Please open the DesignedFurniture|Furniture wider.
+open: Hey, I need the DesignedFurniture|Furniture open.
+open: The DesignedFurniture|Furniture isn’t open yet.
+open: Make sure the DesignedFurniture|Furniture is open.
+open: Please open the DesignedFurniture|Furniture, we have a guest.
+open: Open the DesignedFurniture|Furniture, someone’s here.
+open: Can you open the DesignedFurniture|Furniture for the guest?
+open: Could you open the DesignedFurniture|Furniture, the guest arrived.
+open: Open the DesignedFurniture|Furniture, they’re waiting.
+open: Let the guest in through the DesignedFurniture|Furniture.
+open: The guest is here, open the DesignedFurniture|Furniture.
+open: Please let the guest through the DesignedFurniture|Furniture.
+open: Can you let them in via the DesignedFurniture|Furniture?
+open: Someone is at the DesignedFurniture|Furniture, open it.
+open: We are expecting someone, open the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture so they can come in.
+open: The visitor is outside, open the DesignedFurniture|Furniture.
+open: Can you open the DesignedFurniture|Furniture to welcome them?
+open: Go ahead and open the DesignedFurniture|Furniture for them.
+open: Please open the DesignedFurniture|Furniture, they are waiting outside.
+open: Let them come in through the DesignedFurniture|Furniture.
+open: The guest can't get in, open the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture to let them enter.
+open: We have company, open the DesignedFurniture|Furniture.
+open: The guest just arrived, open the DesignedFurniture|Furniture.
+open: Someone’s trying to come in, open the the DesignedFurniture|Furniture.
 open: Open the DesignedFurniture|Furniture so we can receive them.
 open: Please make the DesignedFurniture|Furniture accessible for the guest.
 
-# ---- Place ----
+# ---- Lookup ----
 
-lookup: Is there anything on DesignedFurniture|Furniture?
-lookup: Is something on DesignedFurniture|Furniture right now?
-lookup: Can you check if there’s anything on DesignedFurniture|Furniture?
-lookup: Could you see if something is on DesignedFurniture|Furniture?
-lookup: What’s on DesignedFurniture|Furniture?
-lookup: Do we have anything on DesignedFurniture|Furniture?
-lookup: Is DesignedFurniture|Furniture empty?
-lookup: Tell me if there’s anything on DesignedFurniture|Furniture.
-lookup: See what’s on DesignedFurniture|Furniture.
-lookup: Is anything placed on DesignedFurniture|Furniture?
-lookup: Check if DesignedFurniture|Furniture has something on it.
-lookup: Is there stuff on DesignedFurniture|Furniture?
-lookup: Is there anything in DesignedFurniture|Furniture?
-lookup: Is something in DesignedFurniture|Furniture right now?
-lookup: Can you check if there’s anything in DesignedFurniture|Furniture?
-lookup: Could you see if something is in DesignedFurniture|Furniture?
-lookup: Check DesignedFurniture|Furniture for items.
-lookup: Look in DesignedFurniture|Furniture.
-lookup: What’s in DesignedFurniture|Furniture?
-lookup: Do we have anything in DesignedFurniture|Furniture?
-lookup: Is DesignedFurniture|Furniture empty or not?
-lookup: Tell me if DesignedFurniture|Furniture has anything in it.
-lookup: Can you look inside DesignedFurniture|Furniture?
-lookup: See if DesignedFurniture|Furniture contains anything.
-lookup: Is there something stored in DesignedFurniture|Furniture?
-lookup: Does DesignedFurniture|Furniture have anything on it?
-lookup: Check whether DesignedFurniture|Furniture is empty.
-lookup: I want to know what’s in DesignedFurniture|Furniture.
-lookup: Find out if there’s anything in DesignedFurniture|Furniture.
-lookup: Have a look at DesignedFurniture|Furniture.
-lookup: What do we have in DesignedFurniture|Furniture?
-lookup: Is anything placed in DesignedFurniture|Furniture?
-lookup: Can you tell me if DesignedFurniture|Furniture is empty?
-lookup: See what’s on DesignedFurniture|Furniture.
-lookup: Check if DesignedFurniture|Furniture has something on it.
-lookup: Is there stuff in DesignedFurniture|Furniture?
-lookup: Is there an item on DesignedFurniture|Furniture?
-lookup: Could you please check whether there is anything on DesignedFurniture|Furniture?
-lookup: Would you mind checking if something is on DesignedFurniture|Furniture?
-lookup: May I ask if there is anything on DesignedFurniture|Furniture?
-lookup: Could you tell me whether DesignedFurniture|Furniture contains any items?
-lookup: Please verify if there is something on DesignedFurniture|Furniture.
-lookup: I would like to know if there is anything on DesignedFurniture|Furniture.
-lookup: Kindly check if there are any items on DesignedFurniture|Furniture.
-lookup: Can you confirm whether DesignedFurniture|Furniture is empty?
-lookup: Please let me know if there is anything placed on DesignedFurniture|Furniture.
-lookup: Would you be able to check what is on DesignedFurniture|Furniture?
+lookup: Is there anything on the DesignedFurniture|Furniture?
+lookup: Is something on the DesignedFurniture|Furniture right now?
+lookup: Can you check if there is anything on DesignedFurniture|Furniture?
+lookup: Could you see if something is on the DesignedFurniture|Furniture?
+lookup: What’s on the DesignedFurniture|Furniture?
+lookup: Do we have anything on the DesignedFurniture|Furniture?
+lookup: Is the DesignedFurniture|Furniture empty?
+lookup: Tell me if there is anything on the DesignedFurniture|Furniture.
+lookup: See what is on the DesignedFurniture|Furniture.
+lookup: Is anything placed on the DesignedFurniture|Furniture?
+lookup: Check if the DesignedFurniture|Furniture has something on it.
+lookup: Is there stuff on the DesignedFurniture|Furniture?
+lookup: Is there anything in the DesignedFurniture|Furniture?
+lookup: Is something in the DesignedFurniture|Furniture right now?
+lookup: Can you check if there is anything in the DesignedFurniture|Furniture?
+lookup: Could you see if something is in the DesignedFurniture|Furniture?
+lookup: Check the DesignedFurniture|Furniture for items.
+lookup: Look in the DesignedFurniture|Furniture.
+lookup: What is in the DesignedFurniture|Furniture?
+lookup: Do we have anything in the DesignedFurniture|Furniture?
+lookup: Is the DesignedFurniture|Furniture empty or not?
+lookup: Tell me if the DesignedFurniture|Furniture has anything in it.
+lookup: Can you look inside the DesignedFurniture|Furniture?
+lookup: See if the DesignedFurniture|Furniture contains anything.
+lookup: Is there something stored in the DesignedFurniture|Furniture?
+lookup: Does the DesignedFurniture|Furniture have anything on it?
+lookup: Check whether the DesignedFurniture|Furniture is empty.
+lookup: I want to know what is in the DesignedFurniture|Furniture.
+lookup: Find out if there is anything in the DesignedFurniture|Furniture.
+lookup: Have a look at the DesignedFurniture|Furniture.
+lookup: What do we have in the DesignedFurniture|Furniture?
+lookup: Is anything placed in the DesignedFurniture|Furniture?
+lookup: Can you tell me if the DesignedFurniture|Furniture is empty?
+lookup: See what is on the DesignedFurniture|Furniture.
+lookup: Check if the DesignedFurniture|Furniture has something on it.
+lookup: Is there stuff in the DesignedFurniture|Furniture?
+lookup: Is there an item on the DesignedFurniture|Furniture?
+lookup: Could you please check whether there is anything on the DesignedFurniture|Furniture?
+lookup: Would you mind checking if something is on the DesignedFurniture|Furniture?
+lookup: May I ask if there is anything on the DesignedFurniture|Furniture?
+lookup: Could you tell me whether the DesignedFurniture|Furniture contains any items?
+lookup: Please verify if there is something on the DesignedFurniture|Furniture.
+lookup: I would like to know if there is anything on the DesignedFurniture|Furniture.
+lookup: Kindly check if there are any items on the DesignedFurniture|Furniture.
+lookup: Can you confirm whether the DesignedFurniture|Furniture is empty?
+lookup: Please let me know if there is anything placed on the DesignedFurniture|Furniture.
+lookup: Would you be able to check what is on the DesignedFurniture|Furniture?
 lookup: Could you provide information on whether anything is on DesignedFurniture|Furniture?
 lookup: I kindly ask you to check if something is on DesignedFurniture|Furniture.
 lookup: Please check whether any items are present on DesignedFurniture|Furniture.
@@ -528,38 +529,38 @@ lookup: What contents are currently on DesignedFurniture|Furniture?
 
 # ---- Seating---- 
 
-seating: Tell the waving person where he can sit.
-seating: Tell the waving  person where she can sit.
-seating: Tell the waving person where to sit.
-seating: Please tell the waving person where they can sit.
-seating: Inform the waving person about an available seat.
-seating: Indicate to the waving person where seating is available.
-seating: Let the waving person know where they may sit.
-seating: Explain to the waving person where they should sit.
-seating: Show the waving person where to take a seat.
-seating: Direct the waving person to an appropriate seat.
-seating: Guide the waving person to a place to sit.
-seating: Tell the waving person which seat to use.
-seating: Please inform the waving person where seating is provided.
-seating: Advise the waving person on where to sit.
-seating: Let the waving person know where seating is located.
-seating: Indicate a seat to the waving person.
-seating: Communicate to the waving person where they can be seated.
+seating: Tell the waving NaturalPerson|Person where he can sit.
+seating: Tell the waving NaturalPerson|Person where she can sit.
+seating: Tell the waving NaturalPerson|Person where to sit.
+seating: Please tell the waving NaturalPerson|Person where they can sit.
+seating: Inform the waving NaturalPerson|Person about an available seat.
+seating: Indicate to the waving NaturalPerson|Person where seating is available.
+seating: Let the waving NaturalPerson|Person know where they may sit.
+seating: Explain to the waving NaturalPerson|Person where they should sit.
+seating: Show the waving NaturalPerson|Person where to take a seat.
+seating: Direct the waving NaturalPerson|Person to an appropriate seat.
+# seating: Guide the waving NaturalPerson|Person to a place to sit.
+seating: Tell the waving NaturalPerson|Person which seat to use.
+seating: Please inform the waving NaturalPerson|Person where seating is provided.
+seating: Advise the waving NaturalPerson|Person on where to sit.
+seating: Let the waving NaturalPerson|Person know where seating is located.
+seating: Indicate a seat to the waving NaturalPerson|Person.
+seating: Communicate to the waving NaturalPerson|Person where they can be seated.
 
-seating: Could you tell the waving person where to sit?
-seating: Could you please tell the waving person where they can sit?
-seating: Could you inform the waving person where seating is available?
-seating: Could you let the waving person know where they may sit?
-seating: Could you indicate to the waving person where to sit?
-seating: Could you guide the waving person to a seat?
-seating: Could you direct the waving person to an available seat?
-seating: Could you explain to the waving person where they should sit?
-seating: Could you show the waving person where seating is located?
-seating: Could you advise the waving person on where to sit?
-seating: Could you communicate to the waving person where they can be seated?
-seating: Could you point out a seat to the waving person?
-seating: Could you clarify to the waving person where seating is provided?
-seating: Could you assist the waving person in finding a seat?
+seating: Could you tell the waving NaturalPerson|Person where to sit?
+seating: Could you please tell the waving NaturalPerson|Person where they can sit?
+seating: Could you inform the waving NaturalPerson|Person where seating is available?
+seating: Could you let the waving NaturalPerson|Person know where they may sit?
+seating: Could you indicate to the waving NaturalPerson|Person where to sit?
+# seating: Could you guide the waving NaturalPerson|Person to a seat?
+seating: Could you direct the waving NaturalPerson|Person to an available seat?
+seating: Could you explain to the waving NaturalPerson|Person where they should sit?
+seating: Could you show the waving NaturalPerson|Person where seating is located?
+seating: Could you advise the waving NaturalPerson|Person on where to sit?
+seating: Could you communicate to the waving NaturalPerson|Person where they can be seated?
+seating: Could you point out a seat to the waving NaturalPerson|Person?
+seating: Could you clarify to the waving NaturalPerson|Person where seating is provided?
+seating: Could you assist the waving NaturalPerson|Person in finding a seat?
 
 # --- Receptionist ---
 
@@ -619,8 +620,6 @@ Receptionist: My favorite beverage is drink|Drink
 Receptionist: What I like most to drink is drink|Drink
 Receptionist: Most of the time I drink dink|Drink
 
-
-
 Receptionist: Hello, I'm NaturalPerson|Person.
 Receptionist: Hello, I am NaturalPerson|Person.
 
@@ -644,7 +643,6 @@ Receptionist: Hi, my favorite drink is drink|Drink. I'm NaturalPerson|Person.
 Receptionist: Hi, my favorite beverage is drink|Drink. I'm NaturalPerson|Person.
 Receptionist: Hi, my favorite drink is drink|Drink. I am NaturalPerson|Person.
 Receptionist: Hi, my favorite beverage is drink|Drink. I am NaturalPerson|Person.
-
 
 Receptionist: I'm NaturalPerson|Person and love to drink drink|Drink.
 Receptionist: I am NaturalPerson|Person and love to drink drink|Drink.
@@ -671,7 +669,6 @@ Receptionist: Hello, NaturalPerson|Person here. My preferred beverage is drink|D
 Receptionist: Hello, nice to meet you. My name is NaturalPerson|Person.
 Receptionist: Hello, nice to meet you. I'm NaturalPerson|Person.
 Receptionist: Hello, nice to meet you. I am NaturalPerson|Person.
-
 
 Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
 Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
@@ -704,14 +701,11 @@ Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I l
 Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to watch Interest|Hobby
 Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and my hobby is Interest|Hobby
 
-
 Receptionist: I prefer eating food|Food
 Receptionist: I like to eat food|Food
 Receptionist: My favorite food is food|Food
 Receptionist: What I like most to eat is food|Food
 Receptionist: Most of the time I eat foot|Food
-
-
 
 Receptionist: Hello, I'm NaturalPerson|Person.
 Receptionist: Hello, I am NaturalPerson|Person.
@@ -720,20 +714,15 @@ Receptionist: Hi there, NaturalPerson|Person here. My favorite food is food|Food
 Receptionist: I'm NaturalPerson|Person, and I enjoy food|Food.
 Receptionist: I'm NaturalPerson|Person, and I enjoy eating food|Food.
 
-
 Receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to eat food|Food.
 
 Receptionist: My name is NaturalPerson|Person, and my favorite food is food|Food.
 
-
 Receptionist: Hello, I'm NaturalPerson|Person, I enjoy eating food|Food.
-
 
 Receptionist: Hi, my favorite food is food|Food. I'm NaturalPerson|Person.
 
 Receptionist: Hi, my favorite food is food|Food. I am NaturalPerson|Person.
-
-
 
 Receptionist: I'm NaturalPerson|Person and love to eat food|Food.
 Receptionist: I am NaturalPerson|Person and love to eat food|Food.
