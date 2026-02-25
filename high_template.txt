@@ -528,38 +528,39 @@ lookup: What contents are currently on DesignedFurniture|Furniture?
 
 # ---- Seating---- 
 
-seating: Tell the waving person where he can sit.
-seating: Tell the waving  person where she can sit.
-seating: Tell the waving person where to sit.
-seating: Please tell the waving person where they can sit.
-seating: Inform the waving person about an available seat.
-seating: Indicate to the waving person where seating is available.
-seating: Let the waving person know where they may sit.
-seating: Explain to the waving person where they should sit.
-seating: Show the waving person where to take a seat.
-seating: Direct the waving person to an appropriate seat.
-seating: Guide the waving person to a place to sit.
-seating: Tell the waving person which seat to use.
-seating: Please inform the waving person where seating is provided.
-seating: Advise the waving person on where to sit.
-seating: Let the waving person know where seating is located.
-seating: Indicate a seat to the waving person.
-seating: Communicate to the waving person where they can be seated.
 
-seating: Could you tell the waving person where to sit?
-seating: Could you please tell the waving person where they can sit?
-seating: Could you inform the waving person where seating is available?
-seating: Could you let the waving person know where they may sit?
-seating: Could you indicate to the waving person where to sit?
-seating: Could you guide the waving person to a seat?
-seating: Could you direct the waving person to an available seat?
-seating: Could you explain to the waving person where they should sit?
-seating: Could you show the waving person where seating is located?
-seating: Could you advise the waving person on where to sit?
-seating: Could you communicate to the waving person where they can be seated?
-seating: Could you point out a seat to the waving person?
-seating: Could you clarify to the waving person where seating is provided?
-seating: Could you assist the waving person in finding a seat?
+seating: Tell the waving  NaturalPerson|Person where he can sit.
+seating: Tell the waving  NaturalPerson|Person where she can sit.
+seating: Tell the waving NaturalPerson|Person where to sit.
+seating: Please tell the waving NaturalPerson|Person where they can sit.
+seating: Inform the waving NaturalPerson|Person about an available seat.
+seating: Indicate to the waving NaturalPerson|Person where seating is available.
+seating: Let the waving NaturalPerson|Person know where they may sit.
+seating: Explain to the waving NaturalPerson|Person where they should sit.
+seating: Show the waving NaturalPerson|Person where to take a seat.
+seating: Direct the waving NaturalPerson|Person to an appropriate seat.
+seating: Guide the waving NaturalPerson|Person to a place to sit.
+seating: Tell the waving NaturalPerson|Person which seat to use.
+seating: Please inform the waving NaturalPerson|Person where seating is provided.
+seating: Advise the waving NaturalPerson|Person on where to sit.
+seating: Let the waving NaturalPerson|Person know where seating is located.
+seating: Indicate a seat to the waving NaturalPerson|Person.
+seating: Communicate to the waving NaturalPerson|Person where they can be seated.
+
+seating: Could you tell the waving NaturalPerson|Person where to sit?
+seating: Could you please tell the waving NaturalPerson|Person where they can sit?
+seating: Could you inform the waving NaturalPerson|Person where seating is available?
+seating: Could you let the waving NaturalPerson|Person know where they may sit?
+seating: Could you indicate to the waving NaturalPerson|Person where to sit?
+seating: Could you guide the waving NaturalPerson|Person to a seat?
+seating: Could you direct the waving NaturalPerson|Person to an available seat?
+seating: Could you explain to the waving NaturalPerson|Person where they should sit?
+seating: Could you show the waving NaturalPerson|Person where seating is located?
+seating: Could you advise the waving NaturalPerson|Person on where to sit?
+seating: Could you communicate to the waving NaturalPerson|Person where they can be seated?
+seating: Could you point out a seat to the waving NaturalPerson|Person?
+seating: Could you clarify to the waving NaturalPerson|Person where seating is provided?
+seating: Could you assist the waving NaturalPerson|Person in finding a seat?
 
 # --- Receptionist ---
 
