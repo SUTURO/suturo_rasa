@@ -108,6 +108,10 @@ guide: Escort the NaturalPerson|Person in a Clothing|Clothes sitting on the Desi
 guide: Lead the NaturalPerson|Person wearing a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
 guide: Show the NaturalPerson|Person having a Clothing|Clothes next the DesignedFurniture|Furniture in the Room|Location the way to the DesignedFurniture|Furniture in the Room|Location.
 guide: Take the NaturalPerson|Person wearing a Clothing|Clothes sitting on the DesignedFurniture|Furniture in the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
+guide: Guide the waving NaturalPerson|Person to the Room|Location.
+guide: Take the waving NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Guide the waving NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Escort the waving NaturalPerson|Person to the Room|Location.
 
 guide: Can you guide NaturalPerson|Person to the Room|Location?
 guide: Can you guide NaturalPerson|Person to the DesignedFurniture|Furniture?
@@ -136,7 +140,13 @@ guide: Would you please lead NaturalPerson|Person to the Room|Location?
 # ----- Take -----
 
 take: Take a Transportable|Item to the Room|Location.
+take: Take a blue Transportable|Item to the Room|Location.
+take: Take a empty Transportable|Item to the Room|Location.
+take: Take a full Transportable|Item to the Room|Location.
 take: Get a Transportable|Item to the Room|Location.
+take: Get a red Transportable|Item to the Room|Location.
+take: Get a full Transportable|Item to the Room|Location.
+take: Get a empty Transportable|Item to the Room|Location.
 take: Fetch a Transportable|Item to the Room|Location.
 take: Get some Transportable|Item to the Room|Location.
 take: Take a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
@@ -144,6 +154,8 @@ take: Get a Transportable|Item to the DesignedFurniture|Furniture in the Room|Lo
 take: Fetch a Transportable|Item to the DesignedFurniture|Furniture in the Room|Location.
 
 take: Take a Transportable|Item from the Room|Location to the Room|Location.
+take: Take a empty Transportable|Item from the Room|Location to the Room|Location.
+take: Take a green Transportable|Item from the Room|Location to the Room|Location.
 take: Get a Transportable|Item from the Room|Location to the Room|Location.
 take: Fetch a Transportable|Item from the Room|Location to Room|Location.
 take: Take a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture in the Room|Location.
@@ -260,6 +272,9 @@ place: Could you put a Transportable|Item on the DesignedFurniture|Furniture in 
 # ---- Deliver ----
 
 deliver: Bring me a Transportable|Item.
+deliver: Bring me a blue Transportable|Item.
+deliver: Bring me a empty Transportable|Item.
+deliver: Bring me a full Transportable|Item.
 deliver: Bring me the Transportable|Item.
 deliver: Bring me a Transportable|Item in the Room|Location.
 deliver: Bring me the Transportable|Item in the Room|Location.
