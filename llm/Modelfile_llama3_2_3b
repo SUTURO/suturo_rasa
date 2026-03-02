@@ -4,7 +4,7 @@
 # Modelfile for the GPSR Milestone 3 Tasks.
 # No Talking
 
-FROM llama3.1:8b
+FROM llama3.2:3b
 
 PARAMETER temperature 0.1
 
