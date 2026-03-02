@@ -70,6 +70,27 @@ go: Could you go to the DesignedFurniture|Furniture?
 go: Could you drive to the Room|Location?
 go: Could you please go to the DesignedFurniture|Furniture?
 
+go: Proceed to the Room|Location.
+go: Move towards the DesignedFurniture|Furniture.
+go: Get to the Room|Location as quickly as possible.
+go: I need you to go to the Room|Location.
+go: Please proceed to the DesignedFurniture|Furniture in the Room|Location.
+go: Could you head over to the NaturalPerson|Person?
+go: Would you mind going to the DesignedFurniture|Furniture?
+go: Your task is to go to the Room|Location.
+go: Make your way to the NaturalPerson|Person standing near the DesignedFurniture|Furniture.
+go: Navigate to the NaturalPerson|Person who is sitting on the DesignedFurniture|Furniture.
+go: Go to the NaturalPerson|Person raising their left arm in the Room|Location.
+go: Find the NaturalPerson|Person pointing to the right and go to them.
+go: Please go to the NaturalPerson|Person wearing a Clothing|Clothes.
+go: Go to the lying NaturalPerson|Person on the DesignedFurniture|Furniture.
+go: Head towards the waving NaturalPerson|Person in the Room|Location.
+go: I want you to go to the DesignedFurniture|Furniture next to the Room|Location.
+go: Can you please go to the NaturalPerson|Person who is sitting?
+go: Go to the Room|Location and wait there.
+go: Move to the DesignedFurniture|Furniture and stop.
+go: Please navigate to the NaturalPerson|Person in the Room|Location.
+
 # ---- Guide ----
 
 guide: Guide NaturalPerson|Person to the Room|Location.
@@ -136,6 +157,25 @@ guide: Would you like to escort NaturalPerson|Person to the DesignedFurniture|Fu
 guide: Would you guide NaturalPerson|Person to the Room|Location?
 guide: Would you escort NaturalPerson|Person to the Room|Location?
 guide: Would you please lead NaturalPerson|Person to the Room|Location?
+
+guide: Bring NaturalPerson|Person to the Room|Location.
+guide: Take NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Accompany NaturalPerson|Person to the Room|Location.
+guide: Help NaturalPerson|Person reach the Room|Location.
+guide: Lead the way for NaturalPerson|Person to the DesignedFurniture|Furniture.
+guide: Guide NaturalPerson|Person from the Room|Location to the DesignedFurniture|Furniture.
+guide: Escort NaturalPerson|Person from the DesignedFurniture|Furniture to the Room|Location.
+guide: Take the NaturalPerson|Person wearing a Clothing|Clothes to the Room|Location.
+guide: Lead NaturalPerson|Person with a Clothing|Clothes from the Room|Location to the DesignedFurniture|Furniture.
+guide: Show the NaturalPerson|Person sitting on the DesignedFurniture|Furniture the way to the Room|Location.
+guide: Escort the NaturalPerson|Person pointing to the left to the Room|Location.
+guide: Take the NaturalPerson|Person near the DesignedFurniture|Furniture to the Room|Location.
+guide: Accompany the NaturalPerson|Person standing next to the DesignedFurniture|Furniture to the DesignedFurniture|Furniture.
+guide: Lead the NaturalPerson|Person who is lying down to the Room|Location.
+guide: Would you escort NaturalPerson|Person from the Room|Location to the Room|Location?
+guide: Please take the NaturalPerson|Person wearing a Clothing|Clothes to the DesignedFurniture|Furniture.
+guide: I need you to guide NaturalPerson|Person to the Room|Location.
+guide: Your job is to escort NaturalPerson|Person to the DesignedFurniture|Furniture.
 
 # ----- Take -----
 
@@ -241,6 +281,27 @@ take: Could you get the NaturalPerson|Person wearing a Clothing|Clothes a Transp
 take: Could you fetch some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location for a NaturalPerson|Person with a Clothing|Clothes next to the DesignedFurniture|Furniture in the Room|Location?
 take: Can you retrieve a Transportable|Item from the Room|Location?
 
+take: Pick up a Transportable|Item from the Room|Location.
+take: Collect a Transportable|Item from the DesignedFurniture|Furniture.
+take: Grab a Transportable|Item and bring it to the Room|Location.
+take: Retrieve a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location.
+take: Take a Transportable|Item from the Room|Location and place it on the DesignedFurniture|Furniture.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture and bring it to NaturalPerson|Person.
+take: Get a Transportable|Item from the Room|Location for NaturalPerson|Person.
+take: Bring a Transportable|Item from the DesignedFurniture|Furniture to NaturalPerson|Person.
+take: Take the largest Transportable|Item from the Room|Location.
+take: Fetch the smallest Transportable|Item from the DesignedFurniture|Furniture.
+take: Grab a full Transportable|Item from the Room|Location.
+take: Retrieve an empty Transportable|Item from the DesignedFurniture|Furniture.
+take: Take a Transportable|Item from the Room|Location and give it to NaturalPerson|Person wearing a Clothing|Clothes.
+take: Fetch a Transportable|Item from the DesignedFurniture|Furniture for the NaturalPerson|Person sitting there.
+take: Get a Transportable|Item from the Room|Location and deliver it to the DesignedFurniture|Furniture.
+take: Please pick up a Transportable|Item from the DesignedFurniture|Furniture.
+take: Could you take a Transportable|Item from the Room|Location?
+take: Would you fetch a Transportable|Item from the DesignedFurniture|Furniture?
+take: I need you to retrieve a Transportable|Item from the Room|Location.
+take: Your task is to grab a Transportable|Item from the DesignedFurniture|Furniture.
+
 # ---- Place ----
 
 place: Put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location.
@@ -268,6 +329,27 @@ place: Can you set a Transportable|Item on the DesignedFurniture|Furniture in th
 place: Could you please put some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
 place: Could you place a Transportable|Item from the DesignedFurniture|Furniture in the Room|Location on the DesignedFurniture|Furniture in the Room|Location please?
 place: Could you put a Transportable|Item on the DesignedFurniture|Furniture in the Room|Location?
+
+place: Put a Transportable|Item onto the DesignedFurniture|Furniture.
+place: Set a Transportable|Item down on the DesignedFurniture|Furniture in the Room|Location.
+place: Leave a Transportable|Item on the DesignedFurniture|Furniture.
+place: Place a Transportable|Item from the Room|Location onto the DesignedFurniture|Furniture.
+place: Put a Transportable|Item that you took from the DesignedFurniture|Furniture onto the DesignedFurniture|Furniture.
+place: Set a Transportable|Item from the Room|Location on the DesignedFurniture|Furniture in the Room|Location.
+place: Position a Transportable|Item carefully on the DesignedFurniture|Furniture.
+place: Arrange a Transportable|Item on the DesignedFurniture|Furniture.
+place: Place the largest Transportable|Item on the DesignedFurniture|Furniture.
+place: Put the smallest Transportable|Item on the DesignedFurniture|Furniture.
+place: Set an empty Transportable|Item on the DesignedFurniture|Furniture.
+place: Place a full Transportable|Item on the DesignedFurniture|Furniture.
+place: Could you put a Transportable|Item on the DesignedFurniture|Furniture?
+place: Would you place a Transportable|Item on the DesignedFurniture|Furniture?
+place: Please set a Transportable|Item on the DesignedFurniture|Furniture.
+place: I need you to put a Transportable|Item on the DesignedFurniture|Furniture.
+place: Your job is to place a Transportable|Item on the DesignedFurniture|Furniture.
+place: Put a Transportable|Item from the Room|Location on the DesignedFurniture|Furniture, please.
+place: Place a Transportable|Item from the DesignedFurniture|Furniture onto the DesignedFurniture|Furniture.
+place: Set a Transportable|Item down gently on the DesignedFurniture|Furniture.
 
 # ---- Deliver ----
 
@@ -393,6 +475,27 @@ deliver: Could you give the NaturalPerson|Person wearing a Clothing|Clothes and 
 deliver: Can you deliver some Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes and standing next to the DesignedFurniture|Furniture in the Room|Location?
 deliver: Could you move the Transportable|Item from the DesignedFurniture|Furniture in the Room|Location to the NaturalPerson|Person in a Clothing|Clothes near the DesignedFurniture|Furniture in the Room|Location please?
 
+deliver: Hand me a Transportable|Item.
+deliver: Pass me a Transportable|Item from the Room|Location.
+deliver: Bring a Transportable|Item to me from the DesignedFurniture|Furniture.
+deliver: Give a Transportable|Item to NaturalPerson|Person.
+deliver: Deliver a Transportable|Item to NaturalPerson|Person in the Room|Location.
+deliver: Transport a Transportable|Item from the DesignedFurniture|Furniture to NaturalPerson|Person.
+deliver: Carry a Transportable|Item to the DesignedFurniture|Furniture.
+deliver: Move a Transportable|Item from the Room|Location to the DesignedFurniture|Furniture.
+deliver: Bring the heaviest Transportable|Item to me.
+deliver: Deliver the lightest Transportable|Item to NaturalPerson|Person.
+deliver: Hand over a Transportable|Item to NaturalPerson|Person wearing a Clothing|Clothes.
+deliver: Pass a Transportable|Item to the NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
+deliver: Bring a Transportable|Item from the Room|Location to the NaturalPerson|Person pointing to the right.
+deliver: Take a Transportable|Item from the DesignedFurniture|Furniture and deliver it to me.
+deliver: Could you bring me a Transportable|Item?
+deliver: Would you deliver a Transportable|Item to NaturalPerson|Person?
+deliver: Please hand a Transportable|Item to NaturalPerson|Person.
+deliver: I need you to bring a Transportable|Item from the Room|Location.
+deliver: Your task is to deliver a Transportable|Item to the DesignedFurniture|Furniture.
+deliver: Fetch a Transportable|Item and give it to NaturalPerson|Person.
+
 # ---- Open ----
 
 open: Open the DesignedFurniture|Furniture.
@@ -471,6 +574,23 @@ open: Someone’s trying to come in, open the the DesignedFurniture|Furniture.
 open: Open the DesignedFurniture|Furniture so we can receive them.
 open: Please make the DesignedFurniture|Furniture accessible for the guest.
 
+open: Could you open the DesignedFurniture|Furniture for me?
+open: Please open up the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture wide.
+open: Swing the DesignedFurniture|Furniture open.
+open: Unlock and open the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture so I can go through.
+open: Let me pass by opening the DesignedFurniture|Furniture.
+open: I want to go through the DesignedFurniture|Furniture, please open it.
+open: The DesignedFurniture|Furniture is closed, can you open it?
+open: Please make the DesignedFurniture|Furniture accessible.
+open: Open the DesignedFurniture|Furniture, there's someone outside.
+open: We need to let them in, open the DesignedFurniture|Furniture.
+open: Open the DesignedFurniture|Furniture for the visitor.
+open: Could you please open the DesignedFurniture|Furniture wider?
+open: I'd like you to open the DesignedFurniture|Furniture.
+open: Your job is to open the DesignedFurniture|Furniture.
+
 # ---- Lookup ----
 
 lookup: Is there anything on the DesignedFurniture|Furniture?
@@ -541,8 +661,29 @@ lookup: May I know what is on DesignedFurniture|Furniture?
 lookup: Could you provide details about what is on DesignedFurniture|Furniture?
 lookup: What contents are currently on DesignedFurniture|Furniture?
 
+lookup: Is there something on the DesignedFurniture|Furniture?
+lookup: What is sitting on the DesignedFurniture|Furniture?
+lookup: Can you see any items on the DesignedFurniture|Furniture?
+lookup: Tell me what you find on the DesignedFurniture|Furniture.
+lookup: Check if the DesignedFurniture|Furniture holds anything.
+lookup: Does the DesignedFurniture|Furniture contain any objects?
+lookup: Is the DesignedFurniture|Furniture empty or occupied?
+lookup: What do you see when you look at the DesignedFurniture|Furniture?
+lookup: Are there any Transportable|Item on the DesignedFurniture|Furniture?
+lookup: Could you inspect the DesignedFurniture|Furniture for me?
+lookup: Look at the DesignedFurniture|Furniture and tell me what's there.
+lookup: Scan the DesignedFurniture|Furniture and report back.
+lookup: Is there anything interesting on the DesignedFurniture|Furniture?
+lookup: Please check the DesignedFurniture|Furniture for objects.
+lookup: I want to know what's on the DesignedFurniture|Furniture.
+lookup: Can you confirm whether the DesignedFurniture|Furniture is clear?
+lookup: What items are present on the DesignedFurniture|Furniture?
+lookup: Give me a list of things on the DesignedFurniture|Furniture.
+lookup: Is the DesignedFurniture|Furniture bare or has something?
+lookup: Tell me the status of the DesignedFurniture|Furniture.
 
-# ---- Seating---- 
+
+# ---- Seating----
 
 seating: Tell the waving NaturalPerson|Person where he can sit.
 seating: Tell the waving NaturalPerson|Person where she can sit.
@@ -577,200 +718,203 @@ seating: Could you point out a seat to the waving NaturalPerson|Person?
 seating: Could you clarify to the waving NaturalPerson|Person where seating is provided?
 seating: Could you assist the waving NaturalPerson|Person in finding a seat?
 
-# --- Receptionist ---
+seating: Direct the waving NaturalPerson|Person to a seat.
+seating: Show the waving NaturalPerson|Person where they can sit down.
+seating: Tell the waving NaturalPerson|Person which chair to use.
+seating: Let the waving NaturalPerson|Person know where to take a seat.
+seating: Point out a seat for the waving NaturalPerson|Person.
+seating: Guide the waving NaturalPerson|Person to an available seat.
+seating: Inform the waving NaturalPerson|Person about seating options.
+seating: Help the waving NaturalPerson|Person find a place to sit.
+seating: Escort the waving NaturalPerson|Person to a seating area.
+seating: Lead the waving NaturalPerson|Person to a comfortable seat.
+seating: Please tell the waving NaturalPerson|Person where they may sit.
+seating: Could you show the waving NaturalPerson|Person a seat?
+seating: Would you direct the waving NaturalPerson|Person to a chair?
+seating: I need you to guide the waving NaturalPerson|Person to a seat.
+seating: Your task is to assist the waving NaturalPerson|Person in finding a seat.
+seating: Make sure the waving NaturalPerson|Person gets a seat.
+seating: Find a seat for the waving NaturalPerson|Person and show them.
+seating: Tell the waving NaturalPerson|Person they can sit over there.
+seating: Indicate a seating location to the waving NaturalPerson|Person.
 
-Receptionist: Hello my name is NaturalPerson|Person
+# --- receptionist ---
 
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
+receptionist: Hello my name is NaturalPerson|Person
+receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is playing Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is watching Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite drink is drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite drink is drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is playing Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is watching Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite beverage is drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite beverage is drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite beverage is drink|Drink.
+receptionist: I am NaturalPerson|Person, I like to drink drink|Drink and my Hobby is playing Interest|Hobby
+receptionist: I like to play Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person and my favorite beverage is drink|Drink
+receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and my hobby is Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to play Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to watch Interest|Hobby
+receptionist: I'm NaturalPerson|Person, I like to drink drink|Drink and my hobby is Interest|Hobby
+receptionist: I'm NaturalPerson|Person and,  I like to beverage drink|Drink and I like to play Interest|Hobby
+receptionist: Hey I'm NaturalPerson|Person, I enjoy drinking drink|Drink and I like to play Interest|Hobby
+receptionist: Hey I am NaturalPerson|Person, I enjoy drink|Drink and I like to play Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to play Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to watch Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and my hobby is Interest|Hobby
+receptionist: I like to watch Interest|Hobby
+receptionist: My hobby is Interest|Hobby
+receptionist: I prefer drink|Drink
+receptionist: I like drink|Drink
+receptionist: My favorite drink is drink|Drink
+receptionist: My favorite beverage is drink|Drink
+receptionist: What I like most to drink is drink|Drink
+receptionist: Most of the time I drink dink|Drink
+receptionist: Hello, I'm NaturalPerson|Person.
+receptionist: Hello, I am NaturalPerson|Person.
+receptionist: Hi there, NaturalPerson|Person here. My favorite drink is drink|Drink.
+receptionist: I'm NaturalPerson|Person, and I enjoy drink|Drink.
+receptionist: I'm NaturalPerson|Person, and I enjoy drinking drink|Drink.
+receptionist: Hey, I'm NaturalPerson|Person, and my preferred beverage is drink|Drink.
+receptionist: Hey, I am NaturalPerson|Person, and my preferred beverage is drink|Drink.
+receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to drink drink|Drink.
+receptionist: Nice to see you! I am NaturalPerson|Person, and I like to drink drink|Drink.
+receptionist: My name is NaturalPerson|Person, and my favorite drink is drink|Drink.
+receptionist: My name is NaturalPerson|Person, and my favorite beverage is drink|Drink.
+receptionist: Hello, I'm NaturalPerson|Person, I enjoy drinking drink|Drink.
+receptionist: Hello, I am NaturalPerson|Person, I enjoy drinking drink|Drink.
+receptionist: Hi, my favorite drink is drink|Drink. I'm NaturalPerson|Person.
+receptionist: Hi, my favorite beverage is drink|Drink. I'm NaturalPerson|Person.
+receptionist: Hi, my favorite drink is drink|Drink. I am NaturalPerson|Person.
+receptionist: Hi, my favorite beverage is drink|Drink. I am NaturalPerson|Person.
+receptionist: I'm NaturalPerson|Person and love to drink drink|Drink.
+receptionist: I am NaturalPerson|Person and love to drink drink|Drink.
+receptionist: Good day, my name is NaturalPerson|Person and I prefer drink|Drink.
+receptionist: Hello, I'm NaturalPerson|Person, and I like to indulge in drink|Drink.
+receptionist: Hello, NaturalPerson|Person here. My go-to drink is drink|Drink.
+receptionist: Greetings! I'm NaturalPerson|Person, and I enjoy sipping on drink|Drink.
+receptionist: Greetings! I am NaturalPerson|Person, and I enjoy sipping on drink|Drink.
+receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite drink is drink|Drink.
+receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite drink is drink|Drink.
+receptionist: Hi, my go-to drink is drink|Drink. I'm NaturalPerson|Person.
+receptionist: Hi, my go-to drink is drink|Drink. I am NaturalPerson|Person.
+receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy drink|Drink.
+receptionist: Greetings, I am NaturalPerson|Person, and I enjoy drink|Drink.
+receptionist: Hello, NaturalPerson|Person here. My preferred beverage is drink|Drink.
+receptionist: Hello, nice to meet you. My name is NaturalPerson|Person.
+receptionist: Hello, nice to meet you. I'm NaturalPerson|Person.
+receptionist: Hello, nice to meet you. I am NaturalPerson|Person.
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is playing Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is watching Interest|Hobby
+receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite food is food|Food.
+receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite food is food|Food.
+receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite food is food|Food.
+receptionist: I am NaturalPerson|Person, I like to eat food|Food and my Hobby is playing Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and my hobby is Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
+receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
+receptionist: I'm NaturalPerson|Person, I like to eat food|Food and my hobby is Interest|Hobby
+receptionist: Hey I'm NaturalPerson|Person, I enjoy eating food|Food and I like to play Interest|Hobby
+receptionist: Hey I am NaturalPerson|Person, I enjoy food|Food and I like to play Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to play Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to watch Interest|Hobby
+receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and my hobby is Interest|Hobby
+receptionist: I prefer eating food|Food
+receptionist: I like to eat food|Food
+receptionist: My favorite food is food|Food
+receptionist: What I like most to eat is food|Food
+receptionist: Most of the time I eat foot|Food
+receptionist: Hi there, NaturalPerson|Person here. My favorite food is food|Food.
+receptionist: I'm NaturalPerson|Person, and I enjoy food|Food.
+receptionist: I'm NaturalPerson|Person, and I enjoy eating food|Food.
+receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to eat food|Food.
+receptionist: My name is NaturalPerson|Person, and my favorite food is food|Food.
+receptionist: Hello, I'm NaturalPerson|Person, I enjoy eating food|Food.
+receptionist: Hi, my favorite food is food|Food. I'm NaturalPerson|Person.
+receptionist: Hi, my favorite food is food|Food. I am NaturalPerson|Person.
+receptionist: I'm NaturalPerson|Person and love to eat food|Food.
+receptionist: I am NaturalPerson|Person and love to eat food|Food.
+receptionist: Good day, my name is NaturalPerson|Person and I prefer food|Food.
+receptionist: Hello, NaturalPerson|Person here. My go-to food is food|Food.
+receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite food is food|Food.
+receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite food is food|Food.
+receptionist: Hi, my go-to food is food|Food. I'm NaturalPerson|Person.
+receptionist: Hi, my go-to food is food|Food. I am NaturalPerson|Person.
+receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy food|Food.
+receptionist: Greetings, I am NaturalPerson|Person, and I enjoy food|Food.
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my favorite drink is drink|Drink.
+receptionist: Hello, I'm NaturalPerson|Person. My favorite food is food|Food and my favorite drink is drink|Drink.
+receptionist: Hi, my name is NaturalPerson|Person, I prefer food|Food and drink|Drink.
+receptionist: I'm NaturalPerson|Person, and I enjoy food|Food with drink|Drink.
+receptionist: My name is NaturalPerson|Person, my go-to food is food|Food and my go-to drink is drink|Drink.
+receptionist: Greetings! I'm NaturalPerson|Person, my favorite food is food|Food and I love drinking drink|Drink.
+receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food, my favorite drink is drink|Drink and I like to play Interest|Hobby.
+receptionist: Hi, I'm NaturalPerson|Person. I enjoy eating food|Food, drinking drink|Drink, and watching Interest|Hobby.
+receptionist: My name is NaturalPerson|Person, I prefer food|Food and drink|Drink, and my hobby is Interest|Hobby.
+receptionist: I'm NaturalPerson|Person, I like to eat food|Food, drink drink|Drink, and play Interest|Hobby.
+receptionist: My favorite food is food|Food and my favorite drink is drink|Drink.
+receptionist: I prefer food|Food and drink|Drink.
+receptionist: What I like most to eat is food|Food and to drink is drink|Drink.
 
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is playing Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is watching Interest|Hobby
-
-Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite drink is drink|Drink.
-Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
-
-Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite drink is drink|Drink.
-Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite drink is drink|Drink.
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is playing Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite beverage is drink|Drink and my Hobby is watching Interest|Hobby
-
-Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite beverage is drink|Drink.
-Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite beverage is drink|Drink.
-Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite beverage is drink|Drink.
-
-Receptionist: I am NaturalPerson|Person, I like to drink drink|Drink and my Hobby is playing Interest|Hobby
-Receptionist: I like to play Interest|Hobby
-
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and my hobby is Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to play Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite drink is drink|Drink and I like to watch Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person and my favorite beverage is drink|Drink
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and my hobby is Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to play Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink and I like to watch Interest|Hobby
-
-Receptionist: I'm NaturalPerson|Person, I like to drink drink|Drink and my hobby is Interest|Hobby
-Receptionist: I'm NaturalPerson|Person and,  I like to beverage drink|Drink and I like to play Interest|Hobby
-
-Receptionist: Hey I'm NaturalPerson|Person, I enjoy drinking drink|Drink and I like to play Interest|Hobby
-Receptionist: Hey I am NaturalPerson|Person, I enjoy drink|Drink and I like to play Interest|Hobby
-
-Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to play Interest|Hobby
-Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and I like to watch Interest|Hobby
-Receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and my hobby is Interest|Hobby
-
-Receptionist: I like to watch Interest|Hobby
-Receptionist: I like to play Interest|Hobby
-Receptionist: My hobby is Interest|Hobby
-
-Receptionist: I prefer drink|Drink
-Receptionist: I like drink|Drink
-Receptionist: My favorite drink is drink|Drink
-Receptionist: My favorite beverage is drink|Drink
-Receptionist: What I like most to drink is drink|Drink
-Receptionist: Most of the time I drink dink|Drink
-
-Receptionist: Hello, I'm NaturalPerson|Person.
-Receptionist: Hello, I am NaturalPerson|Person.
-
-Receptionist: Hi there, NaturalPerson|Person here. My favorite drink is drink|Drink.
-Receptionist: I'm NaturalPerson|Person, and I enjoy drink|Drink.
-Receptionist: I'm NaturalPerson|Person, and I enjoy drinking drink|Drink.
-
-Receptionist: Hey, I'm NaturalPerson|Person, and my preferred beverage is drink|Drink.
-Receptionist: Hey, I am NaturalPerson|Person, and my preferred beverage is drink|Drink.
-
-Receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to drink drink|Drink.
-Receptionist: Nice to see you! I am NaturalPerson|Person, and I like to drink drink|Drink.
-
-Receptionist: My name is NaturalPerson|Person, and my favorite drink is drink|Drink.
-Receptionist: My name is NaturalPerson|Person, and my favorite beverage is drink|Drink.
-
-Receptionist: Hello, I'm NaturalPerson|Person, I enjoy drinking drink|Drink.
-Receptionist: Hello, I am NaturalPerson|Person, I enjoy drinking drink|Drink.
-
-Receptionist: Hi, my favorite drink is drink|Drink. I'm NaturalPerson|Person.
-Receptionist: Hi, my favorite beverage is drink|Drink. I'm NaturalPerson|Person.
-Receptionist: Hi, my favorite drink is drink|Drink. I am NaturalPerson|Person.
-Receptionist: Hi, my favorite beverage is drink|Drink. I am NaturalPerson|Person.
-
-Receptionist: I'm NaturalPerson|Person and love to drink drink|Drink.
-Receptionist: I am NaturalPerson|Person and love to drink drink|Drink.
-
-Receptionist: Good day, my name is NaturalPerson|Person and I prefer drink|Drink.
-
-Receptionist: Hello, I'm NaturalPerson|Person, and I like to indulge in drink|Drink.
-Receptionist: Hello, NaturalPerson|Person here. My go-to drink is drink|Drink.
-
-Receptionist: Greetings! I'm NaturalPerson|Person, and I enjoy sipping on drink|Drink.
-Receptionist: Greetings! I am NaturalPerson|Person, and I enjoy sipping on drink|Drink.
-
-Receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite drink is drink|Drink.
-Receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite drink is drink|Drink.
-
-Receptionist: Hi, my go-to drink is drink|Drink. I'm NaturalPerson|Person.
-Receptionist: Hi, my go-to drink is drink|Drink. I am NaturalPerson|Person.
-
-Receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy drink|Drink.
-Receptionist: Greetings, I am NaturalPerson|Person, and I enjoy drink|Drink.
-
-Receptionist: Hello, NaturalPerson|Person here. My preferred beverage is drink|Drink.
-
-Receptionist: Hello, nice to meet you. My name is NaturalPerson|Person.
-Receptionist: Hello, nice to meet you. I'm NaturalPerson|Person.
-Receptionist: Hello, nice to meet you. I am NaturalPerson|Person.
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is playing Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my hobby is watching Interest|Hobby
-
-Receptionist: Hi, I am NaturalPerson|Person, I like to play Interest|Hobby and my favorite food is food|Food.
-Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite food is food|Food.
-
-Receptionist: Hi, I am NaturalPerson|Person, my hobby is playing Interest|Hobby and my favorite food is food|Food.
-Receptionist: Hi, I am NaturalPerson|Person, I like to watch Interest|Hobby and my favorite food is food|Food.
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
-
-Receptionist: I am NaturalPerson|Person, I like to eat food|Food and my Hobby is playing Interest|Hobby
-Receptionist: I like to play Interest|Hobby
-
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and my hobby is Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to play Interest|Hobby
-Receptionist: Hi, I'm NaturalPerson|Person, my favorite food is food|Food and I like to watch Interest|Hobby
-
-Receptionist: I'm NaturalPerson|Person, I like to eat food|Food and my hobby is Interest|Hobby
-
-Receptionist: Hey I'm NaturalPerson|Person, I enjoy eating food|Food and I like to play Interest|Hobby
-Receptionist: Hey I am NaturalPerson|Person, I enjoy food|Food and I like to play Interest|Hobby
-
-Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to play Interest|Hobby
-Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and I like to watch Interest|Hobby
-Receptionist: My name is NaturalPerson|Person, I prefer to eat food|Food and my hobby is Interest|Hobby
-
-Receptionist: I prefer eating food|Food
-Receptionist: I like to eat food|Food
-Receptionist: My favorite food is food|Food
-Receptionist: What I like most to eat is food|Food
-Receptionist: Most of the time I eat foot|Food
-
-Receptionist: Hello, I'm NaturalPerson|Person.
-Receptionist: Hello, I am NaturalPerson|Person.
-
-Receptionist: Hi there, NaturalPerson|Person here. My favorite food is food|Food.
-Receptionist: I'm NaturalPerson|Person, and I enjoy food|Food.
-Receptionist: I'm NaturalPerson|Person, and I enjoy eating food|Food.
-
-Receptionist: Nice to see you! I'm NaturalPerson|Person, and I like to eat food|Food.
-
-Receptionist: My name is NaturalPerson|Person, and my favorite food is food|Food.
-
-Receptionist: Hello, I'm NaturalPerson|Person, I enjoy eating food|Food.
-
-Receptionist: Hi, my favorite food is food|Food. I'm NaturalPerson|Person.
-
-Receptionist: Hi, my favorite food is food|Food. I am NaturalPerson|Person.
-
-Receptionist: I'm NaturalPerson|Person and love to eat food|Food.
-Receptionist: I am NaturalPerson|Person and love to eat food|Food.
-
-Receptionist: Good day, my name is NaturalPerson|Person and I prefer food|Food.
-
-Receptionist: Hello, NaturalPerson|Person here. My go-to food is food|Food.
-
-Receptionist: Pleasure to meet you! I'm NaturalPerson|Person, and my favorite food is food|Food.
-Receptionist: Pleasure to meet you! I am NaturalPerson|Person, and my favorite food is food|Food.
-
-Receptionist: Hi, my go-to food is food|Food. I'm NaturalPerson|Person.
-Receptionist: Hi, my go-to food is food|Food. I am NaturalPerson|Person.
-
-Receptionist: Greetings, I'm NaturalPerson|Person, and I enjoy food|Food.
-Receptionist: Greetings, I am NaturalPerson|Person, and I enjoy food|Food.
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food and my favorite drink is drink|Drink.
-
-Receptionist: Hello, I'm NaturalPerson|Person. My favorite food is food|Food and my favorite drink is drink|Drink.
-Receptionist: Hi, my name is NaturalPerson|Person, I prefer food|Food and drink|Drink.
-Receptionist: I'm NaturalPerson|Person, and I enjoy food|Food with drink|Drink.
-Receptionist: My name is NaturalPerson|Person, my go-to food is food|Food and my go-to drink is drink|Drink.
-Receptionist: Greetings! I'm NaturalPerson|Person, my favorite food is food|Food and I love drinking drink|Drink.
-
-Receptionist: Hi, I am NaturalPerson|Person, my favorite food is food|Food, my favorite drink is drink|Drink and I like to play Interest|Hobby.
-Receptionist: Hi, I'm NaturalPerson|Person. I enjoy eating food|Food, drinking drink|Drink, and watching Interest|Hobby.
-Receptionist: My name is NaturalPerson|Person, I prefer food|Food and drink|Drink, and my hobby is Interest|Hobby.
-Receptionist: I'm NaturalPerson|Person, I like to eat food|Food, drink drink|Drink, and play Interest|Hobby.
-
-Receptionist: My favorite food is food|Food and my favorite drink is drink|Drink.
-Receptionist: I prefer food|Food and drink|Drink.
-Receptionist: What I like most to eat is food|Food and to drink is drink|Drink.
+receptionist: Hello, I'm NaturalPerson|Person and my favorite drink is drink|Drink.
+receptionist: Hi, my name is NaturalPerson|Person, I love drinking drink|Drink.
+receptionist: Greetings, I am NaturalPerson|Person, I enjoy drink|Drink.
+receptionist: Hey there, I'm NaturalPerson|Person, and I like to drink drink|Drink.
+receptionist: My name is NaturalPerson|Person, I prefer drink|Drink.
+receptionist: Hi, I'm NaturalPerson|Person, my favorite beverage is drink|Drink.
+receptionist: Hello, NaturalPerson|Person here, I usually drink drink|Drink.
+receptionist: I'm NaturalPerson|Person, and I'm fond of drink|Drink.
+receptionist: Nice to meet you, I'm NaturalPerson|Person, I enjoy drink|Drink.
+receptionist: Good day, NaturalPerson|Person, my drink of choice is drink|Drink.
+receptionist: Hi, I'm NaturalPerson|Person, I like to eat food|Food.
+receptionist: Hello, my name is NaturalPerson|Person, my favorite food is food|Food.
+receptionist: Greetings, I'm NaturalPerson|Person, I love eating food|Food.
+receptionist: Hey, I'm NaturalPerson|Person, I enjoy food|Food.
+receptionist: My name is NaturalPerson|Person, I prefer food|Food.
+receptionist: Hi, I'm NaturalPerson|Person, my go-to meal is food|Food.
+receptionist: Hello, NaturalPerson|Person here, I usually eat food|Food.
+receptionist: I'm NaturalPerson|Person, and I'm fond of food|Food.
+receptionist: Nice to meet you, I'm NaturalPerson|Person, I enjoy food|Food.
+receptionist: Good day, NaturalPerson|Person, I like food|Food.
+receptionist: Hi, I'm NaturalPerson|Person, I enjoy eating food|Food and drinking drink|Drink.
+receptionist: Hello, my name is NaturalPerson|Person, my favorite food is food|Food and my favorite drink is drink|Drink.
+receptionist: Greetings, I'm NaturalPerson|Person, I love food|Food and drink|Drink.
+receptionist: Hey, I'm NaturalPerson|Person, I like food|Food and drink|Drink.
+receptionist: My name is NaturalPerson|Person, I prefer food|Food and drink|Drink.
+receptionist: Hi, I'm NaturalPerson|Person, my go-to meal is food|Food and my drink is drink|Drink.
+receptionist: Hello, NaturalPerson|Person here, I enjoy food|Food and drink|Drink.
+receptionist: I'm NaturalPerson|Person, and I'm fond of food|Food and drink|Drink.
+receptionist: Nice to meet you, I'm NaturalPerson|Person, I like food|Food and drink|Drink.
+receptionist: Good day, NaturalPerson|Person, I love food|Food and drink|Drink.
+receptionist: Hi, I'm NaturalPerson|Person, I like to eat food|Food and my hobby is Interest|Hobby.
+receptionist: Hello, my name is NaturalPerson|Person, my favorite food is food|Food and I enjoy Interest|Hobby.
+receptionist: Greetings, I'm NaturalPerson|Person, I love eating food|Food and my hobby is Interest|Hobby.
+receptionist: Hey, I'm NaturalPerson|Person, I like food|Food and I like to play Interest|Hobby.
+receptionist: My name is NaturalPerson|Person, I prefer food|Food and my hobby is Interest|Hobby.
+receptionist: Hi, I'm NaturalPerson|Person, I enjoy food|Food and I like to watch Interest|Hobby.
+receptionist: Hello, NaturalPerson|Person here, I usually eat food|Food and my hobby is Interest|Hobby.
+receptionist: I'm NaturalPerson|Person, and I'm fond of food|Food and I like to play Interest|Hobby.
+receptionist: Nice to meet you, I'm NaturalPerson|Person, I enjoy food|Food and my hobby is Interest|Hobby.
+receptionist: Good day, NaturalPerson|Person, I like food|Food and I love Interest|Hobby.
+receptionist: Hi, I'm NaturalPerson|Person, I like to drink drink|Drink and my hobby is Interest|Hobby.
+receptionist: Hello, my name is NaturalPerson|Person, my favorite drink is drink|Drink and I enjoy Interest|Hobby.
+receptionist: Greetings, I'm NaturalPerson|Person, I love drinking drink|Drink and my hobby is Interest|Hobby.
+receptionist: Hey, I'm NaturalPerson|Person, I like drink|Drink and I like to play Interest|Hobby.
+receptionist: My name is NaturalPerson|Person, I prefer drink|Drink and my hobby is Interest|Hobby.
+receptionist: Hi, I'm NaturalPerson|Person, I enjoy drink|Drink and I like to watch Interest|Hobby.
+receptionist: Hello, NaturalPerson|Person here, I usually drink drink|Drink and my hobby is Interest|Hobby.
+receptionist: I'm NaturalPerson|Person, and I'm fond of drink|Drink and I like to play Interest|Hobby.
+receptionist: Nice to meet you, I'm NaturalPerson|Person, I enjoy drink|Drink and my hobby is Interest|Hobby.
+receptionist: Good day, NaturalPerson|Person, I like drink|Drink and I love Interest|Hobby.
 
 # ---- Affirm ----
 
