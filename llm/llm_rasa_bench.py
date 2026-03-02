@@ -1,18 +1,18 @@
-"""
-Use nlu data from rasa and use the sentences as llm prompts and check if the results are good.
-"""
+#!/usr/bin/env python3
 
 import json
 import re
+import sys
+import time
+from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from pathlib import Path
+from typing import List, Optional
 
 import ollama
-import yaml
 from tqdm import tqdm
 
 OUTPUT_PATH = Path("results")
-NLU = (Path(__file__).parent / "../MS3/data/nlu.yml").resolve()
 ALLOWED_INTENTS = [
     "go",
     "guide",
@@ -24,6 +24,8 @@ ALLOWED_INTENTS = [
     "open",
     "lookup",
     "talk",
+    "seating",
+    "receptionist"
 ]
 ALLOWED_ENTITIES = [
     "NaturalPerson",
@@ -31,332 +33,323 @@ ALLOWED_ENTITIES = [
     "DesignedFurniture",
     "Clothing",
     "Transportable",
+    "Interest",
+    "food",
+    "drink",
 ]
-ALLOWED_ROLES = ["Person", "Location", "Furniture", "Clothes", "Item"]
-REQUIRED_FIELDS = ["instruction", "sentence", "response", "intent", "entities"]
-
-MODELS = [
-    "nlp_llama",
-    "nlp_llama_few",
-    "nlp_llama_cot",
-    "nlp_qwen",
-    "nlp_qwen_few",
-    "nlp_qwen_cot",
-]
+ALLOWED_ROLES = ["Person", "Location", "Furniture", "Clothes", "Item", "Hobby", "Food", "Drink"]
+REQUIRED_FIELDS = ["sentence", "intent", "entities"]
 
 
-def load_ground_truth(nlu_file):
-    with open(nlu_file, "r") as f:
-        data = yaml.safe_load(f)
-
-    samples = []
-    for item in data.get("nlu", []):
-        if "intent" not in item:
-            continue
-
-        intent = item["intent"]
-
-        for line in item.get("examples", "").strip().split("\n"):
-            line = line.strip()
-            if not line.startswith("- "):
-                continue
-
-            raw = line[2:]
-
-            entities = []
-            for match in re.finditer(r"\[([^\]]+)\]\{([^}]+)\}", raw):
-                value = match.group(1)
-                meta = json.loads("{" + match.group(2) + "}")
-                entities.append(
-                    {
-                        "value": value,
-                        "entity": meta.get("entity", ""),
-                        "role": meta.get("role", ""),
-                    }
-                )
-
-            sentence = re.sub(r"\[([^\]]+)\]\{[^}]+\}", r"\1", raw).strip()
-
-            samples.append(
-                {
-                    "sentence": sentence,
-                    "intent": intent,
-                    "entities": entities,
-                }
-            )
-
-    return samples
+@dataclass
+class GroundTruth:
+    sentence: str
+    intent: str
+    entities: List[dict]
 
 
-def validate(reply, gt):
-    """
-    Check if llm response has the correct form and content
-    """
-    result = {
-        "valid_json": False,
-        "json_only": False,
-        "all_fields": False,
-        "allowed_intent": False,
-        "correct_intent": False,
-        "allowed_entity": False,
-        "correct_entity": False,
-        "allowed_roles": False,
-        "correct_roles": False,
-        "predicted_intent": None,
-        "errors": [],
-    }
+@dataclass
+class ValidationCheck:
+    valid_json: bool = False
+    only_json: bool = False
+    has_all_fields: bool = False
+    intent_allowed: bool = False
+    intent_correct: bool = False
+    entities_allowed: bool = False
+    entities_correct: bool = False
+    roles_allowed: bool = False
+    roles_correct: bool = False
+    predicted_intent: Optional[str] = None
+    predicted_entities: Optional[List[dict]] = None
+    errors: List[str] = field(default_factory=list)
+    raw_output: str = ""
 
-    # Only JSON?
-    match = re.search(r"\{.*\}", reply, re.DOTALL)
-    if not match:
-        result["errors"].append(f"No JSON found.")
-        return result
 
-    json_str = match.group()
+@dataclass
+class SampleResult:
+    sentence: str
+    ground_truth: GroundTruth
+    model: str
+    response_time: float
+    output: str
+    validation: ValidationCheck
 
-    if reply.strip() == json_str.strip():
-        result["json_only"] = True
-    else:
-        result["errors"].append(f"Not ONLY JSON found.")
 
-    # Valid JSON?
+def load_ground_truth(file):
+    gt = []
+    with open(file, "r") as f:
+        for line in f:
+            data = json.loads(line)
+            gt.append(GroundTruth(**data))
+    print(f"Loaded {len(gt)} ground truth samples")
+    return gt
+
+
+# === Does it contain JSON? ===
+def contain_json(text):
+    match = re.search(r"(\{.*\})", text, re.DOTALL)
+    return match.group(1) if match else None
+
+
+# === Is it correct JSON? ===
+def parse_json(json_str):
     try:
-        parsed = json.loads(reply)
-    except (json.decoder.JSONDecodeError, Exception) as e:
-        result["errors"].append(f"Not valid JSON: {e}.")
-        return result
-    result["valid_json"] = True
+        return json.loads(json_str)
+    except json.decoder.JSONDecodeError:
+        return None
 
-    # All fields?
-    missing = [f for f in REQUIRED_FIELDS if f not in parsed]
-    if missing:
-        result["errors"].append(f"Missing field: {missing}")
-    else:
-        result["all_fields"] = True
 
-    # Allowed intent and correct?
-    pred_intent = parsed.get("intent", "")
-    result["predicted_intent"] = pred_intent
+# === Does it have valid intents? ===
+def valid_intent(pred, gt):
+    errors = []
+    allowed = pred in ALLOWED_INTENTS
+    correct = pred == gt
 
-    result["allowed_intent"] = pred_intent in ALLOWED_INTENTS
-    result["correct_intent"] = pred_intent == gt["intent"]
+    if not allowed:
+        errors.append(f"Intent '{pred}' not allowed.")
+    if not correct:
+        errors.append(f"Intent '{pred}' not correct. Expected: {gt}")
+    return allowed, correct, errors
 
-    if not result["allowed_intent"]:
-        result["errors"].append(f"Invalid intent: '{pred_intent}'")
-    if not result["correct_intent"]:
-        result["errors"].append(
-            f"Wrong intent: '{pred_intent}' (expected: '{gt['intent']}')"
-        )
 
-    # 4. Allowed entities and roles and correct?
-    pred_entities = parsed.get("entities", [])
-    gt_entities = gt.get("entities", [])
+# === Does it have valid entities? ===
+def valid_entities(pred, gt):
+    pred_ent = sorted(str(e.get("entity") or "") for e in pred)
+    pred_roles = sorted(str(e.get("role") or "") for e in pred)
+    gt_ent = sorted(str(e.get("entity") or "") for e in gt)
+    gt_roles = sorted(str(e.get("role") or "") for e in gt)
 
-    pred_entities_ = sorted(e.get("entity", "") for e in pred_entities)
-    pred_roles = sorted(e.get("role", "") for e in pred_entities)
-    gt_types = sorted(e.get("entity", "") for e in gt_entities)
-    gt_roles = sorted(e.get("role", "") for e in gt_entities)
-
-    bad_types = [t for t in pred_entities_ if t not in ALLOWED_ENTITIES]
+    bad_ent = [e for e in pred_ent if e not in ALLOWED_ENTITIES]
     bad_roles = [r for r in pred_roles if r not in ALLOWED_ROLES]
 
-    result["allowed_entity"] = not bad_types
-    result["allowed_roles"] = not bad_roles
-    result["correct_entity"] = pred_entities_ == gt_types
-    result["correct_roles"] = pred_roles == gt_roles
-
-    if bad_types:
-        result["errors"].append(f"Invalid entity types: {bad_types}")
+    errors = []
+    if bad_ent:
+        errors.append(f"Invalid entities: {bad_ent}.")
     if bad_roles:
-        result["errors"].append(f"Invalid roles: {bad_roles}")
-    if not result["correct_entity"]:
-        result["errors"].append(
-            f"Wrong entities: {pred_entities_} (expected: {gt_types})"
-        )
-    if not result["correct_roles"]:
-        result["errors"].append(f"Wrong roles: {pred_roles} (expected: {gt_roles})")
+        errors.append(f"Invalid roles: {bad_roles}.")
+    if pred_ent != gt_ent:
+        errors.append(f"Wrong entities: {pred_ent} (expected: {gt_ent}).")
+    if pred_roles != gt_roles:
+        errors.append(f"Wrong roles: {pred_roles} (expected: {gt_roles}).")
 
-    return result
-
-
-def save_results(model, results, ts):
-    OUTPUT_PATH.mkdir(exist_ok=True)
-    path = OUTPUT_PATH / f"{model}_{ts}"
-
-    total = len(results)
-
-    keys = [
-        "valid_json",
-        "json_only",
-        "all_fields",
-        "allowed_intent",
-        "correct_intent",
-        "allowed_entity",
-        "correct_entity",
-        "allowed_roles",
-        "correct_roles",
-    ]
-
-    summary = {
-        key: {
-            "count": sum(1 for r in results if r["validation"][key]),
-            "percent": round(
-                sum(1 for r in results if r["validation"][key]) / total * 100, 1
-            ),
-        }
-        for key in keys
+    return {
+        "allowed_ent": not bad_ent,
+        "allowed_roles": not bad_roles,
+        "correct_ent": pred_ent == gt_ent,
+        "correct_roles": pred_roles == gt_roles,
+        "errors": errors,
     }
 
-    intent_accuracy = {}
-    for r in results:
-        gt = r["ground_truth"]["intent"]
-        intent_accuracy.setdefault(gt, {"correct": 0, "total": 0})
-        intent_accuracy[gt]["total"] += 1
-        if r["validation"]["correct_intent"]:
-            intent_accuracy[gt]["correct"] += 1
 
-    for s in intent_accuracy.values():
-        s["percent"] = round(s["correct"] / s["total"] * 100, 1)
+# === Gather everything into the ValidationCheck class ===
+def validate_response(response, gt):
+    check = ValidationCheck(raw_output=response)
 
-    main_output = {
+    # === Containing JSON? ===
+    json_str = contain_json(response)
+    if not json_str:
+        check.errors.append("No JSON object found.")
+        return check
+    check.only_json = response.strip() == json_str.strip()
+
+    # === Valid JSON? ===
+    parsed = parse_json(json_str)
+    if not parsed:
+        check.errors.append("Invalid JSON.")
+        return check
+    check.valid_json = True
+
+    # === Are there missing fields in JSON? ===
+    missing = [f for f in REQUIRED_FIELDS if f not in parsed]
+    if missing:
+        check.errors.append(f"Missing required fields: {missing}")
+    else:
+        check.has_all_fields = True
+
+    # === Does the JSON contain only allowed values? ===
+    pred_intent = parsed.get("intent", "")
+    check.predicted_intent = pred_intent
+    pred_entities = parsed.get("entities", [])
+    check.predicted_entities = pred_entities
+
+    # === Valid intents ===
+    int_allowed, int_correct, int_err = valid_intent(pred_intent, gt.intent)
+
+    check.intent_allowed = int_allowed
+    check.intent_correct = int_correct
+    check.errors.extend(int_err)
+
+    # === Valid entities ===
+    valid_ent = valid_entities(pred_intent, gt.entities)
+    check.entities_allowed = valid_ent["allowed_ent"]
+    check.roles_allowed = valid_ent["allowed_roles"]
+    check.entities_correct = valid_ent["correct_ent"]
+    check.roles_correct = valid_ent["correct_roles"]
+    check.errors.extend(valid_ent["errors"])
+
+    return check
+
+
+def stats(results):
+    total = len(results)
+    if total == 0:
+        return {}
+
+    def percentage(condition):
+        return sum(1 for r in results if condition(r)) / total * 100
+
+    intent_stats = {}
+    for res in results:
+        gt_intent = res.ground_truth.intent
+        if gt_intent not in intent_stats:
+            intent_stats[gt_intent] = {"total": 0, "correct": 0}
+        intent_stats[gt_intent]["total"] += 1
+        if res.validation.intent_correct:
+            intent_stats[gt_intent]["correct"] += 1
+
+    statistic = {
+        "total": total,
+        "valid_json": percentage(lambda r: r.validation.valid_json),
+        "only_json": percentage(lambda r: r.validation.only_json),
+        "has_all_fields": percentage(lambda r: r.validation.has_all_fields),
+        "intent_allowed": percentage(lambda r: r.validation.intent_allowed),
+        "intent_correct": percentage(lambda r: r.validation.intent_correct),
+        "entities_allowed": percentage(lambda r: r.validation.entities_allowed),
+        "entities_correct": percentage(lambda r: r.validation.entities_correct),
+        "roles_allowed": percentage(lambda r: r.validation.roles_allowed),
+        "roles_correct": percentage(lambda r: r.validation.roles_correct),
+        "avg_time": sum(res.response_time for res in results) / total,
+        "intent_acc": {
+            intent: {
+                "total": v["total"],
+                "correct": v["correct"],
+                "percent": v["correct"] / v["total"] * 100,
+            }
+            for intent, v in intent_stats.items()
+        },
+    }
+
+    return statistic
+
+
+def save(model, results, statistic):
+    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
+    OUTPUT_PATH.mkdir(exist_ok=True)
+    path = OUTPUT_PATH / f"{model}_{ts}.json"
+    err_path = OUTPUT_PATH / f"{model}_{ts}_errors.json"
+
+    data = {
         "model": model,
         "timestamp": ts,
-        "total_sentences": total,
-        "summary": summary,
-        "intent_accuracy": intent_accuracy,
-        "results": [
+        "stats": statistic,
+        "samples": [
             {
-                "sentence": r["sentence"],
-                "ground_truth": r["ground_truth"]["intent"],
-                "predicted": r["validation"]["predicted_intent"],
-                "correct": r["validation"]["correct_intent"],
-                "validation": r["validation"],
-                "raw_llm_output": r["raw_output"],
+                "latency": res.response_time,
+                "sentence": res.sentence,
+                "ground_truth": {
+                    "intent": res.ground_truth.intent,
+                    "entities": res.ground_truth.entities,
+                    # "roles": res.ground_truth.roles,
+                },
+                "predicted_intent": res.validation.predicted_intent,
+                "predicted_entities": res.validation.predicted_entities,
+                "validation": {
+                    k: v
+                    for k, v in asdict(res.validation).items()
+                    if k not in ("predicted_intent", "predicted_entities", "raw_output")
+                },
+                "output": res.output,
             }
-            for r in results
+            for res in results
         ],
     }
-
-    main_path = Path(str(path) + ".json")
-    with open(main_path, "w", encoding="utf-8") as f:
-        json.dump(main_output, f, indent=2, ensure_ascii=False)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
     errors = [
         {
-            "sentence": r["sentence"],
-            "ground_truth": r["ground_truth"]["intent"],
-            "predicted": r["validation"]["predicted_intent"],
-            "errors": r["validation"]["errors"],
-            "raw_llm_output": r["raw_output"],
+            "sentence": res.sentence,
+            "ground_truth_intent": res.ground_truth.intent,
+            "predicted_intent": res.validation.predicted_intent,
+            "predicted_entities": res.validation.predicted_entities,
+            "errors": res.validation.errors,
+            "output": res.output,
         }
-        for r in results
-        if r["validation"]["errors"]
+        for res in results
+        if res.validation.errors
     ]
-
-    error_path = Path(str(path) + "_errors.json")
-    with open(error_path, "w", encoding="utf-8") as f:
+    with open(err_path, "w", encoding="utf-8") as f:
         json.dump(
-            {"model": model, "total_errors": len(errors), "errors": errors},
+            {"model": model, "total_err": len(errors), "errors": errors},
             f,
             indent=2,
             ensure_ascii=False,
         )
 
-    print(f"  Result: {main_path}")
-    print(f"  Errors: {error_path}  ({len(errors)} from {total} sentences)\n")
-
-
-def print_stats(model: str, results: list[dict]):
-    total = len(results)
-
-    def pct(key):
-        n = sum(1 for r in results if r["validation"][key])
-        return f"{n}/{total} ({n / total * 100:.1f}%)"
-
-    print(f"\n{'=' * 50}")
-    print(f"Model: {model}")
-    print(f"{'=' * 50}")
-    print(f"Valid JSON: {pct('valid_json')}")
-    print(f"All fields: {pct('all_fields')}")
-    print(f"Allowed intent: {pct('allowed_intent')}")
-    print(f"Correct intent: {pct('correct_intent')}")
-    print(f"Allowed entities: {pct('allowed_entity')}")
-    print(f"Correct entities: {pct('correct_entity')}")
-    print(f"Allowed roles: {pct('allowed_roles')}")
-    print(f"Correct roles: {pct('correct_roles')}")
-
-    intent_stats = {}
-    for r in results:
-        gt = r["ground_truth"]["intent"]
-        intent_stats.setdefault(gt, {"total": 0, "correct": 0})
-        intent_stats[gt]["total"] += 1
-        if r["validation"]["correct_intent"]:
-            intent_stats[gt]["correct"] += 1
-
-    print(f"\n  Accuracy pro Intent:")
-    for intent, s in sorted(intent_stats.items()):
-        print(
-            f"{intent:<12} {s['correct']}/{s['total']} ({s['correct']/s['total']*100:.1f}%)"
-        )
-    print()
+    print(f"Saved full results: {path}.")
+    print(f"Saved errors: {err_path}.")
 
 
 def main():
-    samples = load_ground_truth(NLU)
-    print(f"Loaded {len(samples)} samples")
+    import argparse
 
-    for model in MODELS:
-        print(f"Start evaluating {model}")
-        res = []
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-gt", "--ground_truth", type=Path, help="Path to ground truth file.")
+    parser.add_argument(
+        "-m", "--models", nargs="+", required=True, help="Ollama models to test"
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        required=False,
+        default="./results/",
+        help="Location to save the results.",
+    )
+    args = parser.parse_args()
 
-        for sample in tqdm(samples, desc=f"{model}", unit="sentence", colour="green"):
-            try:
-                resp = ollama.chat(
-                    model=model,
-                    messages=[{"role": "user", "content": sample["sentence"]}],
-                    think=False,
+    ground_truth = load_ground_truth(args.gt)
+
+    for model in args.models:
+        print(f"> Testing model: {model}")
+        results = []
+        try:
+            for gt in tqdm(ground_truth, total=len(ground_truth), desc=model):
+                start = time.perf_counter()
+                try:
+                    response = ollama.chat(
+                        model=model,
+                        messages=[{"role": "user", "content": gt.sentence}],
+                        think=False,
+                    )
+                    raw = response.message.content
+                except Exception as e:
+                    raw = f"Error: {e}"
+                    print(f"Error on '{gt.sentence[:40]}...': {e}")
+                latency = time.perf_counter() - start
+
+                validation = validate_response(raw, gt)
+                results.append(
+                    SampleResult(
+                        sentence=gt.sentence,
+                        ground_truth=gt,
+                        model=model,
+                        response_time=latency,
+                        output=raw,
+                        validation=validation,
+                    )
                 )
-                reply = resp["message"]["content"]
-            except Exception as e:
-                reply = ""
-                tqdm.write(f"Error in '{sample['sentence'][:40]}': {e}")
+        except KeyboardInterrupt:
+            print(f"\nTry saving results in {args.output}.")
+            if results:
+                statistics = stats(results)
+                save(model, results, statistics)
+            else:
+                print("No results to save.")
+            sys.exit(0)
 
-            validation = validate(reply, sample)
-            res.append(
-                {
-                    "sentence": sample["sentence"],
-                    "ground_truth": sample,
-                    "raw_output": reply,
-                    "validation": validation,
-                }
-            )
-
-            if validation["errors"]:
-                status = "OK" if validation["correct_intent"] else "XX"
-                tqdm.write(
-                    f"[{status}] GT={sample['intent']:<10} PRED={validation['predicted_intent']} | {validation['errors'][0]}"
-                )
-
-        print_stats(model, res)
-        save_results(model, res, timestamp)
-
-
-# def run_models(self, data):
-#     for model in MODELS:
-#         for sen in data:
-#             res = ollama.chat(
-#                 model=model,
-#                 messages=[{"role": "user", "content": sen}],
-#                 think=False,
-#             )
-#
-#             reply = res["message"]["content"]
-#             # parsed = json.loads(reply)
-#             # answer = parsed["response"]
-#             # print(f"{model}:\n {reply}\nAnswer: {answer}\n")
-#
-#             self.llmv.validation(reply)
+        statistics = stats(results)
+        save(model, results, statistics)
 
 
 if __name__ == "__main__":
