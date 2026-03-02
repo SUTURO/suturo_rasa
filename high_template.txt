@@ -776,7 +776,7 @@ receptionist: I like drink|Drink
 receptionist: My favorite drink is drink|Drink
 receptionist: My favorite beverage is drink|Drink
 receptionist: What I like most to drink is drink|Drink
-receptionist: Most of the time I drink dink|Drink
+receptionist: Most of the time I drink drink|Drink
 receptionist: Hello, I'm NaturalPerson|Person.
 receptionist: Hello, I am NaturalPerson|Person.
 receptionist: Hi there, NaturalPerson|Person here. My favorite drink is drink|Drink.
@@ -832,7 +832,7 @@ receptionist: I prefer eating food|Food
 receptionist: I like to eat food|Food
 receptionist: My favorite food is food|Food
 receptionist: What I like most to eat is food|Food
-receptionist: Most of the time I eat foot|Food
+receptionist: Most of the time I eat food|Food
 receptionist: Hi there, NaturalPerson|Person here. My favorite food is food|Food.
 receptionist: I'm NaturalPerson|Person, and I enjoy food|Food.
 receptionist: I'm NaturalPerson|Person, and I enjoy eating food|Food.
