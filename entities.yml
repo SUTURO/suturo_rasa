@@ -4,7 +4,7 @@ Clothing:
   - shoes
   - pullover
   - shirt
-  - blue jeans
+  - jeans
   - sweater
   - gloves
   - t-shirt
@@ -19,6 +19,7 @@ Clothing:
   - leggings
   - socks
   - jacket
+
 DesignedFurniture:
   entities:
 #  - trash bin
@@ -55,6 +56,7 @@ DesignedFurniture:
   - cupboard
   - there
   - hallway cabinet
+
 NaturalPerson:
   entities:
   - Adel
@@ -273,9 +275,11 @@ Room:
   - living room
   - study room
   - office
-#  - pantry
   - kitchen
+  - floor
+#  - pantry
 #  - balcony
+
 Transportable:
   entities:
   - ginger ale
@@ -518,6 +522,7 @@ Transportable:
   - redbull
   - lactosefree milk
   - snacks
+  - mezzomix
 
 drink:
   entities:
@@ -580,6 +585,7 @@ drink:
    - dubbelfris
    - red bull
    - lactosefree milk
+   - mezzomix
 
 food:
   entities:
@@ -724,6 +730,7 @@ Challenge:
     - Receptionist
     - GPSR
     - Restaurant
+    - High
 
 TalkTopic:
   entities:
