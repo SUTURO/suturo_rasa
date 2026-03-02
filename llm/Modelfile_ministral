@@ -184,7 +184,7 @@ User: "Hello, my name is Dalia and i like watching anime."
 Assistant:
 {
     "sentence": "Hello my name is Dalia and i like watching anime.",
-    "intent": "Receptionist",
+    "intent": "receptionist",
     "entities":[
         {
             "role":"Person",
