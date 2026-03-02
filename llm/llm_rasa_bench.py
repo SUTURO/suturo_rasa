@@ -308,7 +308,7 @@ def main():
     )
     args = parser.parse_args()
 
-    ground_truth = load_ground_truth(args.gt)
+    ground_truth = load_ground_truth(args.ground_truth)
 
     for model in args.models:
         print(f"> Testing model: {model}")
