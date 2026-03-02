@@ -180,7 +180,7 @@ def validate_response(response, gt):
     check.errors.extend(int_err)
 
     # === Valid entities ===
-    valid_ent = valid_entities(pred_intent, gt.entities)
+    valid_ent = valid_entities(pred_entities, gt.entities)
     check.entities_allowed = valid_ent["allowed_ent"]
     check.roles_allowed = valid_ent["allowed_roles"]
     check.entities_correct = valid_ent["correct_ent"]
