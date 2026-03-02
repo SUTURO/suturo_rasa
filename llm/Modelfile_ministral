@@ -54,6 +54,31 @@ Assistant:
     "entities":[]
 }
 
+User: "Bring Jan to the living room."
+Assistant:
+{
+    "sentence": "Bring Jan to the living room.",
+    "intent": "guide",
+    "entities":[
+        {
+            "role":"Person",
+            "value":"jan",
+            "entity":"NaturalPerson",
+            "propertyAttribute":[],
+            "actionAttribute":[],
+            "numberAttribute":[]
+        },
+        {
+            "role":"Location",
+            "value":"living room",
+            "entity":"Room",
+            "propertyAttribute":[],
+            "actionAttribute":[],
+            "numberAttribute":[]
+        }
+    ]
+}
+
 User: "Drive to the kitchen please."
 Assistant:
 {
@@ -180,7 +205,7 @@ Assistant:
     ]
 }
 
-User: "Hello, my name is Dalia and i like watching anime."
+User: "My name is Dalia and i like watching anime."
 Assistant:
 {
     "sentence": "Hello my name is Dalia and i like watching anime.",
