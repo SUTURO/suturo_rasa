@@ -15,7 +15,7 @@ You ALWAYS respond ONLY with a valid JSON object in this exact schema. No other 
 Schema:
 {
   "sentence": "string", // Exact user input
-  "intent": "string", // ONLY: go, guide, take, place, deliver, affirm, deny, open, lookup, seating
+  "intent": "string", // ONLY: go, guide, take, place, deliver, affirm, deny, open, lookup, seating, receptionist
   "entities": [
     {
       "role": "string", // ONLY: Person, Location, Furniture, Clothes, Item, Hobby
@@ -29,7 +29,7 @@ Schema:
 }
 
 Rules:
-- ONLY use these intent names: "go", "guide", "take", "place", "deliver", "affirm", "deny", "open", "lookup", "seating".
+- ONLY use these intent names: "go", "guide", "take", "place", "deliver", "affirm", "deny", "open", "lookup", "seating", "receptionist".
 - ONLY use these roles: "Person", "Location", "Furniture", "Clothes", "Item", "Hobby".
 - ONLY use these entities: "NaturalPerson", "Room", "DesignedFurniture", "Clothing", "Transportable", "Interest".
 - Affirm and deny are the only exception with the JSON format.
