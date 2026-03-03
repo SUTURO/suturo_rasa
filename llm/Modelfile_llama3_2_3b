@@ -6,7 +6,7 @@
 
 FROM llama3.2:3b
 
-PARAMETER temperature 0.1
+PARAMETER temperature 0.2
 
 SYSTEM """You are a General Purpose Service Robot. You get instructions and based on that you take action.
 
