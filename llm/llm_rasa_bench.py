@@ -25,7 +25,7 @@ ALLOWED_INTENTS = [
     "lookup",
     "talk",
     "seating",
-    "receptionist"
+    "receptionist",
 ]
 ALLOWED_ENTITIES = [
     "NaturalPerson",
@@ -37,7 +37,16 @@ ALLOWED_ENTITIES = [
     "food",
     "drink",
 ]
-ALLOWED_ROLES = ["Person", "Location", "Furniture", "Clothes", "Item", "Hobby", "Food", "Drink"]
+ALLOWED_ROLES = [
+    "Person",
+    "Location",
+    "Furniture",
+    "Clothes",
+    "Item",
+    "Hobby",
+    "Food",
+    "Drink",
+]
 REQUIRED_FIELDS = ["sentence", "intent", "entities"]
 
 
@@ -294,9 +303,11 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-gt", "--ground_truth", type=Path, help="Path to ground truth file.")
     parser.add_argument(
-        "-m", "--models", nargs="+", required=True, help="Ollama models to test"
+        "-gt", "--ground_truth", type=Path, help="Path to ground truth file."
+    )
+    parser.add_argument(
+        "-m", "--models", nargs="+", required=True, help="LLM models to test"
     )
     parser.add_argument(
         "-o",
@@ -322,7 +333,7 @@ def main():
                         messages=[{"role": "user", "content": gt.sentence}],
                         think=False,
                     )
-                    raw = response.message.content
+                    raw = response.message.content.strip()
                 except Exception as e:
                     raw = f"Error: {e}"
                     print(f"Error on '{gt.sentence[:40]}...': {e}")
