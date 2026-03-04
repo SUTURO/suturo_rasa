@@ -15,14 +15,10 @@ go: Head to the Room|Location.
 go: Head over to the DesignedFurniture|Furniture.
 go: Make your way to the Room|Location.
 go: Make your way to the DesignedFurniture|Furniture.
-# go: Leave the Room|Location.
-# go: Leave this Room|Location.
-# go: Exit the Room|Location.
 
 go: Go to NaturalPerson|Person.
 go: Move to the sitting NaturalPerson|Person.
 go: Navigate to the standing NaturalPerson|Person.
-# go: Approach the waving person.
 go: Approach the waving NaturalPerson|Person.
 
 go: Go to the DesignedFurniture|Furniture in the Room|Location.
@@ -36,14 +32,14 @@ go: In the Room|Location drive to NaturalPerson|Person.
 go: Go to the waving NaturalPerson|Person.
 go: Go to the NaturalPerson|Person waving their arm.
 go: Navigate to the waving NaturalPerson|Person.
-go: Find the waving NaturalPerson|Person in the Room|Location.
+# go: Find the waving NaturalPerson|Person in the Room|Location.
 go: Go to the lying NaturalPerson|Person.
 go: Move to the NaturalPerson|Person lying on the DesignedFurniture|Furniture.
 go: Go to the NaturalPerson|Person sitting on the DesignedFurniture|Furniture.
 go: Navigate to the NaturalPerson|Person standing near the DesignedFurniture|Furniture.
 go: Navigate to the NaturalPerson|Person raising their left arm.
 go: Go to the NaturalPerson|Person raising their right arm.
-go: Find the NaturalPerson|Person pointing to the left.
+# go: Find the NaturalPerson|Person pointing to the left.
 go: Go to the NaturalPerson|Person pointing to the left in the Room|Location.
 go: Go to the NaturalPerson|Person pointing to the right.
 
@@ -81,7 +77,7 @@ go: Your task is to go to the Room|Location.
 go: Make your way to the NaturalPerson|Person standing near the DesignedFurniture|Furniture.
 go: Navigate to the NaturalPerson|Person who is sitting on the DesignedFurniture|Furniture.
 go: Go to the NaturalPerson|Person raising their left arm in the Room|Location.
-go: Find the NaturalPerson|Person pointing to the right and go to them.
+# go: Find the NaturalPerson|Person pointing to the right and go to them.
 go: Please go to the NaturalPerson|Person wearing a Clothing|Clothes.
 go: Go to the lying NaturalPerson|Person on the DesignedFurniture|Furniture.
 go: Head towards the waving NaturalPerson|Person in the Room|Location.
@@ -121,11 +117,11 @@ go: Would you mind navigating to the DesignedFurniture|Furniture in the Room|Loc
 go: Do you think you could head over to the Room|Location?
 go: Is it possible for you to go to the DesignedFurniture|Furniture?
 
-go: Go find NaturalPerson|Person in the Room|Location.
+# go: Go find NaturalPerson|Person in the Room|Location.
 go: Locate NaturalPerson|Person in the Room|Location and approach them.
 go: Seek out NaturalPerson|Person in the Room|Location.
 go: Track down NaturalPerson|Person and go to them.
-go: Find NaturalPerson|Person and stand next to them.
+# go: Find NaturalPerson|Person and stand next to them.
 go: Go where NaturalPerson|Person is standing.
 go: Go to the NaturalPerson|Person sitting near the DesignedFurniture|Furniture.
 go: Move toward the NaturalPerson|Person in the Clothing|Clothes.
@@ -957,6 +953,11 @@ lookup: Count the items on the DesignedFurniture|Furniture.
 lookup: How many objects do you see on the DesignedFurniture|Furniture?
 lookup: Give me a count of items on the DesignedFurniture|Furniture.
 
+lookup: Find the waving NaturalPerson|Person in the Room|Location.
+lookup: Find the NaturalPerson|Person pointing to the left.
+lookup: Find the NaturalPerson|Person pointing to the right and go to them.
+lookup: Find NaturalPerson|Person and stand next to them.
+
 
 # ---- Seating----
 
@@ -996,6 +997,8 @@ seating: Could you assist the waving NaturalPerson|Person in finding a seat?
 seating: Direct the waving NaturalPerson|Person to a seat.
 seating: Show the waving NaturalPerson|Person where they can sit down.
 seating: Tell the waving NaturalPerson|Person which chair to use.
+seating: Tell the waving NaturalPerson|Person where to sit.
+seating: Tell the NaturalPerson|Person where to sit.
 seating: Let the waving NaturalPerson|Person know where to take a seat.
 seating: Point out a seat for the waving NaturalPerson|Person.
 seating: Guide the waving NaturalPerson|Person to an available seat.
