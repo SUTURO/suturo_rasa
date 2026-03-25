@@ -329,7 +329,7 @@ Transportable:
   - cocoa box
   - soccer ball
   - tictac
-  - lemonade
+# - lemonade
   - cleanser bottle
   - kitchen knife
   - hammer
@@ -362,7 +362,7 @@ Transportable:
   - tuna
   - meat
   - bowl
-  - cereal box
+  # - cereal box
   - tray
   - spray bottle
   - sponge
@@ -374,7 +374,7 @@ Transportable:
   - juice pack
   - bottle
   - orange
-  - corny box
+  # - corny box
   - mayonaise
   - washer
   - knife
@@ -411,7 +411,7 @@ Transportable:
   - chili con carne
   - nail
   - tea
-  - cereal bowl
+  # - cereal bowl
   - jug
   - tomato soup can
   - chili
@@ -564,7 +564,7 @@ drink:
    - juice box
    - juice pack
    - pack of juice
-   - lemonade
+  # - lemonade
    - milk
    - milk pack
    - mineral water
@@ -603,11 +603,11 @@ food:
    - apple
    - banana
    - bowl of soup
-   - box of cereal
+  #  - box of cereal
    - box of sugar
-   - cereal box
-   - cereal box robo cup
-   - cereal
+  # - cereal box
+  # - cereal box robo cup
+  # - cereal
    - chili con carne
    - chili sin carne
    - chips can
@@ -652,8 +652,8 @@ food:
    - vegetables
    - vegetable
    - grapes
-   - corny box
-   - box of corny
+   # - corny box
+   # - box of corny
    - tomato
    - cornflakes
    - corn flakes
