@@ -413,10 +413,10 @@ Transportable:
   - tea
   # - cereal bowl
   - jug
-  - tomato soup can
+#  - tomato soup can
   - chili
 #  - ice tea
-  - iced tea
+#  - iced tea
   - abrasive sponge
   - pudding box
   - spoon
@@ -442,7 +442,7 @@ Transportable:
   - plastic knife
   - stapel chips
   - pitcher
-  - tomato soup
+#  - tomato soup
   - dice
   - plastic chain
   - coke
@@ -559,7 +559,7 @@ drink:
    - ice tea bottle
    - bottle of ice tea
    - iced coffee
-   - iced tea
+  # - iced tea
    - jug of milk
    - juice box
    - juice pack
@@ -645,8 +645,8 @@ food:
    - strawberry
    - sugar
    - sugar box
-   - tomato soup can
-   - can of tomato soup
+#   - tomato soup can
+#   - can of tomato soup
    - tuna fish can
    - can of tuna fish
    - vegetables
