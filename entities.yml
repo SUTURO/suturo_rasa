@@ -22,7 +22,7 @@ Clothing:
 
 DesignedFurniture:
   entities:
-#  - trash bin
+  - trash bin
   - trash can
   - lamp
   - coffee table
@@ -41,7 +41,7 @@ DesignedFurniture:
   - chair
   - sofa
   - couch
-#  - couch table
+  - couch table
   - coffee table
   - table
   - bed
@@ -524,6 +524,15 @@ Transportable:
   - snacks
   - mezzomix
 
+# new rc objects
+  - tomatosauce
+  - corny
+  - chocolatewaffles
+  - lemonade
+  - chips 
+  - icetea
+  - cereal
+
 drink:
   entities:
    - apple juice
@@ -586,6 +595,8 @@ drink:
    - red bull
    - lactosefree milk
    - mezzomix
+   - lemonade
+   - icetea
 
 food:
   entities:
@@ -669,6 +680,11 @@ food:
    - hamburger
    - cheeseburger
    - burger
+   - tomatosauce
+   - corny
+   - chocolatewaffles
+   - chips 
+   - cereal
 
 Interest:
   entities:
