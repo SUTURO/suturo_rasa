@@ -1,4 +1,5 @@
 import logging
+import os
 
 import torch
 from dataclasses import dataclass
@@ -9,10 +10,12 @@ from transformers import (
     AutoTokenizer,
 )
 from trl import SFTConfig, SFTTrainer
+from matplotlib import pyplot as plt
 
+# Utilizing logger
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
+    format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%H:%M:%S",
 )
 log = logging.getLogger(__name__)
@@ -149,6 +152,7 @@ def load_data(tokenizer):
 
     return dataset
 
+
 def train(model, tokenizer, train_data, gpu):
     log.info("Starting training")
 
@@ -169,13 +173,48 @@ def train(model, tokenizer, train_data, gpu):
     return trainer
 
 
+def create_plot(trainer):
+    log_history = trainer.state.log_history
+
+    train_losses = [ent["loss"] for ent in log_history if "loss" in ent]
+    epoch_train = [ent["epoch"] for ent in log_history if "loss" in ent]
+    eval_losses = [ent["eval_loss"] for ent in log_history if "eval_loss" in ent]
+    epoch_eval = [ent["epoch"] for ent in log_history if "eval_loss" in ent]
+
+    plt.plot(epoch_train, train_losses, label="Training Loss")
+    if eval_losses:
+        plt.plot(epoch_eval, eval_losses, label="Validation Loss")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.title("Training and Validation Loss")
+    plt.legend()
+    plt.grid(True)
+    # plt.show()
+
+    path = os.path.join(OUTPUT, "train-loss.png")
+    plt.savefig(path, dpi=300)
+    plt.close()
+
+    log.info(f"Train Loss Plot saved in {path}")
+
+
 def save(trainer, tokenizer):
+    """Save LoRA adapter weights"""
     log.info(f"Saving LoRA & Tokenizer in: {OUTPUT}")
 
     trainer.model.save_pretrained(OUTPUT)
     tokenizer.save_pretrained(OUTPUT)
 
     log.info(f"Done.")
+
+def save_merged(trainer, tokenizer):
+    """Save merged model"""
+    merged = trainer.model.merge_and_unload()
+    merged.save_pretrained(OUTPUT)
+    tokenizer.save_pretrained(OUTPUT)
+
+    log.info(f"Merge complete.")
+    log.info(f"Saved in {OUTPUT}")
 
 
 def main():
@@ -186,6 +225,8 @@ def main():
     trainer = train(model, tokenizer, dataset, gpu)
 
     save(trainer, tokenizer)
+    create_plot(trainer)
+    save_merged(trainer, tokenizer)
 
 
 if __name__ == "__main__":
