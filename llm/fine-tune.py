@@ -1,5 +1,7 @@
 import logging
 import os
+import sys
+from pathlib import Path
 
 import torch
 from dataclasses import dataclass
@@ -22,9 +24,9 @@ log = logging.getLogger(__name__)
 
 
 MODEL_NAME = "Qwen/Qwen3.5-4B"
-TRAIN_DATA = "train_data_complete.jsonl"
-OUTPUT = "fine_tune"
-MAX_SEQ_LEN = 2048
+# TRAIN_DATA = "train_data_complete.jsonl"
+OUTPUT = os.path.join("fine_tune", MODEL_NAME)
+OUTPUT_MERGED = os.path.join("fine_tune_merged", MODEL_NAME)
 
 LORA_CONFIG = dict(
     r=16,
@@ -44,15 +46,20 @@ LORA_CONFIG = dict(
 )
 
 TRAIN_CONFIG = dict(
-    num_train_epochs=3,
+    max_length=2048,
+    num_train_epochs=5,
     per_device_train_batch_size=1,
+    per_device_eval_batch_size=1,
+    eval_accumulation_steps=4,
     gradient_accumulation_steps=4,
     gradient_checkpointing=True,
-    warmup_steps=10,
+    # warmup_steps=10,
     learning_rate=2e-4,
     lr_scheduler_type="cosine",
     seed=42,
-    logging_steps=10,
+    logging_steps=5,
+    dataset_text_field="text",
+    eval_strategy="epoch",
 )
 
 
@@ -94,13 +101,13 @@ def check_gpu() -> GPU:
         )
 
     log.info(f"GPU found: {gpu}")
-    log.info(f"GPU mem: {gpu.mem}")
+    log.info(f"GPU mem: {gpu.mem:.1f} GB")
     log.info(f"GPU vendor: {gpu.vendor}")
 
     return gpu
 
 
-def load_model(gpu):
+def load_causal_language_model(gpu):
     log.info(f"Loading model: {MODEL_NAME}")
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -141,30 +148,33 @@ def prepare_dataset(example, tokenizer):
     return {"text": text}
 
 
-def load_data(tokenizer):
-    log.info(f"Preparing data: {TRAIN_DATA}")
+def load_data(data, tokenizer):
+    log.info(f"Preparing data: {data}")
 
-    dataset = load_dataset("json", data_files=TRAIN_DATA, split="train")
+    dataset = load_dataset("json", data_files=str(data), split="train")
     dataset = dataset.map(
         lambda example: prepare_dataset(example, tokenizer),
         remove_columns=dataset.column_names,
     )
+    # split dataset
+    split = dataset.train_test_split(test_size=0.2, shuffle=True, seed=42)
 
-    return dataset
+    return split["train"], split["test"]
 
 
-def train(model, tokenizer, train_data, gpu):
+def train(model, tokenizer, train_data, eval_data, gpu):
     log.info("Starting training")
 
     trainer = SFTTrainer(
         model=model,
         processing_class=tokenizer,
         train_dataset=train_data,
+        eval_dataset=eval_data,
         args=SFTConfig(
-            dataset_text_field="text",
             output_dir=OUTPUT,
-            max_length=MAX_SEQ_LEN,
             optim=gpu.optim,
+            fp16=(gpu.dtype == torch.float16),
+            bf16=(gpu.dtype == torch.bfloat16),
             **TRAIN_CONFIG,
         ),
     )
@@ -207,26 +217,37 @@ def save(trainer, tokenizer):
 
     log.info(f"Done.")
 
+
 def save_merged(trainer, tokenizer):
     """Save merged model"""
     merged = trainer.model.merge_and_unload()
-    merged.save_pretrained(OUTPUT)
-    tokenizer.save_pretrained(OUTPUT)
+    merged.save_pretrained(OUTPUT_MERGED)
+    tokenizer.save_pretrained(OUTPUT_MERGED)
 
     log.info(f"Merge complete.")
-    log.info(f"Saved in {OUTPUT}")
+    log.info(f"Saved in {OUTPUT_MERGED}")
 
 
 def main():
-    gpu = check_gpu()
-    model, tokenizer = load_model(gpu)
-    model = add_LoRA(model)
-    dataset = load_data(tokenizer)
-    trainer = train(model, tokenizer, dataset, gpu)
+    import argparse
 
-    save(trainer, tokenizer)
-    create_plot(trainer)
-    save_merged(trainer, tokenizer)
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-d", "--data", type=Path, help="Path to the Training Data File", required=True
+    )
+    args = parser.parse_args()
+    try:
+        gpu = check_gpu()
+        model, tokenizer = load_causal_language_model(gpu)
+        model = add_LoRA(model)
+        train_data, eval_data = load_data(args.data, tokenizer)
+        trainer = train(model, tokenizer, train_data, eval_data, gpu)
+
+        save(trainer, tokenizer)
+        create_plot(trainer)
+        save_merged(trainer, tokenizer)
+    except KeyboardInterrupt:
+        sys.exit(0)
 
 
 if __name__ == "__main__":
