@@ -6,10 +6,12 @@ from pathlib import Path
 import torch
 from dataclasses import dataclass
 from datasets import load_dataset
+from fontTools.misc.arrayTools import quantizeRect
 from peft import LoraConfig, TaskType, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
+    BitsAndBytesConfig,
 )
 from trl import SFTConfig, SFTTrainer
 from matplotlib import pyplot as plt
@@ -28,38 +30,42 @@ MODEL_NAME = "Qwen/Qwen3.5-4B"
 OUTPUT = os.path.join("fine_tune", MODEL_NAME)
 OUTPUT_MERGED = os.path.join("fine_tune_merged", MODEL_NAME)
 
+#LoRAConfig
 LORA_CONFIG = dict(
     r=16,
     lora_alpha=16,
     lora_dropout=0.05,
     bias="none",
-    target_modules=[
-        "q_proj",
-        "k_proj",
-        "v_proj",
-        "o_proj",
-        "gate_proj",
-        "up_proj",
-        "down_proj",
-    ],
+    # target_modules=[
+    #     "q_proj",
+    #     "k_proj",
+    #     "v_proj",
+    #     "o_proj",
+    #     "gate_proj",
+    #     "up_proj",
+    #     "down_proj",
+    # ],
+    target_modules="all-linear",
     use_rslora=True,
 )
 
+#SFTConfig
 TRAIN_CONFIG = dict(
-    max_length=2048,
+    max_seq_length=2048,
     num_train_epochs=5,
     per_device_train_batch_size=1,
     per_device_eval_batch_size=1,
     eval_accumulation_steps=4,
     gradient_accumulation_steps=4,
     gradient_checkpointing=True,
-    # warmup_steps=10,
+    warmup_steps=10,
     learning_rate=2e-4,
     lr_scheduler_type="cosine",
     seed=42,
-    logging_steps=5,
+    logging_steps=10,
     dataset_text_field="text",
     eval_strategy="epoch",
+    # packing=True,
 )
 
 
@@ -75,30 +81,41 @@ class GPU:
 def check_gpu() -> GPU:
     assert (
         torch.cuda.is_available()
-    ), "No GPU found. Make sure CUDA or ROCm drivers are installed."
+    ), "No GPU found. Make sure CUDA drivers are installed."
+
+    # is_amd = any(
+    #     kw in name.upper() for kw in ("AMD", "RADEON", "INSTINCT", "VEGA", "NAVI")
+    # )
 
     name = torch.cuda.get_device_name()
     mem = torch.cuda.get_device_properties(0).total_memory / 1e9
-    is_amd = any(
-        kw in name.upper() for kw in ("AMD", "RADEON", "INSTINCT", "VEGA", "NAVI")
+
+    # Check if GPU benefits from bfloat16
+    if torch.cuda.get_device_capability()[0] >= 8:
+        torch_dtype = torch.bfloat16
+    else:
+        torch_dtype = torch.float16
+
+    gpu = GPU(
+        name=name, vendor="nvidia", mem=mem, dtype=torch_dtype, optim="adamw_8bit"
     )
 
-    if is_amd:
-        gpu = GPU(
-            name=name,
-            vendor="amd",
-            mem=mem,
-            dtype=torch.bfloat16,
-            optim="adamw_torch",
-        )
-    else:
-        gpu = GPU(
-            name=name,
-            vendor="nvidia",
-            mem=mem,
-            dtype=torch.float16,
-            optim="adamw_8bit",
-        )
+    # if is_amd:
+    #     gpu = GPU(
+    #         name=name,
+    #         vendor="amd",
+    #         mem=mem,
+    #         dtype=torch.bfloat16,
+    #         optim="adamw_torch",
+    #     )
+    # else:
+    #     gpu = GPU(
+    #         name=name,
+    #         vendor="nvidia",
+    #         mem=mem,
+    #         dtype=torch.float16,
+    #         optim="adamw_8bit",
+    #     )
 
     log.info(f"GPU found: {gpu}")
     log.info(f"GPU mem: {gpu.mem:.1f} GB")
@@ -110,6 +127,14 @@ def check_gpu() -> GPU:
 def load_causal_language_model(gpu):
     log.info(f"Loading model: {MODEL_NAME}")
 
+    # Quantize the model to reduce memory problems
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_compute_dtype=gpu.dtype,
+    )
+
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     if tokenizer.pad_token is None:
@@ -117,6 +142,7 @@ def load_causal_language_model(gpu):
 
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
+        quantization_config=bnb_config,
         torch_dtype=gpu.dtype,
         device_map="auto",
     )
@@ -144,6 +170,7 @@ def prepare_dataset(example, tokenizer):
         example["messages"],
         tokenize=False,
         add_generation_prompt=False,
+        enable_thinking=False,
     )
     return {"text": text}
 
